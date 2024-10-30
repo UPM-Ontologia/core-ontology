@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-transportinfrastructure: <https://ontologia.segittur.es/turismo/kos/transportinfrastructure/> .
+@prefix estur-ferrytype: <https://ontologia.segittur.es/turismo/kos/ferrytype/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:TransportInfrastructureType a skos:ConceptScheme ; 
+estur-kos:FerryType a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
     dct:modified "2024-05-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Transport Infrastructure Type"@en ;
-    rdfs:label "Tipo de transporteinfraestructura"@es ;
-    dct:title "Concept scheme grouping transport infrastructure types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de transporteinfraestructura"@es .
+    rdfs:label "Ferry Type"@en ;
+    rdfs:label "Tipo de ferry"@es ;
+    dct:title "Concept scheme grouping ferry types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de ferry"@es .
 
 #################################################################
 #
@@ -33,45 +33,37 @@ estur-kos:TransportInfrastructureType a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-transportinfrastructure:AccessForDisabled a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-ferrytype:CableFerry a skos:Concept;
+  skos:inScheme estur-kos:FerryType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Access For Disabled"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Cable Ferry"@en ;
+  skos:prefLabel "Ferry de cable"@es .
 
-estur-transportinfrastructure:InformationPoint a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-ferrytype:ChainFerry a skos:Concept;
+  skos:inScheme estur-kos:FerryType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Information Point"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Chain Ferry"@en ;
+  skos:prefLabel "Ferry de cadena"@es .
 
-estur-transportinfrastructure:ParkingFacility a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-ferrytype:FastFerry a skos:Concept;
+  skos:inScheme estur-kos:FerryType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Parking Facility"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Fast Ferry"@en ;
+  skos:prefLabel "Ferry rápido"@es .
 
-estur-transportinfrastructure:SmokingRooms a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-ferrytype:FerryType_24 a skos:Concept;
+  skos:inScheme estur-kos:FerryType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Smoking Rooms"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "FerryType_24"@en ;
+  skos:prefLabel "FerryType_24"@es .
 
-estur-transportinfrastructure:VipRoom a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-ferrytype:JetFerry a skos:Concept;
+  skos:inScheme estur-kos:FerryType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Vip Room"@en ;
-  skos:prefLabel "XXXXX"@es .
-
-estur-transportinfrastructure:Wifi a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wifi"@en ;
-  skos:prefLabel "XXXXX"@es .
-
+  skos:prefLabel "Jet ferry"@en ;
+  skos:prefLabel "Ferry jet"@es .

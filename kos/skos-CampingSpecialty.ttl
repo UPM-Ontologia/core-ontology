@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-localbusiness: <https://ontologia.segittur.es/turismo/kos/localbusiness/> .
+@prefix estur-campingspecialty: <https://ontologia.segittur.es/turismo/kos/campingspecialty/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:LocalBusinessType a skos:ConceptScheme ; 
-    dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+estur-kos:CampingSpecialty a skos:ConceptScheme ; 
+    dct:issued "2024-10-29"^^xsd:date ;
+    dct:modified "2024-10-29"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Local Business Type"@en ;
-    rdfs:label "Tipo de negocio local"@es ;
-    dct:title "Concept scheme grouping local business types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de negocio local"@es .
+    rdfs:label "Camping Specialty"@en ;
+    rdfs:label "Especialidad del camping"@es ;
+    dct:title "Concept scheme grouping camping specialties"@en ;
+    dct:title "Esquema de conceptos agrupando especialidades de campings"@es .
 
 #################################################################
 #
@@ -33,31 +33,31 @@ estur-kos:LocalBusinessType a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-localbusiness:AccessForDisabled a skos:Concept;
-  skos:inScheme estur-kos:LocalBusinessType;
+estur-campingspecialty:BudgetCamping a skos:Concept;
+  skos:inScheme estur-kos:CampingSpecialty;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Access For Disabled"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Budget camping"@en ;
+  skos:prefLabel "Camping económico"@es .
 
-estur-localbusiness:Audiodescription a skos:Concept;
-  skos:inScheme estur-kos:LocalBusinessType;
+estur-campingspecialty:GreenCamping a skos:Concept;
+  skos:inScheme estur-kos:CampingSpecialty;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Audiodescription"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Green camping"@en ;
+  skos:prefLabel "Camping ecológico"@es .
 
-estur-localbusiness:ParkingFacility a skos:Concept;
-  skos:inScheme estur-kos:LocalBusinessType;
+estur-campingspecialty:ThemeCamping a skos:Concept;
+  skos:inScheme estur-kos:CampingSpecialty;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Parking Facility"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Theme camping"@en ;
+  skos:prefLabel "Camping temático"@es .
 
-estur-localbusiness:Voucher a skos:Concept;
-  skos:inScheme estur-kos:LocalBusinessType;
+estur-campingspecialty:VacationCamping a skos:Concept;
+  skos:inScheme estur-kos:CampingSpecialty;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Voucher"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Vacation camping"@en ;
+  skos:prefLabel "Camping de vacaciones"@es .
 

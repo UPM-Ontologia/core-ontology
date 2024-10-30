@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-transportinfrastructure: <https://ontologia.segittur.es/turismo/kos/transportinfrastructure/> .
+@prefix estur-airplaneservice: <https://ontologia.segittur.es/turismo/kos/airplaneservice/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:TransportInfrastructureType a skos:ConceptScheme ; 
+estur-kos:AirplaneServiceType a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
     dct:modified "2024-05-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Transport Infrastructure Type"@en ;
-    rdfs:label "Tipo de transporteinfraestructura"@es ;
-    dct:title "Concept scheme grouping transport infrastructure types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de transporteinfraestructura"@es .
+    rdfs:label "Airplane Service Type"@en ;
+    rdfs:label "Tipo de servicio de un avión"@es ;
+    dct:title "Concept scheme grouping airplane service types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de servicio de un avión"@es .
 
 #################################################################
 #
@@ -33,43 +33,36 @@ estur-kos:TransportInfrastructureType a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-transportinfrastructure:AccessForDisabled a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-airplaneservice:ChargingPlug a skos:Concept;
+  skos:inScheme estur-kos:AirplaneServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Access For Disabled"@en ;
+  skos:prefLabel "Charging Plug"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-transportinfrastructure:InformationPoint a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-airplaneservice:OnBoardFoodService a skos:Concept;
+  skos:inScheme estur-kos:AirplaneServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Information Point"@en ;
+  skos:prefLabel "On Board Food Service"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-transportinfrastructure:ParkingFacility a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-airplaneservice:SaleOfProducts a skos:Concept;
+  skos:inScheme estur-kos:AirplaneServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Parking Facility"@en ;
+  skos:prefLabel "Sale Of Products"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-transportinfrastructure:SmokingRooms a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-airplaneservice:Tv a skos:Concept;
+  skos:inScheme estur-kos:AirplaneServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Smoking Rooms"@en ;
+  skos:prefLabel "Tv"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-transportinfrastructure:VipRoom a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Vip Room"@en ;
-  skos:prefLabel "XXXXX"@es .
-
-estur-transportinfrastructure:Wifi a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-airplaneservice:Wifi a skos:Concept;
+  skos:inScheme estur-kos:AirplaneServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Wifi"@en ;

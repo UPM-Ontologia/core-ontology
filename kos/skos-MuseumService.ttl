@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-culturecenter: <https://ontologia.segittur.es/turismo/kos/culturecenter/> .
+@prefix estur-museumservice: <https://ontologia.segittur.es/turismo/kos/museumservice/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:CultureCenterType a skos:ConceptScheme ; 
+estur-kos:MuseumServiceType a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
     dct:modified "2024-05-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Culture Center Type"@en ;
-    rdfs:label "Tipo de centro cultural"@es ;
-    dct:title "Concept scheme grouping culture center types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de centro cultural"@es .
+    rdfs:label "Museum Service Type"@en ;
+    rdfs:label "Tipo de servicio de un museo"@es ;
+    dct:title "Concept scheme grouping museum service types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de servicio de un museo"@es .
 
 #################################################################
 #
@@ -33,73 +33,87 @@ estur-kos:CultureCenterType a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-culturecenter:Audioguide a skos:Concept;
-  skos:inScheme estur-kos:CultureCenterType;
+estur-museumservice:Audioguide a skos:Concept;
+  skos:inScheme estur-kos:MuseumServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Audioguide"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-culturecenter:AugmentedReality a skos:Concept;
-  skos:inScheme estur-kos:CultureCenterType;
+estur-museumservice:Auditory a skos:Concept;
+  skos:inScheme estur-kos:MuseumServiceType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Auditory"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-museumservice:AugmentedReality a skos:Concept;
+  skos:inScheme estur-kos:MuseumServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Augmented Reality"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-culturecenter:EducationalTour a skos:Concept;
-  skos:inScheme estur-kos:CultureCenterType;
+estur-museumservice:Cafeteria a skos:Concept;
+  skos:inScheme estur-kos:MuseumServiceType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Cafeteria"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-museumservice:CloakRoom a skos:Concept;
+  skos:inScheme estur-kos:MuseumServiceType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Cloak Room"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-museumservice:ConferenceRoom a skos:Concept;
+  skos:inScheme estur-kos:MuseumServiceType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Conference Room"@en ;
+  skos:prefLabel "XXXXX"@es .
+
+estur-museumservice:EducationalTour a skos:Concept;
+  skos:inScheme estur-kos:MuseumServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Educational Tour"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-culturecenter:GroupTour a skos:Concept;
-  skos:inScheme estur-kos:CultureCenterType;
+estur-museumservice:GroupTour a skos:Concept;
+  skos:inScheme estur-kos:MuseumServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Group Tour"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-culturecenter:GuidedTour a skos:Concept;
-  skos:inScheme estur-kos:CultureCenterType;
+estur-museumservice:GuidedTour a skos:Concept;
+  skos:inScheme estur-kos:MuseumServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Guided Tour"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-culturecenter:PrivateTour a skos:Concept;
-  skos:inScheme estur-kos:CultureCenterType;
+estur-museumservice:PrivateTour a skos:Concept;
+  skos:inScheme estur-kos:MuseumServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Private Tour"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-culturecenter:Venue a skos:Concept;
-  skos:inScheme estur-kos:CultureCenterType;
+estur-museumservice:Venue a skos:Concept;
+  skos:inScheme estur-kos:MuseumServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Venue"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-culturecenter:VirtualReality a skos:Concept;
-  skos:inScheme estur-kos:CultureCenterType;
+estur-museumservice:VirtualReality a skos:Concept;
+  skos:inScheme estur-kos:MuseumServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Virtual Reality"@en ;
-  skos:prefLabel "XXXXX"@es .
-
-estur-culturecenter:Wifi a skos:Concept;
-  skos:inScheme estur-kos:CultureCenterType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wifi"@en ;
-  skos:prefLabel "XXXXX"@es .
-
-estur-culturecenter:WiredInternet a skos:Concept;
-  skos:inScheme estur-kos:CultureCenterType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wired Internet"@en ;
   skos:prefLabel "XXXXX"@es .
 

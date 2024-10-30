@@ -24,7 +24,7 @@ estur-kos:BusOperatorType a skos:ConceptScheme ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
     rdfs:label "Bus Operator Type"@en ;
     rdfs:label "Tipo de operador de autobús"@es ;
-    dct:title "Concept scheme grouping busoperator types"@en ;
+    dct:title "Concept scheme grouping bus operator types"@en ;
     dct:title "Esquema de conceptos agrupando tipos de operador de autobús"@es .
 
 #################################################################
@@ -34,14 +34,14 @@ estur-kos:BusOperatorType a skos:ConceptScheme ;
 #################################################################
 
 estur-busoperator:AdditionalLuggage a skos:Concept;
-  skos:inScheme estur-kos:BusoperatorType;
+  skos:inScheme estur-kos:BusOperatorType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Additional Luggage"@en ;
   skos:prefLabel "XXXXX"@es .
 
 estur-busoperator:UnAccompainedChildService a skos:Concept;
-  skos:inScheme estur-kos:BusoperatorType;
+  skos:inScheme estur-kos:BusOperatorType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Un Accompained Child Service"@en ;

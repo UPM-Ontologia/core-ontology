@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-transportinfrastructure: <https://ontologia.segittur.es/turismo/kos/transportinfrastructure/> .
+@prefix estur-vehiclerentalcompanyservice: <https://ontologia.segittur.es/turismo/kos/vehiclerentalcompanyservice/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:TransportInfrastructureType a skos:ConceptScheme ; 
+estur-kos:VehicleRentalCompanyServiceType a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
     dct:modified "2024-05-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Transport Infrastructure Type"@en ;
-    rdfs:label "Tipo de transporteinfraestructura"@es ;
-    dct:title "Concept scheme grouping transport infrastructure types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de transporteinfraestructura"@es .
+    rdfs:label "Vehicle Rental Company Service Type"@en ;
+    rdfs:label "Tipo de servicio de una empresa de alquiler de vehículos"@es ;
+    dct:title "Concept scheme grouping vehicle rental company service types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de servicio de una empresa de alquiler de vehículos"@es .
 
 #################################################################
 #
@@ -33,45 +33,45 @@ estur-kos:TransportInfrastructureType a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-transportinfrastructure:AccessForDisabled a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-vehiclerentalcompanyservice:AccesibleVehicleFleet a skos:Concept;
+  skos:inScheme estur-kos:VehicleRentalCompanyServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Access For Disabled"@en ;
+  skos:prefLabel "Accesible Vehicle Fleet"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-transportinfrastructure:InformationPoint a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-vehiclerentalcompanyservice:AdditionalDriver a skos:Concept;
+  skos:inScheme estur-kos:VehicleRentalCompanyServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Information Point"@en ;
+  skos:prefLabel "Additional Driver"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-transportinfrastructure:ParkingFacility a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-vehiclerentalcompanyservice:BabySeat a skos:Concept;
+  skos:inScheme estur-kos:VehicleRentalCompanyServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Parking Facility"@en ;
+  skos:prefLabel "Baby Seat"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-transportinfrastructure:SmokingRooms a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-vehiclerentalcompanyservice:PetFriendlyVehicles a skos:Concept;
+  skos:inScheme estur-kos:VehicleRentalCompanyServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Smoking Rooms"@en ;
+  skos:prefLabel "Pet Friendly Vehicles"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-transportinfrastructure:VipRoom a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-vehiclerentalcompanyservice:RentByTheHour a skos:Concept;
+  skos:inScheme estur-kos:VehicleRentalCompanyServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Vip Room"@en ;
+  skos:prefLabel "Rent By The Hour"@en ;
   skos:prefLabel "XXXXX"@es .
 
-estur-transportinfrastructure:Wifi a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-vehiclerentalcompanyservice:SnowChains a skos:Concept;
+  skos:inScheme estur-kos:VehicleRentalCompanyServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wifi"@en ;
+  skos:prefLabel "Snow Chains"@en ;
   skos:prefLabel "XXXXX"@es .
 

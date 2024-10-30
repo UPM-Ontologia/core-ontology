@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-transportinfrastructure: <https://ontologia.segittur.es/turismo/kos/transportinfrastructure/> .
+@prefix estur-gardencategory: <https://ontologia.segittur.es/turismo/kos/gardencategory/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:TransportInfrastructureType a skos:ConceptScheme ; 
-    dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+estur-kos:GardenCategory a skos:ConceptScheme ; 
+    dct:issued "2024-10-29"^^xsd:date ;
+    dct:modified "2024-10-29"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Transport Infrastructure Type"@en ;
-    rdfs:label "Tipo de transporteinfraestructura"@es ;
-    dct:title "Concept scheme grouping transport infrastructure types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de transporteinfraestructura"@es .
+    rdfs:label "Garden Category"@en ;
+    rdfs:label "Categoría del jardín"@es ;
+    dct:title "Concept scheme grouping garden categories"@en ;
+    dct:title "Esquema de conceptos agrupando categorías de jardines"@es .
 
 #################################################################
 #
@@ -33,45 +33,58 @@ estur-kos:TransportInfrastructureType a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-transportinfrastructure:AccessForDisabled a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-gardencategory:Ampelographic a skos:Concept;
+  skos:inScheme estur-kos:GardenCategory;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Access For Disabled"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Ampelographic"@en ;
+  skos:prefLabel "Ampelográfico"@es .
 
-estur-transportinfrastructure:InformationPoint a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-gardencategory:Botanic a skos:Concept;
+  skos:inScheme estur-kos:GardenCategory;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Information Point"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Botanic"@en ;
+  skos:prefLabel "Botánico"@es .
 
-estur-transportinfrastructure:ParkingFacility a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-gardencategory:Castle a skos:Concept;
+  skos:inScheme estur-kos:GardenCategory;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Parking Facility"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Castle"@en ;
+  skos:prefLabel "Castillo"@es .
 
-estur-transportinfrastructure:SmokingRooms a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-gardencategory:Community a skos:Concept;
+  skos:inScheme estur-kos:GardenCategory;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Smoking Rooms"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Community"@en ;
+  skos:prefLabel "Comunidad"@es .
 
-estur-transportinfrastructure:VipRoom a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-gardencategory:FencedOff a skos:Concept;
+  skos:inScheme estur-kos:GardenCategory;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Vip Room"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Fenced off"@en ;
+  skos:prefLabel "Cercado"@es .
 
-estur-transportinfrastructure:Wifi a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-gardencategory:Monastery a skos:Concept;
+  skos:inScheme estur-kos:GardenCategory;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wifi"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Monastery"@en ;
+  skos:prefLabel "Monasterio"@es .
 
+estur-gardencategory:Private a skos:Concept;
+  skos:inScheme estur-kos:GardenCategory;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Private"@en ;
+  skos:prefLabel "Privado"@es .
+
+estur-gardencategory:Public a skos:Concept;
+  skos:inScheme estur-kos:GardenCategory;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Public"@en ;
+  skos:prefLabel "Público"@es .

@@ -24,7 +24,7 @@ estur-kos:ExhibitionHallType a skos:ConceptScheme ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
     rdfs:label "Exhibition Hall Type"@en ;
     rdfs:label "Tipo de sala de exposiciones"@es ;
-    dct:title "Concept scheme grouping exhibitionhall types"@en ;
+    dct:title "Concept scheme grouping exhibition hall types"@en ;
     dct:title "Esquema de conceptos agrupando tipos de sala de exposiciones"@es .
 
 #################################################################
@@ -34,42 +34,42 @@ estur-kos:ExhibitionHallType a skos:ConceptScheme ;
 #################################################################
 
 estur-exhibitionhall:Audioguide a skos:Concept;
-  skos:inScheme estur-kos:ExhibitionhallType;
+  skos:inScheme estur-kos:ExhibitionHallType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Audioguide"@en ;
   skos:prefLabel "XXXXX"@es .
 
 estur-exhibitionhall:EducationalTour a skos:Concept;
-  skos:inScheme estur-kos:ExhibitionhallType;
+  skos:inScheme estur-kos:ExhibitionHallType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Educational Tour"@en ;
   skos:prefLabel "XXXXX"@es .
 
 estur-exhibitionhall:GroupTour a skos:Concept;
-  skos:inScheme estur-kos:ExhibitionhallType;
+  skos:inScheme estur-kos:ExhibitionHallType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Group Tour"@en ;
   skos:prefLabel "XXXXX"@es .
 
 estur-exhibitionhall:GuidedTour a skos:Concept;
-  skos:inScheme estur-kos:ExhibitionhallType;
+  skos:inScheme estur-kos:ExhibitionHallType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Guided Tour"@en ;
   skos:prefLabel "XXXXX"@es .
 
 estur-exhibitionhall:PrivateTour a skos:Concept;
-  skos:inScheme estur-kos:ExhibitionhallType;
+  skos:inScheme estur-kos:ExhibitionHallType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Private Tour"@en ;
   skos:prefLabel "XXXXX"@es .
 
 estur-exhibitionhall:Venue a skos:Concept;
-  skos:inScheme estur-kos:ExhibitionhallType;
+  skos:inScheme estur-kos:ExhibitionHallType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Venue"@en ;

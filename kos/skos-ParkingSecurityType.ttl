@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-congresscentre: <https://ontologia.segittur.es/turismo/kos/congresscentre/> .
+@prefix estur-parkingsecuritytype: <https://ontologia.segittur.es/turismo/kos/parkingsecuritytype/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:CongressCentreType a skos:ConceptScheme ; 
-    dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+estur-kos:ParkingSecurityType a skos:ConceptScheme ; 
+    dct:issued "2024-10-29"^^xsd:date ;
+    dct:modified "2024-10-29"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Congress Centre Type"@en ;
-    rdfs:label "Tipo de centro de congresos"@es ;
-    dct:title "Concept scheme grouping congress centre types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de centro de congresos"@es .
+    rdfs:label "Parking security type"@en ;
+    rdfs:label "Tipo de seguridad del parking"@es ;
+    dct:title "Concept scheme grouping parking security types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de seguridad de parkings"@es .
 
 #################################################################
 #
@@ -33,17 +33,19 @@ estur-kos:CongressCentreType a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-congresscentre:Wifi a skos:Concept;
-  skos:inScheme estur-kos:CongressCentreType;
+estur-parkingsecuritytype:AreaSeparatedFromSurroundings a skos:Concept;
+  skos:inScheme estur-kos:ParkingSecurityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wifi"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Area separated from surroundings"@en ;
+  skos:prefLabel "Area separada de los alrededores"@es .
 
-estur-congresscentre:WiredInternet a skos:Concept;
-  skos:inScheme estur-kos:CongressCentreType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wired Internet"@en ;
-  skos:prefLabel "XXXXX"@es .
 
+
+:cctv
+:externalSecurity
+:fences
+:floodLight
+:guard24Hours
+:patrolled
+:securityStaff

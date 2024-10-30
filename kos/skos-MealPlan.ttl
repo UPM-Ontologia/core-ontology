@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-transportinfrastructure: <https://ontologia.segittur.es/turismo/kos/transportinfrastructure/> .
+@prefix estur-mealplan: <https://ontologia.segittur.es/turismo/kos/mealplan/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:TransportInfrastructureType a skos:ConceptScheme ; 
-    dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+estur-kos:MealPlan a skos:ConceptScheme ; 
+    dct:issued "2024-10-29"^^xsd:date ;
+    dct:modified "2024-10-29"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Transport Infrastructure Type"@en ;
-    rdfs:label "Tipo de transporteinfraestructura"@es ;
-    dct:title "Concept scheme grouping transport infrastructure types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de transporteinfraestructura"@es .
+    rdfs:label "Meal plan"@en ;
+    rdfs:label "Plan de comidas"@es ;
+    dct:title "Concept scheme grouping meal plans"@en ;
+    dct:title "Esquema de conceptos agrupando planes de comidas"@es .
 
 #################################################################
 #
@@ -33,45 +33,37 @@ estur-kos:TransportInfrastructureType a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-transportinfrastructure:AccessForDisabled a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-mealplan:AccommodationOnly a skos:Concept;
+  skos:inScheme estur-kos:MealPlan;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Access For Disabled"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Accommodation only"@en ;
+  skos:prefLabel "Sólo alojamiento"@es .
 
-estur-transportinfrastructure:InformationPoint a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-mealplan:AllInclusive a skos:Concept;
+  skos:inScheme estur-kos:MealPlan;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Information Point"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "All inclusive"@en ;
+  skos:prefLabel "Todo incluido"@es .
 
-estur-transportinfrastructure:ParkingFacility a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-mealplan:Breakfast a skos:Concept;
+  skos:inScheme estur-kos:MealPlan;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Parking Facility"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Breakfast"@en ;
+  skos:prefLabel "Desayuno"@es .
 
-estur-transportinfrastructure:SmokingRooms a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-mealplan:FullBoard a skos:Concept;
+  skos:inScheme estur-kos:MealPlan;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Smoking Rooms"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Full board"@en ;
+  skos:prefLabel "Pensión completa"@es .
 
-estur-transportinfrastructure:VipRoom a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
+estur-mealplan:HalfBoard a skos:Concept;
+  skos:inScheme estur-kos:MealPlan;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Vip Room"@en ;
-  skos:prefLabel "XXXXX"@es .
-
-estur-transportinfrastructure:Wifi a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wifi"@en ;
-  skos:prefLabel "XXXXX"@es .
-
+  skos:prefLabel "Half board"@en ;
+  skos:prefLabel "Media pensión"@es .

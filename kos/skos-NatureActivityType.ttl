@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-roomservice: <https://ontologia.segittur.es/turismo/kos/roomservice/> .
+@prefix estur-natureactivity: <https://ontologia.segittur.es/turismo/kos/natureactivity/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:RoomService a skos:ConceptScheme ; 
-    dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+estur-kos:NatureActivityType a skos:ConceptScheme ; 
+    dct:issued "2024-10-29"^^xsd:date ;
+    dct:modified "2024-10-29"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Room Service"@en ;
-    rdfs:label "Servicio de habitación"@es ;
-    dct:title "Concept scheme grouping room services"@en ;
-    dct:title "Esquema de conceptos agrupando servicios de habitación"@es .
+    rdfs:label "Nature activity type"@en ;
+    rdfs:label "Tipo de actividad relacionada con la naturaleza"@es ;
+    dct:title "Concept scheme grouping nature activity types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de actividades relacionadas con la naturaleza"@es .
 
 #################################################################
 #
@@ -33,136 +33,122 @@ estur-kos:RoomService a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-roomservice:AirConditioning a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Abseiling a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Air Conditioning"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Abseiling"@en ;
+  skos:prefLabel "Abseiling"@es .
 
-estur-roomservice:AlarmClock a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Archery a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Alarm Clock"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Archery"@en ;
+  skos:prefLabel "Archery"@es .
 
-estur-roomservice:Amenities a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Canoping a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Amenities"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Canoping"@en ;
+  skos:prefLabel "Canoping"@es .
 
-estur-roomservice:CoffeeMachine a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Abseiling a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Coffee Machine"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Abseiling"@en ;
+  skos:prefLabel "Abseiling"@es .
 
-estur-roomservice:Cradle a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Canoing a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Cradle"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Canoing"@en ;
+  skos:prefLabel "Canoing"@es .
 
-estur-roomservice:DiningRoom a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Caving a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Dining Room"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Caving"@en ;
+  skos:prefLabel "Caving"@es .
 
-estur-roomservice:Dryer a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Climbing a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Dryer"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Climbing"@en ;
+  skos:prefLabel "Escalada"@es .
 
-estur-roomservice:Heating a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Abseiling a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Heating"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Abseiling"@en ;
+  skos:prefLabel "Abseiling"@es .
 
-estur-roomservice:IroningKit a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:CompressedAirShooting a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Ironing Kit"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Compressed Air shooting"@en ;
+  skos:prefLabel "Tiro con aire comprimido"@es .
 
-estur-roomservice:Jacuzzi a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Geocaching a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Jacuzzi"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Geocaching"@en ;
+  skos:prefLabel "Geocaching"@es .
 
-estur-roomservice:Kitchen a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Gymkhana a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Kitchen"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Gymkhana"@en ;
+  skos:prefLabel "Gymkhana"@es .
 
-estur-roomservice:Microwave a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:HorseRiding a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Microwave"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "HorseRiding"@en ;
+  skos:prefLabel "Montar a caballo"@es .
 
-estur-roomservice:Minibar a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Hunting a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Minibar"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Hunting"@en ;
+  skos:prefLabel "Caza"@es .
 
-estur-roomservice:RoomService a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Orieteering a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Room Service"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Orienteering"@en ;
+  skos:prefLabel "Cross de orientación"@es .
 
-estur-roomservice:SafetyBox a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:Paintball a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Safety Box"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Paintball"@en ;
+  skos:prefLabel "Paintball"@es .
 
-estur-roomservice:SmokingRooms a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:PneumaticShooting a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Smoking Rooms"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Pneumatic Shooting"@en ;
+  skos:prefLabel "Tiro neumático"@es .
 
-estur-roomservice:Telephone a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
+estur-natureactivity:ViaFerrata a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Telephone"@en ;
-  skos:prefLabel "XXXXX"@es .
-
-estur-roomservice:Tv a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Tv"@en ;
-  skos:prefLabel "XXXXX"@es .
-
-estur-roomservice:WiredInternet a skos:Concept;
-  skos:inScheme estur-kos:RoomService;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wired Internet"@en ;
-  skos:prefLabel "XXXXX"@es .
+  skos:prefLabel "Via ferrata"@en ;
+  skos:prefLabel "Via ferrata"@es .
 

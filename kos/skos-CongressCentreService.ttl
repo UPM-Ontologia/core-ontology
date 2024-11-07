@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-natureactivity: <https://ontologia.segittur.es/turismo/kos/natureactivity/> .
+@prefix estur-congresscentreservice: <https://ontologia.segittur.es/turismo/kos/congresscentre/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:NatureActivity a skos:ConceptScheme ; 
-    dct:issued "2024-10-29"^^xsd:date ;
-    dct:modified "2024-10-29"^^xsd:date ;
+estur-kos:CongressCentreService a skos:ConceptScheme ; 
+    dct:issued "2024-05-24"^^xsd:date ;
+    dct:modified "2024-05-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Nature activity"@en ;
-    rdfs:label "Actividad relacionada con la naturaleza"@es ;
-    dct:title "Concept scheme grouping nature activities"@en ;
-    dct:title "Esquema de conceptos agrupando actividades relacionadas con la naturaleza"@es .
+    rdfs:label "Congress Centre Service"@en ;
+    rdfs:label "Servicio de centro de congresos"@es ;
+    dct:title "Concept scheme grouping congress centre services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de centro de congresos"@es .
 
 #################################################################
 #
@@ -33,25 +33,17 @@ estur-kos:NatureActivity a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-natureactivity:Abseiling a skos:Concept;
-  skos:inScheme estur-kos:NatureActivity;
+estur-congresscentreservice:Wifi a skos:Concept;
+  skos:inScheme estur-kos:CongressCentreType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Abseiling"@en ;
-  skos:prefLabel "Abseiling"@es .
+  skos:prefLabel "Wifi"@en ;
+  skos:prefLabel "XXXXX"@es .
 
+estur-congresscentreservice:WiredInternet a skos:Concept;
+  skos:inScheme estur-kos:CongressCentreType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Wired Internet"@en ;
+  skos:prefLabel "XXXXX"@es .
 
-:archery
-:canoping
-:canyoning
-:caving
-:climbing
-:compressedAirShooting
-:geocaching
-:gymkhana
-:horseRiding
-:hunting
-:orienteering
-:paintball
-:pneumaticShooting
-:viaFerrata

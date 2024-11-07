@@ -16,13 +16,13 @@
 #
 #################################################################
 
-estur-kos:FerryServiceType a skos:ConceptScheme ; 
+estur-kos:FerryService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
     dct:modified "2024-05-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Ferry Service Type"@en ;
+    rdfs:label "Ferry Service"@en ;
     rdfs:label "Tipo de servicio de un ferry"@es ;
     dct:title "Concept scheme grouping ferry service types"@en ;
     dct:title "Esquema de conceptos agrupando tipos de servicio de un ferry"@es .

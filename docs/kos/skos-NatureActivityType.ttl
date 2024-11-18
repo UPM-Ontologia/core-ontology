@@ -1,0 +1,140 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-natureactivity: <https://ontologia.segittur.es/turismo/kos/natureactivity/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:NatureActivityType a skos:ConceptScheme ; 
+    dct:issued "2024-10-29"^^xsd:date ;
+    dct:modified "2024-10-29"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Nature activity type"@en ;
+    rdfs:label "Tipo de actividad relacionada con la naturaleza"@es ;
+    dct:title "Concept scheme grouping nature activity types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de actividades relacionadas con la naturaleza"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-natureactivity:Abseiling a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Abseiling"@en ;
+  skos:prefLabel "Abseiling"@es .
+
+estur-natureactivity:Archery a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Archery"@en ;
+  skos:prefLabel "Tiro con arco"@es .
+
+estur-natureactivity:Canoping a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Canoping"@en ;
+  skos:prefLabel "Canoping"@es .
+
+estur-natureactivity:Canoing a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Canoing"@en ;
+  skos:prefLabel "Canoas"@es .
+
+estur-natureactivity:Caving a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Caving"@en ;
+  skos:prefLabel "Espeleología"@es .
+
+estur-natureactivity:Climbing a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Climbing"@en ;
+  skos:prefLabel "Escalada"@es .
+
+estur-natureactivity:CompressedAirShooting a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Compressed Air shooting"@en ;
+  skos:prefLabel "Tiro con aire comprimido"@es .
+
+estur-natureactivity:Geocaching a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Geocaching"@en ;
+  skos:prefLabel "Geocaching"@es .
+
+estur-natureactivity:Gymkhana a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Gymkhana"@en ;
+  skos:prefLabel "Gymkhana"@es .
+
+estur-natureactivity:HorseRiding a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "HorseRiding"@en ;
+  skos:prefLabel "Montar a caballo"@es .
+
+estur-natureactivity:Hunting a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Hunting"@en ;
+  skos:prefLabel "Caza"@es .
+
+estur-natureactivity:Orieteering a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Orienteering"@en ;
+  skos:prefLabel "Cross de orientación"@es .
+
+estur-natureactivity:Paintball a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Paintball"@en ;
+  skos:prefLabel "Paintball"@es .
+
+estur-natureactivity:PneumaticShooting a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Pneumatic Shooting"@en ;
+  skos:prefLabel "Tiro neumático"@es .
+
+estur-natureactivity:ViaFerrata a skos:Concept;
+  skos:inScheme estur-kos:NatureActivityType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Via ferrata"@en ;
+  skos:prefLabel "Via ferrata"@es .
+

@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-professionalposition: <https://ontologia.segittur.es/turismo/kos/professionalposition/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:ProfessionalPosition a skos:ConceptScheme ; 
+    dct:issued "2024-11-08"^^xsd:date ;
+    dct:modified "2024-11-08"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Professional position"@en ;
+    rdfs:label "Puesto profesional"@es ;
+    dct:title "Concept scheme grouping professional positions"@en ;
+    dct:title "Esquema de conceptos agrupando puestos profesionales"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-professionalposition:MediumPositionEmployee a skos:Concept;
+  skos:inScheme estur-kos:ProfessionalPosition;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Medium Position Employee"@en ;
+  skos:prefLabel "Empleado en puesto medio"@es .
+
+estur-professionalposition:SelfEmployed a skos:Concept;
+  skos:inScheme estur-kos:ProfessionalPosition;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Self employed"@en ;
+  skos:prefLabel "Autónomo"@es .
+
+estur-professionalposition:SeniorManagementEmployee a skos:Concept;
+  skos:inScheme estur-kos:ProfessionalPosition;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Senior Management Employee"@en ;
+  skos:prefLabel "Empleado en puesto de gestión senior"@es .
+
+estur-professionalposition:UnskilledEmployee a skos:Concept;
+  skos:inScheme estur-kos:ProfessionalPosition;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Unskilled Employee"@en ;
+  skos:prefLabel "Empleado sin cualificación"@es .

@@ -79,21 +79,6 @@ xsd:date rdf:type rdfs:Datatype .
 <http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty .
 
 
-###  https://ontologia.segittur.es/turismo/def/core#OTAOffersServiceOrTicket
-:OTAOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :otaRelatedTo ;
-                          rdfs:domain :OTA ;
-                          rdfs:range [ rdf:type owl:Class ;
-                                       owl:unionOf ( :Event
-                                                     :Facility
-                                                     :SingularExperience
-                                                     :Tour
-                                                     :TourismResource
-                                                     :Vehicle
-                                                   )
-                                     ] .
-
-
 ###  https://ontologia.segittur.es/turismo/def/core#accessType
 :accessType rdf:type owl:ObjectProperty ;
             rdfs:domain :TourismResource ;
@@ -104,83 +89,25 @@ xsd:date rdf:type rdfs:Datatype .
                                               ]
                                             ) ;
                          rdf:type owl:Class
-                       ] .
+                       ] ;
+            rdfs:label "access type"@en ,
+                       "tipo de acceso"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#accommodationCapacity
 :accommodationCapacity rdf:type owl:ObjectProperty ;
                        rdfs:domain :Accommodation ;
-                       rdfs:range :AccommodationCapacity .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#accommodationContainedIn
-:accommodationContainedIn rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :accommodationRelatedTo ;
-                          rdfs:domain :Accommodation ;
-                          rdfs:range [ rdf:type owl:Class ;
-                                       owl:unionOf ( :Accommodation
-                                                     :Facility
-                                                     :TourismResource
-                                                     :TouristDestination
-                                                     :WinterSportResort
-                                                   )
-                                     ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#accommodationNearTo
-:accommodationNearTo rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :accommodationRelatedTo ;
-                     rdfs:domain :Accommodation ;
-                     rdfs:range [ rdf:type owl:Class ;
-                                  owl:unionOf ( :Accommodation
-                                                :Event
-                                                :LocalBusiness
-                                                :RestaurantService
-                                                :TourismResource
-                                                :TouristInformationOffice
-                                                :TransportFacility
-                                              )
-                                ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#accommodationOffersServiceOrTicket
-:accommodationOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf :accommodationRelatedTo ;
-                                    rdfs:domain :Accommodation ;
-                                    rdfs:range [ rdf:type owl:Class ;
-                                                 owl:unionOf ( :Event
-                                                               :Facility
-                                                               :SingularExperience
-                                                               :Tour
-                                                               :TransportService
-                                                               :Vehicle
-                                                             )
-                                               ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#accommodationOperatesWith
-:accommodationOperatesWith rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf :accommodationRelatedTo ;
-                           rdfs:domain :Accommodation ;
-                           rdfs:range [ rdf:type owl:Class ;
-                                        owl:unionOf ( :Accommodation
-                                                      :DestinationManagementCompany
-                                                      :EventOrganization
-                                                      :TourGuide
-                                                    )
-                                      ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#accommodationRelatedTo
-:accommodationRelatedTo rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :relatedTo ;
-                        rdfs:domain :Accommodation .
+                       rdfs:range :AccommodationCapacity ;
+                       rdfs:label "capacidad del alojamiento"@es ,
+                                  "capacity of the accommodation"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#activityType
 :activityType rdf:type owl:ObjectProperty ;
               rdfs:domain :Activity ;
-              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+              rdfs:label "activity type"@en ,
+                         "tipo de actividad"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#adversity
@@ -193,13 +120,17 @@ xsd:date rdf:type rdfs:Datatype .
                                              ]
                                            ) ;
                         rdf:type owl:Class
-                      ] .
+                      ] ;
+           rdfs:label "adversidad"@es ,
+                      "adversity"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#airplane
 :airplane rdf:type owl:ObjectProperty ;
           rdfs:domain :Airline ;
-          rdfs:range :Airplane .
+          rdfs:range :Airplane ;
+          rdfs:label "Airplane"@en ,
+                     "Avión"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#allowedVehicleType
@@ -216,7 +147,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                       ]
                                                     ) ;
                                  rdf:type owl:Class
-                               ] .
+                               ] ;
+                    rdfs:label "allowed vehicle type"@en ,
+                               "tipo de vehículo permitido"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#areaServed
@@ -247,25 +180,25 @@ xsd:date rdf:type rdfs:Datatype .
                                              ]
                                            ) ;
                         rdf:type owl:Class
-                      ] .
+                      ] ;
+           rdfs:label "beach type"@en ,
+                      "tipo de playa"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#bookingChannel
 :bookingChannel rdf:type owl:ObjectProperty ;
                 rdfs:domain :BookingInformation ;
-                rdfs:range :BookingChannel .
+                rdfs:range :BookingChannel ;
+                rdfs:label "booking channel"@en ,
+                           "canal de reservas"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#bus
 :bus rdf:type owl:ObjectProperty ;
      rdfs:domain :BusOperator ;
-     rdfs:range :Bus .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#busRelatedTo
-:busRelatedTo rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :relatedTo ;
-              rdfs:domain :Bus .
+     rdfs:range :Bus ;
+     rdfs:label "autobús"@es ,
+                "bus"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#cabinType
@@ -278,7 +211,9 @@ xsd:date rdf:type rdfs:Datatype .
                                              ]
                                            ) ;
                         rdf:type owl:Class
-                      ] .
+                      ] ;
+           rdfs:label "cabin type"@en ,
+                      "tipo de cabina"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#campingSpecialty
@@ -291,13 +226,17 @@ xsd:date rdf:type rdfs:Datatype .
                                                     ]
                                                   ) ;
                                rdf:type owl:Class
-                             ] .
+                             ] ;
+                  rdfs:label "camping specialty"@en ,
+                             "especialidad del camping"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#cancellationFee
 :cancellationFee rdf:type owl:ObjectProperty ;
                  rdfs:domain :BookingInformation ;
-                 rdfs:range :CancellationFee .
+                 rdfs:range :CancellationFee ;
+                 rdfs:label "cancellation fee"@en ,
+                            "comisión de cancelación"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#civicBuildingType
@@ -309,18 +248,24 @@ xsd:date rdf:type rdfs:Datatype .
                                                      ]
                                                    ) ;
                                 rdf:type owl:Class
-                              ] .
+                              ] ;
+                   rdfs:label "civic building type"@en ,
+                              "tipo de edificio"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#containedIn
 :containedIn rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :relatedTo .
+             rdfs:subPropertyOf :relatedTo ;
+             rdfs:label "contained in"@en ,
+                        "contenido en"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#cruiseShip
 :cruiseShip rdf:type owl:ObjectProperty ;
             rdfs:domain :CruiseLine ;
-            rdfs:range :CruiseShip .
+            rdfs:range :CruiseShip ;
+            rdfs:label "barco de crucero"@es ,
+                       "cruise ship"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#cuisineType
@@ -333,7 +278,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                ]
                                              ) ;
                           rdf:type owl:Class
-                        ] .
+                        ] ;
+             rdfs:label "cuisine type"@en ,
+                        "tipo de cocina"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#dayOfTheWeek
@@ -343,7 +290,9 @@ xsd:date rdf:type rdfs:Datatype .
                                           :TransportRoute
                                         )
                           ] ;
-              rdfs:range :DayOfTheWeek .
+              rdfs:range :DayOfTheWeek ;
+              rdfs:label "day of the week"@en ,
+                         "día de la semana"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#deliveryPoint
@@ -353,101 +302,9 @@ xsd:date rdf:type rdfs:Datatype .
                                            :PostOffice
                                          )
                            ] ;
-               rdfs:range :DeliveryPoint .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#destinationExperienceContainedIn
-:destinationExperienceContainedIn rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf :destinationExperienceRelatedTo ;
-                                  rdfs:domain :DestinationExperience ;
-                                  rdfs:range :TourismResource .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#destinationExperienceOperatesWith
-:destinationExperienceOperatesWith rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf :destinationExperienceRelatedTo ;
-                                   rdfs:domain :DestinationExperience ;
-                                   rdfs:range :TourismResource .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#destinationExperienceRelatedExperience
-:destinationExperienceRelatedExperience rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf :destinationExperienceRelatedTo ;
-                                        rdfs:domain :DestinationExperience ;
-                                        rdfs:range :DestinationExperience .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#destinationExperienceRelatedTo
-:destinationExperienceRelatedTo rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf :relatedTo ;
-                                rdfs:domain :DestinationExperience .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#destinationManagementCompanyContainedIn
-:destinationManagementCompanyContainedIn rdf:type owl:ObjectProperty ;
-                                         rdfs:subPropertyOf :destinationManagementCompanyRelatedTo ;
-                                         rdfs:domain :DestinationManagementCompany ;
-                                         rdfs:range [ rdf:type owl:Class ;
-                                                      owl:unionOf ( :Airport
-                                                                    :BusStation
-                                                                    :Event
-                                                                    :ShoppingMall
-                                                                    :TouristDestination
-                                                                    :TrainStation
-                                                                  )
-                                                    ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#destinationManagementCompanyNearTo
-:destinationManagementCompanyNearTo rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf :destinationManagementCompanyRelatedTo ;
-                                    rdfs:domain :DestinationManagementCompany ;
-                                    rdfs:range [ rdf:type owl:Class ;
-                                                 owl:unionOf ( :Accommodation
-                                                               :Facility
-                                                               :LocalBusiness
-                                                               :RestaurantService
-                                                               :TourismResource
-                                                               :TouristInformationOffice
-                                                               :TransportFacility
-                                                             )
-                                               ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#destinationManagementCompanyOffersServiceOrTicket
-:destinationManagementCompanyOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                                   rdfs:subPropertyOf :destinationManagementCompanyRelatedTo ;
-                                                   rdfs:domain :DestinationManagementCompany ;
-                                                   rdfs:range [ rdf:type owl:Class ;
-                                                                owl:unionOf ( :Event
-                                                                              :Facility
-                                                                              :SingularExperience
-                                                                              :Tour
-                                                                              :TourismResource
-                                                                              :TransportService
-                                                                              :Vehicle
-                                                                            )
-                                                              ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#destinationManagementCompanyOperatesWith
-:destinationManagementCompanyOperatesWith rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf :destinationManagementCompanyRelatedTo ;
-                                          rdfs:domain :DestinationManagementCompany ;
-                                          rdfs:range [ rdf:type owl:Class ;
-                                                       owl:unionOf ( :Accommodation
-                                                                     :Facility
-                                                                     :LocalBusiness
-                                                                     :PassengerTransportCompany
-                                                                     :RestaurantService
-                                                                   )
-                                                     ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#destinationManagementCompanyRelatedTo
-:destinationManagementCompanyRelatedTo rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf :relatedTo ;
-                                       rdfs:domain :DestinationManagementCompany .
+               rdfs:range :DeliveryPoint ;
+               rdfs:label "delivery point"@es ,
+                          "punto de entrega"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#destinationType
@@ -460,7 +317,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                    ]
                                                  ) ;
                               rdf:type owl:Class
-                            ] .
+                            ] ;
+                 rdfs:label "destination type"@en ,
+                            "tipo de destino"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#educationLevel
@@ -473,120 +332,48 @@ xsd:date rdf:type rdfs:Datatype .
                                                   ]
                                                 ) ;
                              rdf:type owl:Class
-                           ] .
+                           ] ;
+                rdfs:label "education level"@en ,
+                           "nivel educativo"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#event
 :event rdf:type owl:ObjectProperty ;
-       rdfs:domain :EventOrganization ;
-       rdfs:range :Event .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#eventContainedIn
-:eventContainedIn rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf :eventRelatedTo ;
-                  rdfs:domain :Event ;
-                  rdfs:range [ rdf:type owl:Class ;
-                               owl:unionOf ( :Accommodation
-                                             :Event
-                                             :Facility
-                                             :LocalBusiness
-                                             :RestaurantService
-                                             :TourismResource
-                                             :TouristDestination
-                                           )
-                             ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#eventNearTo
-:eventNearTo rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :eventRelatedTo ;
-             rdfs:domain :Event ;
-             rdfs:range [ rdf:type owl:Class ;
-                          owl:unionOf ( :Accommodation
-                                        :Facility
-                                        :LocalBusiness
-                                        :RestaurantService
-                                        :TourismResource
-                                        :TransportFacility
-                                      )
-                        ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#eventOrganizationContainedIn
-:eventOrganizationContainedIn rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf :eventOrganizationRelatedTo ;
-                              rdfs:domain :EventOrganization ;
-                              rdfs:range [ rdf:type owl:Class ;
-                                           owl:unionOf ( :TourismResource
-                                                         :TouristDestination
-                                                         :TransportFacility
-                                                       )
-                                         ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#eventOrganizationNearTo
-:eventOrganizationNearTo rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf :eventOrganizationRelatedTo ;
-                         rdfs:domain :EventOrganization ;
-                         rdfs:range [ rdf:type owl:Class ;
-                                      owl:unionOf ( :Accommodation
-                                                    :Facility
-                                                    :LocalBusiness
-                                                    :RestaurantService
-                                                    :TourismResource
-                                                    :TransportFacility
-                                                  )
-                                    ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#eventOrganizationOffersServiceOrTicket
-:eventOrganizationOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf :eventOrganizationRelatedTo ;
-                                        rdfs:domain :EventOrganization ;
-                                        rdfs:range [ rdf:type owl:Class ;
-                                                     owl:unionOf ( :Facility
-                                                                   :SingularExperience
-                                                                   :Tour
-                                                                   :TourismResource
-                                                                   :Vehicle
-                                                                 )
-                                                   ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#eventOrganizationOperatesWith
-:eventOrganizationOperatesWith rdf:type owl:ObjectProperty ;
-                               rdfs:domain :EventOrganization ;
-                               rdfs:range [ rdf:type owl:Class ;
-                                            owl:unionOf ( :Organisation
-                                                          :TourismResource
-                                                          :TourismService
-                                                        )
-                                          ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#eventOrganizationRelatedTo
-:eventOrganizationRelatedTo rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf :relatedTo ;
-                            rdfs:domain :EventOrganization .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#eventRelatedTo
-:eventRelatedTo rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf :relatedTo ;
-                rdfs:domain :Event .
+       rdfs:domain :EventOrganisationCompany ;
+       rdfs:range :Event ;
+       rdfs:label "event"@en ,
+                  "evento"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#eventSession
 :eventSession rdf:type owl:ObjectProperty ;
               rdfs:domain :Event ;
-              rdfs:range :EventSession .
+              rdfs:range :EventSession ;
+              rdfs:label "event session"@en ,
+                         "sesión del evento"@es .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#eventType
+:eventType rdf:type owl:ObjectProperty ;
+           rdfs:domain :Event ;
+           rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                               owl:hasValue <https://ontologia.segittur.es/turismo/kos/EventType>
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class
+                      ] ;
+           rdfs:label "event type"@en ,
+                      "tipo de evento"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#ferry
 :ferry rdf:type owl:ObjectProperty ;
        rdfs:domain :FerryOperator ;
-       rdfs:range :Ferry .
+       rdfs:range :Ferry ;
+       rdfs:label "ferry"@en ,
+                  "ferry"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#ferryType
@@ -599,7 +386,9 @@ xsd:date rdf:type rdfs:Datatype .
                                              ]
                                            ) ;
                         rdf:type owl:Class
-                      ] .
+                      ] ;
+           rdfs:label "ferry type"@en ,
+                      "tipo de ferry"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#gardenCategory
@@ -612,7 +401,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                   ]
                                                 ) ;
                              rdf:type owl:Class
-                           ] .
+                           ] ;
+                rdfs:label "garden category"@en ,
+                           "tipo de jardín"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#gardenStyle
@@ -625,28 +416,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                ]
                                              ) ;
                           rdf:type owl:Class
-                        ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#gastronomyOfferedBy
-:gastronomyOfferedBy rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :gastronomyRelatedTo ;
-                     rdfs:domain :Gastronomy ;
-                     rdfs:range [ rdf:type owl:Class ;
-                                  owl:unionOf ( :Accommodation
-                                                :BakeryAndPastry
-                                                :Event
-                                                :RestaurantService
-                                                :TraditionalMarket
-                                                :Winery
-                                              )
-                                ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#gastronomyRelatedTo
-:gastronomyRelatedTo rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :relatedTo ;
-                     rdfs:domain :Gastronomy .
+                        ] ;
+             rdfs:label "estilo de jardín"@es ,
+                        "garden style"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#gender
@@ -659,34 +431,17 @@ xsd:date rdf:type rdfs:Datatype .
                                           ]
                                         ) ;
                      rdf:type owl:Class
-                   ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#globalDistributionSystemOffersServiceOrTicket
-:globalDistributionSystemOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                               rdfs:subPropertyOf :globalDistributionSystemRelatedTo ;
-                                               rdfs:domain :GlobalDistributionSystem ;
-                                               rdfs:range [ rdf:type owl:Class ;
-                                                            owl:unionOf ( :Event
-                                                                          :Facility
-                                                                          :SingularExperience
-                                                                          :Tour
-                                                                          :TourismResource
-                                                                          :Vehicle
-                                                                        )
-                                                          ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#globalDistributionSystemRelatedTo
-:globalDistributionSystemRelatedTo rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf :relatedTo ;
-                                   rdfs:domain :GlobalDistributionSystem .
+                   ] ;
+        rdfs:label "gender"@en ,
+                   "género"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#group
 :group rdf:type owl:ObjectProperty ;
        rdfs:domain :TravelUnit ;
-       rdfs:range :Group .
+       rdfs:range :Group ;
+       rdfs:label "group"@en ,
+                  "grupo"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasAcknowledgement
@@ -697,7 +452,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                 :TourismService
                                               )
                                 ] ;
-                    rdfs:range :Acknowledgement .
+                    rdfs:range :Acknowledgement ;
+                    rdfs:label "has Acknowledgement"@en ,
+                               "tiene reconocimiento"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasAdditionalInformation
@@ -708,7 +465,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                       :TourismService
                                                     )
                                       ] ;
-                          rdfs:range :AdditionalInformation .
+                          rdfs:range :AdditionalInformation ;
+                          rdfs:label "tiene información adicional"@es ,
+                                     "hasAdditionalInformation" .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasBookingChannel
@@ -719,7 +478,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                :TourismService
                                              )
                                ] ;
-                   rdfs:range :BookingChannel .
+                   rdfs:range :BookingChannel ;
+                   rdfs:label "has booking channel"@en ,
+                              "tiene canal de reservas"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasBookingInformation
@@ -729,7 +490,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                    :TourismService
                                                  )
                                    ] ;
-                       rdfs:range :BookingInformation .
+                       rdfs:range :BookingInformation ;
+                       rdfs:label "has booking information"@en ,
+                                  "tiene información de reserva"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasContactInfo
@@ -740,7 +503,9 @@ xsd:date rdf:type rdfs:Datatype .
                                             :TourismService
                                           )
                             ] ;
-                rdfs:range :ContactInfo .
+                rdfs:range :ContactInfo ;
+                rdfs:label "has contact information"@en ,
+                           "tiene información de contacto"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasDescription
@@ -751,7 +516,9 @@ xsd:date rdf:type rdfs:Datatype .
                                             :TourismService
                                           )
                             ] ;
-                rdfs:range :Description .
+                rdfs:range :Description ;
+                rdfs:label "has description"@en ,
+                           "tiene descripción"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasLocation
@@ -762,13 +529,9 @@ xsd:date rdf:type rdfs:Datatype .
                                          :TourismService
                                        )
                          ] ;
-             rdfs:range :Location .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#hasMenu
-:hasMenu rdf:type owl:ObjectProperty ;
-         rdfs:domain :RestaurantService ;
-         rdfs:range :Menu .
+             rdfs:range :Location ;
+             rdfs:label "has location"@en ,
+                        "tiene localización"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasMultimedia
@@ -779,7 +542,9 @@ xsd:date rdf:type rdfs:Datatype .
                                            :TourismService
                                          )
                            ] ;
-               rdfs:range :Multimedia .
+               rdfs:range :Multimedia ;
+               rdfs:label "has multimedia"@en ,
+                          "tiene multimedia"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasOpeningHours
@@ -790,7 +555,9 @@ xsd:date rdf:type rdfs:Datatype .
                                              :TourismService
                                            )
                              ] ;
-                 rdfs:range :OpeningHours .
+                 rdfs:range :OpeningHours ;
+                 rdfs:label "has opening hours"@en ,
+                            "tiene horas de apertura"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasPaymentInformation
@@ -801,7 +568,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                    :TourismService
                                                  )
                                    ] ;
-                       rdfs:range :PaymentInformation .
+                       rdfs:range :PaymentInformation ;
+                       rdfs:label "hay payment information"@en ,
+                                  "tiene información de pago"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasPersonRole
@@ -827,7 +596,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                  ]
                                                ) ;
                             rdf:type owl:Class
-                          ] .
+                          ] ;
+               rdfs:label "has price class"@en ,
+                          "tiene categoría de precio"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasPriceInformation
@@ -838,19 +609,25 @@ xsd:date rdf:type rdfs:Datatype .
                                                  :TourismService
                                                )
                                  ] ;
-                     rdfs:range :PriceInformation .
+                     rdfs:range :PriceInformation ;
+                     rdfs:label "has price information"@en ,
+                                "tiene información de precios"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasReducedFare
 :hasReducedFare rdf:type owl:ObjectProperty ;
                 rdfs:domain :PriceInformation ;
-                rdfs:range :ReducedFare .
+                rdfs:range :ReducedFare ;
+                rdfs:label "has reduced fare"@en ,
+                           "tiene tarifa reducida"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasRulesAndTipsForTourist
 :hasRulesAndTipsForTourist rdf:type owl:ObjectProperty ;
                            rdfs:domain :TouristDestination ;
-                           rdfs:range :RulesAndTipsForTourists .
+                           rdfs:range :RulesAndTipsForTourists ;
+                           rdfs:label "has rules and tips for tourists"@en ,
+                                      "tiene reglas y recomendaciones para turistas"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasSocialMediaProfile
@@ -861,7 +638,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                    :TourismService
                                                  )
                                    ] ;
-                       rdfs:range :SocialMediaProfile .
+                       rdfs:range :SocialMediaProfile ;
+                       rdfs:label "has social media profile"@en ,
+                                  "tiene perfil de redes sociales"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasTemporaryClosure
@@ -872,7 +651,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                  :TourismService
                                                )
                                  ] ;
-                     rdfs:range :TemporaryClosure .
+                     rdfs:range :TemporaryClosure ;
+                     rdfs:label "has temporary closure"@en ,
+                                "tiene cierre temporal"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasTransactionInformation
@@ -883,30 +664,14 @@ xsd:date rdf:type rdfs:Datatype .
                                                        :TourismService
                                                      )
                                        ] ;
-                           rdfs:range :TransactionInformation .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#historicalAndCulturalResourceOfferedBy
-:historicalAndCulturalResourceOfferedBy rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf :historicalAndCulturalResourceRelatedTo ;
-                                        rdfs:domain :HistoricalAndCulturalResource ;
-                                        rdfs:range [ rdf:type owl:Class ;
-                                                     owl:unionOf ( :AccesoriesAndComplements
-                                                                   :Handicrafts
-                                                                   :JewelryAndWatches
-                                                                   :Souvenir
-                                                                 )
-                                                   ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#historicalAndCulturalResourceRelatedTo
-:historicalAndCulturalResourceRelatedTo rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf :relatedTo ;
-                                        rdfs:domain :HistoricalAndCulturalResource .
+                           rdfs:range :TransactionInformation ;
+                           rdfs:label "has transaction information"@en ,
+                                      "tiene información de transacción"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#historicalLandmarksOrBuildingsType
 :historicalLandmarksOrBuildingsType rdf:type owl:ObjectProperty ;
+                                    rdfs:domain :HistoricalAndCulturalResource ;
                                     rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                       [ rdf:type owl:Restriction ;
                                                                         owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
@@ -914,30 +679,13 @@ xsd:date rdf:type rdfs:Datatype .
                                                                       ]
                                                                     ) ;
                                                  rdf:type owl:Class
-                                               ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#holidayPackageIntegrates
-:holidayPackageIntegrates rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :holidayPackageRelatedTo ;
-                          rdfs:domain :HolidayPackage ;
-                          rdfs:range [ rdf:type owl:Class ;
-                                       owl:unionOf ( :Accommodation
-                                                     :Event
-                                                     :Facility
-                                                     :PassengerTransportCompany
-                                                     :RestaurantService
-                                                     :SingularExperience
-                                                     :Tour
-                                                     :TourGuide
-                                                     :TourismResource
-                                                   )
-                                     ] .
+                                               ] ;
+                                    rdfs:label "historical landmark or building type"@en ,
+                                               "tipo de edificio o lugar histórico"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#holidayPackageItinerary
 :holidayPackageItinerary rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf :holidayPackageRelatedTo ;
                          rdfs:domain :HolidayPackage ;
                          rdfs:range [ rdf:type owl:Class ;
                                       owl:unionOf ( :Event
@@ -949,13 +697,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                     :TouristDestination
                                                     :TransportFacility
                                                   )
-                                    ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#holidayPackageRelatedTo
-:holidayPackageRelatedTo rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf :relatedTo ;
-                         rdfs:domain :HolidayPackage .
+                                    ] ;
+                         rdfs:label "holiday package itinerary"@en ,
+                                    "itinerario de un paquete de vacaciones"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hotelSpecialty
@@ -968,68 +712,24 @@ xsd:date rdf:type rdfs:Datatype .
                                                   ]
                                                 ) ;
                              rdf:type owl:Class
-                           ] .
+                           ] ;
+                rdfs:label "especialidad del hotel"@es ,
+                           "hotel specialty"@en .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#integrates
+:integrates rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :relatedTo ;
+            rdfs:label "integra"@es ,
+                       "integrates"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#lenghtOfStay
 :lenghtOfStay rdf:type owl:ObjectProperty ;
               rdfs:domain :Tourist ;
-              rdfs:range :LenghtOfStay .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#localBusinessContainedIn
-:localBusinessContainedIn rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :localBusinessRelatedTo ;
-                          rdfs:domain :LocalBusiness ;
-                          rdfs:range [ rdf:type owl:Class ;
-                                       owl:unionOf ( :Accommodation
-                                                     :Airport
-                                                     :Beach
-                                                     :BusStation
-                                                     :Event
-                                                     :Facility
-                                                     :GasStation
-                                                     :TouristDestination
-                                                     :TrainStation
-                                                   )
-                                     ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#localBusinessNearTo
-:localBusinessNearTo rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :localBusinessRelatedTo ;
-                     rdfs:domain :LocalBusiness ;
-                     rdfs:range [ rdf:type owl:Class ;
-                                  owl:unionOf ( :Accommodation
-                                                :Event
-                                                :Facility
-                                                :LocalBusiness
-                                                :RestaurantService
-                                                :TourismResource
-                                                :TouristInformationOffice
-                                                :TransportFacility
-                                                :VehicleRentalCompany
-                                              )
-                                ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#localBusinessOperatesWith
-:localBusinessOperatesWith rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf :localBusinessRelatedTo ;
-                           rdfs:domain :LocalBusiness ;
-                           rdfs:range [ rdf:type owl:Class ;
-                                        owl:unionOf ( :Accommodation
-                                                      :DestinationManagementCompany
-                                                      :EventOrganization
-                                                      :TourGuide
-                                                    )
-                                      ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#localBusinessRelatedTo
-:localBusinessRelatedTo rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :relatedTo ;
-                        rdfs:domain :LocalBusiness .
+              rdfs:range :LenghtOfStay ;
+              rdfs:label "duración de la estancia"@es ,
+                         "lenght of stay"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#meansOfTransport
@@ -1046,13 +746,17 @@ xsd:date rdf:type rdfs:Datatype .
                                                     ]
                                                   ) ;
                                rdf:type owl:Class
-                             ] .
+                             ] ;
+                  rdfs:label "means of transport"@en ,
+                             "medio de transporte"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#meetingPoint
 :meetingPoint rdf:type owl:ObjectProperty ;
               rdfs:domain :Tour ;
-              rdfs:range :Location .
+              rdfs:range :Location ;
+              rdfs:label "meeting point"@en ,
+                         "punto de encuentro"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#menuOptions
@@ -1065,25 +769,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                ]
                                              ) ;
                           rdf:type owl:Class
-                        ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#micromobilityRelatedTo
-:micromobilityRelatedTo rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :relatedTo ;
-                        rdfs:domain :Micromobility .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#micromobilityWorkingAreas
-:micromobilityWorkingAreas rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf :micromobilityRelatedTo ;
-                           rdfs:domain :Micromobility ;
-                           rdfs:range [ rdf:type owl:Class ;
-                                        owl:unionOf ( :TourismResource
-                                                      :TouristDestination
-                                                      :TransportFacility
-                                                    )
-                                      ] .
+                        ] ;
+             rdfs:label "menu options"@en ,
+                        "opciones del menú"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#militaryBuildingType
@@ -1095,13 +783,17 @@ xsd:date rdf:type rdfs:Datatype .
                                                         ]
                                                       ) ;
                                    rdf:type owl:Class
-                                 ] .
+                                 ] ;
+                      rdfs:label "military building type"@en ,
+                                 "tipo de edificio militar"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#modificationFee
 :modificationFee rdf:type owl:ObjectProperty ;
                  rdfs:domain :BookingInformation ;
-                 rdfs:range :ModificationFee .
+                 rdfs:range :ModificationFee ;
+                 rdfs:label "modification fee"@en ,
+                            "tarifa de modificación"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#museumType
@@ -1114,7 +806,9 @@ xsd:date rdf:type rdfs:Datatype .
                                               ]
                                             ) ;
                          rdf:type owl:Class
-                       ] .
+                       ] ;
+            rdfs:label "museum type"@en ,
+                       "tipo de museo"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#natureActivityType
@@ -1133,13 +827,29 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://ontologia.segittur.es/turismo/def/core#nearTo
 :nearTo rdf:type owl:ObjectProperty ;
-        rdfs:subPropertyOf :relatedTo .
+        rdfs:subPropertyOf :relatedTo ;
+        rdfs:label "cerca de"@es ,
+                   "near to"@en .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#offeredBy
+:offeredBy rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :relatedTo .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#offers
+:offers rdf:type owl:ObjectProperty ;
+        rdfs:label "offers"@en ,
+                   "ofrece"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersActivity
 :offersActivity rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :offers ;
                 rdfs:domain :MultiAdventureCentre ;
-                rdfs:range :Activity .
+                rdfs:range :Activity ;
+                rdfs:label "offers activity"@en ,
+                           "ofrece actividad"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalAccommodationService
@@ -1153,7 +863,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                         ]
                                                                       ) ;
                                                    rdf:type owl:Class
-                                                 ] .
+                                                 ] ;
+                                      rdfs:label "offers additional accommodation service"@en ,
+                                                 "ofrece servicio adicional de alojamiento"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalAirlineService
@@ -1167,7 +879,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                   ]
                                                                 ) ;
                                              rdf:type owl:Class
-                                           ] .
+                                           ] ;
+                                rdfs:label "offers additional airline service"@en ,
+                                           "ofrece servicio adicional de aerolínea"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalAirplaneService
@@ -1181,7 +895,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                    ]
                                                                  ) ;
                                               rdf:type owl:Class
-                                            ] .
+                                            ] ;
+                                 rdfs:label "offers additional ariplane service"@en ,
+                                            "ofrece servicio adicional de avión"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalAirportService
@@ -1195,7 +911,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                   ]
                                                                 ) ;
                                              rdf:type owl:Class
-                                           ] .
+                                           ] ;
+                                rdfs:label "offers additional airport service"@en ,
+                                           "ofrece servicio adicional de aeropuerto"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalAmusementParkService
@@ -1209,7 +927,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                         ]
                                                                       ) ;
                                                    rdf:type owl:Class
-                                                 ] .
+                                                 ] ;
+                                      rdfs:label "offers additional amusement park service"@en ,
+                                                 "ofrece servicio adicional de parque de entretenimiento"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalAquariumService
@@ -1223,7 +943,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                    ]
                                                                  ) ;
                                               rdf:type owl:Class
-                                            ] .
+                                            ] ;
+                                 rdfs:label "offers additional aquarium service"@en ,
+                                            "ofrece servicio adicional de acuario"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalArtGalleryService
@@ -1237,7 +959,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                      ]
                                                                    ) ;
                                                 rdf:type owl:Class
-                                              ] .
+                                              ] ;
+                                   rdfs:label "offers additional art gallery service"@en ,
+                                              "ofrece servicio adicional de galería de arte"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalBeachService
@@ -1251,7 +975,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                 ]
                                                               ) ;
                                            rdf:type owl:Class
-                                         ] .
+                                         ] ;
+                              rdfs:label "offers additional beach service"@en ,
+                                         "ofrece servicio adicional de playa"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalBusOperatorService
@@ -1265,7 +991,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                       ]
                                                                     ) ;
                                                  rdf:type owl:Class
-                                               ] .
+                                               ] ;
+                                    rdfs:label "offers additional bus operator service"@en ,
+                                               "ofrece servicio adicional de operador de autobús"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalBusService
@@ -1279,7 +1007,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                               ]
                                                             ) ;
                                          rdf:type owl:Class
-                                       ] .
+                                       ] ;
+                            rdfs:label "offers additional bus service"@en ,
+                                       "ofrece servicio adicional de autobús"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalBusStationService
@@ -1293,7 +1023,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                      ]
                                                                    ) ;
                                                 rdf:type owl:Class
-                                              ] .
+                                              ] ;
+                                   rdfs:label "offers additional bus station service"@en ,
+                                              "ofrece servicio adicional de estación de autobuses"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalCarpoolService
@@ -1307,7 +1039,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                   ]
                                                                 ) ;
                                              rdf:type owl:Class
-                                           ] .
+                                           ] ;
+                                rdfs:label "offers additional carpool service"@en ,
+                                           "ofrece servicio adicional de compartición de coches"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalCruiseShipCabinService
@@ -1321,7 +1055,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                           ]
                                                                         ) ;
                                                      rdf:type owl:Class
-                                                   ] .
+                                                   ] ;
+                                        rdfs:label "offers additional cruise ship cabin service"@en ,
+                                                   "ofrece servicio adicional de cabina de crucero"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalCruiseShipService
@@ -1335,7 +1071,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                      ]
                                                                    ) ;
                                                 rdf:type owl:Class
-                                              ] .
+                                              ] ;
+                                   rdfs:label "offers additional cruiseship service"@en ,
+                                              "ofrece servicio adicional de crucero"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalDMCService
@@ -1349,7 +1087,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                               ]
                                                             ) ;
                                          rdf:type owl:Class
-                                       ] .
+                                       ] ;
+                            rdfs:label "offers additional DMC service"@en ,
+                                       "ofrece servicio adicional de DMC"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalEducationalService
@@ -1363,7 +1103,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                       ]
                                                                     ) ;
                                                  rdf:type owl:Class
-                                               ] .
+                                               ] ;
+                                    rdfs:label "offers additional educational service"@en ,
+                                               "ofrece servicio adicional de educación"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalEventAttendanceService
@@ -1377,13 +1119,15 @@ xsd:date rdf:type rdfs:Datatype .
                                                                           ]
                                                                         ) ;
                                                      rdf:type owl:Class
-                                                   ] .
+                                                   ] ;
+                                        rdfs:label "offers additional event attendance service"@en ,
+                                                   "ofrece servicio adicional de asistencia a eventos"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalEventOrganizationService
 :offersAdditionalEventOrganizationService rdf:type owl:ObjectProperty ;
                                           rdfs:subPropertyOf :offersAdditionalService ;
-                                          rdfs:domain :EventOrganization ;
+                                          rdfs:domain :EventOrganisationCompany ;
                                           rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                             [ rdf:type owl:Restriction ;
                                                                               owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
@@ -1391,7 +1135,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                             ]
                                                                           ) ;
                                                        rdf:type owl:Class
-                                                     ] .
+                                                     ] ;
+                                          rdfs:label "offers additional event organisation service"@en ,
+                                                     "ofrece servicio adicional de organización de eventos"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalEventService
@@ -1405,7 +1151,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                 ]
                                                               ) ;
                                            rdf:type owl:Class
-                                         ] .
+                                         ] ;
+                              rdfs:label "offers additional event service"@en ,
+                                         "ofrece servicio adicional de eventos"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalExhibitionHallService
@@ -1419,7 +1167,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                          ]
                                                                        ) ;
                                                     rdf:type owl:Class
-                                                  ] .
+                                                  ] ;
+                                       rdfs:label "offers additional exhibition hall service"@en ,
+                                                  "ofrece servicio adicional de sala de exhibiciones"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalFerryOperatorService
@@ -1433,7 +1183,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                         ]
                                                                       ) ;
                                                    rdf:type owl:Class
-                                                 ] .
+                                                 ] ;
+                                      rdfs:label "offers additional ferry operator service"@en ,
+                                                 "ofrece servicio adicional de operador de ferries"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalFerryService
@@ -1447,7 +1199,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                 ]
                                                               ) ;
                                            rdf:type owl:Class
-                                         ] .
+                                         ] ;
+                              rdfs:label "offers additional ferry service"@en ,
+                                         "ofrece servicio adicional de ferries"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalGymService
@@ -1461,7 +1215,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                               ]
                                                             ) ;
                                          rdf:type owl:Class
-                                       ] .
+                                       ] ;
+                            rdfs:label "offers additional gym service"@en ,
+                                       "ofrece servicio adicional de gimnasio"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalHandiCraftService
@@ -1475,7 +1231,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                      ]
                                                                    ) ;
                                                 rdf:type owl:Class
-                                              ] .
+                                              ] ;
+                                   rdfs:label "offers additional handcraft service"@en ,
+                                              "ofrece servicio adicional de artesanía"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalHealthAndBeautyService
@@ -1489,7 +1247,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                           ]
                                                                         ) ;
                                                      rdf:type owl:Class
-                                                   ] .
+                                                   ] ;
+                                        rdfs:label "offers additional health and beauty service"@en ,
+                                                   "ofrece servicio adicional de salud y belleza"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalHealthResortService
@@ -1503,7 +1263,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                        ]
                                                                      ) ;
                                                   rdf:type owl:Class
-                                                ] .
+                                                ] ;
+                                     rdfs:label "offers additional health resort service"@en ,
+                                                "ofrece servicio adicional de resort de salud"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalHistoricalAndCulturalResourceService
@@ -1517,7 +1279,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                         ]
                                                                                       ) ;
                                                                    rdf:type owl:Class
-                                                                 ] .
+                                                                 ] ;
+                                                      rdfs:label "offers additional historical and cultural resource service"@en ,
+                                                                 "ofrece servicio adicional de recursos históricos y culturales"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalLakeService
@@ -1531,7 +1295,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                ]
                                                              ) ;
                                           rdf:type owl:Class
-                                        ] .
+                                        ] ;
+                             rdfs:label "offers additional lake service"@en ,
+                                        "ofrece servicio adicional de lago"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalLeisureAndCultureService
@@ -1545,7 +1311,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                             ]
                                                                           ) ;
                                                        rdf:type owl:Class
-                                                     ] .
+                                                     ] ;
+                                          rdfs:label "offers additional lesire and culture service"@en ,
+                                                     "ofrece servicio adicional de ocio y cultura"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalMicromobilityService
@@ -1559,7 +1327,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                         ]
                                                                       ) ;
                                                    rdf:type owl:Class
-                                                 ] .
+                                                 ] ;
+                                      rdfs:label "offers additional micromobility service"@en ,
+                                                 "ofrece servicio adicional de micromovilidad"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalMovieTheatreService
@@ -1573,7 +1343,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                        ]
                                                                      ) ;
                                                   rdf:type owl:Class
-                                                ] .
+                                                ] ;
+                                     rdfs:label "offers additional movie theatre service"@en ,
+                                                "ofrece servicio adicional de sala de cine"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalMuseumService
@@ -1587,7 +1359,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                  ]
                                                                ) ;
                                             rdf:type owl:Class
-                                          ] .
+                                          ] ;
+                               rdfs:label "offers additional museum service"@en ,
+                                          "ofrece servicio adicional de museo"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalParcelAndCourierService
@@ -1601,7 +1375,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                            ]
                                                                          ) ;
                                                       rdf:type owl:Class
-                                                    ] .
+                                                    ] ;
+                                         rdfs:label "offers additional parcel and courier service"@en ,
+                                                    "ofrece servicio adicional de mensajería"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalParkingFacilityService
@@ -1615,13 +1391,15 @@ xsd:date rdf:type rdfs:Datatype .
                                                                           ]
                                                                         ) ;
                                                      rdf:type owl:Class
-                                                   ] .
+                                                   ] ;
+                                        rdfs:label "offers additional parking facility service"@en ,
+                                                   "ofrece servicio adicional de parking"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalPartyAndEntertaimentService
 :offersAdditionalPartyAndEntertaimentService rdf:type owl:ObjectProperty ;
                                              rdfs:subPropertyOf :offersAdditionalService ;
-                                             rdfs:domain :PartyAndEntertaymentFacility ;
+                                             rdfs:domain :PartyAndEntertainmentFacility ;
                                              rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                                                [ rdf:type owl:Restriction ;
                                                                                  owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
@@ -1629,7 +1407,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                ]
                                                                              ) ;
                                                           rdf:type owl:Class
-                                                        ] .
+                                                        ] ;
+                                             rdfs:label "offers additional party and entertainment service"@en ,
+                                                        "ofrece servicio adicional de fiestas y entretenimiento"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalPassengerTransportService
@@ -1643,7 +1423,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                              ]
                                                                            ) ;
                                                         rdf:type owl:Class
-                                                      ] .
+                                                      ] ;
+                                           rdfs:label "offers additional passenger transport service"@en ,
+                                                      "ofrece servicio adicional de transporte de pasajeros"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalPlanetariumService
@@ -1657,7 +1439,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                       ]
                                                                     ) ;
                                                  rdf:type owl:Class
-                                               ] .
+                                               ] ;
+                                    rdfs:label "offers additional planetarium service"@en ,
+                                               "ofrece servicio adicional de planetario"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalRailwayCompanyService
@@ -1671,7 +1455,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                          ]
                                                                        ) ;
                                                     rdf:type owl:Class
-                                                  ] .
+                                                  ] ;
+                                       rdfs:label "offers additional railway company service"@en ,
+                                                  "ofrece servicio adicional de compañía ferroviaria"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalRestaurantService
@@ -1685,7 +1471,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                      ]
                                                                    ) ;
                                                 rdf:type owl:Class
-                                              ] .
+                                              ] ;
+                                   rdfs:label "offers additional restaurant service"@en ,
+                                              "ofrece servicio adicional de restauración"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalRetailAndFashionService
@@ -1699,7 +1487,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                            ]
                                                                          ) ;
                                                       rdf:type owl:Class
-                                                    ] .
+                                                    ] ;
+                                         rdfs:label "offers additional retail and fashion service"@en ,
+                                                    "ofrece servicio adicional de compras y moda"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalRiverService
@@ -1713,7 +1503,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                 ]
                                                               ) ;
                                            rdf:type owl:Class
-                                         ] .
+                                         ] ;
+                              rdfs:label "offers additional river service"@en ,
+                                         "ofrece servicio adicional de río"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalRoomService
@@ -1727,12 +1519,17 @@ xsd:date rdf:type rdfs:Datatype .
                                                                ]
                                                              ) ;
                                           rdf:type owl:Class
-                                        ] .
+                                        ] ;
+                             rdfs:label "offers additional room service"@en ,
+                                        "ofrece servicio adicional de habitaciones"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalService
 :offersAdditionalService rdf:type owl:ObjectProperty ;
-                         rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+                         rdfs:subPropertyOf :offers ;
+                         rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                         rdfs:label "offers additional service"@en ,
+                                    "ofrece servicio adicional"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalSportService
@@ -1746,7 +1543,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                 ]
                                                               ) ;
                                            rdf:type owl:Class
-                                         ] .
+                                         ] ;
+                              rdfs:label "offers additional sport service"@en ,
+                                         "ofrece servicio adicional de deportes"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalStadiumService
@@ -1760,7 +1559,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                   ]
                                                                 ) ;
                                              rdf:type owl:Class
-                                           ] .
+                                           ] ;
+                                rdfs:label "offers additional stadium service"@en ,
+                                           "ofrece servicio adicional de estadio"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTheaterService
@@ -1774,7 +1575,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                   ]
                                                                 ) ;
                                              rdf:type owl:Class
-                                           ] .
+                                           ] ;
+                                rdfs:label "offers additional theatre service"@en ,
+                                           "ofrece servicio adicional de teatro"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTourGuideService
@@ -1788,7 +1591,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                     ]
                                                                   ) ;
                                                rdf:type owl:Class
-                                             ] .
+                                             ] ;
+                                  rdfs:label "offers additional tourist guide service"@en ,
+                                             "ofrece servicio adicional de guía turístico"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTourService
@@ -1802,7 +1607,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                ]
                                                              ) ;
                                           rdf:type owl:Class
-                                        ] .
+                                        ] ;
+                             rdfs:label "offers additional tour service"@en ,
+                                        "ofrece servicio adicional de tour"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTourismResourceOfInterestService
@@ -1816,7 +1623,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                     ]
                                                                                   ) ;
                                                                rdf:type owl:Class
-                                                             ] .
+                                                             ] ;
+                                                  rdfs:label "offers additional tourism resource of interest service"@en ,
+                                                             "ofrece servicio adicional de recurso de interés turístico"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTouristDestinationService
@@ -1830,7 +1639,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                              ]
                                                                            ) ;
                                                         rdf:type owl:Class
-                                                      ] .
+                                                      ] ;
+                                           rdfs:label "offers additional tourist destination service"@en ,
+                                                      "ofrece servicio adicional de destino turístico"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTouristIntermediaryService
@@ -1844,7 +1655,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                               ]
                                                                             ) ;
                                                          rdf:type owl:Class
-                                                       ] .
+                                                       ] ;
+                                            rdfs:label "offers additional tourist intermediary service"@en ,
+                                                       "ofrece servicio adicional de intermediario turístico"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTouristOrRelatedFacility
@@ -1858,7 +1671,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                             ]
                                                                           ) ;
                                                        rdf:type owl:Class
-                                                     ] .
+                                                     ] ;
+                                          rdfs:label "offers additional tourist or related facility service"@en ,
+                                                     "ofrece servicio adicional de instalación turística"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTrainService
@@ -1872,7 +1687,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                 ]
                                                               ) ;
                                            rdf:type owl:Class
-                                         ] .
+                                         ] ;
+                              rdfs:label "offers additional train service"@en ,
+                                         "ofrece servicio adicional de tren"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTrainStationService
@@ -1886,21 +1703,25 @@ xsd:date rdf:type rdfs:Datatype .
                                                                        ]
                                                                      ) ;
                                                   rdf:type owl:Class
-                                                ] .
+                                                ] ;
+                                     rdfs:label "offers additional train station service"@en ,
+                                                "ofrece servicio adicional de estación de tren"@es .
 
 
-###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTransportInfraestructureService
-:offersAdditionalTransportInfraestructureService rdf:type owl:ObjectProperty ;
-                                                 rdfs:subPropertyOf :offersAdditionalService ;
-                                                 rdfs:domain :TransportFacility ;
-                                                 rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                                                                   [ rdf:type owl:Restriction ;
-                                                                                     owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                                                     owl:hasValue <https://ontologia.segittur.es/turismo/kos/TransportInfrastructureServiceType>
-                                                                                   ]
-                                                                                 ) ;
-                                                              rdf:type owl:Class
-                                                            ] .
+###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTransportInfrastructureService
+:offersAdditionalTransportInfrastructureService rdf:type owl:ObjectProperty ;
+                                                rdfs:subPropertyOf :offersAdditionalService ;
+                                                rdfs:domain :TransportFacility ;
+                                                rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                                    owl:hasValue <https://ontologia.segittur.es/turismo/kos/TransportInfrastructureServiceType>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                                rdfs:label "offers additional transport infrastructure service"@en ,
+                                                           "ofrece servicio adicional de infraestructura de transporte"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTransportService
@@ -1914,7 +1735,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                     ]
                                                                   ) ;
                                                rdf:type owl:Class
-                                             ] .
+                                             ] ;
+                                  rdfs:label "offers additional transport service"@en ,
+                                             "ofrece servicio adicional de transporte"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalTravelAgencyService
@@ -1928,7 +1751,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                        ]
                                                                      ) ;
                                                   rdf:type owl:Class
-                                                ] .
+                                                ] ;
+                                     rdfs:label "offers additional travel agency service"@en ,
+                                                "ofrece servicio adicional de agencia de viajes"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalVehicleExperienceService
@@ -1942,7 +1767,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                             ]
                                                                           ) ;
                                                        rdf:type owl:Class
-                                                     ] .
+                                                     ] ;
+                                          rdfs:label "offers additional vehicle experience service"@en ,
+                                                     "ofrece servicio adicional de experiencia con vehículos"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalVehicleRentalCompanyService
@@ -1956,13 +1783,25 @@ xsd:date rdf:type rdfs:Datatype .
                                                                                ]
                                                                              ) ;
                                                           rdf:type owl:Class
-                                                        ] .
+                                                        ] ;
+                                             rdfs:label "offers additional vehicle rental company service"@en ,
+                                                        "ofrece servicio adicional de empresa de alquiler de coches"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalVehicleRentalService
 :offersAdditionalVehicleRentalService rdf:type owl:ObjectProperty ;
                                       rdfs:subPropertyOf :offersAdditionalService ;
-                                      rdfs:domain :VehicleRentalService .
+                                      rdfs:domain :VehicleRentalService ;
+                                      rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                          owl:hasValue <https://ontologia.segittur.es/turismo/kos/VehicleRentalServiceType>
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                                      rdfs:label "offers additional vehicle rental service"@en ,
+                                                 "ofrece servicio adicional de alquiler de vehículos"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalVehicleService
@@ -1976,7 +1815,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                   ]
                                                                 ) ;
                                              rdf:type owl:Class
-                                           ] .
+                                           ] ;
+                                rdfs:label "offers additional vehicle service"@en ,
+                                           "ofrece servicio adicional de vehículos"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalVineyardService
@@ -1990,7 +1831,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                    ]
                                                                  ) ;
                                               rdf:type owl:Class
-                                            ] .
+                                            ] ;
+                                 rdfs:label "offers additional vineyard service"@en ,
+                                            "ofrece servicio adicional de viñedo"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalWineryService
@@ -2004,7 +1847,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                  ]
                                                                ) ;
                                             rdf:type owl:Class
-                                          ] .
+                                          ] ;
+                               rdfs:label "offers additional winery service"@en ,
+                                          "ofrece servicio adicional de bodega vinícola"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAdditionalZooService
@@ -2018,7 +1863,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                               ]
                                                             ) ;
                                          rdf:type owl:Class
-                                       ] .
+                                       ] ;
+                            rdfs:label "offers additional soo service"@en ,
+                                       "ofrece servicio adicional de zoológico"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAddtionalSwimmingPoolService
@@ -2032,7 +1879,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                                       ]
                                                                     ) ;
                                                  rdf:type owl:Class
-                                               ] .
+                                               ] ;
+                                    rdfs:label "offers additional swimming pool service"@en ,
+                                               "ofrece servicio adicional de piscina"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersAditionalCultureCentreService
@@ -2046,23 +1895,41 @@ xsd:date rdf:type rdfs:Datatype .
                                                                        ]
                                                                      ) ;
                                                   rdf:type owl:Class
-                                                ] .
+                                                ] ;
+                                     rdfs:label "offers additional culture centre service"@en ,
+                                                "ofrece servicio adicional de centro cultural"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersCabin
 :offersCabin rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :offers ;
              rdfs:domain :CruiseShip ;
-             rdfs:range :Cabin .
+             rdfs:range :Cabin ;
+             rdfs:label "offers cabin"@en ,
+                        "ofrece cabina"@es .
 
 
-###  https://ontologia.segittur.es/turismo/def/core#offersExperience
-:offersExperience rdf:type owl:ObjectProperty ;
-                  rdfs:domain :TouristDestination ;
-                  rdfs:range :DestinationExperience .
+###  https://ontologia.segittur.es/turismo/def/core#offersDestinationExperience
+:offersDestinationExperience rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :offers ;
+                             rdfs:domain :TouristDestination ;
+                             rdfs:range :DestinationExperience ;
+                             rdfs:label "offers destination experience"@en ,
+                                        "ofrece experiencia de destino"@es .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#offersHolidayPackage
+:offersHolidayPackage rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :offers ;
+                      rdfs:domain :TouristIntermediary ;
+                      rdfs:range :HolidayPackage ;
+                      rdfs:label "offers holiday package"@en ,
+                                 "ofrece paquete de vacaciones"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersMealPlan
 :offersMealPlan rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :offers ;
                 rdfs:domain :Accommodation ;
                 rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                   [ rdf:type owl:Restriction ;
@@ -2071,93 +1938,100 @@ xsd:date rdf:type rdfs:Datatype .
                                                   ]
                                                 ) ;
                              rdf:type owl:Class
-                           ] .
+                           ] ;
+                rdfs:label "offers meal plan"@en ,
+                           "ofrece plan de comidas"@es .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#offersMenu
+:offersMenu rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :offers ;
+            rdfs:domain :RestaurantService ;
+            rdfs:range :Menu ;
+            rdfs:label "offers menu"@en ,
+                       "ofrece menú"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersRate
 :offersRate rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :offers ;
             rdfs:domain :CruiseLine ;
-            rdfs:range :Rate .
+            rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                owl:hasValue <https://ontologia.segittur.es/turismo/kos/RateType>
+                                              ]
+                                            ) ;
+                         rdf:type owl:Class
+                       ] ;
+            rdfs:label "offers rate"@en ,
+                       "ofrece tarifa"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersRoom
 :offersRoom rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :offers ;
             rdfs:domain :Accommodation ;
-            rdfs:range :Room .
+            rdfs:range :Room ;
+            rdfs:label "offers room"@en ,
+                       "ofrece habitación"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersServiceOrTicket
 :offersServiceOrTicket rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :relatedTo .
+                       rdfs:subPropertyOf :relatedTo ;
+                       rdfs:label "offers service or ticket"@en ,
+                                  "ofrece servicio o ticket"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersTouristDestinationService
 :offersTouristDestinationService rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf :offers ;
                                  rdfs:domain :TouristDestination ;
-                                 rdfs:range :TouristDestinationService .
+                                 rdfs:range :TouristDestinationService ;
+                                 rdfs:label "offers tourist destination service"@en ,
+                                            "ofrece servicio de destino turístico"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersTransport
 :offersTransport rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :offers ;
                  rdfs:domain :PrivateHireCompany ;
-                 rdfs:range :TransportService .
+                 rdfs:range :TransportService ;
+                 rdfs:label "offers transport"@en ,
+                            "ofrece transporte"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#offersVehicle
 :offersVehicle rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :offers ;
                rdfs:domain :VehicleRentalCompany ;
-               rdfs:range :Vehicle .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#offersholidayPackage
-:offersholidayPackage rdf:type owl:ObjectProperty ;
-                      rdfs:domain :TouristIntermediary ;
-                      rdfs:range :HolidayPackage .
+               rdfs:range :Vehicle ;
+               rdfs:label "offers vehicle"@en ,
+                          "offrece vehículo"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#onSite
 :onSite rdf:type owl:ObjectProperty ;
         rdfs:domain :BookingChannel ;
-        rdfs:range :Location .
+        rdfs:range :Location ;
+        rdfs:label "en localización"@es ,
+                   "on site"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#operatesWith
 :operatesWith rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :relatedTo .
+              rdfs:subPropertyOf :relatedTo ;
+              rdfs:label "opera con"@es ,
+                         "operates with"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#originLocation
 :originLocation rdf:type owl:ObjectProperty ;
                 rdfs:domain :Person ;
-                rdfs:range :Location .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#otaRelatedTo
-:otaRelatedTo rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :relatedTo ;
-              rdfs:domain :OTA .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#parkingFacilityContainedIn
-:parkingFacilityContainedIn rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf :parkingFacilityRelatedTo ;
-                            rdfs:domain :ParkingFacility ;
-                            rdfs:range :ParkingFacility ,
-                                       [ rdf:type owl:Class ;
-                                         owl:unionOf ( :Accommodation
-                                                       :Event
-                                                       :Facility
-                                                       :LocalBusiness
-                                                       :RestaurantService
-                                                       :TourismResource
-                                                     )
-                                       ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#parkingFacilityRelatedTo
-:parkingFacilityRelatedTo rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :relatedTo ;
-                          rdfs:domain :ParkingFacility .
+                rdfs:range :Location ;
+                rdfs:label "lugar de origen"@es ,
+                           "origin location"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#parkingSecurity
@@ -2170,7 +2044,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                    ]
                                                  ) ;
                               rdf:type owl:Class
-                            ] .
+                            ] ;
+                 rdfs:label "parking security"@en ,
+                            "seguridad del parking"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#parkingType
@@ -2183,61 +2059,17 @@ xsd:date rdf:type rdfs:Datatype .
                                                ]
                                              ) ;
                           rdf:type owl:Class
-                        ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#passengerTransportContainedIn
-:passengerTransportContainedIn rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf :passengerTransportRelatedTo ;
-                               rdfs:domain :PassengerTransportCompany ;
-                               rdfs:range [ rdf:type owl:Class ;
-                                            owl:unionOf ( :Airport
-                                                          :BusStation
-                                                          :TouristDestination
-                                                          :TrainStation
-                                                        )
-                                          ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#passengerTransportOffersServiceOrTicket
-:passengerTransportOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                         rdfs:subPropertyOf :passengerTransportRelatedTo ;
-                                         rdfs:domain :PassengerTransportCompany ;
-                                         rdfs:range [ rdf:type owl:Class ;
-                                                      owl:unionOf ( :Event
-                                                                    :Facility
-                                                                    :SingularExperience
-                                                                    :Tour
-                                                                    :TourismResource
-                                                                    :Vehicle
-                                                                  )
-                                                    ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#passengerTransportOperatesWith
-:passengerTransportOperatesWith rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf :passengerTransportRelatedTo ;
-                                rdfs:domain :PassengerTransportCompany ;
-                                rdfs:range [ rdf:type owl:Class ;
-                                             owl:unionOf ( :Accommodation
-                                                           :PassengerTransportCompany
-                                                           :TourismResource
-                                                           :TouristDestination
-                                                           :TransportFacility
-                                                         )
-                                           ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#passengerTransportRelatedTo
-:passengerTransportRelatedTo rdf:type owl:ObjectProperty ;
-                             rdfs:subPropertyOf :relatedTo ;
-                             rdfs:domain :PassengerTransportCompany .
+                        ] ;
+             rdfs:label "parking type"@en ,
+                        "tipo de parking"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#paymentMethod
 :paymentMethod rdf:type owl:ObjectProperty ;
                rdfs:domain :PaymentInformation ;
-               rdfs:range :PaymentMethod .
+               rdfs:range :PaymentMethod ;
+               rdfs:label "método de pago"@es ,
+                          "payment method"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#placeOfWorshipType
@@ -2249,7 +2081,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                       ]
                                                     ) ;
                                  rdf:type owl:Class
-                               ] .
+                               ] ;
+                    rdfs:label "place of workship type"@en ,
+                               "tipo de lugar de culto"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#pointOfSale
@@ -2259,46 +2093,9 @@ xsd:date rdf:type rdfs:Datatype .
                                          :VehicleExperience
                                        )
                          ] ;
-             rdfs:range :PointOfSale .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#pointOfSaleContainedIn
-:pointOfSaleContainedIn rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :pointOfSaleRelatedTo ;
-                        rdfs:domain :PointOfSale ;
-                        rdfs:range [ rdf:type owl:Class ;
-                                     owl:unionOf ( :Airport
-                                                   :BusStation
-                                                   :Event
-                                                   :Facility
-                                                   :ShoppingMall
-                                                   :TourismResource
-                                                   :TouristDestination
-                                                   :TrainStation
-                                                 )
-                                   ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#pointOfSaleNearTo
-:pointOfSaleNearTo rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf :pointOfSaleRelatedTo ;
-                   rdfs:domain :PointOfSale ;
-                   rdfs:range [ rdf:type owl:Class ;
-                                owl:unionOf ( :Event
-                                              :Facility
-                                              :LocalBusiness
-                                              :RestaurantService
-                                              :TourismResource
-                                              :TransportFacility
-                                              :VehicleRentalCompany
-                                            )
-                              ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#pointOfSaleRelatedTo
-:pointOfSaleRelatedTo rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf :relatedTo ;
-                      rdfs:domain :PointOfSale .
+             rdfs:range :PointOfSale ;
+             rdfs:label "point of sale"@en ,
+                        "punto de venta"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#professionalPosition
@@ -2311,13 +2108,24 @@ xsd:date rdf:type rdfs:Datatype .
                                                         ]
                                                       ) ;
                                    rdf:type owl:Class
-                                 ] .
+                                 ] ;
+                      rdfs:label "posición profesional"@es ,
+                                 "professional position"@en .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#promotes
+:promotes rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :relatedTo ;
+          rdfs:label "promotes"@en ,
+                     "promueve"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#promotion
 :promotion rdf:type owl:ObjectProperty ;
            rdfs:domain :PriceInformation ;
-           rdfs:range :Promotion .
+           rdfs:range :Promotion ;
+           rdfs:label "promoción"@es ,
+                      "promotion"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#propulsionType
@@ -2334,65 +2142,25 @@ xsd:date rdf:type rdfs:Datatype .
                                                   ]
                                                 ) ;
                              rdf:type owl:Class
-                           ] .
+                           ] ;
+                rdfs:label "propulsion type"@en ,
+                           "tipo de propulsión"@es .
 
 
-###  https://ontologia.segittur.es/turismo/def/core#publicServiceContainedIn
-:publicServiceContainedIn rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :publicServiceRelatedTo ;
-                          rdfs:domain :PublicService ;
-                          rdfs:range [ rdf:type owl:Class ;
-                                       owl:unionOf ( :TourismResource
-                                                     :TouristDestination
-                                                     :TransportFacility
-                                                   )
-                                     ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#publicServiceNearTo
-:publicServiceNearTo rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :publicServiceRelatedTo ;
-                     rdfs:domain :PublicService ;
-                     rdfs:range [ rdf:type owl:Class ;
-                                  owl:unionOf ( :Accommodation
-                                                :Event
-                                                :Facility
-                                                :LocalBusiness
-                                                :PublicService
-                                                :RestaurantService
-                                                :TourismResource
-                                                :TransportFacility
-                                              )
-                                ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#publicServiceOperatesWith
-:publicServiceOperatesWith rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf :publicServiceRelatedTo ;
-                           rdfs:domain :PublicService ;
-                           rdfs:range [ rdf:type owl:Class ;
-                                        owl:unionOf ( :TourismResource
-                                                      :TransportFacility
-                                                    )
-                                      ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#publicServiceRelatedTo
-:publicServiceRelatedTo rdf:type owl:ObjectProperty ;
-                        rdfs:subPropertyOf :relatedTo ;
-                        rdfs:domain :PublicService .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#refPublicTransportRoute
-:refPublicTransportRoute rdf:type owl:ObjectProperty ;
-                         rdfs:domain :PublicTransportStop ;
-                         rdfs:range :TransportRoute .
+###  https://ontologia.segittur.es/turismo/def/core#publicTransportRoute
+:publicTransportRoute rdf:type owl:ObjectProperty ;
+                      rdfs:domain :PublicTransportStop ;
+                      rdfs:range :TransportRoute ;
+                      rdfs:label "public transport route"@en ,
+                                 "ruta de transporte público"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#registration
 :registration rdf:type owl:ObjectProperty ;
               rdfs:domain :Accommodation ;
-              rdfs:range :AccommodationRegistration .
+              rdfs:range :AccommodationRegistration ;
+              rdfs:label "registration"@en ,
+                         "registro"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#relatedTo
@@ -2423,77 +2191,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                    ]
                                                  ) ;
                               rdf:type owl:Class
-                            ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#restaurantServiceContainedIn
-:restaurantServiceContainedIn rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf :restaurantServiceRelatedTo ;
-                              rdfs:domain :RestaurantService ;
-                              rdfs:range [ rdf:type owl:Class ;
-                                           owl:unionOf ( :Accommodation
-                                                         :Airport
-                                                         :BusStation
-                                                         :Event
-                                                         :Facility
-                                                         :GasStation
-                                                         :PassengerTerminal
-                                                         :PrivateHospital
-                                                         :ShoppingMall
-                                                         :TourismResource
-                                                         :TouristDestination
-                                                         :TrainStation
-                                                       )
-                                         ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#restaurantServiceNearTo
-:restaurantServiceNearTo rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf :restaurantServiceRelatedTo ;
-                         rdfs:domain :RestaurantService ;
-                         rdfs:range [ rdf:type owl:Class ;
-                                      owl:unionOf ( :Accommodation
-                                                    :Event
-                                                    :Facility
-                                                    :LocalBusiness
-                                                    :RestaurantService
-                                                    :TourismResource
-                                                    :TouristInformationOffice
-                                                    :TransportFacility
-                                                  )
-                                    ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#restaurantServiceOffersServiceOrTicket
-:restaurantServiceOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf :restaurantServiceRelatedTo ;
-                                        rdfs:domain :RestaurantService ;
-                                        rdfs:range [ rdf:type owl:Class ;
-                                                     owl:unionOf ( :Event
-                                                                   :Gastronomy
-                                                                   :SingularExperience
-                                                                 )
-                                                   ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#restaurantServiceOperatesWith
-:restaurantServiceOperatesWith rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf :restaurantServiceRelatedTo ;
-                               rdfs:domain :RestaurantService ;
-                               rdfs:range [ rdf:type owl:Class ;
-                                            owl:unionOf ( :DestinationManagementCompany
-                                                          :DryCleaningOrLaundry
-                                                          :EventOrganization
-                                                          :ParkingFacility
-                                                          :TourGuide
-                                                        )
-                                          ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#restaurantServiceRelatedTo
-:restaurantServiceRelatedTo rdf:type owl:ObjectProperty ;
-                            rdfs:subPropertyOf :relatedTo ;
-                            rdfs:domain :RestaurantService .
+                            ] ;
+                 rdfs:label "reservation type"@en ,
+                            "tipo de reserva"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#roomType
@@ -2507,68 +2207,9 @@ xsd:date rdf:type rdfs:Datatype .
                                             ]
                                           ) ;
                        rdf:type owl:Class
-                     ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#rulesAndTipsForTouristOffersServiceOrTicket
-:rulesAndTipsForTouristOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                             rdfs:subPropertyOf :rulesAndTipsForTouristRelatedTo ;
-                                             rdfs:domain :RulesAndTipsForTourists ;
-                                             rdfs:range [ rdf:type owl:Class ;
-                                                          owl:unionOf ( :Event
-                                                                        :SingularExperience
-                                                                        :Tour
-                                                                        :TourismResource
-                                                                      )
-                                                        ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#rulesAndTipsForTouristOperatesWith
-:rulesAndTipsForTouristOperatesWith rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf :rulesAndTipsForTouristRelatedTo ;
-                                    rdfs:domain :RulesAndTipsForTourists ;
-                                    rdfs:range [ rdf:type owl:Class ;
-                                                 owl:unionOf ( :Accommodation
-                                                               :EventOrganization
-                                                               :Facility
-                                                               :LocalBusiness
-                                                               :PassengerTransportCompany
-                                                               :PublicService
-                                                               :RestaurantService
-                                                               :TourGuide
-                                                               :TourismResource
-                                                               :TouristDestination
-                                                               :TouristIntermediary
-                                                               :TransportFacility
-                                                             )
-                                               ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#rulesAndTipsForTouristPromotes
-:rulesAndTipsForTouristPromotes rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf :rulesAndTipsForTouristRelatedTo ;
-                                rdfs:domain :RulesAndTipsForTourists ;
-                                rdfs:range [ rdf:type owl:Class ;
-                                             owl:unionOf ( :Accommodation
-                                                           :DestinationManagementCompany
-                                                           :Event
-                                                           :Facility
-                                                           :PublicService
-                                                           :RestaurantService
-                                                           :RetailAndFashion
-                                                           :SingularExperience
-                                                           :TourGuide
-                                                           :TourismResource
-                                                           :TouristDestination
-                                                           :TransportFacility
-                                                         )
-                                           ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#rulesAndTipsForTouristRelatedTo
-:rulesAndTipsForTouristRelatedTo rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf :relatedTo ;
-                                 rdfs:domain :RulesAndTipsForTourists .
+                     ] ;
+          rdfs:label "room type"@en ,
+                     "tipo de habitación"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#saturationLevel
@@ -2580,13 +2221,17 @@ xsd:date rdf:type rdfs:Datatype .
                                                    ]
                                                  ) ;
                               rdf:type owl:Class
-                            ] .
+                            ] ;
+                 rdfs:label "nivel de saturación"@es ,
+                            "saturation level"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#seaConditions
 :seaConditions rdf:type owl:ObjectProperty ;
                rdfs:domain :Beach ;
-               rdfs:range :SeaConditions .
+               rdfs:range :SeaConditions ;
+               rdfs:label "condiciones del mar"@es ,
+                          "sea conditions"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#seabedType
@@ -2599,7 +2244,9 @@ xsd:date rdf:type rdfs:Datatype .
                                               ]
                                             ) ;
                          rdf:type owl:Class
-                       ] .
+                       ] ;
+            rdfs:label "seabed type"@en ,
+                       "tipo de fondo marino"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#shipmentScope
@@ -2616,7 +2263,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                  ]
                                                ) ;
                             rdf:type owl:Class
-                          ] .
+                          ] ;
+               rdfs:label "shipment scope"@en ,
+                          "ámbito del envío"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#socketType
@@ -2629,7 +2278,9 @@ xsd:date rdf:type rdfs:Datatype .
                                               ]
                                             ) ;
                          rdf:type owl:Class
-                       ] .
+                       ] ;
+            rdfs:label "socket type"@en ,
+                       "tipo de enchufe"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#stationType
@@ -2642,7 +2293,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                ]
                                              ) ;
                           rdf:type owl:Class
-                        ] .
+                        ] ;
+             rdfs:label "station type"@en ,
+                        "tipo de estación"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#status
@@ -2654,249 +2307,17 @@ xsd:date rdf:type rdfs:Datatype .
                                           ]
                                         ) ;
                      rdf:type owl:Class
-                   ] .
+                   ] ;
+        rdfs:label "estado"@es ,
+                   "status"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#tour
 :tour rdf:type owl:ObjectProperty ;
       rdfs:domain :TourGuide ;
-      rdfs:range :Tour .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#tourGuideOffersServiceOrTicket
-:tourGuideOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf :tourGuideRelatedTo ;
-                                rdfs:domain :TourGuide ;
-                                rdfs:range [ rdf:type owl:Class ;
-                                             owl:unionOf ( :DestinationExperience
-                                                           :Event
-                                                           :TourismResource
-                                                         )
-                                           ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#tourGuideOperatesWith
-:tourGuideOperatesWith rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :tourGuideRelatedTo ;
-                       rdfs:domain :TourGuide ;
-                       rdfs:range [ rdf:type owl:Class ;
-                                    owl:unionOf ( :Accommodation
-                                                  :BusOperator
-                                                  :FerryOperator
-                                                  :PrivateHireCompany
-                                                  :RestaurantService
-                                                  :TouristDestination
-                                                )
-                                  ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#tourGuideRelatedTo
-:tourGuideRelatedTo rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :relatedTo ;
-                    rdfs:domain :TourGuide .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#tourGuideWorkingAreas
-:tourGuideWorkingAreas rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :tourGuideRelatedTo ;
-                       rdfs:domain :TourGuide ;
-                       rdfs:range [ rdf:type owl:Class ;
-                                    owl:unionOf ( :TourismResource
-                                                  :TouristDestination
-                                                )
-                                  ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#tourismResourceOfInterestContainedIn
-:tourismResourceOfInterestContainedIn rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf :tourismResourceOfInterestRelatedTo ;
-                                      rdfs:domain :TourismResource ;
-                                      rdfs:range [ rdf:type owl:Class ;
-                                                   owl:unionOf ( :TourismResource
-                                                                 :TouristDestination
-                                                               )
-                                                 ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#tourismResourceOfInterestNearTo
-:tourismResourceOfInterestNearTo rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf :tourismResourceOfInterestRelatedTo ;
-                                 rdfs:domain :TourismResource ;
-                                 rdfs:range [ rdf:type owl:Class ;
-                                              owl:unionOf ( :Accommodation
-                                                            :Event
-                                                            :Facility
-                                                            :LocalBusiness
-                                                            :PublicService
-                                                            :RestaurantService
-                                                            :TourismResource
-                                                            :TransportFacility
-                                                          )
-                                            ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#tourismResourceOfInterestOffersServiceOrTicket
-:tourismResourceOfInterestOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                                rdfs:subPropertyOf :tourismResourceOfInterestRelatedTo ;
-                                                rdfs:domain :TourismResource ;
-                                                rdfs:range [ rdf:type owl:Class ;
-                                                             owl:unionOf ( :Event
-                                                                           :Facility
-                                                                           :SingularExperience
-                                                                           :Tour
-                                                                         )
-                                                           ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#tourismResourceOfInterestOperatesWith
-:tourismResourceOfInterestOperatesWith rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf :tourismResourceOfInterestRelatedTo ;
-                                       rdfs:domain :TourismResource ;
-                                       rdfs:range [ rdf:type owl:Class ;
-                                                    owl:unionOf ( :Accommodation
-                                                                  :BusOperator
-                                                                  :EventOrganization
-                                                                  :Facility
-                                                                  :LocalBusiness
-                                                                  :PublicService
-                                                                  :RestaurantService
-                                                                  :TourGuide
-                                                                  :TourismResource
-                                                                  :TouristDestination
-                                                                  :TransportFacility
-                                                                )
-                                                  ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#tourismResourceOfInterestRelatedTo
-:tourismResourceOfInterestRelatedTo rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf :relatedTo ;
-                                    rdfs:domain :TourismResource .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#touristInformationPointOffersServiceOrTicket
-:touristInformationPointOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                              rdfs:subPropertyOf :touristInformationPointRelatedTo ;
-                                              rdfs:domain :TouristInformationOffice ;
-                                              rdfs:range [ rdf:type owl:Class ;
-                                                           owl:unionOf ( :Event
-                                                                         :SingularExperience
-                                                                         :Tour
-                                                                         :TourismResource
-                                                                       )
-                                                         ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#touristInformationPointRelatedTo
-:touristInformationPointRelatedTo rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf :relatedTo ;
-                                  rdfs:domain :TouristInformationOffice .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#touristIntermediaryOffersServiceOrTicket
-:touristIntermediaryOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                          rdfs:subPropertyOf :touristIntermediaryRelatedTo ;
-                                          rdfs:domain :TouristIntermediary ;
-                                          rdfs:range [ rdf:type owl:Class ;
-                                                       owl:unionOf ( :Event
-                                                                     :SingularExperience
-                                                                     :Tour
-                                                                     :Vehicle
-                                                                   )
-                                                     ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#touristIntermediaryOperatesWith
-:touristIntermediaryOperatesWith rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf :touristIntermediaryRelatedTo ;
-                                 rdfs:domain :TouristIntermediary ;
-                                 rdfs:range [ rdf:type owl:Class ;
-                                              owl:unionOf ( :Accommodation
-                                                            :EventOrganization
-                                                            :Facility
-                                                            :LocalBusiness
-                                                            :PassengerTransportCompany
-                                                            :RestaurantService
-                                                            :TourGuide
-                                                            :TourismResource
-                                                            :TouristDestination
-                                                            :TransportFacility
-                                                          )
-                                            ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#touristIntermediaryRelatedTo
-:touristIntermediaryRelatedTo rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf :relatedTo ;
-                              rdfs:domain :TouristIntermediary .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#touristIntermediarySpecialty
-:touristIntermediarySpecialty rdf:type owl:ObjectProperty ;
-                              rdfs:subPropertyOf :relatedTo ;
-                              rdfs:domain :TouristIntermediary .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#touristOrRelatedFacilityContainedIn
-:touristOrRelatedFacilityContainedIn rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf :touristOrRelatedFacilityRelatedTo ;
-                                     rdfs:domain :Facility ;
-                                     rdfs:range [ rdf:type owl:Class ;
-                                                  owl:unionOf ( :Accommodation
-                                                                :Facility
-                                                                :RestaurantService
-                                                                :ShoppingMall
-                                                                :TourismResource
-                                                                :TouristDestination
-                                                              )
-                                                ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#touristOrRelatedFacilityNearTo
-:touristOrRelatedFacilityNearTo rdf:type owl:ObjectProperty ;
-                                rdfs:subPropertyOf :touristOrRelatedFacilityRelatedTo ;
-                                rdfs:domain :Facility ;
-                                rdfs:range [ rdf:type owl:Class ;
-                                             owl:unionOf ( :Accommodation
-                                                           :Event
-                                                           :Facility
-                                                           :LocalBusiness
-                                                           :RestaurantService
-                                                           :TourismResource
-                                                           :TouristInformationOffice
-                                                           :TransportFacility
-                                                           :VehicleRentalCompany
-                                                         )
-                                           ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#touristOrRelatedFacilityOffersServiceOrTicket
-:touristOrRelatedFacilityOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                               rdfs:subPropertyOf :touristOrRelatedFacilityRelatedTo ;
-                                               rdfs:domain :Facility ;
-                                               rdfs:range [ rdf:type owl:Class ;
-                                                            owl:unionOf ( :Event
-                                                                          :SingularExperience
-                                                                          :Tour
-                                                                        )
-                                                          ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#touristOrRelatedFacilityOperatesWith
-:touristOrRelatedFacilityOperatesWith rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf :touristOrRelatedFacilityRelatedTo ;
-                                      rdfs:domain :Facility ;
-                                      rdfs:range [ rdf:type owl:Class ;
-                                                   owl:unionOf ( :ParkingFacility
-                                                                 :TouristIntermediary
-                                                               )
-                                                 ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#touristOrRelatedFacilityRelatedTo
-:touristOrRelatedFacilityRelatedTo rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf :relatedTo ;
-                                   rdfs:domain :Facility .
+      rdfs:range :Tour ;
+      rdfs:label "tour"@en ,
+                 "tour"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#transmissionType
@@ -2909,134 +2330,24 @@ xsd:date rdf:type rdfs:Datatype .
                                                     ]
                                                   ) ;
                                rdf:type owl:Class
-                             ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#transportInfrastructureContainedIn
-:transportInfrastructureContainedIn rdf:type owl:ObjectProperty ;
-                                    rdfs:subPropertyOf :transportInfrastructureRelatedTo ;
-                                    rdfs:domain :TransportFacility ;
-                                    rdfs:range [ rdf:type owl:Class ;
-                                                 owl:unionOf ( :TouristDestination
-                                                               :TransportFacility
-                                                             )
-                                               ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#transportInfrastructureNearTo
-:transportInfrastructureNearTo rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf :transportInfrastructureRelatedTo ;
-                               rdfs:domain :TransportFacility ;
-                               rdfs:range [ rdf:type owl:Class ;
-                                            owl:unionOf ( :Accommodation
-                                                          :Event
-                                                          :Facility
-                                                          :LocalBusiness
-                                                          :PublicService
-                                                          :RestaurantService
-                                                          :TourismResource
-                                                          :TransportFacility
-                                                          :VehicleRentalCompany
-                                                        )
-                                          ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#transportInfrastructureOperatesWith
-:transportInfrastructureOperatesWith rdf:type owl:ObjectProperty ;
-                                     rdfs:subPropertyOf :transportInfrastructureRelatedTo ;
-                                     rdfs:domain :TransportFacility ;
-                                     rdfs:range [ rdf:type owl:Class ;
-                                                  owl:unionOf ( :LocalBusiness
-                                                                :PassengerTransportCompany
-                                                                :PublicService
-                                                                :TouristDestination
-                                                              )
-                                                ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#transportInfrastructureRelatedTo
-:transportInfrastructureRelatedTo rdf:type owl:ObjectProperty ;
-                                  rdfs:subPropertyOf :relatedTo ;
-                                  rdfs:domain :TransportFacility .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#transportRelatedTo
-:transportRelatedTo rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :relatedTo ;
-                    rdfs:domain :TransportService .
+                             ] ;
+                  rdfs:label "tipo de transmisión"@es ,
+                             "transmission type"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#transportRoute
 :transportRoute rdf:type owl:ObjectProperty ;
-                rdfs:range :TransportRoute .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#transportWorkingAreas
-:transportWorkingAreas rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :transportRelatedTo ;
-                       rdfs:domain :TransportService ;
-                       rdfs:range [ rdf:type owl:Class ;
-                                    owl:unionOf ( :TourismResource
-                                                  :TouristDestination
-                                                  :TransportFacility
-                                                )
-                                  ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#travelAgencyContainedIn
-:travelAgencyContainedIn rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf :travelAgencyRelatedTo ;
-                         rdfs:domain :TravelAgency ;
-                         rdfs:range [ rdf:type owl:Class ;
-                                      owl:unionOf ( :Airport
-                                                    :BusStation
-                                                    :Event
-                                                    :ShoppingMall
-                                                    :TouristDestination
-                                                    :TrainStation
-                                                  )
-                                    ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#travelAgencyOffersServiceOrTicket
-:travelAgencyOffersServiceOrTicket rdf:type owl:ObjectProperty ;
-                                   rdfs:subPropertyOf :travelAgencyRelatedTo ;
-                                   rdfs:domain :TravelAgency ;
-                                   rdfs:range [ rdf:type owl:Class ;
-                                                owl:unionOf ( :Event
-                                                              :Facility
-                                                              :SingularExperience
-                                                              :Tour
-                                                              :TourismResource
-                                                              :Vehicle
-                                                            )
-                                              ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#travelAgencyOperatesWith
-:travelAgencyOperatesWith rdf:type owl:ObjectProperty ;
-                          rdfs:subPropertyOf :travelAgencyRelatedTo ;
-                          rdfs:domain :TravelAgency ;
-                          rdfs:range [ rdf:type owl:Class ;
-                                       owl:unionOf ( :Accommodation
-                                                     :EventOrganization
-                                                     :LocalBusiness
-                                                     :PassengerTransportCompany
-                                                     :RestaurantService
-                                                   )
-                                     ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#travelAgencyRelatedTo
-:travelAgencyRelatedTo rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf :relatedTo ;
-                       rdfs:domain :TravelAgency .
+                rdfs:range :TransportRoute ;
+                rdfs:label "ruta de transporte"@es ,
+                           "transport route"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#travelUnit
 :travelUnit rdf:type owl:ObjectProperty ;
             rdfs:domain :Tourist ;
-            rdfs:range :TravelUnit .
+            rdfs:range :TravelUnit ;
+            rdfs:label "travel unit"@en ,
+                       "unidad de viaje"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#travellerClass
@@ -3054,43 +2365,17 @@ xsd:date rdf:type rdfs:Datatype .
                                                   ]
                                                 ) ;
                              rdf:type owl:Class
-                           ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#typeOfEvent
-:typeOfEvent rdf:type owl:ObjectProperty ;
-             rdfs:domain :Event ;
-             rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                 owl:hasValue <https://ontologia.segittur.es/turismo/kos/EventType>
-                                               ]
-                                             ) ;
-                          rdf:type owl:Class
-                        ] .
+                           ] ;
+                rdfs:label "clase de viajero"@es ,
+                           "traveller class"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#vehicle
 :vehicle rdf:type owl:ObjectProperty ;
          rdfs:domain :VehicleRentalService ;
-         rdfs:range :Vehicle .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#vehicleCompanyContainedIn
-:vehicleCompanyContainedIn rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf :vehicleCompanyRelatedTo ;
-                           rdfs:domain :VehicleRentalCompany ;
-                           rdfs:range [ rdf:type owl:Class ;
-                                        owl:unionOf ( :Beach
-                                                      :ShoppingMall
-                                                    )
-                                      ] .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#vehicleCompanyRelatedTo
-:vehicleCompanyRelatedTo rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf :relatedTo ;
-                         rdfs:domain :VehicleRentalCompany .
+         rdfs:range :Vehicle ;
+         rdfs:label "vehicle"@en ,
+                    "vehículo"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#vehicleExperienceType
@@ -3103,7 +2388,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                          ]
                                                        ) ;
                                     rdf:type owl:Class
-                                  ] .
+                                  ] ;
+                       rdfs:label "tipo de experiencia de vehículo"@es ,
+                                  "vehicle experience type"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#vehicleType
@@ -3121,7 +2408,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                ]
                                              ) ;
                           rdf:type owl:Class
-                        ] .
+                        ] ;
+             rdfs:label "tipo de vehículo"@es ,
+                        "vehicle type"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#waterActivityType
@@ -3141,7 +2430,16 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://ontologia.segittur.es/turismo/def/core#weatherForecast
 :weatherForecast rdf:type owl:ObjectProperty ;
                  rdfs:domain :TouristDestination ;
-                 rdfs:range :WeatherForecast .
+                 rdfs:range :WeatherForecast ;
+                 rdfs:label "predicción meteorológica"@es ,
+                            "weather forecast"@en .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#workingArea
+:workingArea rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :relatedTo ;
+             rdfs:label "working area"@en ,
+                        "área de trabajo"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#workshopType
@@ -3153,7 +2451,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                 ]
                                               ) ;
                            rdf:type owl:Class
-                         ] .
+                         ] ;
+              rdfs:label "tipo de taller"@es ,
+                         "workshop type"@en .
 
 
 #################################################################
@@ -3405,7 +2705,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 ###  https://ontologia.segittur.es/turismo/def/core#closesAt
 :closesAt rdf:type owl:DatatypeProperty ;
           rdfs:domain :OpeningHours ;
-          rdfs:range xsd:dateTime .
+          rdfs:range xsd:string .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#code
@@ -3645,6 +2945,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#facebook
 :facebook rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :socialMediaAccount ;
           rdfs:domain :SocialMediaProfile ;
           rdfs:range xsd:string .
 
@@ -3757,6 +3058,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#instagram
 :instagram rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :socialMediaAccount ;
            rdfs:domain :SocialMediaProfile ;
            rdfs:range xsd:string .
 
@@ -3809,12 +3111,6 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                rdfs:range xsd:dateTime .
 
 
-###  https://ontologia.segittur.es/turismo/def/core#latitude
-:latitude rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Location ;
-          rdfs:range xsd:float .
-
-
 ###  https://ontologia.segittur.es/turismo/def/core#locality
 :locality rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
@@ -3843,12 +3139,6 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 :longDescription rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Description ;
                  rdfs:range xsd:string .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#longitude
-:longitude rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Location ;
-           rdfs:range xsd:float .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#lugaggeCapacity
@@ -4013,12 +3303,6 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#offeredBy
 :offeredBy rdf:type owl:DatatypeProperty ;
-           rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( :Organisation
-                                       :TourismResource
-                                       :TourismService
-                                     )
-                       ] ;
            rdfs:range xsd:string .
 
 
@@ -4036,7 +3320,8 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#onsite
-:onsite rdf:type owl:DatatypeProperty ;
+:onsite rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
         rdfs:domain :AccommodationRegistration ;
         rdfs:range xsd:boolean .
 
@@ -4050,7 +3335,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 ###  https://ontologia.segittur.es/turismo/def/core#opensAt
 :opensAt rdf:type owl:DatatypeProperty ;
          rdfs:domain :OpeningHours ;
-         rdfs:range xsd:dateTime .
+         rdfs:range xsd:string .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#origin
@@ -4245,12 +3530,6 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
              rdfs:range xsd:dateTime .
 
 
-###  https://ontologia.segittur.es/turismo/def/core#shape
-:shape rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Location ;
-       rdfs:range <http://www.openlinksw.com/schemas/virtrdf#Geometry> .
-
-
 ###  https://ontologia.segittur.es/turismo/def/core#shortDescription
 :shortDescription rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
@@ -4289,6 +3568,10 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 :snowHeight rdf:type owl:DatatypeProperty ;
             rdfs:domain :WeatherForecast ;
             rdfs:range xsd:string .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#socialMediaAccount
+:socialMediaAccount rdf:type owl:DatatypeProperty .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#socialResponsibility
@@ -4421,6 +3704,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#tiktok
 :tiktok rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :socialMediaAccount ;
         rdfs:domain :SocialMediaProfile ;
         rdfs:range xsd:string .
 
@@ -4467,6 +3751,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#tripAdvisor
 :tripAdvisor rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :socialMediaAccount ;
              rdfs:domain :SocialMediaProfile ;
              rdfs:range xsd:string .
 
@@ -4479,6 +3764,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#twitter
 :twitter rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :socialMediaAccount ;
          rdfs:domain :SocialMediaProfile ;
          rdfs:range xsd:string .
 
@@ -4515,15 +3801,13 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
            rdfs:range xsd:date .
 
 
-###  https://ontologia.segittur.es/turismo/def/core#validThrough
-:validThrough rdf:type owl:DatatypeProperty ;
-              rdfs:domain :OpeningHours ;
-              rdfs:range xsd:date .
-
-
 ###  https://ontologia.segittur.es/turismo/def/core#validTo
 :validTo rdf:type owl:DatatypeProperty ;
-         rdfs:domain :RulesAndTipsForTourists ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :OpeningHours
+                                     :RulesAndTipsForTourists
+                                   )
+                     ] ;
          rdfs:range xsd:dateTime .
 
 
@@ -4599,6 +3883,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#youtube
 :youtube rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :socialMediaAccount ;
          rdfs:domain :SocialMediaProfile ;
          rdfs:range xsd:string .
 
@@ -4612,6 +3897,10 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class .
+
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
@@ -4871,7 +4160,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#BeachClub
 :BeachClub rdf:type owl:Class ;
-           rdfs:subClassOf :PartyAndEntertaymentFacility .
+           rdfs:subClassOf :PartyAndEntertainmentFacility .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#BeautyCentre
@@ -4900,7 +4189,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#Bingo
 :Bingo rdf:type owl:Class ;
-       rdfs:subClassOf :PartyAndEntertaymentFacility .
+       rdfs:subClassOf :PartyAndEntertainmentFacility .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#BookShop
@@ -5102,7 +4391,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#Casino
 :Casino rdf:type owl:Class ;
-        rdfs:subClassOf :PartyAndEntertaymentFacility .
+        rdfs:subClassOf :PartyAndEntertainmentFacility .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#Castle
@@ -5163,7 +4452,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#ChillOut
 :ChillOut rdf:type owl:Class ;
-          rdfs:subClassOf :PartyAndEntertaymentFacility .
+          rdfs:subClassOf :PartyAndEntertainmentFacility .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#ChocolateShop
@@ -5412,16 +4701,17 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
                        ] ,
                        [ rdf:type owl:Restriction ;
-                         owl:onProperty :maximumAttendeeCapacity ;
-                         owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                       ] ,
-                       [ rdf:type owl:Restriction ;
                          owl:onProperty :offeredBy ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
                        ] ,
                        [ rdf:type owl:Restriction ;
-                         owl:onProperty :outdoorEvent ;
+                         owl:onProperty :maximumAttendeeCapacity ;
                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :outdoorEvent ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:boolean
                        ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :performer ;
@@ -5436,35 +4726,35 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                          rdfs:subClassOf :Facility .
 
 
-###  https://ontologia.segittur.es/turismo/def/core#EventOrganization
-:EventOrganization rdf:type owl:Class ;
-                   rdfs:subClassOf owl:Thing ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :hasLocation ;
-                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :hasMultimedia ;
-                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :hasOpeningHours ;
-                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :hasSocialMediaProfile ;
-                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :hasTemporaryClosure ;
-                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :offeredBy ;
-                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                                   ] ;
-                   rdfs:label "Organización de eventos"@es ,
-                              "event organization" .
+###  https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany
+:EventOrganisationCompany rdf:type owl:Class ;
+                          rdfs:subClassOf :Organisation ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasLocation ;
+                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasMultimedia ;
+                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasOpeningHours ;
+                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasSocialMediaProfile ;
+                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasTemporaryClosure ;
+                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :offeredBy ;
+                                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                          ] ;
+                          rdfs:label "Empresa de organización de eventos"@es ,
+                                     "Event Organisation Company" .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#EventSession
@@ -5476,7 +4766,8 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :sessionDate ;
-                                owl:cardinality "1"^^xsd:nonNegativeInteger
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:date
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :startsAt ;
@@ -5770,7 +5061,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#Karaoke
 :Karaoke rdf:type owl:Class ;
-         rdfs:subClassOf :PartyAndEntertaymentFacility .
+         rdfs:subClassOf :PartyAndEntertainmentFacility .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#Kiosk
@@ -5845,21 +5136,9 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#Location
 :Location rdf:type owl:Class ;
-          rdfs:subClassOf owl:Thing ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :shape ;
-                            owl:cardinality "1"^^xsd:nonNegativeInteger
-                          ] ,
+          rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :county ;
-                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :latitude ;
-                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty :longitude ;
                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
                           ] ;
           rdfs:label "localización"@es ,
@@ -6037,7 +5316,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#NightClub
 :NightClub rdf:type owl:Class ;
-           rdfs:subClassOf :PartyAndEntertaymentFacility .
+           rdfs:subClassOf :PartyAndEntertainmentFacility .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#OTA
@@ -6047,8 +5326,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 
 ###  https://ontologia.segittur.es/turismo/def/core#OpeningHours
 :OpeningHours rdf:type owl:Class ;
-              rdfs:subClassOf owl:Thing ,
-                              [ rdf:type owl:Restriction ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                 owl:onProperty :announcement ;
                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
                               ] .
@@ -6142,9 +5420,9 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                                  ] .
 
 
-###  https://ontologia.segittur.es/turismo/def/core#PartyAndEntertaymentFacility
-:PartyAndEntertaymentFacility rdf:type owl:Class ;
-                              rdfs:subClassOf :Facility .
+###  https://ontologia.segittur.es/turismo/def/core#PartyAndEntertainmentFacility
+:PartyAndEntertainmentFacility rdf:type owl:Class ;
+                               rdfs:subClassOf :Facility .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#PassengerTerminal
@@ -6351,10 +5629,6 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                 rdfs:subClassOf :PassengerTransportCompany .
 
 
-###  https://ontologia.segittur.es/turismo/def/core#Rate
-:Rate rdf:type owl:Class .
-
-
 ###  https://ontologia.segittur.es/turismo/def/core#Rating
 :Rating rdf:type owl:Class ;
         rdfs:subClassOf :Acknowledgement ,
@@ -6432,15 +5706,15 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                    ] ,
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty :hasMenu ;
-                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                                   ] ,
-                                   [ rdf:type owl:Restriction ;
                                      owl:onProperty :hasPriceInformation ;
                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                    ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :offeredBy ;
+                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :offersMenu ;
                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                    ] ;
                    rdfs:label "Restaurant service"@en ,
@@ -6739,6 +6013,10 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                                    owl:allValuesFrom :Location
                                  ] ,
                                  [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasOpeningHours ;
+                                   owl:allValuesFrom :OpeningHours
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
                                    owl:onProperty :hasTemporaryClosure ;
                                    owl:allValuesFrom :TemporaryClosure
                                  ] ,
@@ -6756,11 +6034,6 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                                    owl:onProperty :hasMultimedia ;
                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                    owl:onClass :Multimedia
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty :hasOpeningHours ;
-                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                   owl:onClass :OpeningHours
                                  ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty :hasSocialMediaProfile ;
@@ -6789,7 +6062,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                                  ] ;
                  rdfs:comment "Clase generada para agrupar de manera general los recursos relevantes para el sector turístico, donde se aplicarán las propiedades comunes a todos estos recursos."@es ,
                               "Class created to group in a general manner all resources that are relevant for the tourism sector, so as to group all common properties to all these resources."@en ;
-                 rdfs:label "Recurso relacionado con el turismo"@es ,
+                 rdfs:label "Recurso turístico"@es ,
                             "Tourism Resource"@en .
 
 
@@ -6834,7 +6107,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                                 ] ;
                 rdfs:comment "Clase generada para agrupar de manera general los servicios relevantes para el sector turístico, donde se aplicarán las propiedades comunes a todos estos servicios."@es ,
                              "Class created to group in a general manner all services that are relevant for the tourism sector, so as to group all common properties to all these services."@en ;
-                rdfs:label "Servicio relacionado con el turismo"@es ,
+                rdfs:label "Servicio turístico"@es ,
                            "Tourism Service"@en .
 
 
@@ -7277,11 +6550,6 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
               :PaymentMethod .
 
 
-###  https://ontologia.segittur.es/turismo/def/core#alIncluded
-:alIncluded rdf:type owl:NamedIndividual ,
-                     :Rate .
-
-
 ###  https://ontologia.segittur.es/turismo/def/core#bankCard
 :bankCard rdf:type owl:NamedIndividual ,
                    :PaymentMethod .
@@ -7290,11 +6558,6 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 ###  https://ontologia.segittur.es/turismo/def/core#bankTransfer
 :bankTransfer rdf:type owl:NamedIndividual ,
                        :PaymentMethod .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#basic
-:basic rdf:type owl:NamedIndividual ,
-                :Rate .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#bizum
@@ -7355,11 +6618,6 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 ###  https://ontologia.segittur.es/turismo/def/core#tuesday
 :tuesday rdf:type owl:NamedIndividual ,
                   :DayOfTheWeek .
-
-
-###  https://ontologia.segittur.es/turismo/def/core#unlimitedDrinks
-:unlimitedDrinks rdf:type owl:NamedIndividual ,
-                          :Rate .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#wednesday
@@ -7712,6 +6970,11 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                                                                                <http://www.w3.org/2008/05/skos#ConceptScheme> .
 
 
+###  https://ontologia.segittur.es/turismo/kos/RateType
+<https://ontologia.segittur.es/turismo/kos/RateType> rdf:type owl:NamedIndividual ,
+                                                              <http://www.w3.org/2008/05/skos#ConceptScheme> .
+
+
 ###  https://ontologia.segittur.es/turismo/kos/ReservationType
 <https://ontologia.segittur.es/turismo/kos/ReservationType> rdf:type owl:NamedIndividual ,
                                                                      <http://www.w3.org/2008/05/skos#ConceptScheme> .
@@ -7867,6 +7130,11 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                                                                                      <http://www.w3.org/2008/05/skos#ConceptScheme> .
 
 
+###  https://ontologia.segittur.es/turismo/kos/VehicleRentalServiceType
+<https://ontologia.segittur.es/turismo/kos/VehicleRentalServiceType> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.w3.org/2008/05/skos#ConceptScheme> .
+
+
 ###  https://ontologia.segittur.es/turismo/kos/VehicleServiceType
 <https://ontologia.segittur.es/turismo/kos/VehicleServiceType> rdf:type owl:NamedIndividual ,
                                                                         <http://www.w3.org/2008/05/skos#ConceptScheme> .
@@ -7900,6 +7168,18 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 ###  https://ontologia.segittur.es/turismo/kos/ZooServiceType
 <https://ontologia.segittur.es/turismo/kos/ZooServiceType> rdf:type owl:NamedIndividual ,
                                                                     <http://www.w3.org/2008/05/skos#ConceptScheme> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:areaServed rdfs:label "area served"@en ,
+                       "área cubierta"@es .
+
+
+:offeredBy rdfs:label "offered by"@en ,
+                      "ofrecido por"@es .
 
 
 #################################################################

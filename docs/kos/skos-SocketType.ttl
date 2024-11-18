@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-sockettype: <https://ontologia.segittur.es/turismo/kos/sockettype/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:SocketType a skos:ConceptScheme ; 
+    dct:issued "2024-10-29"^^xsd:date ;
+    dct:modified "2024-10-29"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Socket type"@en ;
+    rdfs:label "Tipo de enchufe"@es ;
+    dct:title "Concept scheme grouping socket types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de enchufe"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-socketype:CaravanMainSocket a skos:Concept;
+  skos:inScheme estur-kos:SocketType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Caravan main socket"@en ;
+  skos:prefLabel "Enchufe principal de caravana"@es .
+
+estur-socketype:CCSSAE a skos:Concept;
+  skos:inScheme estur-kos:SocketType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "cCsSAE"@en ;
+  skos:prefLabel "cCsSAE"@es .
+
+estur-socketype:CHADEMO a skos:Concept;
+  skos:inScheme estur-kos:SocketType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "cHAdeMO"@en ;
+  skos:prefLabel "cHAdeMO"@es .
+
+estur-socketype:DualJ1772 a skos:Concept;
+  skos:inScheme estur-kos:SocketType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "dualJ1772"@en ;
+  skos:prefLabel "dualJ1772"@es .
+
+estur-socketype:DualMennekes a skos:Concept;
+  skos:inScheme estur-kos:SocketType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "dualmenekkes"@en ;
+  skos:prefLabel "dualmenekkes"@es .
+
+estur-socketype:J1772 a skos:Concept;
+  skos:inScheme estur-kos:SocketType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "j1772"@en ;
+  skos:prefLabel "j1772"@es .
+
+estur-socketype:Tesla a skos:Concept;
+  skos:inScheme estur-kos:SocketType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Tesla"@en ;
+  skos:prefLabel "Tesla"@es .
+
+estur-socketype:Type3 a skos:Concept;
+  skos:inScheme estur-kos:SocketType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Type3"@en ;
+  skos:prefLabel "Type3"@es .
+
+estur-socketype:WallEuro a skos:Concept;
+  skos:inScheme estur-kos:SocketType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "WallEuro"@en ;
+  skos:prefLabel "WallEuro"@es .

@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-travellerclass: <https://ontologia.segittur.es/turismo/kos/travellerclass/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:TravellerClass a skos:ConceptScheme ; 
+    dct:issued "2024-10-29"^^xsd:date ;
+    dct:modified "2024-10-29"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Traveller Class"@en ;
+    rdfs:label "Clase de viajero"@es ;
+    dct:title "Concept scheme grouping traveller classes"@en ;
+    dct:title "Esquema de conceptos agrupando clases de viajero"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-travellerclass:Business a skos:Concept;
+  skos:inScheme estur-kos:TravellerClass;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Business"@en ;
+  skos:prefLabel "Business"@es .
+
+estur-travellerclass:Economy a skos:Concept;
+  skos:inScheme estur-kos:TravellerClass;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Economy"@en ;
+  skos:prefLabel "Economy"@es .
+
+estur-travellerclass:FirstClass a skos:Concept;
+  skos:inScheme estur-kos:TravellerClass;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "First class"@en ;
+  skos:prefLabel "First class"@es .
+
+estur-travellerclass:PremiumEconomy a skos:Concept;
+  skos:inScheme estur-kos:TravellerClass;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Premium Economy"@en ;
+  skos:prefLabel "Premium Economy"@es .
+
+
+

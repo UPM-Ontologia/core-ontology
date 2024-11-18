@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-gardenstyle: <https://ontologia.segittur.es/turismo/kos/gardenstyle/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:GardenStyle a skos:ConceptScheme ; 
+    dct:issued "2024-10-29"^^xsd:date ;
+    dct:modified "2024-10-29"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Garden style"@en ;
+    rdfs:label "Estilo de jardín"@es ;
+    dct:title "Concept scheme grouping garden styles"@en ;
+    dct:title "Esquema de conceptos agrupando estilos de jardín"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-gardenstyle:Japanese a skos:Concept;
+  skos:inScheme estur-kos:GardenStyle;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Japanese"@en ;
+  skos:prefLabel "Japonés"@es .
+
+estur-gardenstyle:Chinese a skos:Concept;
+  skos:inScheme estur-kos:GardenStyle;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Chinese"@en ;
+  skos:prefLabel "Chino"@es .
+
+estur-gardenstyle:English a skos:Concept;
+  skos:inScheme estur-kos:GardenStyle;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "English"@en ;
+  skos:prefLabel "Inglés"@es .
+
+estur-gardenstyle:French a skos:Concept;
+  skos:inScheme estur-kos:GardenStyle;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "French"@en ;
+  skos:prefLabel "Francés"@es .
+
+estur-gardenstyle:Kitchen a skos:Concept;
+  skos:inScheme estur-kos:GardenStyle;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Kitchen"@en ;
+  skos:prefLabel "Cocina"@es .
+
+estur-gardenstyle:Rosarium a skos:Concept;
+  skos:inScheme estur-kos:GardenStyle;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Rosarium"@en ;
+  skos:prefLabel "Rosaleda"@es .
+
+estur-gardenstyle:Zen a skos:Concept;
+  skos:inScheme estur-kos:GardenStyle;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Zen"@en ;
+  skos:prefLabel "Zen"@es .

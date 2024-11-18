@@ -1248,8 +1248,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional accommodation service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de alojamiento</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1270,8 +1270,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional airline service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de aerolínea</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1292,8 +1292,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional ariplane service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de avión</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1314,8 +1314,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional airport service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de aeropuerto</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1336,8 +1336,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional amusement park service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de parque de entretenimiento</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1358,8 +1358,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional aquarium service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de acuario</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1380,8 +1380,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional art gallery service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de galería de arte</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1402,8 +1402,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional beach service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de playa</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1424,8 +1424,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional bus operator service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de operador de autobús</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1446,8 +1446,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional bus service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de autobús</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1468,8 +1468,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional bus station service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de estación de autobuses</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1490,8 +1490,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional carpool service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de compartición de coches</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1512,8 +1512,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional cruise ship cabin service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de cabina de crucero</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1534,8 +1534,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional cruiseship service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de crucero</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1556,8 +1556,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional DMC service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de DMC</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1578,8 +1578,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional educational service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de educación</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1600,8 +1600,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional event attendance service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de asistencia a eventos</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1622,8 +1622,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional event organisation service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de organización de eventos</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1644,8 +1644,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional event service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de eventos</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1666,8 +1666,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional exhibition hall service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de sala de exhibiciones</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1688,8 +1688,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional ferry operator service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de operador de ferries</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1710,8 +1710,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional ferry service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de ferries</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1732,8 +1732,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional gym service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de gimnasio</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1754,8 +1754,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional handcraft service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de artesanía</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1776,8 +1776,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional health and beauty service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de salud y belleza</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1798,8 +1798,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional health resort service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de resort de salud</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1820,8 +1820,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional historical and cultural resource service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de recursos históricos y culturales</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1842,8 +1842,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional lake service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de lago</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1864,8 +1864,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional lesire and culture service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de ocio y cultura</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1886,8 +1886,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional micromobility service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de micromovilidad</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1908,8 +1908,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional movie theatre service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de sala de cine</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1930,8 +1930,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional museum service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de museo</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1952,8 +1952,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional parcel and courier service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de mensajería</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1974,8 +1974,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional parking facility service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de parking</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1996,8 +1996,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional party and entertainment service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de fiestas y entretenimiento</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2018,8 +2018,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional passenger transport service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de transporte de pasajeros</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2040,8 +2040,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional planetarium service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de planetario</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2062,8 +2062,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional railway company service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de compañía ferroviaria</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2084,8 +2084,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional restaurant service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de restauración</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2106,8 +2106,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional retail and fashion service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de compras y moda</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2128,8 +2128,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional river service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de río</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2150,8 +2150,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional room service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de habitaciones</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2183,8 +2183,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional sport service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de deportes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2205,8 +2205,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional stadium service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de estadio</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2227,8 +2227,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional theatre service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de teatro</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2249,8 +2249,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional tourist guide service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de guía turístico</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2271,8 +2271,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional tour service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de tour</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2293,8 +2293,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional tourism resource of interest service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de recurso de interés turístico</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2315,8 +2315,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional tourist destination service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de destino turístico</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2337,8 +2337,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional tourist intermediary service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de intermediario turístico</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2359,8 +2359,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional tourist or related facility service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de instalación turística</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2381,8 +2381,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional train service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de tren</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2403,8 +2403,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional train station service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de estación de tren</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2425,8 +2425,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional transport infrastructure service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de infraestructura de transporte</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2447,8 +2447,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional transport service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de transporte</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2469,8 +2469,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional travel agency service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de agencia de viajes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2491,8 +2491,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional vehicle experience service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de experiencia con vehículos</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2513,8 +2513,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional vehicle rental company service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de empresa de alquiler de coches</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2535,8 +2535,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional vehicle rental service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de alquiler de vehículos</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2557,8 +2557,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional vehicle service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de vehículos</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2579,8 +2579,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional vineyard service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de viñedo</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2601,8 +2601,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional winery service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de bodega vinícola</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2623,8 +2623,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional soo service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de zoológico</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2645,8 +2645,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional swimming pool service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de piscina</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2667,8 +2667,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional  service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional culture centre service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional de centro cultural</rdfs:label>
     </owl:ObjectProperty>
     
 

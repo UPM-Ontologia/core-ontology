@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
+  <diagram name="Página-1" id="9NE1CFCY72S730cSAlYq">
+    <mxGraphModel dx="794" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EJPMnw-cm1ycKZixcM0E-1" target="EJPMnw-cm1ycKZixcM0E-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-8" value="geosparql:hasGeometry" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EJPMnw-cm1ycKZixcM0E-7">
+          <mxGeometry x="-0.28" y="2" relative="1" as="geometry">
+            <mxPoint x="19" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-1" value="geosparqlFeature" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" vertex="1" parent="1">
+          <mxGeometry x="270" y="70" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-2" value="streetAddress&lt;div&gt;locality&lt;/div&gt;&lt;div&gt;city&lt;/div&gt;&lt;div&gt;province&lt;/div&gt;&lt;div&gt;county&lt;/div&gt;&lt;div&gt;region&lt;/div&gt;&lt;div&gt;autonomousCommunity&lt;/div&gt;&lt;div&gt;country&lt;/div&gt;&lt;div&gt;postalCode&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="270" y="239" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-3" value="Location" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" vertex="1" parent="1">
+          <mxGeometry x="270" y="209" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-4" value="" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="EJPMnw-cm1ycKZixcM0E-3" target="EJPMnw-cm1ycKZixcM0E-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="220" as="sourcePoint" />
+            <mxPoint x="490" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-5" value="geo:lat&lt;div&gt;geo:long&lt;/div&gt;&lt;div style=&quot;&quot;&gt;geosparql:asWkT&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];dashed=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="590" y="100" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-6" value="geosparql: Geometry" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" vertex="1" parent="1">
+          <mxGeometry x="590" y="70" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" edge="1" parent="1" source="EJPMnw-cm1ycKZixcM0E-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="218" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="204" />
+              <mxPoint x="190" y="218" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-18" value="onSite" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EJPMnw-cm1ycKZixcM0E-14">
+          <mxGeometry x="-0.7018" y="3" relative="1" as="geometry">
+            <mxPoint x="-5" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-9" value="BookingChannel" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" vertex="1" parent="1">
+          <mxGeometry x="37" y="189" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="EJPMnw-cm1ycKZixcM0E-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="229" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="244" />
+              <mxPoint x="190" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-19" value="hasLocation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EJPMnw-cm1ycKZixcM0E-15">
+          <mxGeometry x="-0.7544" y="1" relative="1" as="geometry">
+            <mxPoint x="12" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-10" value="" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" vertex="1" parent="1">
+          <mxGeometry x="37" y="229" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.9;entryDx=0;entryDy=0;" edge="1" parent="1" source="EJPMnw-cm1ycKZixcM0E-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="236" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="284" />
+              <mxPoint x="220" y="236" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-20" value="originLocation" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EJPMnw-cm1ycKZixcM0E-16">
+          <mxGeometry x="-0.6796" y="-2" relative="1" as="geometry">
+            <mxPoint x="7" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-11" value="Person" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" vertex="1" parent="1">
+          <mxGeometry x="37" y="269" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.1;entryDx=0;entryDy=0;" edge="1" parent="1" source="EJPMnw-cm1ycKZixcM0E-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="212" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="164" />
+              <mxPoint x="220" y="212" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-17" value="meetingPoint" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EJPMnw-cm1ycKZixcM0E-13">
+          <mxGeometry x="-0.1351" relative="1" as="geometry">
+            <mxPoint x="-44" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-12" value="Tour" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" vertex="1" parent="1">
+          <mxGeometry x="37" y="149" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-21" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="250" y="40" width="520" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EJPMnw-cm1ycKZixcM0E-22" value="geosparql" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="37" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

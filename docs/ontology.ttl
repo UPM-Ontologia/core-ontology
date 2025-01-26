@@ -466,8 +466,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                     )
                                       ] ;
                           rdfs:range :AdditionalInformation ;
-                          rdfs:label "tiene información adicional"@es ,
-                                     "hasAdditionalInformation" .
+                          rdfs:label "hasAdditionalInformation"@en ,
+                                     "tiene información adicional"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#hasBookingChannel
@@ -4733,8 +4733,8 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                          owl:onProperty :numberOfCabins ;
                          owl:cardinality "1"^^xsd:nonNegativeInteger
                        ] ;
-       rdfs:label "cabina"@es ,
-                  "cabin" .
+       rdfs:label "cabin"@en ,
+                  "cabina"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#CafeOrCoffeShop
@@ -5074,7 +5074,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                                          owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                        ] ;
                        rdfs:label "destination experience"@en ,
-                                  "experiencia en destino" .
+                                  "experiencia en destino"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#DestinationManagementCompany
@@ -5539,8 +5539,8 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
                                   owl:onProperty :subcategory ;
                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                 ] ;
-                rdfs:label "paquete vacacional"@es ,
-                           "holiday package" .
+                rdfs:label "holiday package"@en ,
+                           "paquete vacacional"@es .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#Horchateria
@@ -6458,7 +6458,7 @@ owl:topDataProperty rdfs:domain :BicycleSharingSystem .
 :SingularExperience rdf:type owl:Class ;
                     rdfs:subClassOf :DestinationExperience ;
                     rdfs:label "expeiencia particular"@es ,
-                               "singular experience" .
+                               "singular experience"@en .
 
 
 ###  https://ontologia.segittur.es/turismo/def/core#SkatePark

@@ -6234,10 +6234,11 @@
   "@id" : "https://ontologia.segittur.es/turismo/def/core#Cabin",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cabin"
+  }, {
     "@language" : "es",
     "@value" : "cabina"
-  }, {
-    "@value" : "cabin"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
@@ -6734,6 +6735,7 @@
     "@language" : "en",
     "@value" : "destination experience"
   }, {
+    "@language" : "es",
     "@value" : "experiencia en destino"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -7390,10 +7392,11 @@
   "@id" : "https://ontologia.segittur.es/turismo/def/core#HolidayPackage",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "holiday package"
+  }, {
     "@language" : "es",
     "@value" : "paquete vacacional"
-  }, {
-    "@value" : "holiday package"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://ontologia.segittur.es/turismo/def/core#TourismService"
@@ -8752,6 +8755,7 @@
     "@language" : "es",
     "@value" : "expeiencia particular"
   }, {
+    "@language" : "en",
     "@value" : "singular experience"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
@@ -11611,10 +11615,11 @@
     "@id" : "_:genid84"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasAdditionalInformation"
+  }, {
     "@language" : "es",
     "@value" : "tiene información adicional"
-  }, {
-    "@value" : "hasAdditionalInformation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://ontologia.segittur.es/turismo/def/core#AdditionalInformation"

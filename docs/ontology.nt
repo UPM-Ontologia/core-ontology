@@ -530,8 +530,8 @@ _:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://ontologia.
 _:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ontologia.segittur.es/turismo/def/core#hasAdditionalInformation> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core#AdditionalInformation> .
+<https://ontologia.segittur.es/turismo/def/core#hasAdditionalInformation> <http://www.w3.org/2000/01/rdf-schema#label> "hasAdditionalInformation"@en .
 <https://ontologia.segittur.es/turismo/def/core#hasAdditionalInformation> <http://www.w3.org/2000/01/rdf-schema#label> "tiene información adicional"@es .
-<https://ontologia.segittur.es/turismo/def/core#hasAdditionalInformation> <http://www.w3.org/2000/01/rdf-schema#label> "hasAdditionalInformation" .
 # 
 # https://ontologia.segittur.es/turismo/def/core#hasBookingChannel
 <https://ontologia.segittur.es/turismo/def/core#hasBookingChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -5167,8 +5167,8 @@ _:genid759 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid760 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid760 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/core#numberOfCabins> .
 _:genid760 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/core#Cabin> <http://www.w3.org/2000/01/rdf-schema#label> "cabin"@en .
 <https://ontologia.segittur.es/turismo/def/core#Cabin> <http://www.w3.org/2000/01/rdf-schema#label> "cabina"@es .
-<https://ontologia.segittur.es/turismo/def/core#Cabin> <http://www.w3.org/2000/01/rdf-schema#label> "cabin" .
 # 
 # https://ontologia.segittur.es/turismo/def/core#CafeOrCoffeShop
 <https://ontologia.segittur.es/turismo/def/core#CafeOrCoffeShop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -5473,7 +5473,7 @@ _:genid784 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.or
 _:genid784 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/core#startsAt> .
 _:genid784 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://ontologia.segittur.es/turismo/def/core#DestinationExperience> <http://www.w3.org/2000/01/rdf-schema#label> "destination experience"@en .
-<https://ontologia.segittur.es/turismo/def/core#DestinationExperience> <http://www.w3.org/2000/01/rdf-schema#label> "experiencia en destino" .
+<https://ontologia.segittur.es/turismo/def/core#DestinationExperience> <http://www.w3.org/2000/01/rdf-schema#label> "experiencia en destino"@es .
 # 
 # https://ontologia.segittur.es/turismo/def/core#DestinationManagementCompany
 <https://ontologia.segittur.es/turismo/def/core#DestinationManagementCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -5892,8 +5892,8 @@ _:genid819 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid820 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid820 <http://www.w3.org/2002/07/owl#onProperty> <https://ontologia.segittur.es/turismo/def/core#subcategory> .
 _:genid820 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ontologia.segittur.es/turismo/def/core#HolidayPackage> <http://www.w3.org/2000/01/rdf-schema#label> "holiday package"@en .
 <https://ontologia.segittur.es/turismo/def/core#HolidayPackage> <http://www.w3.org/2000/01/rdf-schema#label> "paquete vacacional"@es .
-<https://ontologia.segittur.es/turismo/def/core#HolidayPackage> <http://www.w3.org/2000/01/rdf-schema#label> "holiday package" .
 # 
 # https://ontologia.segittur.es/turismo/def/core#Horchateria
 <https://ontologia.segittur.es/turismo/def/core#Horchateria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -6716,7 +6716,7 @@ _:genid883 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://ontologia.segittur.es/turismo/def/core#SingularExperience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://ontologia.segittur.es/turismo/def/core#SingularExperience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#DestinationExperience> .
 <https://ontologia.segittur.es/turismo/def/core#SingularExperience> <http://www.w3.org/2000/01/rdf-schema#label> "expeiencia particular"@es .
-<https://ontologia.segittur.es/turismo/def/core#SingularExperience> <http://www.w3.org/2000/01/rdf-schema#label> "singular experience" .
+<https://ontologia.segittur.es/turismo/def/core#SingularExperience> <http://www.w3.org/2000/01/rdf-schema#label> "singular experience"@en .
 # 
 # https://ontologia.segittur.es/turismo/def/core#SkatePark
 <https://ontologia.segittur.es/turismo/def/core#SkatePark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

@@ -679,7 +679,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#AdditionalInformation"/>
-        <rdfs:label>hasAdditionalInformation</rdfs:label>
+        <rdfs:label xml:lang="en">hasAdditionalInformation</rdfs:label>
         <rdfs:label xml:lang="es">tiene información adicional</rdfs:label>
     </owl:ObjectProperty>
     
@@ -6702,7 +6702,7 @@
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>cabin</rdfs:label>
+        <rdfs:label xml:lang="en">cabin</rdfs:label>
         <rdfs:label xml:lang="es">cabina</rdfs:label>
     </owl:Class>
     
@@ -7196,7 +7196,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">destination experience</rdfs:label>
-        <rdfs:label>experiencia en destino</rdfs:label>
+        <rdfs:label xml:lang="es">experiencia en destino</rdfs:label>
     </owl:Class>
     
 
@@ -7871,7 +7871,7 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>holiday package</rdfs:label>
+        <rdfs:label xml:lang="en">holiday package</rdfs:label>
         <rdfs:label xml:lang="es">paquete vacacional</rdfs:label>
     </owl:Class>
     
@@ -9201,7 +9201,7 @@
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SingularExperience">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#DestinationExperience"/>
         <rdfs:label xml:lang="es">expeiencia particular</rdfs:label>
-        <rdfs:label>singular experience</rdfs:label>
+        <rdfs:label xml:lang="en">singular experience</rdfs:label>
     </owl:Class>
     
 

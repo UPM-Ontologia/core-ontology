@@ -19,7 +19,7 @@
         <dct:description xml:lang="es">Esta ontología de dominio del sector turístico está construida a partir del Modelo Conceptual de Referencia Semántico de Turismo de SEGITTUR, un modelo para el desarrollo de una Red de Ontologías del Sector Turístico al servicio de la futura Plataforma Inteligente de Destino (PID) promovida por SEGITTUR. El Modelo Conceptual de Referencia de Turismo de SEGITTUR ofrece un corazón ontológico extensible para conceptos e información sobre el dominio de turismo, y aspira a convertirse en una referencia para el intercambio controlado de información sobre turismo.</dct:description>
         <dct:description xml:lang="en">This tourism domain ontology is built from SEGITTUR&apos;s Conceptual Tourism Semantic Reference Model, a model for the development of a Network of Tourism Sector Ontologies at the service of the future Intelligent Destination Platform (IDP) promoted by SEGITTUR. The SEGITTUR Conceptual Tourism Reference Model offers an extensible ontological core for concepts and information on the tourism domain, and aims to become a reference for the controlled exchange of tourism information.</dct:description>
         <dct:hasFormat rdf:resource="https://ontologia.segittur.es/turismo/def/core.owl"/>
-        <dct:issued xml:lang="es">2024-11-08</dct:issued>
+        <dct:issued xml:lang="es">2025-01-26</dct:issued>
         <dct:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
         <dct:license>CC BY-NC-ND</dct:license>
         <dct:title xml:lang="en">Core ontology for tourism by SEGITTUR</dct:title>
@@ -202,7 +202,7 @@
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Airline"/>
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Airplane"/>
         <rdfs:label xml:lang="en">Airplane</rdfs:label>
-        <rdfs:label xml:lang="es">Avión</rdfs:label>
+        <rdfs:label xml:lang="es">avión</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -812,7 +812,7 @@
         </rdfs:domain>
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#OpeningHours"/>
         <rdfs:label xml:lang="en">has opening hours</rdfs:label>
-        <rdfs:label xml:lang="es">tiene horas de apertura</rdfs:label>
+        <rdfs:label xml:lang="es">tiene horario de apertura</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1189,6 +1189,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">nature activity type</rdfs:label>
+        <rdfs:label xml:lang="es">tipo de actividad natural</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3409,6 +3411,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">tipo de actividad acuática</rdfs:label>
+        <rdfs:label xml:lang="en">water activity type</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3478,6 +3482,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#adultsNumber">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">adult number</rdfs:label>
+        <rdfs:label xml:lang="es">número de adultos</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3487,6 +3493,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#adultsOnly">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Label"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">adults only</rdfs:label>
+        <rdfs:label xml:lang="es">sólo adultos</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3496,6 +3504,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#age">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">age</rdfs:label>
+        <rdfs:label xml:lang="es">edad</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3512,6 +3522,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">all inclusive package</rdfs:label>
+        <rdfs:label xml:lang="es">paquete todo incluido</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3520,7 +3532,9 @@
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#alone">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TravelUnit"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">alone</rdfs:label>
+        <rdfs:label xml:lang="es">en solitario</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3530,6 +3544,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#amperage">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#EVChargingStation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">amperage</rdfs:label>
+        <rdfs:label xml:lang="es">amperaje</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3546,6 +3562,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">announcement</rdfs:label>
+        <rdfs:label xml:lang="es">anuncio</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3563,6 +3581,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">app</rdfs:label>
+        <rdfs:label xml:lang="es">app</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3580,6 +3600,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#arrivalTime">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Trip"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">arrival time</rdfs:label>
+        <rdfs:label xml:lang="es">hora de llegada</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3589,6 +3611,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#audience">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#HolidayPackage"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">audience</rdfs:label>
+        <rdfs:label xml:lang="es">audiencia</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3599,6 +3623,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">autonomous community</rdfs:label>
+        <rdfs:label xml:lang="es">comunidad autónoma</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3616,6 +3642,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label xml:lang="en">availability ends</rdfs:label>
+        <rdfs:label xml:lang="es">fin de disponibilidad</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3633,6 +3661,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label xml:lang="en">availability starts</rdfs:label>
+        <rdfs:label xml:lang="es">comienzo de disponibilidad</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3642,6 +3672,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#availableBikeNumber">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#BicycleSharingSystem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">available bike number</rdfs:label>
+        <rdfs:label xml:lang="es">número de bicicletas disponibles</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3659,6 +3691,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">available language</rdfs:label>
+        <rdfs:label xml:lang="es">idioma disponible</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3668,6 +3702,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#availableSpots">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#ParkingFacility"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">available spots</rdfs:label>
+        <rdfs:label xml:lang="es">plazas de aparcamiento disponibles</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3677,6 +3713,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#averageDailyExpenditure">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Tourist"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">average daily expenditure</rdfs:label>
+        <rdfs:label xml:lang="es">gasto diario medio</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3686,6 +3724,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#averagePrice">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">average price</rdfs:label>
+        <rdfs:label xml:lang="es">precio medio</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3695,6 +3735,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#babiesNumber">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">babies number</rdfs:label>
+        <rdfs:label xml:lang="es">número de bebes</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3703,6 +3745,8 @@
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#beginsAt">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">begins at</rdfs:label>
+        <rdfs:label xml:lang="es">comienza en</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3712,6 +3756,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#bookingValue">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Rating"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">booking value</rdfs:label>
+        <rdfs:label xml:lang="es">valor de booking</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3729,6 +3775,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">brand</rdfs:label>
+        <rdfs:label xml:lang="es">marca</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3738,6 +3786,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#bringsBagagge">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Tourist"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">brings baggage</rdfs:label>
+        <rdfs:label xml:lang="es">lleva equipaje</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3747,6 +3797,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#budgetFriendly">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Label"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">budget friendly</rdfs:label>
+        <rdfs:label xml:lang="es">económico</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3764,6 +3816,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="es">capacidad</rdfs:label>
+        <rdfs:label xml:lang="en">capacity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3780,6 +3834,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">car number plate</rdfs:label>
+        <rdfs:label xml:lang="es">matrícula</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3796,6 +3852,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="es">cargo volume</rdfs:label>
+        <rdfs:label xml:lang="es">volumen o capacidad de carga</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3805,6 +3863,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#checkInHours">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#AccommodationRegistration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">check-in hours</rdfs:label>
+        <rdfs:label xml:lang="es">hora de registro</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3814,6 +3874,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#checkOutHours">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#AccommodationRegistration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">check-out hours</rdfs:label>
+        <rdfs:label xml:lang="es">hora de salida</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3823,6 +3885,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#childrenNumber">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">children number</rdfs:label>
+        <rdfs:label xml:lang="es">número de niños</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3833,6 +3897,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">city</rdfs:label>
+        <rdfs:label xml:lang="es">ciudad</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3842,23 +3908,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#closesAt">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#OpeningHours"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#code -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#code">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#BicycleSharingSystem"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PublicTransportStop"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">closes at</rdfs:label>
+        <rdfs:label xml:lang="es">hora de cierre</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3875,6 +3926,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">condiciones</rdfs:label>
+        <rdfs:label xml:lang="en">conditions</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3884,6 +3937,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#conservationStrategy">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Certification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">conservation strategy</rdfs:label>
+        <rdfs:label xml:lang="es">estrategia de conservación</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3893,6 +3948,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#country">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">country</rdfs:label>
+        <rdfs:label xml:lang="es">país</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3902,6 +3959,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#countryOfRepresentation">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#EmbassyAndConsulate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">country of representation</rdfs:label>
+        <rdfs:label xml:lang="es">país representado</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3911,6 +3970,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#county">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">condado</rdfs:label>
+        <rdfs:label xml:lang="en">county</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3919,7 +3980,9 @@
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#couple">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TravelUnit"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">couple</rdfs:label>
+        <rdfs:label xml:lang="es">en pareja</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3929,6 +3992,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#coworkers">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">colegas de trabajo</rdfs:label>
+        <rdfs:label xml:lang="en">coworkers</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3938,6 +4003,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#curiosites">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#AdditionalInformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">curiosidades</rdfs:label>
+        <rdfs:label xml:lang="en">curiosites</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3955,6 +4022,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">currency</rdfs:label>
+        <rdfs:label xml:lang="es">moneda</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3972,6 +4041,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">date</rdfs:label>
+        <rdfs:label xml:lang="es">fecha</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3981,6 +4052,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#dayMaximumTemperature">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">day maximum temperature</rdfs:label>
+        <rdfs:label xml:lang="es">temperatura máxima del día</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3990,6 +4063,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#dayMinimumTemperature">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">day minimum temperature</rdfs:label>
+        <rdfs:label xml:lang="es">temperatura mínima del día</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3999,6 +4074,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#departureDate">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#LenghtOfStay"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">departure date</rdfs:label>
+        <rdfs:label xml:lang="es">fecha de salida</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4008,6 +4085,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#departureTime">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Trip"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">departure time</rdfs:label>
+        <rdfs:label xml:lang="es">hora de salida</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4025,6 +4104,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">descripción</rdfs:label>
+        <rdfs:label xml:lang="en">description</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4041,6 +4122,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">destination</rdfs:label>
+        <rdfs:label xml:lang="es">destino</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4051,6 +4134,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportRoute"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">destination station</rdfs:label>
+        <rdfs:label xml:lang="es">estación de destino</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4060,6 +4145,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#discount">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Promotion"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="es">descuento</rdfs:label>
+        <rdfs:label xml:lang="en">discount</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4069,6 +4156,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#dramatisedTour">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Tour"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">dramatised tour</rdfs:label>
+        <rdfs:label xml:lang="es">tour teatralizado</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4078,6 +4167,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#driverAge">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Carpool"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">driver age</rdfs:label>
+        <rdfs:label xml:lang="es">edad del conductor</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4087,6 +4178,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#driverName">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportService"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">driver name</rdfs:label>
+        <rdfs:label xml:lang="es">nombre del conductor</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4096,6 +4189,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#driverSince">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Carpool"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label xml:lang="es">conductor desde</rdfs:label>
+        <rdfs:label xml:lang="en">driver since</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4113,6 +4208,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">duración</rdfs:label>
+        <rdfs:label xml:lang="en">duration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4123,6 +4220,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportRoute"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">earliest departure</rdfs:label>
+        <rdfs:label xml:lang="es">salida más temprana</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4139,6 +4238,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">email</rdfs:label>
+        <rdfs:label xml:lang="es">email</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4157,6 +4258,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">end date</rdfs:label>
+        <rdfs:label xml:lang="es">fecha de finalización</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4173,6 +4276,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">ends at</rdfs:label>
+        <rdfs:label xml:lang="es">termina en</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4182,6 +4287,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#energyEfficiency">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Certification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">eficiencia energética</rdfs:label>
+        <rdfs:label xml:lang="en">energy efficiency</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4191,6 +4298,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#engine">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">engine</rdfs:label>
+        <rdfs:label xml:lang="es">motor</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4200,6 +4309,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#environment">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Certification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">environment</rdfs:label>
+        <rdfs:label xml:lang="es">medio ambiente</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4210,6 +4321,8 @@
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">facebook</rdfs:label>
+        <rdfs:label xml:lang="es">facebook</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4219,15 +4332,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#family">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#fellLikesTemperature -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#fellLikesTemperature">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">familia</rdfs:label>
+        <rdfs:label xml:lang="en">family</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4237,6 +4343,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#finalPrice">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Promotion"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">final price</rdfs:label>
+        <rdfs:label xml:lang="es">precio final</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4253,6 +4361,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">flat rate</rdfs:label>
+        <rdfs:label xml:lang="es">tarifa plana</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4269,6 +4379,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">free</rdfs:label>
+        <rdfs:label xml:lang="es">gratis</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4285,6 +4397,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label xml:lang="en">free cancellation validity</rdfs:label>
+        <rdfs:label xml:lang="es">periodo para cancelación gratis</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4294,6 +4408,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#freeSlotNumber">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#BicycleSharingSystem"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">free slot number</rdfs:label>
+        <rdfs:label xml:lang="es">número de huecos disponibles</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4303,6 +4419,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#frequentlyAskedQuestions">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#AdditionalInformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">frequently asked questions</rdfs:label>
+        <rdfs:label xml:lang="es">preguntas frecuentes</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4312,6 +4430,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#friends">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">amigos</rdfs:label>
+        <rdfs:label xml:lang="en">friends</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4321,6 +4441,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#fullTank">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="es">depósito lleno</rdfs:label>
+        <rdfs:label xml:lang="en">full tank</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4330,6 +4452,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#gayFriendly">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Label"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">amigable con los gays</rdfs:label>
+        <rdfs:label xml:lang="en">gay friendly</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4339,6 +4463,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#googleReviewValue">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Rating"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">google review value</rdfs:label>
+        <rdfs:label xml:lang="es">valor de revisiones de Google</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4348,6 +4474,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#hiresTourPackage">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Tourist"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">compra un paquete turístico</rdfs:label>
+        <rdfs:label xml:lang="en">hires tour package</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4357,6 +4485,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#image">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Multimedia"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">image</rdfs:label>
+        <rdfs:label xml:lang="es">imagen</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4373,6 +4503,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">includes</rdfs:label>
+        <rdfs:label xml:lang="es">incluye</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4383,6 +4515,8 @@
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">instagram</rdfs:label>
+        <rdfs:label xml:lang="es">instagram</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4399,6 +4533,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">es accesible de manera gratuita</rdfs:label>
+        <rdfs:label xml:lang="en">is accesible for free</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4417,6 +4553,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">itinerario</rdfs:label>
+        <rdfs:label xml:lang="en">itinerary</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4427,6 +4565,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#VacationRental"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">keys</rdfs:label>
+        <rdfs:label xml:lang="es">llaves</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4436,6 +4576,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#keyword">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Description"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">keyword</rdfs:label>
+        <rdfs:label xml:lang="es">palabra clave</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4445,6 +4587,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#kidsFriendly">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Label"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">amigable con los niños</rdfs:label>
+        <rdfs:label xml:lang="en">kids friendly</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4455,6 +4599,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportRoute"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">last departure</rdfs:label>
+        <rdfs:label xml:lang="es">última salida</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4465,6 +4611,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">localidad</rdfs:label>
+        <rdfs:label xml:lang="en">locality</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4482,6 +4630,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">location name</rdfs:label>
+        <rdfs:label xml:lang="es">nombre del lugar</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4491,6 +4641,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#logo">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Multimedia"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">logo</rdfs:label>
+        <rdfs:label xml:lang="es">logo</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4500,6 +4652,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#longDescription">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Description"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">descripción amplia</rdfs:label>
+        <rdfs:label xml:lang="en">long description</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4516,6 +4670,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="es">capacidad para equipaje</rdfs:label>
+        <rdfs:label xml:lang="en">luggage capacity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4532,6 +4688,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">entidad gestora</rdfs:label>
+        <rdfs:label xml:lang="en">management entity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4541,6 +4699,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#maxPrice">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">maximum price</rdfs:label>
+        <rdfs:label xml:lang="es">precio máximo</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4558,6 +4718,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="es">capacidad máxima de asistentes</rdfs:label>
+        <rdfs:label xml:lang="en">maximum attendee capacity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4575,6 +4737,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="es">capacidad máxima</rdfs:label>
+        <rdfs:label xml:lang="en">maximum capacity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4584,6 +4748,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#maximumDuration">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#VehicleExperience"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">duración máxima</rdfs:label>
+        <rdfs:label xml:lang="en">maximum duration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4593,6 +4759,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#maximumParkingDuration">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#ParkingFacility"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">maximum parking duration</rdfs:label>
+        <rdfs:label xml:lang="es">máxima duración del parking</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4609,6 +4777,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">maximum size</rdfs:label>
+        <rdfs:label xml:lang="es">tamaño máximo</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4618,6 +4788,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#maximumVehicleHeightAccepted">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Ferry"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="es">altura máxima de vehículo aceptada</rdfs:label>
+        <rdfs:label xml:lang="en">maximum vehicle height accepted</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4627,6 +4799,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#maximumVehicleLengthtAccepted">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Ferry"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="es">longitud máxima de vehículo aceptada</rdfs:label>
+        <rdfs:label xml:lang="en">maximum vehicle length accepted</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4643,6 +4817,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">maximum weight</rdfs:label>
+        <rdfs:label xml:lang="es">peso máximo</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4652,6 +4828,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#mileage">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="es">kilometraje</rdfs:label>
+        <rdfs:label xml:lang="en">mileage</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4661,6 +4839,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#minPrice">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">minimum price</rdfs:label>
+        <rdfs:label xml:lang="es">precio mínimo</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4678,6 +4858,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">model name</rdfs:label>
+        <rdfs:label xml:lang="es">modelo</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4687,6 +4869,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#nonRefundable">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#CancellationFee"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">no reembolsable</rdfs:label>
+        <rdfs:label xml:lang="en">non refundable</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4703,6 +4887,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">no incluido</rdfs:label>
+        <rdfs:label xml:lang="en">not included</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4712,6 +4898,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#numberOfCabins">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Cabin"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">number of cabins</rdfs:label>
+        <rdfs:label xml:lang="es">número de cabinas</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4721,6 +4909,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#numberOfDoors">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">number of doors</rdfs:label>
+        <rdfs:label xml:lang="es">número de puertas</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4730,6 +4920,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#numberOfNights">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#LenghtOfStay"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">number of nights</rdfs:label>
+        <rdfs:label xml:lang="es">número de noches</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4747,6 +4939,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="en">number of rooms</rdfs:label>
+        <rdfs:label xml:lang="es">número de habitaciones</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4764,6 +4958,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersWineMenu">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Menu"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">incluye carta de vinos</rdfs:label>
+        <rdfs:label xml:lang="en">offers wine menu</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4774,6 +4970,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#AccommodationRegistration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">online</rdfs:label>
+        <rdfs:label xml:lang="es">online</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4784,6 +4982,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#AccommodationRegistration"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">onsite</rdfs:label>
+        <rdfs:label xml:lang="es">onsite</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4793,6 +4993,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#open24Hours">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#OpeningHours"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">abierto las 24 horas</rdfs:label>
+        <rdfs:label xml:lang="en">open 24 hours</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4802,6 +5004,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#opensAt">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#OpeningHours"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">hora de apertura</rdfs:label>
+        <rdfs:label xml:lang="en">opens at</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4811,6 +5015,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#origin">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Trip"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">origen</rdfs:label>
+        <rdfs:label xml:lang="en">origin</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4820,6 +5026,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#outdoorEvent">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">evento al aire libre</rdfs:label>
+        <rdfs:label xml:lang="en">outdoor event</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4829,6 +5037,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#pH">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SeaConditions"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">ph</rdfs:label>
+        <rdfs:label xml:lang="es">ph</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4845,6 +5055,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="es">capacidad de pasajeros</rdfs:label>
+        <rdfs:label xml:lang="en">passenger capacity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4854,6 +5066,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#penalty">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#ModificationFee"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="es">penalización</rdfs:label>
+        <rdfs:label xml:lang="en">penalty</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4863,6 +5077,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#performer">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">artista</rdfs:label>
+        <rdfs:label xml:lang="en">performer</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4871,7 +5087,9 @@
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#pet">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TravelUnit"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">mascota</rdfs:label>
+        <rdfs:label xml:lang="en">pet</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4881,6 +5099,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#petFriendly">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Label"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">amigable con las mascotas</rdfs:label>
+        <rdfs:label xml:lang="en">pet friendly</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4889,6 +5109,8 @@
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#pickupLocation">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Vehicle"/>
+        <rdfs:label xml:lang="es">lugar de recogida</rdfs:label>
+        <rdfs:label xml:lang="en">pickup location</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4898,6 +5120,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#population">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TouristDestination"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="es">población</rdfs:label>
+        <rdfs:label xml:lang="en">population</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4908,6 +5132,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">código postal</rdfs:label>
+        <rdfs:label xml:lang="en">postal code</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4917,6 +5143,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#precipitation">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">precipitación</rdfs:label>
+        <rdfs:label xml:lang="en">precipitation</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4926,6 +5154,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#preferredTravelSeason">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Tourist"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">preferred travel season</rdfs:label>
+        <rdfs:label xml:lang="es">temporada de viaje preferida</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4935,6 +5165,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#prepayment">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#BookingInformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">prepago</rdfs:label>
+        <rdfs:label xml:lang="en">prepayment</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4951,6 +5183,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">moneda del precio</rdfs:label>
+        <rdfs:label xml:lang="en">price currency</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4961,6 +5195,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">province</rdfs:label>
+        <rdfs:label xml:lang="es">provincia</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4970,6 +5206,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#publicAccess">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">acceso público</rdfs:label>
+        <rdfs:label xml:lang="en">public access</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4979,6 +5217,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#quality">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Certification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">calidad</rdfs:label>
+        <rdfs:label xml:lang="en">quality</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4989,6 +5229,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Acknowledgement"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">recognized by</rdfs:label>
+        <rdfs:label xml:lang="es">reconocido por</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5004,6 +5246,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:label xml:lang="es">punto de interés de referencia</rdfs:label>
+        <rdfs:label xml:lang="en">reference point of interest</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5014,6 +5258,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">region</rdfs:label>
+        <rdfs:label xml:lang="es">región</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5023,6 +5269,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#registrationNumber">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourGuide"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">número de registro</rdfs:label>
+        <rdfs:label xml:lang="en">registration number</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5032,6 +5280,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#relativeHumidity">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">humedad relativa</rdfs:label>
+        <rdfs:label xml:lang="en">relative humidity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5048,6 +5298,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">comentarios</rdfs:label>
+        <rdfs:label xml:lang="en">remarks</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5057,6 +5309,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#returnDate">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#LenghtOfStay"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="es">fecha de regreso</rdfs:label>
+        <rdfs:label xml:lang="en">return date</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5066,6 +5320,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#returnLocation">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">lugar de devolución</rdfs:label>
+        <rdfs:label xml:lang="en">return location</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5075,6 +5331,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#salinity">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SeaConditions"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">salinidad</rdfs:label>
+        <rdfs:label xml:lang="en">salinity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5084,6 +5342,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#security">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Certification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">security</rdfs:label>
+        <rdfs:label xml:lang="es">seguridad</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5093,6 +5353,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#sessionDate">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#EventSession"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="es">fecha de la sesión</rdfs:label>
+        <rdfs:label xml:lang="en">session date</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5103,6 +5365,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Description"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">descripción corta</rdfs:label>
+        <rdfs:label xml:lang="en">short description</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5120,6 +5384,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">slogan</rdfs:label>
+        <rdfs:label xml:lang="es">slogan</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5129,6 +5395,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#smartTouristDestinationNetwork">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Label"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">red de destino turístico inteligente</rdfs:label>
+        <rdfs:label xml:lang="en">smart tourist destination network</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5145,6 +5413,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">permitido fumar</rdfs:label>
+        <rdfs:label xml:lang="en">smoking allowed</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5154,13 +5424,18 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#snowHeight">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">cota de nieve</rdfs:label>
+        <rdfs:label xml:lang="en">snow height</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://ontologia.segittur.es/turismo/def/core#socialMediaAccount -->
 
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount">
+        <rdfs:label xml:lang="es">cuenta de red social</rdfs:label>
+        <rdfs:label xml:lang="en">social network account</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -5169,6 +5444,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#socialResponsibility">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Certification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">responsabilidad social</rdfs:label>
+        <rdfs:label xml:lang="en">social reponsability</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5178,6 +5455,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#specialNeeds">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TravelUnit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">necesidades especiales</rdfs:label>
+        <rdfs:label xml:lang="en">special needs</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5187,6 +5466,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#spokenLanguage">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">idioma hablado</rdfs:label>
+        <rdfs:label xml:lang="en">spoken language</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5196,6 +5477,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#standardPrice">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Micromobility"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">precio estándar</rdfs:label>
+        <rdfs:label xml:lang="en">standard price</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5213,6 +5496,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="es">estrellas</rdfs:label>
+        <rdfs:label xml:lang="en">stars</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5231,6 +5516,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="es">fecha de comienzo</rdfs:label>
+        <rdfs:label xml:lang="en">start date</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5247,6 +5534,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="es">empieza en</rdfs:label>
+        <rdfs:label xml:lang="en">starts at</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5256,6 +5545,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#stops">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportRoute"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">paradas</rdfs:label>
+        <rdfs:label xml:lang="en">stops</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5266,6 +5557,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">calle</rdfs:label>
+        <rdfs:label xml:lang="en">street address</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5282,6 +5575,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">subcategory</rdfs:label>
+        <rdfs:label xml:lang="es">subcategoría</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5291,6 +5586,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#surfaceTemperature">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SeaConditions"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">surface temperature</rdfs:label>
+        <rdfs:label xml:lang="es">temperatura en la superficie</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5300,6 +5597,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#taxFree">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Label"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">libre de impuestos</rdfs:label>
+        <rdfs:label xml:lang="en">tax free</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5316,6 +5615,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">tasas y cargos incluidos</rdfs:label>
+        <rdfs:label xml:lang="en">taxes and fees included</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5332,6 +5633,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">telephone</rdfs:label>
+        <rdfs:label xml:lang="es">teléfono</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5341,6 +5644,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#temperature">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">temperatura</rdfs:label>
+        <rdfs:label xml:lang="en">temperature</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5357,6 +5662,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">temático</rdfs:label>
+        <rdfs:label xml:lang="en">thematic</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5367,6 +5674,8 @@
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">tiktok</rdfs:label>
+        <rdfs:label xml:lang="es">tiktok</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5383,6 +5692,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">hora del día</rdfs:label>
+        <rdfs:label xml:lang="en">time of the day</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5392,6 +5703,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#timeOfTheYear">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#DestinationExperience"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">hora del año</rdfs:label>
+        <rdfs:label xml:lang="en">time of the year</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5401,6 +5714,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#topSpeedLimit">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Micromobility"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label xml:lang="es">límite de velocidad</rdfs:label>
+        <rdfs:label xml:lang="en">top speed limit</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5410,6 +5725,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#touristCard">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TouristDestinationService"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">tarjeta turística</rdfs:label>
+        <rdfs:label xml:lang="en">tourist card</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5419,6 +5736,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#transportInfrastructureAuthority">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportFacility"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">autoridad de la infraestructura de transporte</rdfs:label>
+        <rdfs:label xml:lang="en">transport infrastructure authority</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5428,6 +5747,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#travelFrequency">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Tourist"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">frecuencia de viaje</rdfs:label>
+        <rdfs:label xml:lang="en">travel frequency</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5438,6 +5759,8 @@
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">tripadvisor</rdfs:label>
+        <rdfs:label xml:lang="es">tripadvisor</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5447,16 +5770,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#tripAdvisorValue">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Rating"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#twitter -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#twitter">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">tripadvisor value</rdfs:label>
+        <rdfs:label xml:lang="es">valor de tripadvisor</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5466,6 +5781,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#typeOfGas">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Vehicle"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">tipo de combustible</rdfs:label>
+        <rdfs:label xml:lang="en">type of gas</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5475,6 +5792,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#uVIndexMax">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">uv index max</rdfs:label>
+        <rdfs:label xml:lang="es">índice ultravioleta máximo</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5491,6 +5810,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">url</rdfs:label>
+        <rdfs:label xml:lang="es">url</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5507,6 +5828,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label xml:lang="en">valid from</rdfs:label>
+        <rdfs:label xml:lang="es">válido desde</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5523,6 +5846,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="en">valid to</rdfs:label>
+        <rdfs:label xml:lang="es">válido hasta</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5532,6 +5857,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#validity">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">validez</rdfs:label>
+        <rdfs:label xml:lang="en">validity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5541,6 +5868,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#video">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Multimedia"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">video</rdfs:label>
+        <rdfs:label xml:lang="es">vídeo</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5557,6 +5886,8 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">duración de la visita</rdfs:label>
+        <rdfs:label xml:lang="en">visit duration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5566,6 +5897,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#voltage">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#EVChargingStation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">voltage</rdfs:label>
+        <rdfs:label xml:lang="es">voltaje</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5575,6 +5908,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#waveHeight">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SeaConditions"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="es">altura de las olas</rdfs:label>
+        <rdfs:label xml:lang="en">wave height</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5584,6 +5919,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#waveLevel">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SeaConditions"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">nivel de las olas</rdfs:label>
+        <rdfs:label xml:lang="en">wave level</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5593,6 +5930,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#wavePeriod">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SeaConditions"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">periodo de las olas</rdfs:label>
+        <rdfs:label xml:lang="en">wave period</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5602,6 +5941,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#weatherType">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">tipo de clima</rdfs:label>
+        <rdfs:label xml:lang="en">weather type</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5611,6 +5952,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#windDirection">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">dirección del viento</rdfs:label>
+        <rdfs:label xml:lang="en">wind direction</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5620,15 +5963,20 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#windSpeed">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">velocidad del viento</rdfs:label>
+        <rdfs:label xml:lang="en">wind speed</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#wineMenu -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#x -->
 
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#wineMenu">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Menu"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#x">
+        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">x</rdfs:label>
+        <rdfs:label xml:lang="es">x</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5639,6 +5987,8 @@
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">youtube</rdfs:label>
+        <rdfs:label xml:lang="es">youtube</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5648,6 +5998,8 @@
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#zone">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicTransportStop"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">zona</rdfs:label>
+        <rdfs:label xml:lang="en">zone</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5687,7 +6039,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ATM">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#FinancialService"/>
-        <rdfs:label>ATM</rdfs:label>
+        <rdfs:label xml:lang="en">ATM</rdfs:label>
         <rdfs:label xml:lang="es">cajero automático</rdfs:label>
     </owl:Class>
     
@@ -5805,6 +6157,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">accommodation registration</rdfs:label>
+        <rdfs:label xml:lang="es">registro en el alojamiento</rdfs:label>
     </owl:Class>
     
 
@@ -5840,6 +6194,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Airline">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
+        <rdfs:label xml:lang="es">aerolínea</rdfs:label>
+        <rdfs:label xml:lang="en">airline</rdfs:label>
     </owl:Class>
     
 
@@ -5888,6 +6244,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Airport">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportFacility"/>
+        <rdfs:label xml:lang="es">aeropuerto</rdfs:label>
+        <rdfs:label xml:lang="en">airport</rdfs:label>
     </owl:Class>
     
 
@@ -5896,6 +6254,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Alcazar">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">alcazar</rdfs:label>
+        <rdfs:label xml:lang="es">alcázar</rdfs:label>
     </owl:Class>
     
 
@@ -5904,6 +6264,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Amphitheatre">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">amphitheater</rdfs:label>
+        <rdfs:label xml:lang="es">anfiteatro</rdfs:label>
     </owl:Class>
     
 
@@ -5912,6 +6274,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#AmusementPark">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="en">amusement park</rdfs:label>
+        <rdfs:label xml:lang="es">parque de atracciones</rdfs:label>
     </owl:Class>
     
 
@@ -5930,6 +6294,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Aquarium">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="es">acuario</rdfs:label>
+        <rdfs:label xml:lang="en">aquarium</rdfs:label>
     </owl:Class>
     
 
@@ -5938,6 +6304,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Aqueduct">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">acueducto</rdfs:label>
+        <rdfs:label xml:lang="en">aqueduct</rdfs:label>
     </owl:Class>
     
 
@@ -5946,6 +6314,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Arcade">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="es">arcada</rdfs:label>
+        <rdfs:label xml:lang="en">arcade</rdfs:label>
     </owl:Class>
     
 
@@ -5954,6 +6324,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Arch">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">arch</rdfs:label>
+        <rdfs:label xml:lang="es">arco</rdfs:label>
     </owl:Class>
     
 
@@ -5962,6 +6334,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ArcheologicalSite">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">archaelogical site</rdfs:label>
+        <rdfs:label xml:lang="es">yacimiento arqueológico</rdfs:label>
     </owl:Class>
     
 
@@ -5970,6 +6344,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ArtGallery">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="en">art gallery</rdfs:label>
+        <rdfs:label xml:lang="es">galería de arte</rdfs:label>
     </owl:Class>
     
 
@@ -5978,6 +6354,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Auditorium">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#EventAttendanceFacility"/>
+        <rdfs:label xml:lang="es">auditorio</rdfs:label>
+        <rdfs:label xml:lang="en">auditorium</rdfs:label>
     </owl:Class>
     
 
@@ -5986,7 +6364,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BakeryAndPastry">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Groceries"/>
-        <rdfs:label>bakery and pastry</rdfs:label>
+        <rdfs:label xml:lang="en">bakery and pastry</rdfs:label>
         <rdfs:label xml:lang="es">panadería y pastelería</rdfs:label>
     </owl:Class>
     
@@ -6006,6 +6384,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Bar">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">bar</rdfs:label>
+        <rdfs:label xml:lang="es">bar</rdfs:label>
     </owl:Class>
     
 
@@ -6014,6 +6394,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Basilica">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">basilica</rdfs:label>
+        <rdfs:label xml:lang="es">basílica</rdfs:label>
     </owl:Class>
     
 
@@ -6022,6 +6404,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BasketballCourt">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="en">basketball court</rdfs:label>
+        <rdfs:label xml:lang="es">cancha de baloncesto</rdfs:label>
     </owl:Class>
     
 
@@ -6030,7 +6414,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Bazaar">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RetailAndFashion"/>
-        <rdfs:label>bazaar</rdfs:label>
+        <rdfs:label xml:lang="en">bazaar</rdfs:label>
         <rdfs:label xml:lang="es">bazar</rdfs:label>
     </owl:Class>
     
@@ -6046,6 +6430,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">beach</rdfs:label>
+        <rdfs:label xml:lang="es">playa</rdfs:label>
     </owl:Class>
     
 
@@ -6054,6 +6440,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BeachBar">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">beach bar</rdfs:label>
+        <rdfs:label xml:lang="es">chiringuito de playa</rdfs:label>
     </owl:Class>
     
 
@@ -6062,6 +6450,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BeachClub">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PartyAndEntertainmentFacility"/>
+        <rdfs:label xml:lang="en">beach club</rdfs:label>
+        <rdfs:label xml:lang="es">club de playa</rdfs:label>
     </owl:Class>
     
 
@@ -6070,6 +6460,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BeautyCentre">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HealthAndWellnessFacility"/>
+        <rdfs:label xml:lang="en">beauty centre</rdfs:label>
+        <rdfs:label xml:lang="es">centro de belleza</rdfs:label>
     </owl:Class>
     
 
@@ -6078,6 +6470,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BellTower">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">bell tower</rdfs:label>
+        <rdfs:label xml:lang="es">campanario</rdfs:label>
     </owl:Class>
     
 
@@ -6092,6 +6486,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">bicycle sharing system</rdfs:label>
+        <rdfs:label xml:lang="es">sistema de compartición de bicicletas</rdfs:label>
     </owl:Class>
     
 
@@ -6100,6 +6496,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BikeLane">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportFacility"/>
+        <rdfs:label xml:lang="en">bike lane</rdfs:label>
+        <rdfs:label xml:lang="es">carril bici</rdfs:label>
     </owl:Class>
     
 
@@ -6108,6 +6506,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Bingo">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PartyAndEntertainmentFacility"/>
+        <rdfs:label xml:lang="en">bingo</rdfs:label>
+        <rdfs:label xml:lang="es">bingo</rdfs:label>
     </owl:Class>
     
 
@@ -6116,7 +6516,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BookShop">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RetailAndFashion"/>
-        <rdfs:label>bookshop</rdfs:label>
+        <rdfs:label xml:lang="en">bookshop</rdfs:label>
         <rdfs:label xml:lang="es">librería</rdfs:label>
     </owl:Class>
     
@@ -6194,14 +6594,18 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BowlingAlley">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">bolera</rdfs:label>
+        <rdfs:label xml:lang="en">bowling alley</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#Brewry -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#Brewery -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Brewry">
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Brewery">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">brewery</rdfs:label>
+        <rdfs:label xml:lang="es">cervecería</rdfs:label>
     </owl:Class>
     
 
@@ -6210,6 +6614,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Bridge">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">bridge</rdfs:label>
+        <rdfs:label xml:lang="es">puente</rdfs:label>
     </owl:Class>
     
 
@@ -6248,8 +6654,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="es">autobus</rdfs:label>
-        <rdfs:label>bus</rdfs:label>
+        <rdfs:label xml:lang="es">autobús</rdfs:label>
+        <rdfs:label xml:lang="en">bus</rdfs:label>
     </owl:Class>
     
 
@@ -6258,6 +6664,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BusOperator">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
+        <rdfs:label xml:lang="en">bus operator</rdfs:label>
+        <rdfs:label xml:lang="es">operador de autobuses</rdfs:label>
     </owl:Class>
     
 
@@ -6266,6 +6674,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BusStation">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportFacility"/>
+        <rdfs:label xml:lang="en">bus station</rdfs:label>
+        <rdfs:label xml:lang="es">estación de autobuses</rdfs:label>
     </owl:Class>
     
 
@@ -6302,6 +6712,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CafeOrCoffeShop">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">cafe or coffee shop</rdfs:label>
+        <rdfs:label xml:lang="es">cafetería</rdfs:label>
     </owl:Class>
     
 
@@ -6310,7 +6722,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CallShop">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#MiscellaneousService"/>
-        <rdfs:label>callshop</rdfs:label>
+        <rdfs:label xml:lang="en">call shop</rdfs:label>
         <rdfs:label xml:lang="es">locutorio</rdfs:label>
     </owl:Class>
     
@@ -6330,6 +6742,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Campsite">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#EducationalFacility"/>
+        <rdfs:label xml:lang="en">campsite</rdfs:label>
+        <rdfs:label xml:lang="es">instalación para campamentos</rdfs:label>
     </owl:Class>
     
 
@@ -6338,6 +6752,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Canal">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="en">canal</rdfs:label>
+        <rdfs:label xml:lang="es">canal</rdfs:label>
     </owl:Class>
     
 
@@ -6404,6 +6820,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">carpool</rdfs:label>
+        <rdfs:label xml:lang="es">coche compartido</rdfs:label>
     </owl:Class>
     
 
@@ -6412,6 +6830,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Casino">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PartyAndEntertainmentFacility"/>
+        <rdfs:label xml:lang="en">casino</rdfs:label>
+        <rdfs:label xml:lang="es">casino</rdfs:label>
     </owl:Class>
     
 
@@ -6420,6 +6840,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Castle">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">castillo</rdfs:label>
+        <rdfs:label xml:lang="en">castle</rdfs:label>
     </owl:Class>
     
 
@@ -6428,6 +6850,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Catacomb">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">catacomb</rdfs:label>
+        <rdfs:label xml:lang="es">catacumba</rdfs:label>
     </owl:Class>
     
 
@@ -6436,6 +6860,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Cathedral">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">catedral</rdfs:label>
+        <rdfs:label xml:lang="en">cathedral</rdfs:label>
     </owl:Class>
     
 
@@ -6444,6 +6870,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Cave">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="en">cave</rdfs:label>
+        <rdfs:label xml:lang="es">cueva</rdfs:label>
     </owl:Class>
     
 
@@ -6498,6 +6926,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Chapel">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">capilla</rdfs:label>
+        <rdfs:label xml:lang="en">chapel</rdfs:label>
     </owl:Class>
     
 
@@ -6506,6 +6936,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ChillOut">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PartyAndEntertainmentFacility"/>
+        <rdfs:label xml:lang="en">chill out</rdfs:label>
+        <rdfs:label xml:lang="es">chill out</rdfs:label>
     </owl:Class>
     
 
@@ -6514,6 +6946,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ChocolateShop">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">chocolate shop</rdfs:label>
+        <rdfs:label xml:lang="es">chocolatería</rdfs:label>
     </owl:Class>
     
 
@@ -6522,6 +6956,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Church">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">church</rdfs:label>
+        <rdfs:label xml:lang="es">iglesia</rdfs:label>
     </owl:Class>
     
 
@@ -6530,6 +6966,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ChurroShop">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="es">churrería</rdfs:label>
+        <rdfs:label xml:lang="en">churro shop</rdfs:label>
     </owl:Class>
     
 
@@ -6538,6 +6976,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CiderBar">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">cider bar</rdfs:label>
+        <rdfs:label xml:lang="es">sidrería</rdfs:label>
     </owl:Class>
     
 
@@ -6546,6 +6986,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CivilProtection">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+        <rdfs:label xml:lang="en">civil protection</rdfs:label>
+        <rdfs:label xml:lang="es">protección civil</rdfs:label>
     </owl:Class>
     
 
@@ -6554,6 +6996,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ClimbingWall">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="en">climbing wall</rdfs:label>
+        <rdfs:label xml:lang="es">pared de escalada</rdfs:label>
     </owl:Class>
     
 
@@ -6572,6 +7016,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CocktailBar">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">cocktail bar</rdfs:label>
+        <rdfs:label xml:lang="es">coctelería</rdfs:label>
     </owl:Class>
     
 
@@ -6580,6 +7026,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CongressCentre">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#EventAttendanceFacility"/>
+        <rdfs:label xml:lang="es">centro de congresos</rdfs:label>
+        <rdfs:label xml:lang="en">congress centre</rdfs:label>
     </owl:Class>
     
 
@@ -6594,6 +7042,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">contact information</rdfs:label>
+        <rdfs:label xml:lang="es">información de contacto</rdfs:label>
     </owl:Class>
     
 
@@ -6602,14 +7052,18 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Convent">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">convent</rdfs:label>
+        <rdfs:label xml:lang="es">convento</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#CreaftmanshipResource -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#CraftmanshipResource -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CreaftmanshipResource">
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CraftmanshipResource">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">craftmanship resource</rdfs:label>
+        <rdfs:label xml:lang="es">recurso de artesanía</rdfs:label>
     </owl:Class>
     
 
@@ -6618,6 +7072,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CruiseLine">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
+        <rdfs:label xml:lang="en">cruise line</rdfs:label>
+        <rdfs:label xml:lang="es">línea de cruceros</rdfs:label>
     </owl:Class>
     
 
@@ -6656,7 +7112,7 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>crucero</rdfs:label>
+        <rdfs:label xml:lang="es">crucero</rdfs:label>
         <rdfs:label xml:lang="en">cruise ship</rdfs:label>
     </owl:Class>
     
@@ -6666,6 +7122,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CultureCentre">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="es">centro cultural</rdfs:label>
+        <rdfs:label xml:lang="en">culture centre</rdfs:label>
     </owl:Class>
     
 
@@ -6703,6 +7161,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Desert">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="en">desert</rdfs:label>
+        <rdfs:label xml:lang="es">desierto</rdfs:label>
     </owl:Class>
     
 
@@ -6745,6 +7205,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#DestinationManagementCompany">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TouristIntermediary"/>
+        <rdfs:label xml:lang="en">destination management company</rdfs:label>
+        <rdfs:label xml:lang="es">empresa de gestión de destinos</rdfs:label>
     </owl:Class>
     
 
@@ -6753,7 +7215,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#DryCleaningOrLaundry">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#MiscellaneousService"/>
-        <rdfs:label>dry cleaning or laundry</rdfs:label>
+        <rdfs:label xml:lang="en">dry cleaning or laundry</rdfs:label>
         <rdfs:label xml:lang="es">tintorería o lavandería</rdfs:label>
     </owl:Class>
     
@@ -6787,6 +7249,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">electric vehicle charging station</rdfs:label>
+        <rdfs:label xml:lang="es">estación de carga de vehículos eleéctricos</rdfs:label>
     </owl:Class>
     
 
@@ -6795,6 +7259,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#EducationalCentre">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#EducationalFacility"/>
+        <rdfs:label xml:lang="es">centro educativo</rdfs:label>
+        <rdfs:label xml:lang="en">educational centre</rdfs:label>
     </owl:Class>
     
 
@@ -6803,6 +7269,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#EducationalFacility">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Facility"/>
+        <rdfs:label xml:lang="en">educational facility</rdfs:label>
+        <rdfs:label xml:lang="es">instalación educativa</rdfs:label>
     </owl:Class>
     
 
@@ -6823,6 +7291,8 @@
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">embajada y consulado</rdfs:label>
+        <rdfs:label xml:lang="en">embassy and consulate</rdfs:label>
     </owl:Class>
     
 
@@ -6831,6 +7301,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#EmergencyService112">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+        <rdfs:label xml:lang="en">emergency service 112</rdfs:label>
+        <rdfs:label xml:lang="es">servicio de emergencia 112</rdfs:label>
     </owl:Class>
     
 
@@ -6839,6 +7311,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#EngineCircuit">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">circuito del motor</rdfs:label>
+        <rdfs:label xml:lang="en">engine circuit</rdfs:label>
     </owl:Class>
     
 
@@ -6847,7 +7321,6 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Enoteca">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Groceries"/>
-        <rdfs:label>bar de vinos</rdfs:label>
         <rdfs:label xml:lang="en">enoteca</rdfs:label>
     </owl:Class>
     
@@ -6857,6 +7330,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#EquestrianClub">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">club de hípica</rdfs:label>
+        <rdfs:label xml:lang="en">equestrian club</rdfs:label>
     </owl:Class>
     
 
@@ -6865,6 +7340,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#EscapeRoom">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="en">escape room</rdfs:label>
+        <rdfs:label xml:lang="es">escape room</rdfs:label>
     </owl:Class>
     
 
@@ -6920,6 +7397,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#EventAttendanceFacility">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Facility"/>
+        <rdfs:label xml:lang="en">event attendance facility</rdfs:label>
+        <rdfs:label xml:lang="es">instalación para eventos</rdfs:label>
     </owl:Class>
     
 
@@ -6965,7 +7444,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="es">Empresa de organización de eventos</rdfs:label>
-        <rdfs:label>Event Organisation Company</rdfs:label>
+        <rdfs:label xml:lang="en">Event Organisation Company</rdfs:label>
     </owl:Class>
     
 
@@ -6993,6 +7472,8 @@
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">event session</rdfs:label>
+        <rdfs:label xml:lang="es">sesión de un evento</rdfs:label>
     </owl:Class>
     
 
@@ -7002,7 +7483,7 @@
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ExchangeBureau">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#FinancialService"/>
         <rdfs:label xml:lang="es">casa de cambios</rdfs:label>
-        <rdfs:label>exchange bureau</rdfs:label>
+        <rdfs:label xml:lang="en">exchange bureau</rdfs:label>
     </owl:Class>
     
 
@@ -7011,6 +7492,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Excursionist">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PersonRole"/>
+        <rdfs:label xml:lang="en">excursionist</rdfs:label>
+        <rdfs:label xml:lang="es">excursionista</rdfs:label>
     </owl:Class>
     
 
@@ -7019,6 +7502,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ExhibitionHall">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="en">exhibition hall</rdfs:label>
+        <rdfs:label xml:lang="es">sala de exposiciones</rdfs:label>
     </owl:Class>
     
 
@@ -7039,6 +7524,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">facility</rdfs:label>
+        <rdfs:label xml:lang="es">instalación</rdfs:label>
     </owl:Class>
     
 
@@ -7047,6 +7534,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#FarmSchool">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#EducationalFacility"/>
+        <rdfs:label xml:lang="en">farm school</rdfs:label>
+        <rdfs:label xml:lang="es">granja escuela</rdfs:label>
     </owl:Class>
     
 
@@ -7092,7 +7581,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">ferry</rdfs:label>
-        <rdfs:label>transbordador ferry</rdfs:label>
+        <rdfs:label xml:lang="es">transbordador ferry</rdfs:label>
     </owl:Class>
     
 
@@ -7101,6 +7590,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#FerryOperator">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
+        <rdfs:label xml:lang="en">ferry operator</rdfs:label>
+        <rdfs:label xml:lang="es">operador de ferries</rdfs:label>
     </owl:Class>
     
 
@@ -7119,6 +7610,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#FireService">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+        <rdfs:label xml:lang="en">fire service</rdfs:label>
+        <rdfs:label xml:lang="es">servicio de bomberos</rdfs:label>
     </owl:Class>
     
 
@@ -7127,6 +7620,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#FootballField">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">campo de fútbol</rdfs:label>
+        <rdfs:label xml:lang="en">football field</rdfs:label>
     </owl:Class>
     
 
@@ -7135,6 +7630,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Forest">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="es">bosque</rdfs:label>
+        <rdfs:label xml:lang="en">forest</rdfs:label>
     </owl:Class>
     
 
@@ -7149,6 +7646,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">garden</rdfs:label>
+        <rdfs:label xml:lang="es">jardín</rdfs:label>
     </owl:Class>
     
 
@@ -7157,6 +7656,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#GasStation">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportFacility"/>
+        <rdfs:label xml:lang="en">gas station</rdfs:label>
+        <rdfs:label xml:lang="es">gasolinera</rdfs:label>
     </owl:Class>
     
 
@@ -7165,6 +7666,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#GastronomicMarket">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">gastronomic market</rdfs:label>
+        <rdfs:label xml:lang="es">mercado gastronómico</rdfs:label>
     </owl:Class>
     
 
@@ -7173,6 +7676,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Gastronomy">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">gastronomy</rdfs:label>
+        <rdfs:label xml:lang="es">gastronomía</rdfs:label>
     </owl:Class>
     
 
@@ -7181,7 +7686,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#GeneralStore">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Groceries"/>
-        <rdfs:label>general store</rdfs:label>
+        <rdfs:label xml:lang="en">general store</rdfs:label>
         <rdfs:label xml:lang="es">tienda de ultramarinos</rdfs:label>
     </owl:Class>
     
@@ -7191,6 +7696,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Geyser">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="en">geyser</rdfs:label>
+        <rdfs:label xml:lang="es">geyser</rdfs:label>
     </owl:Class>
     
 
@@ -7209,6 +7716,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#GlobalDistributionSystem">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TouristIntermediary"/>
+        <rdfs:label xml:lang="en">global distribution system</rdfs:label>
+        <rdfs:label xml:lang="es">sistema global de distribución</rdfs:label>
     </owl:Class>
     
 
@@ -7217,6 +7726,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#GolfCourse">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">campo de golf</rdfs:label>
+        <rdfs:label xml:lang="en">golf course</rdfs:label>
     </owl:Class>
     
 
@@ -7235,7 +7746,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Group">
         <rdfs:label xml:lang="en">group</rdfs:label>
-        <rdfs:label>grupo</rdfs:label>
+        <rdfs:label xml:lang="es">grupo</rdfs:label>
     </owl:Class>
     
 
@@ -7254,6 +7765,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Gym">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">gimnasio</rdfs:label>
+        <rdfs:label xml:lang="en">gym</rdfs:label>
     </owl:Class>
     
 
@@ -7272,6 +7785,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#HandicraftAndLocalProduct">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">handicraft and local product</rdfs:label>
+        <rdfs:label xml:lang="es">productos locales y hechos a mano</rdfs:label>
     </owl:Class>
     
 
@@ -7280,7 +7795,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Handicrafts">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RetailAndFashion"/>
-        <rdfs:label>handicrafts</rdfs:label>
+        <rdfs:label xml:lang="en">handicrafts</rdfs:label>
         <rdfs:label xml:lang="es">tienda de artesanías</rdfs:label>
     </owl:Class>
     
@@ -7290,6 +7805,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#HealthAndWellnessFacility">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Facility"/>
+        <rdfs:label xml:lang="en">health and wellness facility</rdfs:label>
+        <rdfs:label xml:lang="es">instalación de salud y bienestar</rdfs:label>
     </owl:Class>
     
 
@@ -7298,6 +7815,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#HealthResort">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HealthAndWellnessFacility"/>
+        <rdfs:label xml:lang="es">balneario</rdfs:label>
+        <rdfs:label xml:lang="en">health resort</rdfs:label>
     </owl:Class>
     
 
@@ -7306,6 +7825,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismResource"/>
+        <rdfs:label xml:lang="en">historical and cultural resource</rdfs:label>
+        <rdfs:label xml:lang="es">recurso histórico-cultural</rdfs:label>
     </owl:Class>
     
 
@@ -7350,8 +7871,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="es">Paquete vacacional</rdfs:label>
         <rdfs:label>holiday package</rdfs:label>
+        <rdfs:label xml:lang="es">paquete vacacional</rdfs:label>
     </owl:Class>
     
 
@@ -7360,6 +7881,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Horchateria">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">horchateria</rdfs:label>
+        <rdfs:label xml:lang="es">horchatería</rdfs:label>
     </owl:Class>
     
 
@@ -7398,6 +7921,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#IceCreamShop">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="es">heladería</rdfs:label>
+        <rdfs:label xml:lang="en">ice cream shop</rdfs:label>
     </owl:Class>
     
 
@@ -7406,6 +7931,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Inn">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">inn</rdfs:label>
+        <rdfs:label xml:lang="es">venta</rdfs:label>
     </owl:Class>
     
 
@@ -7414,6 +7941,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#InterpretationCentre">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#EducationalFacility"/>
+        <rdfs:label xml:lang="es">centro de interpretación</rdfs:label>
+        <rdfs:label xml:lang="en">interpretation centre</rdfs:label>
     </owl:Class>
     
 
@@ -7422,7 +7951,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#JewelryAndWatches">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RetailAndFashion"/>
-        <rdfs:label>jewelry and watches</rdfs:label>
+        <rdfs:label xml:lang="en">jewelry and watches</rdfs:label>
         <rdfs:label xml:lang="es">joyería y relojería</rdfs:label>
     </owl:Class>
     
@@ -7432,6 +7961,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Karaoke">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PartyAndEntertainmentFacility"/>
+        <rdfs:label xml:lang="en">karaoke</rdfs:label>
+        <rdfs:label xml:lang="es">karaoke</rdfs:label>
     </owl:Class>
     
 
@@ -7440,7 +7971,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Kiosk">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RetailAndFashion"/>
-        <rdfs:label>kiosk</rdfs:label>
+        <rdfs:label xml:lang="en">kiosk</rdfs:label>
         <rdfs:label xml:lang="es">quiosco</rdfs:label>
     </owl:Class>
     
@@ -7502,6 +8033,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Lake">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="es">lago</rdfs:label>
+        <rdfs:label xml:lang="en">lake</rdfs:label>
     </owl:Class>
     
 
@@ -7510,6 +8043,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Landform">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="es">accidente geográfico</rdfs:label>
+        <rdfs:label xml:lang="en">landform</rdfs:label>
     </owl:Class>
     
 
@@ -7518,6 +8053,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Facility"/>
+        <rdfs:label xml:lang="es">instalación de cultura y ocio</rdfs:label>
+        <rdfs:label xml:lang="en">leisure and culture facility</rdfs:label>
     </owl:Class>
     
 
@@ -7526,7 +8063,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#LenghtOfStay">
         <rdfs:label xml:lang="es">duración de la visita</rdfs:label>
-        <rdfs:label>lenght of stay</rdfs:label>
+        <rdfs:label xml:lang="en">lenght of stay</rdfs:label>
     </owl:Class>
     
 
@@ -7535,7 +8072,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#LocalBusiness">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismResource"/>
-        <rdfs:label>local business</rdfs:label>
+        <rdfs:label xml:lang="en">local business</rdfs:label>
         <rdfs:label xml:lang="es">negocio local</rdfs:label>
     </owl:Class>
     
@@ -7552,7 +8089,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="es">localización</rdfs:label>
-        <rdfs:label>location</rdfs:label>
+        <rdfs:label xml:lang="en">location</rdfs:label>
     </owl:Class>
     
 
@@ -7581,13 +8118,18 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#MassageCentre">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HealthAndWellnessFacility"/>
+        <rdfs:label xml:lang="es">centro de masajes</rdfs:label>
+        <rdfs:label xml:lang="en">massage centre</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://ontologia.segittur.es/turismo/def/core#MeansOfTransport -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#MeansOfTransport"/>
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#MeansOfTransport">
+        <rdfs:label xml:lang="en">means of transport</rdfs:label>
+        <rdfs:label xml:lang="es">medio de transporte</rdfs:label>
+    </owl:Class>
     
 
 
@@ -7611,8 +8153,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>menu</rdfs:label>
-        <rdfs:label xml:lang="es">menu</rdfs:label>
+        <rdfs:label xml:lang="en">menu</rdfs:label>
+        <rdfs:label xml:lang="es">menú</rdfs:label>
     </owl:Class>
     
 
@@ -7621,6 +8163,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#MetasearchEngine">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TouristIntermediary"/>
+        <rdfs:label xml:lang="en">meta search engine</rdfs:label>
+        <rdfs:label xml:lang="es">metabuscador</rdfs:label>
     </owl:Class>
     
 
@@ -7653,6 +8197,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">micromobility</rdfs:label>
+        <rdfs:label xml:lang="es">micromovilidad</rdfs:label>
     </owl:Class>
     
 
@@ -7661,6 +8207,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Minaret">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">minaret</rdfs:label>
+        <rdfs:label xml:lang="es">minarete</rdfs:label>
     </owl:Class>
     
 
@@ -7669,7 +8217,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#MiscellaneousService">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LocalBusiness"/>
-        <rdfs:label xml:lang="en">miscallaneous store</rdfs:label>
+        <rdfs:label xml:lang="en">miscallaneous service</rdfs:label>
         <rdfs:label xml:lang="es">servicios varios</rdfs:label>
     </owl:Class>
     
@@ -7697,6 +8245,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">cargo por modificación</rdfs:label>
+        <rdfs:label xml:lang="en">modification fee</rdfs:label>
     </owl:Class>
     
 
@@ -7705,6 +8255,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Monument">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">monument</rdfs:label>
+        <rdfs:label xml:lang="es">monumento</rdfs:label>
     </owl:Class>
     
 
@@ -7713,6 +8265,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Mosque">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">mezquita</rdfs:label>
+        <rdfs:label xml:lang="en">mosque</rdfs:label>
     </owl:Class>
     
 
@@ -7731,6 +8285,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Mountain">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="es">montaña</rdfs:label>
+        <rdfs:label xml:lang="en">mountain</rdfs:label>
     </owl:Class>
     
 
@@ -7749,6 +8305,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#MovieTheater">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="en">movie theater</rdfs:label>
+        <rdfs:label xml:lang="es">sala de cine</rdfs:label>
     </owl:Class>
     
 
@@ -7757,6 +8315,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#MultiAdventureCentre">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">centro multiaventura</rdfs:label>
+        <rdfs:label xml:lang="en">multiadventure centre</rdfs:label>
     </owl:Class>
     
 
@@ -7771,6 +8331,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">multimedia</rdfs:label>
+        <rdfs:label xml:lang="es">multimedia</rdfs:label>
     </owl:Class>
     
 
@@ -7779,6 +8341,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Museum">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="es">museo</rdfs:label>
+        <rdfs:label xml:lang="en">museum</rdfs:label>
     </owl:Class>
     
 
@@ -7787,6 +8351,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#MusicVenue">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#EventAttendanceFacility"/>
+        <rdfs:label xml:lang="es">instalación para música</rdfs:label>
+        <rdfs:label xml:lang="en">music venue</rdfs:label>
     </owl:Class>
     
 
@@ -7795,6 +8361,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#NaturalPark">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="en">natural park</rdfs:label>
+        <rdfs:label xml:lang="es">parque natural</rdfs:label>
     </owl:Class>
     
 
@@ -7803,6 +8371,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#NaturalResource">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismResource"/>
+        <rdfs:label xml:lang="en">natural resource</rdfs:label>
+        <rdfs:label xml:lang="es">recurso natural</rdfs:label>
     </owl:Class>
     
 
@@ -7811,6 +8381,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#NaturalViewPoint">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="es">mirador natural</rdfs:label>
+        <rdfs:label xml:lang="en">natural viewpoint</rdfs:label>
     </owl:Class>
     
 
@@ -7819,14 +8391,18 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#NightClub">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PartyAndEntertainmentFacility"/>
+        <rdfs:label xml:lang="es">club nocturno</rdfs:label>
+        <rdfs:label xml:lang="en">night club</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#OTA -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#OnlineTravelAgency -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#OTA">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TouristIntermediary"/>
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#OnlineTravelAgency">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TravelAgency"/>
+        <rdfs:label xml:lang="es">agencia de viajes online</rdfs:label>
+        <rdfs:label xml:lang="en">online travel agency</rdfs:label>
     </owl:Class>
     
 
@@ -7840,6 +8416,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">horas de apertura</rdfs:label>
+        <rdfs:label xml:lang="en">opening hours</rdfs:label>
     </owl:Class>
     
 
@@ -7906,10 +8484,12 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#PaddleCourt -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#PaddelCourt -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PaddleCourt">
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PaddelCourt">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="en">paddel court</rdfs:label>
+        <rdfs:label xml:lang="es">pista de pádel</rdfs:label>
     </owl:Class>
     
 
@@ -7918,6 +8498,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Palace">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">palace</rdfs:label>
+        <rdfs:label xml:lang="es">palacio</rdfs:label>
     </owl:Class>
     
 
@@ -7970,6 +8552,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">parking</rdfs:label>
+        <rdfs:label xml:lang="es">parking</rdfs:label>
     </owl:Class>
     
 
@@ -7978,6 +8562,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PartyAndEntertainmentFacility">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Facility"/>
+        <rdfs:label xml:lang="es">instalación para fiestas y entretenimiento</rdfs:label>
+        <rdfs:label xml:lang="en">party and entertainment facility</rdfs:label>
     </owl:Class>
     
 
@@ -7986,6 +8572,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PassengerTerminal">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportFacility"/>
+        <rdfs:label xml:lang="en">passenger terminal</rdfs:label>
+        <rdfs:label xml:lang="es">terminal de pasajeros</rdfs:label>
     </owl:Class>
     
 
@@ -8000,6 +8588,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">compañía de transporte de pasajeros</rdfs:label>
+        <rdfs:label xml:lang="en">passenger transport company</rdfs:label>
     </owl:Class>
     
 
@@ -8014,13 +8604,18 @@
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">información para pagos</rdfs:label>
+        <rdfs:label xml:lang="en">payment information</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://ontologia.segittur.es/turismo/def/core#PaymentMethod -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PaymentMethod"/>
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PaymentMethod">
+        <rdfs:label xml:lang="es">método de pago</rdfs:label>
+        <rdfs:label xml:lang="en">payment method</rdfs:label>
+    </owl:Class>
     
 
 
@@ -8028,7 +8623,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Perfumery">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RetailAndFashion"/>
-        <rdfs:label>perfumery</rdfs:label>
+        <rdfs:label xml:lang="en">perfumery</rdfs:label>
         <rdfs:label xml:lang="es">perfumería</rdfs:label>
     </owl:Class>
     
@@ -8071,13 +8666,18 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">person</rdfs:label>
+        <rdfs:label xml:lang="es">persona</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://ontologia.segittur.es/turismo/def/core#PersonRole -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PersonRole"/>
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PersonRole">
+        <rdfs:label xml:lang="en">person role</rdfs:label>
+        <rdfs:label xml:lang="es">rol de una persona</rdfs:label>
+    </owl:Class>
     
 
 
@@ -8095,6 +8695,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Planetarium">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="es">planetario</rdfs:label>
+        <rdfs:label xml:lang="en">planetarium</rdfs:label>
     </owl:Class>
     
 
@@ -8103,6 +8705,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Playground">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="es">patio de juegos</rdfs:label>
+        <rdfs:label xml:lang="en">playground</rdfs:label>
     </owl:Class>
     
 
@@ -8111,6 +8715,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PointOfSale">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LocalBusiness"/>
+        <rdfs:label xml:lang="en">point of sale</rdfs:label>
+        <rdfs:label xml:lang="es">punto de venta</rdfs:label>
     </owl:Class>
     
 
@@ -8119,6 +8725,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PoliceStation">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+        <rdfs:label xml:lang="es">comisaría de policía</rdfs:label>
+        <rdfs:label xml:lang="en">police station</rdfs:label>
     </owl:Class>
     
 
@@ -8145,6 +8753,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">oficina de Correos</rdfs:label>
+        <rdfs:label xml:lang="en">post office</rdfs:label>
     </owl:Class>
     
 
@@ -8189,6 +8799,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">información de precio</rdfs:label>
+        <rdfs:label xml:lang="en">price information</rdfs:label>
     </owl:Class>
     
 
@@ -8197,6 +8809,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PrimaryCare">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+        <rdfs:label xml:lang="es">lugar de primeros auxilios</rdfs:label>
+        <rdfs:label xml:lang="en">primary care</rdfs:label>
     </owl:Class>
     
 
@@ -8205,6 +8819,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PrivateHireCompany">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
+        <rdfs:label xml:lang="es">empresa de alquiler privado</rdfs:label>
+        <rdfs:label xml:lang="en">private hire company</rdfs:label>
     </owl:Class>
     
 
@@ -8214,7 +8830,7 @@
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PrivateHospital">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#MedicalService"/>
         <rdfs:label xml:lang="es">hospital privado</rdfs:label>
-        <rdfs:label>private hospital</rdfs:label>
+        <rdfs:label xml:lang="en">private hospital</rdfs:label>
     </owl:Class>
     
 
@@ -8235,6 +8851,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">promoción</rdfs:label>
+        <rdfs:label xml:lang="en">promotion</rdfs:label>
     </owl:Class>
     
 
@@ -8243,6 +8861,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Pub">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">pub</rdfs:label>
+        <rdfs:label xml:lang="es">pub</rdfs:label>
     </owl:Class>
     
 
@@ -8251,6 +8871,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PublicHospital">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+        <rdfs:label xml:lang="es">hospital público</rdfs:label>
+        <rdfs:label xml:lang="en">public hospital</rdfs:label>
     </owl:Class>
     
 
@@ -8259,6 +8881,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PublicRestroom">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+        <rdfs:label xml:lang="es">baño público</rdfs:label>
+        <rdfs:label xml:lang="en">public restroom</rdfs:label>
     </owl:Class>
     
 
@@ -8267,6 +8891,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PublicService">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismService"/>
+        <rdfs:label xml:lang="en">public service</rdfs:label>
+        <rdfs:label xml:lang="es">servicio público</rdfs:label>
     </owl:Class>
     
 
@@ -8275,6 +8901,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PublicTransportStop">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportFacility"/>
+        <rdfs:label xml:lang="es">parada de transporte público</rdfs:label>
+        <rdfs:label xml:lang="en">public transport stop</rdfs:label>
     </owl:Class>
     
 
@@ -8283,6 +8911,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Racetrack">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">pista de carreras de motor</rdfs:label>
+        <rdfs:label xml:lang="en">race track</rdfs:label>
     </owl:Class>
     
 
@@ -8291,6 +8921,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#RailwayCompany">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
+        <rdfs:label xml:lang="es">empresa de ferrocarriles</rdfs:label>
+        <rdfs:label xml:lang="en">railway company</rdfs:label>
     </owl:Class>
     
 
@@ -8351,6 +8983,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">reduced fare</rdfs:label>
+        <rdfs:label xml:lang="es">tarifa reducida</rdfs:label>
     </owl:Class>
     
 
@@ -8359,6 +8993,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Reservoir">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="es">embalse</rdfs:label>
+        <rdfs:label xml:lang="en">reservoir</rdfs:label>
     </owl:Class>
     
 
@@ -8377,6 +9013,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Resident">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PersonRole"/>
+        <rdfs:label xml:lang="en">resident</rdfs:label>
+        <rdfs:label xml:lang="es">residente</rdfs:label>
     </owl:Class>
     
 
@@ -8395,6 +9033,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Restaurant">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">restaurant</rdfs:label>
+        <rdfs:label xml:lang="es">restaurante</rdfs:label>
     </owl:Class>
     
 
@@ -8447,6 +9087,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#River">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="en">river</rdfs:label>
+        <rdfs:label xml:lang="es">río</rdfs:label>
     </owl:Class>
     
 
@@ -8473,6 +9115,8 @@
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">habitación</rdfs:label>
+        <rdfs:label xml:lang="en">room</rdfs:label>
     </owl:Class>
     
 
@@ -8487,6 +9131,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">reglas y consejos para turistas</rdfs:label>
+        <rdfs:label xml:lang="en">rules and tips for tourists</rdfs:label>
     </owl:Class>
     
 
@@ -8495,6 +9141,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#RunningTrack">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">pista de carreras</rdfs:label>
+        <rdfs:label xml:lang="en">running track</rdfs:label>
     </owl:Class>
     
 
@@ -8503,6 +9151,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Salina">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="en">salina</rdfs:label>
+        <rdfs:label xml:lang="es">salina</rdfs:label>
     </owl:Class>
     
 
@@ -8511,13 +9161,18 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Sanctuary">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="en">sanctuary</rdfs:label>
+        <rdfs:label xml:lang="es">santuario</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://ontologia.segittur.es/turismo/def/core#SeaConditions -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SeaConditions"/>
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SeaConditions">
+        <rdfs:label xml:lang="es">condiciones del mar</rdfs:label>
+        <rdfs:label xml:lang="en">sea conditions</rdfs:label>
+    </owl:Class>
     
 
 
@@ -8525,6 +9180,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ShootingRange">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">campo de tiro</rdfs:label>
+        <rdfs:label xml:lang="en">shooting range</rdfs:label>
     </owl:Class>
     
 
@@ -8534,7 +9191,7 @@
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ShoppingMall">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RetailAndFashion"/>
         <rdfs:label xml:lang="es">centro comercial</rdfs:label>
-        <rdfs:label>shopping mall</rdfs:label>
+        <rdfs:label xml:lang="en">shopping mall</rdfs:label>
     </owl:Class>
     
 
@@ -8553,6 +9210,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SkatePark">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">parque de patinaje</rdfs:label>
+        <rdfs:label xml:lang="en">skate park</rdfs:label>
     </owl:Class>
     
 
@@ -8561,6 +9220,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SkatingRink">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">pista de patinaje</rdfs:label>
+        <rdfs:label xml:lang="en">skating rink</rdfs:label>
     </owl:Class>
     
 
@@ -8595,7 +9256,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#twitter"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#x"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8605,6 +9266,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">perfil de redes sociales</rdfs:label>
+        <rdfs:label xml:lang="en">social media profile</rdfs:label>
     </owl:Class>
     
 
@@ -8613,7 +9276,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Souvenir">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RetailAndFashion"/>
-        <rdfs:label>souvenirs</rdfs:label>
+        <rdfs:label xml:lang="en">souvenirs</rdfs:label>
         <rdfs:label xml:lang="es">tienda de souvenirs</rdfs:label>
     </owl:Class>
     
@@ -8623,6 +9286,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Spa">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HealthAndWellnessFacility"/>
+        <rdfs:label xml:lang="en">spa</rdfs:label>
+        <rdfs:label xml:lang="es">spa</rdfs:label>
     </owl:Class>
     
 
@@ -8631,6 +9296,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SportFacility">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Facility"/>
+        <rdfs:label xml:lang="es">instalación deportiva</rdfs:label>
+        <rdfs:label xml:lang="en">sport facility</rdfs:label>
     </owl:Class>
     
 
@@ -8640,6 +9307,8 @@
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SportsCentre">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
         <rdfs:comment xml:lang="en">A Sports Centre may contain several Sport Facilities</rdfs:comment>
+        <rdfs:label xml:lang="es">centro deportivo</rdfs:label>
+        <rdfs:label xml:lang="en">sports centre</rdfs:label>
     </owl:Class>
     
 
@@ -8648,6 +9317,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Spring">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="es">manantial</rdfs:label>
+        <rdfs:label xml:lang="en">spring</rdfs:label>
     </owl:Class>
     
 
@@ -8656,6 +9327,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Stadium">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">estadio</rdfs:label>
+        <rdfs:label xml:lang="en">stadium</rdfs:label>
     </owl:Class>
     
 
@@ -8674,6 +9347,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Swamp">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="es">pantano</rdfs:label>
+        <rdfs:label xml:lang="en">swamp</rdfs:label>
     </owl:Class>
     
 
@@ -8682,6 +9357,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SwimmingPool">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">piscina</rdfs:label>
+        <rdfs:label xml:lang="en">swimming pool</rdfs:label>
     </owl:Class>
     
 
@@ -8690,6 +9367,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Synagogue">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">sinagoga</rdfs:label>
+        <rdfs:label xml:lang="en">synagogue</rdfs:label>
     </owl:Class>
     
 
@@ -8698,6 +9377,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TakeAway">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="es">lugar de comida para llevar</rdfs:label>
+        <rdfs:label xml:lang="en">take away</rdfs:label>
     </owl:Class>
     
 
@@ -8706,6 +9387,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Tavern">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="es">taberna</rdfs:label>
+        <rdfs:label xml:lang="en">tavern</rdfs:label>
     </owl:Class>
     
 
@@ -8714,6 +9397,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TaxiStand">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportFacility"/>
+        <rdfs:label xml:lang="es">parada de taxis</rdfs:label>
+        <rdfs:label xml:lang="en">taxi stand</rdfs:label>
     </owl:Class>
     
 
@@ -8722,6 +9407,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TeaRoom">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="en">tea room</rdfs:label>
+        <rdfs:label xml:lang="es">tetería</rdfs:label>
     </owl:Class>
     
 
@@ -8738,7 +9425,10 @@
 
     <!-- https://ontologia.segittur.es/turismo/def/core#TemporaryClosure -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TemporaryClosure"/>
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TemporaryClosure">
+        <rdfs:label xml:lang="es">cierre temporal</rdfs:label>
+        <rdfs:label xml:lang="en">temporary closure</rdfs:label>
+    </owl:Class>
     
 
 
@@ -8746,6 +9436,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TennisCourt">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">pista de tenis</rdfs:label>
+        <rdfs:label xml:lang="en">tennnis court</rdfs:label>
     </owl:Class>
     
 
@@ -8754,6 +9446,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Theater">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="es">teatro</rdfs:label>
+        <rdfs:label xml:lang="en">theater</rdfs:label>
     </owl:Class>
     
 
@@ -8838,6 +9532,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">tour</rdfs:label>
+        <rdfs:label xml:lang="es">tour</rdfs:label>
     </owl:Class>
     
 
@@ -8852,6 +9548,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">guía turístico</rdfs:label>
+        <rdfs:label xml:lang="en">tour guide</rdfs:label>
     </owl:Class>
     
 
@@ -8860,6 +9558,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TourOperator">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TouristIntermediary"/>
+        <rdfs:label xml:lang="en">touroperator</rdfs:label>
+        <rdfs:label xml:lang="es">turoperador</rdfs:label>
     </owl:Class>
     
 
@@ -8949,8 +9649,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="es">Clase generada para agrupar de manera general los recursos relevantes para el sector turístico, donde se aplicarán las propiedades comunes a todos estos recursos.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Class created to group in a general manner all resources that are relevant for the tourism sector, so as to group all common properties to all these resources.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Clase que agrupa de manera general los recursos relevantes para el sector turístico, donde se aplicarán las propiedades comunes a todos estos recursos.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Class that groups in a general manner all resources that are relevant for the tourism sector, so as to group all common properties to all these resources.</rdfs:comment>
         <rdfs:label xml:lang="es">Recurso turístico</rdfs:label>
         <rdfs:label xml:lang="en">Tourism Resource</rdfs:label>
     </owl:Class>
@@ -9013,8 +9713,8 @@
                 <owl:onClass rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="es">Clase generada para agrupar de manera general los servicios relevantes para el sector turístico, donde se aplicarán las propiedades comunes a todos estos servicios.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Class created to group in a general manner all services that are relevant for the tourism sector, so as to group all common properties to all these services.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Clase que agrupa de manera general los servicios relevantes para el sector turístico, donde se aplicarán las propiedades comunes a todos estos servicios.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Class that groups in a general manner all services that are relevant for the tourism sector, so as to group all common properties to all these services.</rdfs:comment>
         <rdfs:label xml:lang="es">Servicio turístico</rdfs:label>
         <rdfs:label xml:lang="en">Tourism Service</rdfs:label>
     </owl:Class>
@@ -9073,6 +9773,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">tourist</rdfs:label>
+        <rdfs:label xml:lang="es">turista</rdfs:label>
     </owl:Class>
     
 
@@ -9081,6 +9783,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristAttractionSite">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">atracción turística</rdfs:label>
+        <rdfs:label xml:lang="en">tourist attraction site</rdfs:label>
     </owl:Class>
     
 
@@ -9125,6 +9829,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">destino turístico</rdfs:label>
+        <rdfs:label xml:lang="en">tourist destination</rdfs:label>
     </owl:Class>
     
 
@@ -9133,6 +9839,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristDestinationService">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismService"/>
+        <rdfs:label xml:lang="es">servicio de destino turístico</rdfs:label>
+        <rdfs:label xml:lang="en">tourist destination service</rdfs:label>
     </owl:Class>
     
 
@@ -9141,6 +9849,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristInformationOffice">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+        <rdfs:label xml:lang="es">oficina de información turística</rdfs:label>
+        <rdfs:label xml:lang="en">tourist information office</rdfs:label>
     </owl:Class>
     
 
@@ -9149,6 +9859,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristInformationPoint">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+        <rdfs:label xml:lang="es">punto de información turística</rdfs:label>
+        <rdfs:label xml:lang="en">tourist information point</rdfs:label>
     </owl:Class>
     
 
@@ -9163,6 +9875,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">intermediario turístico</rdfs:label>
+        <rdfs:label xml:lang="en">tourist intermediary</rdfs:label>
     </owl:Class>
     
 
@@ -9182,7 +9896,7 @@
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TraditionalMarket">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Groceries"/>
         <rdfs:label xml:lang="es">mercado tradicional</rdfs:label>
-        <rdfs:label>traditional market</rdfs:label>
+        <rdfs:label xml:lang="en">traditional market</rdfs:label>
     </owl:Class>
     
 
@@ -9191,6 +9905,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Trail">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="es">sendero</rdfs:label>
+        <rdfs:label xml:lang="en">trail</rdfs:label>
     </owl:Class>
     
 
@@ -9199,6 +9915,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TrailMTB">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="es">sendero para bicicleta de montaña</rdfs:label>
+        <rdfs:label xml:lang="en">trail for mountain bike</rdfs:label>
     </owl:Class>
     
 
@@ -9237,6 +9955,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">train</rdfs:label>
+        <rdfs:label xml:lang="es">tren</rdfs:label>
     </owl:Class>
     
 
@@ -9245,6 +9965,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TrainStation">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportFacility"/>
+        <rdfs:label xml:lang="es">estación de ferrocarriles</rdfs:label>
+        <rdfs:label xml:lang="en">train station</rdfs:label>
     </owl:Class>
     
 
@@ -9253,6 +9975,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Tram">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#MeansOfTransport"/>
+        <rdfs:label xml:lang="en">tram</rdfs:label>
+        <rdfs:label xml:lang="es">tranvía</rdfs:label>
     </owl:Class>
     
 
@@ -9279,6 +10003,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">información de transacción</rdfs:label>
+        <rdfs:label xml:lang="en">transaction information</rdfs:label>
     </owl:Class>
     
 
@@ -9293,6 +10019,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">instalación de transporte</rdfs:label>
+        <rdfs:label xml:lang="en">transport facility</rdfs:label>
     </owl:Class>
     
 
@@ -9312,6 +10040,8 @@
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">ruta de transporte</rdfs:label>
+        <rdfs:label xml:lang="en">transport route</rdfs:label>
     </owl:Class>
     
 
@@ -9374,6 +10104,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">servicio de transporte</rdfs:label>
+        <rdfs:label xml:lang="en">transport service</rdfs:label>
     </owl:Class>
     
 
@@ -9382,13 +10114,18 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TravelAgency">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TouristIntermediary"/>
+        <rdfs:label xml:lang="es">agencia de viajes</rdfs:label>
+        <rdfs:label xml:lang="en">travel agency</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://ontologia.segittur.es/turismo/def/core#TravelUnit -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TravelUnit"/>
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TravelUnit">
+        <rdfs:label xml:lang="en">travel unit</rdfs:label>
+        <rdfs:label xml:lang="es">unidad de viaje</rdfs:label>
+    </owl:Class>
     
 
 
@@ -9396,13 +10133,18 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Tree">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="en">tree</rdfs:label>
+        <rdfs:label xml:lang="es">árbol</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://ontologia.segittur.es/turismo/def/core#Trip -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Trip"/>
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Trip">
+        <rdfs:label xml:lang="en">trip</rdfs:label>
+        <rdfs:label xml:lang="es">viaje</rdfs:label>
+    </owl:Class>
     
 
 
@@ -9410,6 +10152,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#UrbanViewPoint">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">mirador urbano</rdfs:label>
+        <rdfs:label xml:lang="en">urban viewpoint</rdfs:label>
     </owl:Class>
     
 
@@ -9438,6 +10182,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Valley">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="es">valle</rdfs:label>
+        <rdfs:label xml:lang="en">valley</rdfs:label>
     </owl:Class>
     
 
@@ -9524,6 +10270,8 @@
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">vehicle</rdfs:label>
+        <rdfs:label xml:lang="es">vehículo</rdfs:label>
     </owl:Class>
     
 
@@ -9532,6 +10280,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VehicleExperience">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="es">experiencia en un vehículo</rdfs:label>
+        <rdfs:label xml:lang="en">vehicle experience</rdfs:label>
     </owl:Class>
     
 
@@ -9540,6 +10290,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VehicleRentalCompany">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
+        <rdfs:label xml:lang="es">empresa de alquiler de vehículos</rdfs:label>
+        <rdfs:label xml:lang="en">vehicle rental company</rdfs:label>
     </owl:Class>
     
 
@@ -9548,6 +10300,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VehicleRentalService">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismService"/>
+        <rdfs:label xml:lang="es">servicio de alquiler de vehículos</rdfs:label>
+        <rdfs:label xml:lang="en">vehicle rental service</rdfs:label>
     </owl:Class>
     
 
@@ -9557,7 +10311,7 @@
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VehicleWorkshop">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#MiscellaneousService"/>
         <rdfs:label xml:lang="es">taller mecánico</rdfs:label>
-        <rdfs:label>vehicle workshop</rdfs:label>
+        <rdfs:label xml:lang="en">vehicle workshop</rdfs:label>
     </owl:Class>
     
 
@@ -9576,6 +10330,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VernacularArchitecture">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">arquitectura vernácula</rdfs:label>
+        <rdfs:label xml:lang="en">vernacular architecture</rdfs:label>
     </owl:Class>
     
 
@@ -9584,6 +10340,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Vineyard">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="en">vineyard</rdfs:label>
+        <rdfs:label xml:lang="es">viñedo</rdfs:label>
     </owl:Class>
     
 
@@ -9592,6 +10350,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VineyardShelter">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">refugio de un viñedo</rdfs:label>
+        <rdfs:label xml:lang="en">vineyard shelter</rdfs:label>
     </owl:Class>
     
 
@@ -9600,6 +10360,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VisitAdvice">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RulesAndTipsForTourists"/>
+        <rdfs:label xml:lang="es">consejo sobre una visita</rdfs:label>
+        <rdfs:label xml:lang="en">visit advice</rdfs:label>
     </owl:Class>
     
 
@@ -9608,6 +10370,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VisitRule">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RulesAndTipsForTourists"/>
+        <rdfs:label xml:lang="es">regla sobre una visita</rdfs:label>
+        <rdfs:label xml:lang="en">visit rule</rdfs:label>
     </owl:Class>
     
 
@@ -9616,6 +10380,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Volcano">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="en">volcano</rdfs:label>
+        <rdfs:label xml:lang="es">volcán</rdfs:label>
     </owl:Class>
     
 
@@ -9624,6 +10390,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Wall">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">muro</rdfs:label>
+        <rdfs:label xml:lang="en">wall</rdfs:label>
     </owl:Class>
     
 
@@ -9632,13 +10400,18 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Waterfall">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:label xml:lang="es">cascada</rdfs:label>
+        <rdfs:label xml:lang="en">waterfall</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://ontologia.segittur.es/turismo/def/core#WeatherForecast -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#WeatherForecast"/>
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#WeatherForecast">
+        <rdfs:label xml:lang="es">predicción meteorológica</rdfs:label>
+        <rdfs:label xml:lang="en">weather forecast</rdfs:label>
+    </owl:Class>
     
 
 
@@ -9646,6 +10419,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#WineBar">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:label xml:lang="es">bar enoteca</rdfs:label>
+        <rdfs:label xml:lang="en">wine bar</rdfs:label>
     </owl:Class>
     
 
@@ -9654,6 +10429,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Winery">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="es">lagar</rdfs:label>
+        <rdfs:label xml:lang="en">winery</rdfs:label>
     </owl:Class>
     
 
@@ -9662,6 +10439,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#WinterSportResort">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="en">winter sport resort</rdfs:label>
+        <rdfs:label xml:lang="es">estación de deportes de invierno</rdfs:label>
     </owl:Class>
     
 
@@ -9670,6 +10449,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#YatchingPort">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
+        <rdfs:label xml:lang="es">puerto deportivo</rdfs:label>
+        <rdfs:label xml:lang="en">yachting port</rdfs:label>
     </owl:Class>
     
 
@@ -9678,6 +10459,8 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Zoo">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:label xml:lang="en">zoo</rdfs:label>
+        <rdfs:label xml:lang="es">zoológico</rdfs:label>
     </owl:Class>
     
 

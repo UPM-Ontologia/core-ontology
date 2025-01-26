@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://ontologia.segittur.es/turismo/def/extended-relatedTo#"
-     xml:base="https://ontologia.segittur.es/turismo/def/extended-relatedTo#"
+     xml:base="https://ontologia.segittur.es/turismo/def/extended-relatedTo"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -13,8 +13,7 @@
      xmlns:estur="https://ontologia.segittur.es/turismo/def/core#"
      xmlns:estur-kos="https://ontologia.segittur.es/turismo/kos/"
      xmlns:geosparql="http://www.opengis.net/ont/geosparql#">
-    <owl:Ontology rdf:about="https://ontologia.segittur.es/turismo/def/extended-relatedTo#">
-        <owl:versionIRI rdf:resource="https://ontologia.segittur.es/turismo/def/extended-relatedTo/0.0.1"/>
+    <owl:Ontology rdf:about="https://ontologia.segittur.es/turismo/def/core/1.1.0">
         <owl:imports rdf:resource="https://ontologia.segittur.es/turismo/def/core/1.1.0"/>
         <dc:rights>Creative Commons Attribution Non-Commercial No-Derivatives 4.0 International (CC BY-NC-ND 4.0)</dc:rights>
         <dct:description xml:lang="es">Este módulo extiende la propiedad estur:relatedTo de la ontología principal (core) de la Red de Ontologías del Sector Turístico al servicio de la futura Plataforma Inteligente de Destino (PID) promovida por SEGITTUR.</dct:description>
@@ -29,8 +28,66 @@
         <vann:preferredNamespaceUri rdf:resource="https://ontologia.segittur.es/turismo/def/extended-relatedTo#"/>
         <owl:versionInfo>0.0.1</owl:versionInfo>
         <owl:versionInfo xml:lang="es">0.0.1</owl:versionInfo>
-
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasFormat -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
@@ -45,9 +102,9 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#OTAOffersServiceOrTicket -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#OnlineTravelAgencyOffersServiceOrTicket -->
 
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#OTAOffersServiceOrTicket">
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#OnlineTravelAgencyOffersServiceOrTicket">
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersServiceOrTicket"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#OTA"/>
         <rdfs:range>
@@ -62,6 +119,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">agencia de viajes online ofrece servicio o ticket</rdfs:label>
+        <rdfs:label xml:lang="en">online travel agency offers service or ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -82,6 +141,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">accomodation contained in</rdfs:label>
+        <rdfs:label xml:lang="es">alojamiento contenido en</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -104,6 +165,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">accommodation near to</rdfs:label>
+        <rdfs:label xml:lang="es">alojamiento cerca de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -125,6 +188,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">accommodation offers service or ticket</rdfs:label>
+        <rdfs:label xml:lang="es">alojamiento ofrece servicio o ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -144,7 +209,15 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">accommodation operates with</rdfs:label>
+        <rdfs:label xml:lang="es">alojamiento opera con</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#containedIn -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#containedIn"/>
     
 
 
@@ -154,6 +227,8 @@
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#containedIn"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#DestinationExperience"/>
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismResource"/>
+        <rdfs:label xml:lang="en">destination experience contained in</rdfs:label>
+        <rdfs:label xml:lang="es">experiencia de destino contenida en</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -164,6 +239,8 @@
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#operatesWith"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#DestinationExperience"/>
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismResource"/>
+        <rdfs:label xml:lang="en">destination experience operates with</rdfs:label>
+        <rdfs:label xml:lang="es">experiencia de destino opera con</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -185,6 +262,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">destination management company contained in</rdfs:label>
+        <rdfs:label xml:lang="es">empresa de gestión de destino contenida en</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -207,6 +286,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">destination management company near to</rdfs:label>
+        <rdfs:label xml:lang="es">empresa de gestión de destino cerca de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -229,6 +310,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">destination management company offers service or ticket</rdfs:label>
+        <rdfs:label xml:lang="es">empresa de gestión de destinos ofrece servicio o ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -249,6 +332,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">destination management company operates with</rdfs:label>
+        <rdfs:label xml:lang="es">empresa de gestión de destinos opera con</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -271,6 +356,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">event contained in</rdfs:label>
+        <rdfs:label xml:lang="es">evento contenido en</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -292,6 +379,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">event near to</rdfs:label>
+        <rdfs:label xml:lang="es">evento cerca de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -310,6 +399,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">event organisation contained in</rdfs:label>
+        <rdfs:label xml:lang="es">organización de eventos contenida en</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -331,6 +422,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">event organization near to</rdfs:label>
+        <rdfs:label xml:lang="es">organización de eventos cerca de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -351,6 +444,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">event organization offers service or ticket</rdfs:label>
+        <rdfs:label xml:lang="es">organización de evento ofrece servicio o ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -372,6 +467,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">gastronomy offered by</rdfs:label>
+        <rdfs:label xml:lang="es">gastronomía ofrecida por</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -393,6 +490,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">global distribution system offers service or ticket</rdfs:label>
+        <rdfs:label xml:lang="es">sistema de distribución global ofrece servicio o ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -412,6 +511,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">historical and cultural resource offered by</rdfs:label>
+        <rdfs:label xml:lang="es">recurso histórico-cultural ofrecido por</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -436,7 +537,15 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">holiday package integrates</rdfs:label>
+        <rdfs:label xml:lang="es">paquete de vacaciones integra</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#integrates -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#integrates"/>
     
 
 
@@ -460,6 +569,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">local business contained in</rdfs:label>
+        <rdfs:label xml:lang="es">negocio local contenido en</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -484,6 +595,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">local business near to</rdfs:label>
+        <rdfs:label xml:lang="es">negocio local cerca de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -503,6 +616,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">local business operates with</rdfs:label>
+        <rdfs:label xml:lang="es">negocio local opera con</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -521,7 +636,33 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">micromobility working area</rdfs:label>
+        <rdfs:label xml:lang="es">área de cobertura de micromovilidad</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#nearTo -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#nearTo"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#offeredBy -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offeredBy"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#offersServiceOrTicket -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersServiceOrTicket"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#operatesWith -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#operatesWith"/>
     
 
 
@@ -543,6 +684,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">parking contenido en</rdfs:label>
+        <rdfs:label xml:lang="en">parking facility contained in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -562,6 +705,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">passenger transport contained in</rdfs:label>
+        <rdfs:label xml:lang="es">transporte de pasajeros contenido en</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -583,6 +728,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">passenger transport offers service or ticket</rdfs:label>
+        <rdfs:label xml:lang="es">transporte de pasajeros ofrece servicio o ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -603,6 +750,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">passenger transport operates with</rdfs:label>
+        <rdfs:label xml:lang="es">transporte de pasajeros opera con</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -626,6 +775,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">point of sale contained in</rdfs:label>
+        <rdfs:label xml:lang="es">punto de venta contenido en</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -648,7 +799,15 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">point of sale near to</rdfs:label>
+        <rdfs:label xml:lang="es">punto de venta cerca de</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#promotes -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#promotes"/>
     
 
 
@@ -666,6 +825,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">public service contained in</rdfs:label>
+        <rdfs:label xml:lang="es">servicio público contenido en</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -689,6 +850,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">public service near to</rdfs:label>
+        <rdfs:label xml:lang="es">servicio público cerca de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -706,6 +869,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">public service operates with</rdfs:label>
+        <rdfs:label xml:lang="es">servicio público opera con</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -733,6 +898,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">restaurant service contained in</rdfs:label>
+        <rdfs:label xml:lang="es">servicio de restauración contenido en</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -756,6 +923,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">restaurant service near to</rdfs:label>
+        <rdfs:label xml:lang="es">servicio de restauración cerca de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -774,6 +943,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">restaurant service offers service or ticket</rdfs:label>
+        <rdfs:label xml:lang="es">servicio de restauración ofrece servicio o ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -794,6 +965,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">restaurante service operates with</rdfs:label>
+        <rdfs:label xml:lang="es">servicio de restauración opera con</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -813,6 +986,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">reglas y consejos para turistas ofrece servicio o ticket</rdfs:label>
+        <rdfs:label xml:lang="en">rules and tips for tourist offers service or ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -840,6 +1015,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">reglas y consejos para turistas opera con</rdfs:label>
+        <rdfs:label xml:lang="en">rules and tips for tourists operates with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -867,6 +1044,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">reglas y consejos para turistas promueve</rdfs:label>
+        <rdfs:label xml:lang="en">rules and tips for tourists promotes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -885,6 +1064,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">guía turístico ofrece servicio o ticket</rdfs:label>
+        <rdfs:label xml:lang="en">tour guide offers service or ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -906,6 +1087,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">guía turístico opera con</rdfs:label>
+        <rdfs:label xml:lang="en">tourist guide operates with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -923,6 +1106,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">tour guide working area</rdfs:label>
+        <rdfs:label xml:lang="es">área de cobertura de guía turístico</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -940,6 +1125,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">recurso de interés turístico contenido en</rdfs:label>
+        <rdfs:label xml:lang="en">tourism resource of interest contained in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -963,6 +1150,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">recurtso de interés turístico cerca de</rdfs:label>
+        <rdfs:label xml:lang="en">tourism resource of interest near to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -982,6 +1171,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">recurso de interés turístico ofrece servicio o ticket</rdfs:label>
+        <rdfs:label xml:lang="en">tourism resource of interest offers service or ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1008,6 +1199,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">recurso de interés turístico opera con</rdfs:label>
+        <rdfs:label xml:lang="en">tourism resource of interest operates with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1027,6 +1220,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">punto de información turística ofrece servicio o ticket</rdfs:label>
+        <rdfs:label xml:lang="en">tourist information point offers service or ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1046,6 +1241,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">intermediario turístico ofrece servicio o ticket</rdfs:label>
+        <rdfs:label xml:lang="en">tourist intermediary offers service or ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1071,6 +1268,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">intermediario turístico opera con</rdfs:label>
+        <rdfs:label xml:lang="en">tourist intermediary operates with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1092,6 +1291,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">instalación turística contenida en</rdfs:label>
+        <rdfs:label xml:lang="en">tourist or related facility contained in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1116,6 +1317,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">instalación turística cerca de</rdfs:label>
+        <rdfs:label xml:lang="en">tourist or related facility near to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1134,6 +1337,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">instalación turística ofrece servicio o ticket</rdfs:label>
+        <rdfs:label xml:lang="en">tourism or related facility offers service or ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1151,6 +1356,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">instalación turística opera con</rdfs:label>
+        <rdfs:label xml:lang="en">tourist or related facility operates with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1168,6 +1375,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">infraestructura de transportes contenida en</rdfs:label>
+        <rdfs:label xml:lang="en">transport infrastructure contained in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1192,6 +1401,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">infraestructura de transporte cerca de</rdfs:label>
+        <rdfs:label xml:lang="en">transport infrastructure near to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1211,6 +1422,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">infraestructura de transporte opera con</rdfs:label>
+        <rdfs:label xml:lang="en">transport infrastructure operates with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1229,6 +1442,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="en">transport working area</rdfs:label>
+        <rdfs:label xml:lang="es">área de cobertura de transporte</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1250,6 +1465,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">agencia de viajes contenida en</rdfs:label>
+        <rdfs:label xml:lang="en">travel agency contained in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1271,6 +1488,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">agencia de viajes ofrece servicio o ticket</rdfs:label>
+        <rdfs:label xml:lang="en">travel agency offers service or ticket</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1291,6 +1510,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">agencia de viajes opera con</rdfs:label>
+        <rdfs:label xml:lang="en">travel agency operates with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1308,7 +1529,338 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:label xml:lang="es">compañía de vehículos contenida en</rdfs:label>
+        <rdfs:label xml:lang="en">vehicle company contained in</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#workingArea -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#workingArea"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#AccesoriesAndComplements -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#AccesoriesAndComplements"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Accommodation -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Accommodation"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Airport -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Airport"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#BakeryAndPastry -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BakeryAndPastry"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Beach -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Beach"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#BusOperator -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BusOperator"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#BusStation -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BusStation"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#DestinationExperience -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#DestinationExperience"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#DestinationManagementCompany -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#DestinationManagementCompany"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#DryCleaningOrLaundry -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#DryCleaningOrLaundry"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Event -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Event"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#EventOrganization -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#EventOrganization"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Facility -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Facility"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#FerryOperator -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#FerryOperator"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#GasStation -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#GasStation"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Gastronomy -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Gastronomy"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#GlobalDistributionSystem -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#GlobalDistributionSystem"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Handicrafts -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Handicrafts"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#HolidayPackage -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#HolidayPackage"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#JewelryAndWatches -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#JewelryAndWatches"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#LocalBusiness -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#LocalBusiness"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Micromobility -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Micromobility"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#OTA -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#OTA"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#ParkingFacility -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ParkingFacility"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#PassengerTerminal -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PassengerTerminal"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#PointOfSale -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PointOfSale"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#PrivateHireCompany -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PrivateHireCompany"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#PrivateHospital -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PrivateHospital"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#PublicService -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#RestaurantService -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#RetailAndFashion -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#RetailAndFashion"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#RulesAndTipsForTourists -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#RulesAndTipsForTourists"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#ShoppingMall -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ShoppingMall"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#SingularExperience -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SingularExperience"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Souvenir -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Souvenir"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Tour -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Tour"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#TourGuide -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TourGuide"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#TourismResource -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TourismResource"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#TouristDestination -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristDestination"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#TouristInformationOffice -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristInformationOffice"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#TouristIntermediary -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristIntermediary"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#TraditionalMarket -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TraditionalMarket"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#TrainStation -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TrainStation"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#TransportFacility -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TransportFacility"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#TransportService -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TransportService"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#TravelAgency -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TravelAgency"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Vehicle -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Vehicle"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#VehicleRentalCompany -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VehicleRentalCompany"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Winery -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Winery"/>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#WinterSportResort -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#WinterSportResort"/>
 </rdf:RDF>
 
 

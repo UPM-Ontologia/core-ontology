@@ -635,17 +635,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#group -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#group">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TravelUnit"/>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
-        <rdfs:label xml:lang="en">group</rdfs:label>
-        <rdfs:label xml:lang="es">grupo</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#hasAcknowledgement -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#hasAcknowledgement">
@@ -3327,7 +3316,17 @@
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#travelUnit">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Tourist"/>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#TravelUnit"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/TravelUnitType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:label xml:lang="en">travel unit</rdfs:label>
         <rdfs:label xml:lang="es">unidad de viaje</rdfs:label>
     </owl:ObjectProperty>
@@ -3506,17 +3505,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#adultsNumber -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#adultsNumber">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:label xml:lang="en">adult number</rdfs:label>
-        <rdfs:label xml:lang="es">número de adultos</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#adultsOnly -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#adultsOnly">
@@ -3553,17 +3541,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:label xml:lang="en">all inclusive package</rdfs:label>
         <rdfs:label xml:lang="es">paquete todo incluido</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#alone -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#alone">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TravelUnit"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label xml:lang="en">alone</rdfs:label>
-        <rdfs:label xml:lang="es">en solitario</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3759,17 +3736,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#babiesNumber -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#babiesNumber">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:label xml:lang="en">babies number</rdfs:label>
-        <rdfs:label xml:lang="es">número de bebes</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#beginsAt -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#beginsAt">
@@ -3909,17 +3875,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#childrenNumber -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#childrenNumber">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:label xml:lang="en">children number</rdfs:label>
-        <rdfs:label xml:lang="es">número de niños</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#city -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#city">
@@ -4001,28 +3956,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="es">condado</rdfs:label>
         <rdfs:label xml:lang="en">county</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#couple -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#couple">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TravelUnit"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label xml:lang="en">couple</rdfs:label>
-        <rdfs:label xml:lang="es">en pareja</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#coworkers -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#coworkers">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label xml:lang="es">colegas de trabajo</rdfs:label>
-        <rdfs:label xml:lang="en">coworkers</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4355,17 +4288,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#family -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#family">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label xml:lang="es">familia</rdfs:label>
-        <rdfs:label xml:lang="en">family</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#finalPrice -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#finalPrice">
@@ -4449,17 +4371,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">frequently asked questions</rdfs:label>
         <rdfs:label xml:lang="es">preguntas frecuentes</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#friends -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#friends">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Group"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label xml:lang="es">amigos</rdfs:label>
-        <rdfs:label xml:lang="en">friends</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5107,17 +5018,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#pet -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#pet">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TravelUnit"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label xml:lang="es">mascota</rdfs:label>
-        <rdfs:label xml:lang="en">pet</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#petFriendly -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#petFriendly">
@@ -5470,17 +5370,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:label xml:lang="es">responsabilidad social</rdfs:label>
         <rdfs:label xml:lang="en">social reponsability</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#specialNeeds -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#specialNeeds">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TravelUnit"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="es">necesidades especiales</rdfs:label>
-        <rdfs:label xml:lang="en">special needs</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -8147,15 +8036,6 @@
         <rdfs:comment xml:lang="en">Physical spaces that provide consumers with an accessible and convenient place where food products are offered for purchase and consumption.</rdfs:comment>
         <rdfs:label xml:lang="es">alimentación</rdfs:label>
         <rdfs:label xml:lang="en">groceries</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#Group -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Group">
-        <rdfs:label xml:lang="en">group</rdfs:label>
-        <rdfs:label xml:lang="es">grupo</rdfs:label>
     </owl:Class>
     
 
@@ -11366,15 +11246,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#TravelUnit -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TravelUnit">
-        <rdfs:label xml:lang="en">travel unit</rdfs:label>
-        <rdfs:label xml:lang="es">unidad de viaje</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#Tree -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Tree">
@@ -12771,6 +12642,14 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/TravelAgencyServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TravelAgencyServiceType">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/TravelUnitType -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TravelUnitType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     

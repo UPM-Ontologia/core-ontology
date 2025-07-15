@@ -256,3 +256,10 @@ estur-cuisinetype:Vegetarian a skos:Concept;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Vegetarian"@en ;
   skos:prefLabel "Cocina vegetariana"@es .
+
+estur-cuisinetype:Grill a skos:Concept;
+  skos:inScheme estur-kos:CuisineType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Grill"@en ;
+  skos:prefLabel "Asador"@es .

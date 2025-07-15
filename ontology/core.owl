@@ -6124,6 +6124,18 @@
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TouristOrRelatedFacility"/>
+        <rdfs:comment xml:lang="en">Facility focused on promoting agricultural, livestock, and active tourism activities in rural settings.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Instalación enfocada a la promoción de actividades agrícolas, ganaderas y de turismo activo en entornos rurales.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agrotourism Facility</rdfs:label>
+        <rdfs:label xml:lang="es">Instalación agroturística</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#Airline -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Airline">
@@ -6972,6 +6984,18 @@
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#CateringService -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CateringService">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+        <rdfs:comment xml:lang="en">Food and beverage services for events, whether large or small, formal or informal.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicio de provisión de alimentos y bebidas para eventos, ya sean grandes o pequeños, formales o informales.</rdfs:comment>
+        <rdfs:label xml:lang="en">Catering Service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio de catering</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#Cathedral -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Cathedral">
@@ -7106,7 +7130,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Church">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
-        <rdfs:comment xml:lang="es">Templo cristiano.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Templo cristiano. También se pueden utilizar otros términos como parroquia</rdfs:comment>
         <rdfs:label xml:lang="en">church</rdfs:label>
         <rdfs:label xml:lang="es">iglesia</rdfs:label>
     </owl:Class>
@@ -7593,8 +7617,9 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Enoteca -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Enoteca">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility"/>
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Groceries"/>
-        <rdfs:comment xml:lang="es">Lugar donde se exponen, guardan, venden e incluso se catan o degustan distintas clases de vinos.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Lugar donde se exponen, guardan, venden e incluso se catan o degustan distintas clases de vinos. En algunos lugares también se puede utilizar el término tabanco</rdfs:comment>
         <rdfs:comment xml:lang="en">Place where different types of wines are exhibited, stored, sold and even tasted or tasted</rdfs:comment>
         <rdfs:label xml:lang="es">Enoteca</rdfs:label>
         <rdfs:label xml:lang="en">enoteca</rdfs:label>
@@ -7983,7 +8008,7 @@
                 <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="es">Terreno donde se cultivan especies vegetales, con posible añadidura de otros elementos como fuentes, esculturas o zonas de ocio.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Terreno donde se cultivan especies vegetales, con posible añadidura de otros elementos como fuentes, esculturas o zonas de ocio. También pueden referirse a parques urbanos.</rdfs:comment>
         <rdfs:label xml:lang="en">garden</rdfs:label>
         <rdfs:label xml:lang="es">jardín</rdfs:label>
     </owl:Class>
@@ -8014,13 +8039,13 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#Gastronomy -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#Gastronomy_-_deprecated -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Gastronomy">
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Gastronomy_-_deprecated">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
         <rdfs:comment xml:lang="es">Referido a la cocina, los productos y platos típicos de una región como experiencia cultural de un destino.</rdfs:comment>
-        <rdfs:label xml:lang="en">gastronomy</rdfs:label>
-        <rdfs:label xml:lang="es">gastronomía</rdfs:label>
+        <rdfs:label xml:lang="en">gastronomy -deprecated</rdfs:label>
+        <rdfs:label xml:lang="es">gastronomía - deprecado</rdfs:label>
     </owl:Class>
     
 
@@ -8135,6 +8160,17 @@
         <rdfs:comment xml:lang="en">Establishment where hair is combed, cut, groomed and cared for.</rdfs:comment>
         <rdfs:label xml:lang="en">hairdressing</rdfs:label>
         <rdfs:label xml:lang="es">peluquería</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Hammam -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Hammam">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:label xml:lang="es">Baños árabes</rdfs:label>
+        <rdfs:label xml:lang="en">Hammam</rdfs:label>
+        <rdfs:label xml:lang="es">Los baños árabes, también conocidos como hammam, son espacios públicos de baño que combinan la limpieza del cuerpo con la relajación y el bienestar</rdfs:label>
     </owl:Class>
     
 
@@ -8332,7 +8368,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Inn">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
-        <rdfs:comment xml:lang="es">Establecimiento en el que se preparan y sirven comidas y que está decorado de forma tradicional y rústica.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Establecimiento en el que se preparan y sirven comidas y que está decorado de forma tradicional y rústica. También se puede utilizar el término venta</rdfs:comment>
         <rdfs:comment xml:lang="en">Establishment in which meals are prepared and served and which is decorated in a traditional and rustic way.</rdfs:comment>
         <rdfs:label xml:lang="en">inn</rdfs:label>
         <rdfs:label xml:lang="es">mesón</rdfs:label>
@@ -9041,6 +9077,18 @@
         <rdfs:comment xml:lang="en">Public place where they serve drinks and dance to recorded music.</rdfs:comment>
         <rdfs:label xml:lang="es">discoteca</rdfs:label>
         <rdfs:label xml:lang="en">night club</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#OilPress -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#OilPress">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility"/>
+        <rdfs:comment xml:lang="es">Molino de aceite</rdfs:comment>
+        <rdfs:comment xml:lang="en">Oil press</rdfs:comment>
+        <rdfs:label xml:lang="es">Almazara</rdfs:label>
+        <rdfs:label xml:lang="en">Oil Press</rdfs:label>
     </owl:Class>
     
 
@@ -9982,6 +10030,12 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismService"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#cuisineType"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasBookingInformation"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -10321,7 +10375,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SportsCentre">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
-        <rdfs:comment xml:lang="es">Lugar que dispone de diferentes instalaciones e infraestructuras para la práctica de disciplinas deportivas.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Lugar que dispone de diferentes instalaciones e infraestructuras para la práctica de disciplinas deportivas. También se puede denominar centro deportivo.</rdfs:comment>
         <rdfs:comment xml:lang="en">Place that has different facilities and infrastructure for practicing sports disciplines.</rdfs:comment>
         <rdfs:label xml:lang="es">polideportivo</rdfs:label>
         <rdfs:label xml:lang="en">sports centre</rdfs:label>
@@ -10419,6 +10473,18 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:comment xml:lang="es">Edificio dedicado a la congregación y culto de la religión judía.</rdfs:comment>
         <rdfs:label xml:lang="es">sinagoga</rdfs:label>
         <rdfs:label xml:lang="en">synagogue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Tailoring -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Tailoring">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RetailAndFashion"/>
+        <rdfs:comment xml:lang="en">A tailor&apos;s shop and workshop</rdfs:comment>
+        <rdfs:comment xml:lang="es">Tienda y taller de sastre</rdfs:comment>
+        <rdfs:label xml:lang="es">Sastrería</rdfs:label>
+        <rdfs:label xml:lang="en">Tailoring</rdfs:label>
     </owl:Class>
     
 
@@ -11072,6 +11138,18 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#ToyLibrary -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ToyLibrary">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:comment xml:lang="es">Centro de recreo donde se guardan juegos y juguetes para su uso y préstamo</rdfs:comment>
+        <rdfs:comment xml:lang="en">Recreation center where games and toys are stored for use and loan</rdfs:comment>
+        <rdfs:label xml:lang="es">Ludoteca</rdfs:label>
+        <rdfs:label xml:lang="es">Toy Library</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#ToyStore -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ToyStore">
@@ -11087,6 +11165,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#TraditionalMarket -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TraditionalMarket">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility"/>
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Groceries"/>
         <rdfs:comment xml:lang="en">An area made up of individual stalls that offer products of various kinds with a predominance of fresh products: meat, fruits, vegetables, fish, etc.</rdfs:comment>
         <rdfs:comment xml:lang="es">Recinto formado por puestos individuales que ofrecen productos de diversa índole con predominancia de los productos frescos: carne, frutas, verduras, pescado, etc.</rdfs:comment>
@@ -11635,6 +11714,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#Vineyard -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Vineyard">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility"/>
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
         <rdfs:comment xml:lang="en">Land planted with vineyards belonging to a winery, area, region, country, designation of origin, etc. A characteristic element of the wine landscape of La Rioja and Rioja Alavesa, currently in disuse, it became popular at the end of the 19th century, although its origin dates back centuries.</rdfs:comment>
         <rdfs:comment xml:lang="es">Tierra plantada de viñas perteneciente a una bodega, zona, región, país, denominación de origen, etc. Elemento característico del paisaje vitivinícola de La  Rioja y la Rioja Alavesa actualmente en desuso, se popularizó a finales del siglo XIX, aunque su origen se remonta a siglos atrás.</rdfs:comment>
@@ -11738,6 +11818,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#Winery -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Winery">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility"/>
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -11773,6 +11854,18 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:comment xml:lang="en">Installation located in a coastal area or next to a body of water, which is used for mooring and sheltering recreational and sports vessels, such as yachts, sailboats, motorboats and other types of private boats.</rdfs:comment>
         <rdfs:label xml:lang="es">puerto deportivo</rdfs:label>
         <rdfs:label xml:lang="en">yachting port</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#YogaCentre -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#YogaCentre">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HealthAndWellnessFacility"/>
+        <rdfs:comment xml:lang="es">Establecimiento en el que se practica yoga</rdfs:comment>
+        <rdfs:comment xml:lang="en">Establishment where yoga is practiced</rdfs:comment>
+        <rdfs:label xml:lang="es">Centro de yoga</rdfs:label>
+        <rdfs:label xml:lang="en">Yoga Centre</rdfs:label>
     </owl:Class>
     
 

@@ -1303,28 +1303,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalCruiseShipCabinService -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalCruiseShipCabinService">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Cabin-Deprecated"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/CruiseShipCabinServiceType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional cruise ship cabin service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de cabina de crucero</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalCruiseShipService -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalCruiseShipService">
@@ -2465,18 +2443,6 @@
         </rdfs:range>
         <rdfs:label xml:lang="en">offers additional soo service</rdfs:label>
         <rdfs:label xml:lang="es">ofrece servicio adicional de zoológico</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#offersCabin -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersCabin">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offers"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#CruiseShip"/>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Cabin-Deprecated"/>
-        <rdfs:label xml:lang="en">offers cabin</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece cabina</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3839,7 +3805,6 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#AccommodationCapacity"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Cabin-Deprecated"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Room"/>
                 </owl:unionOf>
             </owl:Class>
@@ -4008,17 +3973,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">numberOfBeds</rdfs:comment>
         <rdfs:comment xml:lang="es">número de camas</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#numberOfCabins -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#numberOfCabins">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Cabin-Deprecated"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:label xml:lang="en">number of cabins</rdfs:label>
-        <rdfs:label xml:lang="es">número de camarotes</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5662,44 +5616,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#Cabin-Deprecated -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Cabin-Deprecated">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasDescription"/>
-                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#Description"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasAdditionalInformation"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#maximumCapacity"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#numberOfCabins"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A cabin or private accommodation space on board the ship where passengers stay during the voyage.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Cabina o espacio de alojamiento privado a bordo del barco donde los pasajeros se alojan durante la travesía.</rdfs:comment>
-        <rdfs:label xml:lang="en">cabin - deprecated</rdfs:label>
-        <rdfs:label xml:lang="es">camarote - deprecado</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#CafeOrCoffeShop -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CafeOrCoffeShop">
@@ -6203,12 +6119,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalCruiseShipService"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersCabin"/>
-                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#Cabin-Deprecated"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10662,14 +10572,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/CongressCentreServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/CongressCentreServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/CruiseShipCabinServiceType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/CruiseShipCabinServiceType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     

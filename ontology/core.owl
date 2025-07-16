@@ -178,7 +178,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#adversity -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#adversity">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#RulesAndTipsForTourists"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#RulesAndTips"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -877,13 +877,13 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#hasRulesAndTipsForTourist -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#hasRulesAndTips -->
 
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#hasRulesAndTipsForTourist">
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#hasRulesAndTips">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TouristDestination"/>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#RulesAndTipsForTourists"/>
-        <rdfs:label xml:lang="en">has rules and tips for tourists</rdfs:label>
-        <rdfs:label xml:lang="es">tiene reglas y recomendaciones para turistas</rdfs:label>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#RulesAndTips"/>
+        <rdfs:label xml:lang="en">has rules and tips</rdfs:label>
+        <rdfs:label xml:lang="es">tiene reglas y recomendaciones</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -5427,8 +5427,9 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Certification"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#OpeningHours"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#RulesAndTipsForTourists"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#RulesAndTips"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -5445,12 +5446,13 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Certification"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#OpeningHours"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#RulesAndTipsForTourists"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#RulesAndTips"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:label xml:lang="en">valid to</rdfs:label>
         <rdfs:label xml:lang="es">válido hasta</rdfs:label>
     </owl:DatatypeProperty>
@@ -5807,6 +5809,18 @@
         <rdfs:comment xml:lang="es">Detalles, datos o explicaciones adicionales que complementan o amplían la información principal proporcionada. Es información extra que puede proporcionar aclaraciones, contexto o detalles específicos sobre un tema determinado.</rdfs:comment>
         <rdfs:label xml:lang="en">additional information</rdfs:label>
         <rdfs:label xml:lang="es">información adicional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Advice -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Advice">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RulesAndTips"/>
+        <rdfs:comment xml:lang="en">Communication to the user of advice and good practices.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Comunicación al usuario de consejos y buenas prácticas.</rdfs:comment>
+        <rdfs:label xml:lang="en">Advice</rdfs:label>
+        <rdfs:label xml:lang="es">Recomendación</rdfs:label>
     </owl:Class>
     
 
@@ -9668,9 +9682,21 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#RulesAndTipsForTourists -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#Rule -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#RulesAndTipsForTourists">
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Rule">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RulesAndTips"/>
+        <rdfs:comment xml:lang="es">Principio que se impone para dirigir la conducta, la correcta realización de una acción o el correcto desarrollo de una actividad.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Principle that is imposed to direct behavior, the correct performance of an action or the correct development of an activity.</rdfs:comment>
+        <rdfs:label xml:lang="es">Regla</rdfs:label>
+        <rdfs:label xml:lang="en">Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#RulesAndTips -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#RulesAndTips">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -9698,8 +9724,8 @@ quality, performance or satisfaction. Based on this score, the instances of each
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Conjunto de principios, normas y recomendaciones que establece un destino turístico con el objetivo de garantizar una experiencia segura, respetuosa y satisfactoria tanto para los turistas como para la comunidad local y el entorno.</rdfs:comment>
         <rdfs:comment xml:lang="en">Set of principles, standards and recommendations established by a tourist destination with the aim of guaranteeing a safe, respectful and satisfactory experience for both tourists and the local community and the environment.</rdfs:comment>
-        <rdfs:label xml:lang="es">reglas y consejos para el turista</rdfs:label>
-        <rdfs:label xml:lang="en">rules and tips for tourists</rdfs:label>
+        <rdfs:label xml:lang="es">Reglas y consejos</rdfs:label>
+        <rdfs:label xml:lang="en">Rules and Tips</rdfs:label>
     </owl:Class>
     
 
@@ -10484,7 +10510,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasRulesAndTipsForTourist"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasRulesAndTips"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11225,30 +11251,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:comment xml:lang="es">También conocido como chozo, se trata de una pequeña edificación de piedra de una sola planta, normalmente de forma circular y coronada con una falsa cúpula, levantada por el propio agricultor de la vid como refugio ante las inclemencias del tiempo o durante los momentos de descanso, y como almacén de herramientas de labor. También utilizada como puesto de vigilancia para proteger las cosechas. Elemento característico del paisaje vitivinícola de La Rioja y la Rioja Alavesa actualmente en desuso, se popularizó a finales del siglo XIX, aunque su origen se remonta a siglos atrás.</rdfs:comment>
         <rdfs:label xml:lang="es">guardaviña</rdfs:label>
         <rdfs:label xml:lang="en">vineyard shelter</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#VisitAdvice -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VisitAdvice">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RulesAndTipsForTourists"/>
-        <rdfs:comment xml:lang="en">Communication to the user of advice and good practices.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Comunicación al usuario de consejos y buenas prácticas.</rdfs:comment>
-        <rdfs:label xml:lang="es">recomendación</rdfs:label>
-        <rdfs:label xml:lang="en">visit advice</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#VisitRule -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VisitRule">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RulesAndTipsForTourists"/>
-        <rdfs:comment xml:lang="es">Principio que se impone para dirigir la conducta, la correcta realización de una acción o el correcto desarrollo de una actividad.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Principle that is imposed to direct behavior, the correct performance of an action or the correct development of an activity.</rdfs:comment>
-        <rdfs:label xml:lang="es">regla</rdfs:label>
-        <rdfs:label xml:lang="en">visit rule</rdfs:label>
     </owl:Class>
     
 

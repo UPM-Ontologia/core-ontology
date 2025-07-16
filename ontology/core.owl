@@ -2600,17 +2600,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#registration -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#registration">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Accommodation"/>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Registration"/>
-        <rdfs:label xml:lang="en">registration</rdfs:label>
-        <rdfs:label xml:lang="es">registro</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#relatedTo -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#relatedTo">
@@ -3035,16 +3024,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#beginsAt -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#beginsAt">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label xml:lang="en">begins at</rdfs:label>
-        <rdfs:label xml:lang="es">comienza en</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#brand -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#brand">
@@ -3133,10 +3112,10 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#checkInHours -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#checkInHours">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Registration"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Accommodation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label xml:lang="en">check-in hours</rdfs:label>
-        <rdfs:label xml:lang="es">hora de registro</rdfs:label>
+        <rdfs:label xml:lang="es">hora de llegada</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3144,7 +3123,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#checkOutHours -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#checkOutHours">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Registration"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Accommodation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label xml:lang="en">check-out hours</rdfs:label>
         <rdfs:label xml:lang="es">hora de salida</rdfs:label>
@@ -3400,17 +3379,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">email</rdfs:label>
         <rdfs:label xml:lang="es">email</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#endDate -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#endDate">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label xml:lang="en">end date</rdfs:label>
-        <rdfs:label xml:lang="es">fecha de finalización</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3906,22 +3874,10 @@
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#online">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Registration"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Accommodation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label xml:lang="en">online</rdfs:label>
-        <rdfs:label xml:lang="es">online</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#onsite -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#onsite">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Registration"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label xml:lang="en">onsite</rdfs:label>
-        <rdfs:label xml:lang="es">onsite</rdfs:label>
+        <rdfs:label xml:lang="es">check-in autónomo</rdfs:label>
+        <rdfs:label xml:lang="en">online check-in</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4778,12 +4734,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasTransactionInformation"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#registration"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8207,44 +8157,6 @@ calidad, rendimiento o satisfacción. A partir de está puntuación, se podrán 
 quality, performance or satisfaction. Based on this score, the instances of each entity can be ordered to recommend based on the tourist profile.</rdfs:comment>
         <rdfs:label xml:lang="es">Puntuación</rdfs:label>
         <rdfs:label xml:lang="en">Rating</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#Registration -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Registration">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#checkInHours"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#checkOutHours"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#online"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#onsite"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Complete process that encompasses the check-in and check-out actions of a client.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Proceso completo que engloba las acciones de check-in (registro de entrada) y check-out (registro de salida) de un cliente.</rdfs:comment>
-        <rdfs:label xml:lang="en">registration</rdfs:label>
-        <rdfs:label xml:lang="es">registro</rdfs:label>
     </owl:Class>
     
 

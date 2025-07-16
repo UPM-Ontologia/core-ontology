@@ -870,20 +870,9 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceSpecification"/>
         <rdfs:label xml:lang="en">has price information</rdfs:label>
         <rdfs:label xml:lang="es">tiene información de precios</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#hasReducedFare -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#hasReducedFare">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#ReducedFare"/>
-        <rdfs:label xml:lang="en">has reduced fare</rdfs:label>
-        <rdfs:label xml:lang="es">tiene tarifa reducida</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3012,17 +3001,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#promotion -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#promotion">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Promotion"/>
-        <rdfs:label xml:lang="es">promoción</rdfs:label>
-        <rdfs:label xml:lang="en">promotion</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#propulsionType -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#propulsionType">
@@ -3711,17 +3689,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#averagePrice -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#averagePrice">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:label xml:lang="en">average price</rdfs:label>
-        <rdfs:label xml:lang="es">precio medio</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#beginsAt -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#beginsAt">
@@ -3912,13 +3879,16 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PaymentInformation"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PriceSpecification"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristDestination"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">La divisa debe especificarse de acuerdo con la ISO 4217</rdfs:comment>
+        <rdfs:comment xml:lang="en">The currency must be described according to the norm ISO 4217</rdfs:comment>
         <rdfs:label xml:lang="en">currency</rdfs:label>
-        <rdfs:label xml:lang="es">moneda</rdfs:label>
+        <rdfs:label xml:lang="es">divisa</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3986,25 +3956,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#description -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#description">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Promotion"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#ReducedFare"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="es">descripción</rdfs:label>
-        <rdfs:label xml:lang="en">description</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#destination -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#destination">
@@ -4038,7 +3989,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#discount -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#discount">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Promotion"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceSpecification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="es">descuento</rdfs:label>
         <rdfs:label xml:lang="en">discount</rdfs:label>
@@ -4184,35 +4135,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#finalPrice -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#finalPrice">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Promotion"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:label xml:lang="en">final price</rdfs:label>
-        <rdfs:label xml:lang="es">precio final</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#flatRate -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#flatRate">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#ReducedFare"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:label xml:lang="en">flat rate</rdfs:label>
-        <rdfs:label xml:lang="es">tarifa plana</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#free -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#free">
@@ -4326,17 +4248,9 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#isAccesibleForFree -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#isAccesibleForFree">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#ReducedFare"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label xml:lang="es">es accesible de manera gratuita</rdfs:label>
-        <rdfs:label xml:lang="en">is accesible for free</rdfs:label>
+        <rdfs:label xml:lang="en">accesible for free</rdfs:label>
+        <rdfs:label xml:lang="es">accesso gratuito</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4499,7 +4413,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#maxPrice -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#maxPrice">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceSpecification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">maximum price</rdfs:label>
         <rdfs:label xml:lang="es">precio máximo</rdfs:label>
@@ -4639,7 +4553,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#minPrice -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#minPrice">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceSpecification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">minimum price</rdfs:label>
         <rdfs:label xml:lang="es">precio mínimo</rdfs:label>
@@ -4947,20 +4861,13 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#priceCurrency -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#price -->
 
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#priceCurrency">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#ReducedFare"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="es">moneda del precio</rdfs:label>
-        <rdfs:label xml:lang="en">price currency</rdfs:label>
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#price">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="es">precio</rdfs:label>
+        <rdfs:label xml:lang="en">price</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5325,14 +5232,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#taxesAndFessIncluded -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#taxesAndFessIncluded">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#ReducedFare"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceSpecification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:label xml:lang="es">tasas y cargos incluidos</rdfs:label>
         <rdfs:label xml:lang="en">taxes and fees included</rdfs:label>
@@ -9325,57 +9225,49 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#PriceInformation -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#PriceSpecification -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PriceInformation">
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PriceSpecification">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasReducedFare"/>
-                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#ReducedFare"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#discount"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#promotion"/>
-                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#Promotion"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#currency"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#averagePrice"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#isAccesibleForFree"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#maxPrice"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#flatRate"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#isAccesibleForFree"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#maxPrice"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#minPrice"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#priceCurrency"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#price"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9387,8 +9279,8 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Coste total del producto o servicio que puede incluir impuestos, cargos o reducciones en las tarifas.</rdfs:comment>
         <rdfs:comment xml:lang="en">Total cost of the product or service that may include taxes, charges, or rate reductions.</rdfs:comment>
-        <rdfs:label xml:lang="es">información del precio</rdfs:label>
-        <rdfs:label xml:lang="en">price information</rdfs:label>
+        <rdfs:label xml:lang="es">Especificación del precio</rdfs:label>
+        <rdfs:label xml:lang="en">price specification</rdfs:label>
     </owl:Class>
     
 
@@ -9431,44 +9323,6 @@
         <rdfs:comment xml:lang="en">Establishment intended for the diagnosis and treatment of patients, whose financing is provided by the patients themselves, by insurance companies or by foreign embassies.</rdfs:comment>
         <rdfs:label xml:lang="es">hospital privado</rdfs:label>
         <rdfs:label xml:lang="en">private hospital</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#Promotion -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Promotion">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#availabilityEnds"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#availabilityStarts"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#discount"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#finalPrice"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Advertising campaign that is carried out for a certain product or service for a limited time through an attractive offer.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Campaña publicitaria que se hace de un determinado producto o servicio durante un tiempo limitado mediante una oferta atractiva.</rdfs:comment>
-        <rdfs:label xml:lang="es">promoción</rdfs:label>
-        <rdfs:label xml:lang="en">promotion</rdfs:label>
     </owl:Class>
     
 
@@ -9606,18 +9460,6 @@ calidad, rendimiento o satisfacción. A partir de está puntuación, se podrán 
 quality, performance or satisfaction. Based on this score, the instances of each entity can be ordered to recommend based on the tourist profile.</rdfs:comment>
         <rdfs:label xml:lang="es">Puntuación</rdfs:label>
         <rdfs:label xml:lang="en">Rating</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#ReducedFare -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ReducedFare">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceInformation"/>
-        <rdfs:comment xml:lang="en">Most economical payment option in order to attract a specific segment of customers or in certain special circumstances.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Opción de pago más económica con la finalidad de atraer a un segmento específico de clientes o en ciertas circunstancias especiales.</rdfs:comment>
-        <rdfs:label xml:lang="en">reduced fare</rdfs:label>
-        <rdfs:label xml:lang="es">tarifa reducida</rdfs:label>
     </owl:Class>
     
 

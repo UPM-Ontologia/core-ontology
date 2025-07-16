@@ -18,7 +18,7 @@
 
 estur-kos:DestinationType a skos:ConceptScheme ; 
     dct:issued "2024-10-29"^^xsd:date ;
-    dct:modified "2024-10-29"^^xsd:date ;
+    dct:modified "2025-07-16"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
@@ -38,7 +38,7 @@ estur-destinationtype:CoastalDestination a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Coastal destination"@en ;
-  skos:prefLabel "Destino costero"@es .
+  skos:prefLabel "Destino de costa"@es .
 
 estur-destinationtype:enotourismDestination a skos:Concept;
   skos:inScheme estur-kos:DestinationType;
@@ -52,7 +52,14 @@ estur-destinationtype:InlandDestination a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Inland destination"@en ;
-  skos:prefLabel "Destino interior"@es .
+  skos:prefLabel "Destino de interior"@es .
+
+estur-destinationtype:IslandDestination a skos:Concept;
+  skos:inScheme estur-kos:DestinationType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Island destination"@en ;
+  skos:prefLabel "Destino insular"@es .
 
 estur-destinationtype:MountainDestination a skos:Concept;
   skos:inScheme estur-kos:DestinationType;

@@ -18,14 +18,14 @@
 
 estur-kos:AdversityType a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+    dct:modified "2025-07-16"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Adversity Type"@en ;
-    rdfs:label "Tipo de adversidad"@es ;
-    dct:title "Concept scheme grouping adversity types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de adversidad"@es .
+    rdfs:label "Adversity"@en ;
+    rdfs:label "Adversidad"@es ;
+    dct:title "Concept scheme grouping adversities"@en ;
+    dct:title "Esquema de conceptos agrupando adversidades"@es .
 
 #################################################################
 #

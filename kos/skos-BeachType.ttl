@@ -18,7 +18,7 @@
 
 estur-kos:BeachType a skos:ConceptScheme ; 
     dct:issued "2024-10-29"^^xsd:date ;
-    dct:modified "2024-10-29"^^xsd:date ;
+    dct:modified "2025-07-16"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
@@ -52,14 +52,14 @@ estur-beachtype:inland a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Inland"@en ;
-  skos:prefLabel "Playa interior"@es .
+  skos:prefLabel "Playa de interior"@es .
 
 estur-beachtype:isolatedBeach a skos:Concept;
   skos:inScheme estur-kos:BeachType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Isolated beach"@en ;
-  skos:prefLabel "Playa aislada"@es .
+  skos:prefLabel "Playa no urbana"@es .
 
 estur-beachtype:riverBeach a skos:Concept;
   skos:inScheme estur-kos:BeachType;
@@ -86,12 +86,20 @@ estur-beachtype:whiteSand a skos:Concept;
   skos:inScheme estur-kos:BeachType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "White Sand beach"@en ;
-  skos:prefLabel "Playa de arena blanca"@es .
+  skos:prefLabel "White Sand"@en ;
+  skos:prefLabel "Arena blanca"@es .
 
-estur-beachtype:windy a skos:Concept;
+estur-beachtype:urbanised a skos:Concept;
   skos:inScheme estur-kos:BeachType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Windy"@en ;
-  skos:prefLabel "Playa con viento"@es .
+  skos:prefLabel "Urbanised"@en ;
+  skos:prefLabel "Playa urbanizada"@es .
+
+estur-beachtype:sandyBottom a skos:Concept;
+  skos:inScheme estur-kos:BeachType;
+  skos:prefLabel "Sandy bottom"@en ;
+  skos:prefLabel "Fondo arenoso"@es .
+
+estur-beachtype:rockyBottom a skos:Concept;
+  skos:inScheme estur-kos:BeachType;
+  skos:prefLabel "Rocky bottom"@en ;
+  skos:prefLabel "Fondo rocoso"@es .

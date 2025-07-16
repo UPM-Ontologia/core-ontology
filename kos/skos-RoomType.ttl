@@ -18,14 +18,14 @@
 
 estur-kos:RoomType a skos:ConceptScheme ; 
     dct:issued "2024-10-29"^^xsd:date ;
-    dct:modified "2024-10-29"^^xsd:date ;
+    dct:modified "2025-07-16"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Room Type"@en ;
-    rdfs:label "Tipo de habitación"@es ;
-    dct:title "Concept scheme grouping room types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de habitación"@es .
+    rdfs:label "Accommodation Unit Category"@en ;
+    rdfs:label "Tipo de unidad de alojamiento"@es ;
+    dct:title "Concept scheme grouping accommodation unit categories"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de unidad de alojamiento"@es .
 
 #################################################################
 #
@@ -38,7 +38,7 @@ estur-roomtype:SingleRoom a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Single room"@en ;
-  skos:prefLabel "Habitación sencilla"@es .
+  skos:prefLabel "Habitación individual"@es .
 
 estur-roomtype:DoubleRoom a skos:Concept;
   skos:inScheme estur-kos:RoomType;
@@ -47,17 +47,38 @@ estur-roomtype:DoubleRoom a skos:Concept;
   skos:prefLabel "Double room"@en ;
   skos:prefLabel "Habitación doble"@es .
 
-estur-roomtype:TripleRoom a skos:Concept;
+estur-roomtype:TwinRoom a skos:Concept;
   skos:inScheme estur-kos:RoomType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Triple room"@en ;
-  skos:prefLabel "Habitación triple"@es .
+  skos:prefLabel "Twin room"@en ;
+  skos:prefLabel "Habitación con camas separadas"@es .
 
-estur-roomtype:QuadrupleRoom a skos:Concept;
+estur-roomtype:FamilyRoom a skos:Concept;
   skos:inScheme estur-kos:RoomType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Quadruple room"@en ;
-  skos:prefLabel "Habitación cuádruple"@es .
+  skos:prefLabel "Family room"@en ;
+  skos:prefLabel "Habitación familiar"@es .
+
+estur-roomtype:Suite a skos:Concept;
+  skos:inScheme estur-kos:RoomType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Suite"@en ;
+  skos:prefLabel "Suite"@es .
+
+estur-roomtype:Studio a skos:Concept;
+  skos:inScheme estur-kos:RoomType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Studio"@en ;
+  skos:prefLabel "Estudio"@es .
+
+estur-roomtype:Apartment a skos:Concept;
+  skos:inScheme estur-kos:RoomType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Apartment"@en ;
+  skos:prefLabel "Apartamento"@es .
 

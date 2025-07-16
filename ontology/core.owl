@@ -132,27 +132,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#accessType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#accessType">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismResource"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AccessType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">access type</rdfs:label>
-        <rdfs:label xml:lang="es">tipo de acceso</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#accommodationCapacity -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#accommodationCapacity">
@@ -160,17 +139,6 @@
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#AccommodationCapacity"/>
         <rdfs:label xml:lang="es">capacidad alojativa</rdfs:label>
         <rdfs:label xml:lang="en">capacity of the accommodation</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#activityType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#activityType">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Activity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:label xml:lang="en">activity type</rdfs:label>
-        <rdfs:label xml:lang="es">tipo de actividad</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -305,48 +273,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#cabinType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#cabinType">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Cabin-Deprecated"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/CabinType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">cabin type</rdfs:label>
-        <rdfs:label xml:lang="es">tipo de cabina</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#campingSpecialty -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#campingSpecialty">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Camping"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/CampingSpecialty"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">camping specialty</rdfs:label>
-        <rdfs:label xml:lang="es">especialidad del camping</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#cancellationFee -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#cancellationFee">
@@ -470,27 +396,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#educationLevel -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#educationLevel">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Person"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/EducationLevel"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">education level</rdfs:label>
-        <rdfs:label xml:lang="es">nivel educativo</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#event -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#event">
@@ -541,90 +446,6 @@
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Ferry"/>
         <rdfs:label xml:lang="en">ferry</rdfs:label>
         <rdfs:label xml:lang="es">ferry</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#ferryType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#ferryType">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Ferry"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/FerryType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">ferry type</rdfs:label>
-        <rdfs:label xml:lang="es">tipo de ferry</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#gardenCategory -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#gardenCategory">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Garden"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/GardenCategory"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">garden category</rdfs:label>
-        <rdfs:label xml:lang="es">tipo de jardín</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#gardenStyle -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#gardenStyle">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Garden"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/GardenStyle"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="es">estilo de jardín</rdfs:label>
-        <rdfs:label xml:lang="en">garden style</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#gender -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#gender">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Person"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/Gender"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">gender</rdfs:label>
-        <rdfs:label xml:lang="es">género</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -989,27 +810,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#hotelSpecialty -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#hotelSpecialty">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Hotel"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/HotelSpecialty"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="es">especialidad del hotel</rdfs:label>
-        <rdfs:label xml:lang="en">hotel specialty</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#integrates -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#integrates">
@@ -1049,34 +849,6 @@
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#LenghtOfStay"/>
         <rdfs:label xml:lang="es">duración de la estancia</rdfs:label>
         <rdfs:label xml:lang="en">lenght of stay</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#meansOfTransport -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#meansOfTransport">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#HolidayPackage"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Tourist"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/MeansOfTransport"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">means of transport</rdfs:label>
-        <rdfs:label xml:lang="es">medio de transporte</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1144,6 +916,27 @@
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#multiadventureActivityType -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#multiadventureActivityType">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Activity"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/MultiadventureActivityType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">multiadventure activity type</rdfs:label>
+        <rdfs:label xml:lang="es">tipo de actividad multiaventura</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#museumType -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#museumType">
@@ -1161,28 +954,6 @@
         </rdfs:range>
         <rdfs:label xml:lang="en">museum type</rdfs:label>
         <rdfs:label xml:lang="es">tipo de museo</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#natureActivityType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#natureActivityType">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#activityType"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Activity"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/NatureActivityType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">nature activity type</rdfs:label>
-        <rdfs:label xml:lang="es">tipo de actividad natural</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1210,6 +981,28 @@
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offers">
         <rdfs:label xml:lang="en">offers</rdfs:label>
         <rdfs:label xml:lang="es">ofrece</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#offersAccommodationRateType -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAccommodationRateType">
+        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offers"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Accommodation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AccommodationRateType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">offers meal plan</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece plan de comidas</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2390,7 +2183,7 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/TouriatIntermediaryServiceType"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/TouristIntermediaryServiceType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2544,7 +2337,7 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/VehicleExperienceServiceType"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/VehicleExperienceType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -2582,17 +2375,6 @@
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalVehicleRentalService">
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#VehicleRentalService"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/VehicleRentalServiceType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:label xml:lang="en">offers additional vehicle rental service</rdfs:label>
         <rdfs:label xml:lang="es">ofrece servicio adicional de alquiler de vehículos</rdfs:label>
     </owl:ObjectProperty>
@@ -2719,28 +2501,6 @@
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#HolidayPackage"/>
         <rdfs:label xml:lang="en">offers holiday package</rdfs:label>
         <rdfs:label xml:lang="es">ofrece paquete de vacaciones</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#offersMealPlan -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersMealPlan">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offers"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Accommodation"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/MealPlan"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">offers meal plan</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece plan de comidas</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2879,42 +2639,10 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#parkingSecurity -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#parkingSecurity">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#ParkingFacility"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/ParkingSecurityType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">parking security</rdfs:label>
-        <rdfs:label xml:lang="es">seguridad del parking</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#parkingType -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#parkingType">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#ParkingFacility"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/ParkingType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:label xml:lang="en">parking type</rdfs:label>
         <rdfs:label xml:lang="es">tipo de parking</rdfs:label>
     </owl:ObjectProperty>
@@ -2970,61 +2698,12 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#professionalPosition -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#professionalPosition">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Person"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/ProfessionalPosition"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="es">posición profesional</rdfs:label>
-        <rdfs:label xml:lang="en">professional position</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#promotes -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#promotes">
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#relatedTo"/>
         <rdfs:label xml:lang="en">promotes</rdfs:label>
         <rdfs:label xml:lang="es">promueve</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#propulsionType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#propulsionType">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TransportService"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Vehicle"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/PropulsionType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">propulsion type</rdfs:label>
-        <rdfs:label xml:lang="es">tipo de propulsión</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3078,27 +2757,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#reservationType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#reservationType">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#ParkingFacility"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/ReservationType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">reservation type</rdfs:label>
-        <rdfs:label xml:lang="es">tipo de reserva</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#roomType -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#roomType">
@@ -3121,26 +2779,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#saturationLevel -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#saturationLevel">
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/SaturationLevel"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="es">nivel de saturación</rdfs:label>
-        <rdfs:label xml:lang="en">saturation level</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#seaConditions -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#seaConditions">
@@ -3148,55 +2786,6 @@
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#SeaConditions"/>
         <rdfs:label xml:lang="es">condiciones del mar</rdfs:label>
         <rdfs:label xml:lang="en">sea conditions</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#seabedType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#seabedType">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Beach"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/SeabedType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">seabed type</rdfs:label>
-        <rdfs:label xml:lang="es">tipo de fondo marino</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#shipmentScope -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#shipmentScope">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#ParcelAndCourier"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PostOffice"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/ShipmentScope"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">shipment scope</rdfs:label>
-        <rdfs:label xml:lang="es">ámbito del envío</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3222,27 +2811,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#socketType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#socketType">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#EVChargingStation"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/SocketType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">socket type</rdfs:label>
-        <rdfs:label xml:lang="es">tipo de enchufe</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#stationType -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#stationType">
@@ -3264,26 +2832,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#status -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#status">
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/Status"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="es">estado</rdfs:label>
-        <rdfs:label xml:lang="en">status</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#tour -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#tour">
@@ -3291,27 +2839,6 @@
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Tour"/>
         <rdfs:label xml:lang="en">tour</rdfs:label>
         <rdfs:label xml:lang="es">tour</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#transmissionType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#transmissionType">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Vehicle"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/TransmissionType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="es">tipo de transmisión</rdfs:label>
-        <rdfs:label xml:lang="en">transmission type</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3347,35 +2874,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#travellerClass -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#travellerClass">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Airline"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#BusOperator"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#RailwayCompany"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/TravellerClass"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="es">clase de viajero</rdfs:label>
-        <rdfs:label xml:lang="en">traveller class</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#vehicle -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#vehicle">
@@ -3397,7 +2895,7 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/VehicleExperienceServiceType"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/VehicleExperienceType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3437,28 +2935,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#waterActivityType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#waterActivityType">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#activityType"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Activity"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/WaterActivityType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="es">tipo de actividad acuática</rdfs:label>
-        <rdfs:label xml:lang="en">water activity type</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#weatherForecast -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#weatherForecast">
@@ -3476,26 +2952,6 @@
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#relatedTo"/>
         <rdfs:label xml:lang="en">working area</rdfs:label>
         <rdfs:label xml:lang="es">área de trabajo</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#workshopType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#workshopType">
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/WorkshopType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="es">tipo de taller</rdfs:label>
-        <rdfs:label xml:lang="en">workshop type</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4248,6 +3704,17 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:label xml:lang="en">accesible for free</rdfs:label>
         <rdfs:label xml:lang="es">accesso gratuito</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#isIndoorParking -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#isIndoorParking">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#ParkingFacility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">aparcamiento cubierto</rdfs:label>
+        <rdfs:label xml:lang="en">is indoor parking</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5723,6 +5190,12 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Activity -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Activity">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#multiadventureActivityType"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="es">Actividad</rdfs:label>
         <rdfs:label xml:lang="en">Activity</rdfs:label>
     </owl:Class>
@@ -6074,13 +5547,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#seabedType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Bank of the sea or a large river, formed by sandbanks on an almost flat surface</rdfs:comment>
         <rdfs:comment xml:lang="es">Ribera del mar o de un río grande, formada de arenales en superficie casi plana.</rdfs:comment>
         <rdfs:label xml:lang="en">beach</rdfs:label>
@@ -6362,12 +5828,6 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#cabinType"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasDescription"/>
                 <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#Description"/>
             </owl:Restriction>
@@ -6428,12 +5888,6 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Camping">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Accommodation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#campingSpecialty"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#stars"/>
@@ -7093,12 +6547,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#socketType"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasTransactionInformation"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -7484,13 +6932,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#ferryType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#maximumVehicleHeightAccepted"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -7587,19 +7028,6 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Garden">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#gardenStyle"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#gardenCategory"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Terreno donde se cultivan especies vegetales, con posible añadidura de otros elementos como fuentes, esculturas o zonas de ocio. También pueden referirse a parques urbanos.</rdfs:comment>
         <rdfs:label xml:lang="en">garden</rdfs:label>
         <rdfs:label xml:lang="es">jardín</rdfs:label>
@@ -7924,12 +7352,6 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Hotel">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Accommodation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hotelSpecialty"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#stars"/>
@@ -8845,12 +8267,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#shipmentScope"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#maximumSize"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -8893,12 +8309,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#reservationType"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#parkingType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -8909,6 +8319,13 @@
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#capacity"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#isIndoorParking"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8957,12 +8374,6 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Organisation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#travellerClass"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasTransactionInformation"/>
@@ -9032,20 +8443,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasPersonRole"/>
                 <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#PersonRole"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#educationLevel"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#gender"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9158,12 +8555,6 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PostOffice">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#shipmentScope"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasTransactionInformation"/>
@@ -10358,12 +9749,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#meansOfTransport"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#travelUnit"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
@@ -10795,12 +10180,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismService"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#propulsionType"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#vehicleType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -10962,20 +10341,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasAdditionalInformation"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://ontologia.segittur.es/turismo/def/core#AdditionalInformation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#propulsionType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#transmissionType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11479,9 +10844,9 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/AccessType -->
+    <!-- https://ontologia.segittur.es/turismo/kos/AccommodationRateType -->
 
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AccessType">
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AccommodationRateType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -11591,22 +10956,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/CabinType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/CabinType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/CampingSpecialty -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/CampingSpecialty">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/CarpoolServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/CarpoolServiceType">
@@ -11679,14 +11028,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/EducationLevel -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/EducationLevel">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/EducationalServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/EducationalServiceType">
@@ -11751,38 +11092,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/FerryType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/FerryType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/GardenCategory -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/GardenCategory">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/GardenStyle -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/GardenStyle">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/Gender -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/Gender">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/GymServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/GymServiceType">
@@ -11831,14 +11140,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/HotelSpecialty -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/HotelSpecialty">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/LabelType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/LabelType">
@@ -11866,22 +11167,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/LocalBusinessServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/LocalBusinessServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/MealPlan -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/MealPlan">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/MeansOfTransport -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/MeansOfTransport">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -11919,6 +11204,14 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/kos/MultiadventureActivityType -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/MultiadventureActivityType">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/kos/MuseumServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/MuseumServiceType">
@@ -11935,14 +11228,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/NatureActivityType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/NatureActivityType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/ParcelAndCourierServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/ParcelAndCourierServiceType">
@@ -11954,22 +11239,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/ParkingFacilityServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/ParkingFacilityServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/ParkingSecurityType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/ParkingSecurityType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/ParkingType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/ParkingType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -12015,22 +11284,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/ProfessionalPosition -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/ProfessionalPosition">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/PropulsionType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/PropulsionType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/RailwayCompanyServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/RailwayCompanyServiceType">
@@ -12042,14 +11295,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/RateType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/RateType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/ReservationType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/ReservationType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -12095,41 +11340,9 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/SaturationLevel -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/SaturationLevel">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/SeabedType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/SeabedType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/ShipmentScope -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/ShipmentScope">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/SocialMediaPlatform -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/SocialMediaPlatform">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/SocketType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/SocketType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -12154,14 +11367,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/StationType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/StationType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/Status -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/Status">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -12199,14 +11404,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/TouriatIntermediaryServiceType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TouriatIntermediaryServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/TourismResourceOfInterestServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TourismResourceOfInterestServiceType">
@@ -12218,6 +11415,14 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/TouristDestinationServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TouristDestinationServiceType">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/TouristIntermediaryServiceType -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TouristIntermediaryServiceType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -12247,14 +11452,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/TransmissionType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TransmissionType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/TransportInfrastructureServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TransportInfrastructureServiceType">
@@ -12279,6 +11476,14 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/kos/TravelMotivationType -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TravelMotivationType">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/kos/TravelUnitType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TravelUnitType">
@@ -12287,17 +11492,9 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/TravellerClass -->
+    <!-- https://ontologia.segittur.es/turismo/kos/VehicleExperienceType -->
 
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TravellerClass">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/VehicleExperienceServiceType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/VehicleExperienceServiceType">
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/VehicleExperienceType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -12306,14 +11503,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/VehicleRentalCompanyServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/VehicleRentalCompanyServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/VehicleRentalServiceType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/VehicleRentalServiceType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -12343,25 +11532,9 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/WaterActivityType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/WaterActivityType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/WineryServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/WineryServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/WorkshopType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/WorkshopType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -12386,23 +11559,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#areaServed">
         <rdfs:label xml:lang="en">area served</rdfs:label>
         <rdfs:label xml:lang="es">área cubierta</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/kos/GardenStyle"/>
-        </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>
 

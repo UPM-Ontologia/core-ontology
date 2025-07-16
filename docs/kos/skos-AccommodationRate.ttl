@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-gardenstyle: <https://ontologia.segittur.es/turismo/kos/gardenstyle/> .
+@prefix estur-accommodationratetype: <https://ontologia.segittur.es/turismo/kos/accommodationratetype/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:GardenStyle a skos:ConceptScheme ; 
+estur-kos:AccommodationRateType a skos:ConceptScheme ; 
     dct:issued "2024-10-29"^^xsd:date ;
-    dct:modified "2024-10-29"^^xsd:date ;
+    dct:modified "2025-07-16"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Garden style"@en ;
-    rdfs:label "Estilo de jardín"@es ;
-    dct:title "Concept scheme grouping garden styles"@en ;
-    dct:title "Esquema de conceptos agrupando estilos de jardín"@es .
+    rdfs:label "Accommodation rate type"@en ;
+    rdfs:label "Tipo de tarifa de alojamiento"@es ;
+    dct:title "Concept scheme grouping accommodation rate types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de tarifas de alojamiento"@es .
 
 #################################################################
 #
@@ -33,51 +33,37 @@ estur-kos:GardenStyle a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-gardenstyle:Japanese a skos:Concept;
-  skos:inScheme estur-kos:GardenStyle;
+estur-accommodationratetype:AccommodationOnly a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRateType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Japanese"@en ;
-  skos:prefLabel "Japonés"@es .
+  skos:prefLabel "Accommodation only"@en ;
+  skos:prefLabel "Sólo alojamiento"@es .
 
-estur-gardenstyle:Chinese a skos:Concept;
-  skos:inScheme estur-kos:GardenStyle;
+estur-accommodationratetype:AllInclusive a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRateType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Chinese"@en ;
-  skos:prefLabel "Chino"@es .
+  skos:prefLabel "All inclusive"@en ;
+  skos:prefLabel "Todo incluido"@es .
 
-estur-gardenstyle:English a skos:Concept;
-  skos:inScheme estur-kos:GardenStyle;
+estur-accommodationratetype:AccommodationWithBreakfast a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRateType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "English"@en ;
-  skos:prefLabel "Inglés"@es .
+  skos:prefLabel "Accommodation with Breakfast"@en ;
+  skos:prefLabel "Alojamiento con desayuno"@es .
 
-estur-gardenstyle:French a skos:Concept;
-  skos:inScheme estur-kos:GardenStyle;
+estur-accommodationratetype:FullBoard a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRateType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "French"@en ;
-  skos:prefLabel "Francés"@es .
+  skos:prefLabel "Full board"@en ;
+  skos:prefLabel "Pensión completa"@es .
 
-estur-gardenstyle:Kitchen a skos:Concept;
-  skos:inScheme estur-kos:GardenStyle;
+estur-accommodationratetype:HalfBoard a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRateType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Kitchen"@en ;
-  skos:prefLabel "Cocina"@es .
-
-estur-gardenstyle:Rosarium a skos:Concept;
-  skos:inScheme estur-kos:GardenStyle;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Rosarium"@en ;
-  skos:prefLabel "Rosaleda"@es .
-
-estur-gardenstyle:Zen a skos:Concept;
-  skos:inScheme estur-kos:GardenStyle;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Zen"@en ;
-  skos:prefLabel "Zen"@es .
+  skos:prefLabel "Half board"@en ;
+  skos:prefLabel "Media pensión"@es .

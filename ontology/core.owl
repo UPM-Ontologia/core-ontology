@@ -2708,17 +2708,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#publicTransportRoute -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#publicTransportRoute">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicTransportStop"/>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportRoute"/>
-        <rdfs:label xml:lang="en">public transport route</rdfs:label>
-        <rdfs:label xml:lang="es">ruta de transporte público</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#registration -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#registration">
@@ -2828,16 +2817,6 @@
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Tour"/>
         <rdfs:label xml:lang="en">tour</rdfs:label>
         <rdfs:label xml:lang="es">tour</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#transportRoute -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#transportRoute">
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportRoute"/>
-        <rdfs:label xml:lang="es">ruta de transporte</rdfs:label>
-        <rdfs:label xml:lang="en">transport route</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3448,18 +3427,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#destinationStation -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#destinationStation">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportRoute"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">destination station</rdfs:label>
-        <rdfs:label xml:lang="es">estación de destino</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#discount -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#discount">
@@ -3530,18 +3497,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="es">duración</rdfs:label>
         <rdfs:label xml:lang="en">duration</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#earliestDeparture -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#earliestDeparture">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportRoute"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label xml:lang="en">earliest departure</rdfs:label>
-        <rdfs:label xml:lang="es">salida más temprana</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3755,18 +3710,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">keyword</rdfs:label>
         <rdfs:label xml:lang="es">palabra clave</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#lastDeparture -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#lastDeparture">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportRoute"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:label xml:lang="en">last departure</rdfs:label>
-        <rdfs:label xml:lang="es">última salida</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4614,17 +4557,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label xml:lang="es">empieza en</rdfs:label>
         <rdfs:label xml:lang="en">starts at</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#stops -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#stops">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportRoute"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="es">paradas</rdfs:label>
-        <rdfs:label xml:lang="en">stops</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -8618,12 +8550,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#transportRoute"/>
-                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#TransportRoute"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#zone"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -9991,57 +9917,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:comment xml:lang="en">Physical facilities that allow the movement of people from one place to another. They provide the roads, connections and resources necessary for land, air, sea and rail transportation, facilitating mobility both locally and globally.</rdfs:comment>
         <rdfs:label xml:lang="es">infraestructura de transporte</rdfs:label>
         <rdfs:label xml:lang="en">transport infrastructure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#TransportRoute -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TransportRoute">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#dayOfTheWeek"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#stops"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#destination"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#earliestDeparture"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#lastDeparture"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#origin"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Predefined route followed by a means of public transportation, such as buses, trains, trams or subways, to connect different destinations within a city or region.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Trayecto predefinido que sigue un medio de transporte público, como autobuses, trenes, tranvías o metros, para conectar diferentes destinos dentro de una ciudad o región.</rdfs:comment>
-        <rdfs:label xml:lang="es">ruta de transporte público</rdfs:label>
-        <rdfs:label xml:lang="en">transport route</rdfs:label>
     </owl:Class>
     
 

@@ -2856,7 +2856,16 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#travelUnit -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#travelUnit">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Tourist"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TourismResource"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TourismService"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristIntermediary"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristOrRelatedFacility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">

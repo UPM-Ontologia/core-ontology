@@ -3201,6 +3201,27 @@
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#socialMediaPlatform -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#socialMediaPlatform">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/SocialMediaPlatform"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="es">plataforma de redes sociales</rdfs:label>
+        <rdfs:label xml:lang="en">social media platform</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#socketType -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#socketType">
@@ -4123,18 +4144,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#facebook -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#facebook">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">facebook</rdfs:label>
-        <rdfs:label xml:lang="es">facebook</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#free -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#free">
@@ -4229,18 +4238,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">includes</rdfs:label>
         <rdfs:label xml:lang="es">incluye</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#instagram -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#instagram">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">instagram</rdfs:label>
-        <rdfs:label xml:lang="es">instagram</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5098,11 +5095,13 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#socialMediaAccount -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#socialMediaUser -->
 
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount">
-        <rdfs:label xml:lang="es">cuenta de red social</rdfs:label>
-        <rdfs:label xml:lang="en">social network account</rdfs:label>
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#socialMediaUser">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">social media user</rdfs:label>
+        <rdfs:label xml:lang="es">usuario en red social</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5273,18 +5272,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#tiktok -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#tiktok">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">tiktok</rdfs:label>
-        <rdfs:label xml:lang="es">tiktok</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#timeOfTheDay -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#timeOfTheDay">
@@ -5354,18 +5341,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="es">frecuencia de viaje</rdfs:label>
         <rdfs:label xml:lang="en">travel frequency</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#tripAdvisor -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#tripAdvisor">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">tripadvisor</rdfs:label>
-        <rdfs:label xml:lang="es">tripadvisor</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -5572,30 +5547,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="es">velocidad del viento</rdfs:label>
         <rdfs:label xml:lang="en">wind speed</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#x -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#x">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">x</rdfs:label>
-        <rdfs:label xml:lang="es">x</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#youtube -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#youtube">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaAccount"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#SocialMediaProfile"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">youtube</rdfs:label>
-        <rdfs:label xml:lang="es">youtube</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -9706,20 +9657,16 @@ quality, performance or satisfaction. Based on this score, the instances of each
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasDescription"/>
-                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#Description"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#validFrom"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#validTo"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Conjunto de principios, normas y recomendaciones que establece un destino turístico con el objetivo de garantizar una experiencia segura, respetuosa y satisfactoria tanto para los turistas como para la comunidad local y el entorno.</rdfs:comment>
@@ -9851,38 +9798,16 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#facebook"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaPlatform"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#instagram"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#tiktok"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#tripAdvisor"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#x"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#youtube"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#socialMediaUser"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Cuentas individuales o de empresas creadas en plataformas digitales diseñadas para la interacción social. Permiten a las personas y organizaciones compartir información, publicar contenido, interactuar con otros usuarios y construir una presencia en línea.</rdfs:comment>
@@ -12189,6 +12114,14 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/ShipmentScope -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/ShipmentScope">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/SocialMediaPlatform -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/SocialMediaPlatform">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     

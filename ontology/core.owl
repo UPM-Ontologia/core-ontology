@@ -153,17 +153,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#airplane -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#airplane">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Airline"/>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Airplane"/>
-        <rdfs:label xml:lang="en">Airplane</rdfs:label>
-        <rdfs:label xml:lang="es">avión</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#allowedVehicleType -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#allowedVehicleType">
@@ -239,17 +228,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#bus -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#bus">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#BusOperator"/>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Bus"/>
-        <rdfs:label xml:lang="es">autobús</rdfs:label>
-        <rdfs:label xml:lang="en">bus</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#civicBuildingType -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#civicBuildingType">
@@ -276,17 +254,6 @@
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#relatedTo"/>
         <rdfs:label xml:lang="en">contained in</rdfs:label>
         <rdfs:label xml:lang="es">contenido en</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#cruiseShip -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#cruiseShip">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#CruiseLine"/>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#CruiseShip"/>
-        <rdfs:label xml:lang="es">barco de crucero</rdfs:label>
-        <rdfs:label xml:lang="en">cruise ship</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -401,17 +368,6 @@
         </rdfs:range>
         <rdfs:label xml:lang="en">event type</rdfs:label>
         <rdfs:label xml:lang="es">tipo de evento</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#ferry -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#ferry">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#FerryOperator"/>
-        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Ferry"/>
-        <rdfs:label xml:lang="en">ferry</rdfs:label>
-        <rdfs:label xml:lang="es">ferry</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -945,28 +901,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalAirplaneService -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalAirplaneService">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Airplane"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AirplaneServiceType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional ariplane service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de avión</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalAirportService -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalAirportService">
@@ -1099,28 +1033,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalBusService -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalBusService">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Bus"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/BusServiceType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional bus service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de autobús</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalBusStationService -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalBusStationService">
@@ -1181,28 +1093,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalCruiseShipService -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalCruiseShipService">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#CruiseShip"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/CruiseShipServiceType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional cruiseship service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de crucero</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1379,28 +1269,6 @@
         </rdfs:range>
         <rdfs:label xml:lang="en">offers additional ferry operator service</rdfs:label>
         <rdfs:label xml:lang="es">ofrece servicio adicional de operador de ferries</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalFerryService -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalFerryService">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Ferry"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/FerryServiceType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional ferry service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de ferries</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2072,28 +1940,6 @@
         </rdfs:range>
         <rdfs:label xml:lang="en">offers additional tourist or related facility service</rdfs:label>
         <rdfs:label xml:lang="es">ofrece servicio adicional de instalación turística</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalTrainService -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalTrainService">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Train"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/TrainServiceType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional train service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de tren</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3470,28 +3316,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#maximumVehicleHeightAccepted -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#maximumVehicleHeightAccepted">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Ferry"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:label xml:lang="es">altura máxima de vehículo aceptada</rdfs:label>
-        <rdfs:label xml:lang="en">maximum vehicle height accepted</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#maximumVehicleLengthtAccepted -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#maximumVehicleLengthtAccepted">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Ferry"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:label xml:lang="es">longitud máxima de vehículo aceptada</rdfs:label>
-        <rdfs:label xml:lang="en">maximum vehicle length accepted</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#maximumWeight -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#maximumWeight">
@@ -4335,12 +4159,6 @@
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#airplane"/>
-                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#Airplane"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalAirlineService"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
@@ -4349,24 +4167,6 @@
         <rdfs:comment xml:lang="es">Organización o compañía de transporte aéreo</rdfs:comment>
         <rdfs:label xml:lang="es">aerolínea</rdfs:label>
         <rdfs:label xml:lang="en">airline</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#Airplane -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Airplane">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#MeansOfTransport"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalAirplaneService"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Means of air transportation used to cover long distances.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Medio de transporte aéreo utilizado para cubrir distancias largas.</rdfs:comment>
-        <rdfs:label xml:lang="en">airplane</rdfs:label>
-        <rdfs:label xml:lang="es">avión</rdfs:label>
     </owl:Class>
     
 
@@ -4793,34 +4593,10 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#Bus -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Bus">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#MeansOfTransport"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalBusService"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Land vehicle for group travel.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Vehículo terrestre para viajes en grupo.</rdfs:comment>
-        <rdfs:label xml:lang="es">autocar</rdfs:label>
-        <rdfs:label xml:lang="en">bus</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#BusOperator -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BusOperator">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#bus"/>
-                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#Bus"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalBusOperatorService"/>
@@ -5301,41 +5077,10 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CruiseLine">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#cruiseShip"/>
-                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#CruiseShip"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Empresa naviera o conjunto de empresas navieras, del mismo grupo empresarial, dedicados a ofrecer servicios de viajes en crucero, operando una flota de buques de pasajeros tipo crucero turístico diseñados para el entretenimiento y transporte de pasajeros en viajes de placer.</rdfs:comment>
         <rdfs:comment xml:lang="en">Shipping company or group of shipping companies, from the same business group, dedicated to offering cruise travel services, operating a fleet of tourist cruise type passenger ships designed for the entertainment and transportation of passengers on pleasure trips.</rdfs:comment>
         <rdfs:label xml:lang="es">compañía de cruceros</rdfs:label>
         <rdfs:label xml:lang="en">cruise line</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#CruiseShip -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#CruiseShip">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#MeansOfTransport"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalCruiseShipService"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#capacity"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="es">Barco de pasajeros que realiza viajes con fines vacacionales o turísticos a cualquier parte del mundo haciendo escala en destinos intermedios, que proporciona a sus pasajeros todos los servicios propios de un hotel, como alojamiento, manutención, servicio médico, actividades de entretenimiento, etc.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Passenger ship that makes trips for vacation or tourism purposes to any part of the world, stopping at intermediate destinations, which provides its passengers with all the services of a hotel, such as accommodation, food, medical service, entertainment activities, etc.</rdfs:comment>
-        <rdfs:label xml:lang="es">crucero</rdfs:label>
-        <rdfs:label xml:lang="en">cruise ship</rdfs:label>
     </owl:Class>
     
 
@@ -5856,48 +5601,10 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#Ferry -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Ferry">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#MeansOfTransport"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalFerryService"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#maximumVehicleHeightAccepted"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#maximumVehicleLengthtAccepted"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="es">Barco que enlaza dos puntos llevando pasajeros y a veces vehículos en horarios programados. Forman parte del transporte público en algunas ciudades situadas en la costa, con bahías, grandes lagos o ríos, permitiendo el tránsito directo entre dos puntos y su coste es mucho menor a la construcción de puentes y túneles. En algunas regiones la palabra transbordador se usa para el buque que une distancias cortas (dos orillas de un río, por ejemplo), mientras que ferry se denomina a un buque que cubre mayores recorridos y es también de mayores dimensiones.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Boat that connects two points carrying passengers and sometimes vehicles at scheduled times. They are part of public transport in some cities located on the coast, with bays, large lakes or rivers, allowing direct transit between two points and their cost is much lower than the construction of bridges and tunnels. In some regions the word ferry is used for a ship that connects short distances (two banks of a river, for example), while a ferry is a ship that covers longer distances and is also larger.</rdfs:comment>
-        <rdfs:label xml:lang="en">ferry</rdfs:label>
-        <rdfs:label xml:lang="es">transbordador ferry</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#FerryOperator -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#FerryOperator">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#ferry"/>
-                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#Ferry"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalFerryOperatorService"/>
@@ -6561,52 +6268,6 @@
         <rdfs:comment xml:lang="es">Negocio que brinda los servicios de relax, salud y bienestar corporal por medio de masajes terapéuticos y anti estrés.</rdfs:comment>
         <rdfs:label xml:lang="es">centro de masajes</rdfs:label>
         <rdfs:label xml:lang="en">massage centre</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#MeansOfTransport -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#MeansOfTransport">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasContactPoint"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasDescription"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasAdditionalInformation"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasMultimedia"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasPaymentInformation"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#availableLanguage"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">means of transport</rdfs:label>
-        <rdfs:label xml:lang="es">medio de transporte</rdfs:label>
     </owl:Class>
     
 
@@ -8662,24 +8323,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#Train -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Train">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#MeansOfTransport"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalTrainService"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Means of rail transport that connects cities and regions.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Medio de transporte ferroviario que conecta ciudades y regiones.</rdfs:comment>
-        <rdfs:label xml:lang="en">train</rdfs:label>
-        <rdfs:label xml:lang="es">tren</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#TrainStation -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TrainStation">
@@ -8694,16 +8337,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:comment xml:lang="en">Railway facility with tracks that can be reached and from which trains can be dispatched.</rdfs:comment>
         <rdfs:label xml:lang="es">estación de ferrocarril</rdfs:label>
         <rdfs:label xml:lang="en">train station</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#Tram -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Tram">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#MeansOfTransport"/>
-        <rdfs:label xml:lang="en">tram</rdfs:label>
-        <rdfs:label xml:lang="es">tranvía</rdfs:label>
     </owl:Class>
     
 
@@ -9362,14 +8995,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/AirplaneServiceType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AirplaneServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/AirportServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AirportServiceType">
@@ -9426,14 +9051,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/BusServiceType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/BusServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/BusStationServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/BusStationServiceType">
@@ -9461,14 +9078,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/CongressCentreServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/CongressCentreServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/CruiseShipServiceType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/CruiseShipServiceType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -9557,14 +9166,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/FerryOperatorServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/FerryOperatorServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/FerryServiceType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/FerryServiceType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -9909,14 +9510,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/TouristOrRelatedFacilityServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TouristOrRelatedFacilityServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/TrainServiceType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TrainServiceType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     

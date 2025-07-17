@@ -18,7 +18,7 @@
 
 estur-kos:StationType a skos:ConceptScheme ; 
     dct:issued "2024-10-29"^^xsd:date ;
-    dct:modified "2025-07-16"^^xsd:date ;
+    dct:modified "2024-10-29"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
@@ -40,33 +40,30 @@ estur-stationtype:BusStop a skos:Concept;
   skos:prefLabel "Bus stop"@en ;
   skos:prefLabel "Parada de autobús"@es .
 
-estur-stationtype:TramStop a skos:Concept;
-  skos:inScheme estur-kos:StationType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Tram stop"@en ;
-  skos:prefLabel "Parada de tranvía"@es .
-
-estur-stationtype:SubwayStation a skos:Concept;
-  skos:inScheme estur-kos:StationType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Subway station"@en ;
-  skos:prefLabel "Estación de metro"@es .
-
 estur-stationtype:CableCarStop a skos:Concept;
   skos:inScheme estur-kos:StationType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Cable car stop"@en ;
-  skos:prefLabel "Parada de funicular"@es .
+  skos:prefLabel "Parada de cable car"@es .
 
 estur-stationtype:CableWayStop a skos:Concept;
   skos:inScheme estur-kos:StationType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Cable way stop"@en ;
-  skos:prefLabel "Parada de teleférico"@es .
+  skos:prefLabel "Parada de cable way"@es .
 
+estur-stationtype:SubwayStation a skos:Concept;
+  skos:inScheme estur-kos:StationType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Subway station"@en ;
+  skos:prefLabel "Estación de suburbano"@es .
 
-
+estur-stationtype:TramStop a skos:Concept;
+  skos:inScheme estur-kos:StationType;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Tram stop"@en ;
+  skos:prefLabel "Parada de tranvía"@es .

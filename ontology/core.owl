@@ -896,28 +896,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalBeachService -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalBeachService">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Beach"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/BeachServiceType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional beach service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de playa</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalBusOperatorService -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalBusOperatorService">
@@ -1224,28 +1202,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalLakeService -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalLakeService">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Lake"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/LakeServiceType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional lake service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de lago</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalLeisureAndCultureService -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalLeisureAndCultureService">
@@ -1440,28 +1396,6 @@
         </rdfs:range>
         <rdfs:label xml:lang="en">offers additional retail and fashion service</rdfs:label>
         <rdfs:label xml:lang="es">ofrece servicio adicional de compras y moda</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#offersAdditionalRiverService -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalRiverService">
-        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#River"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/RiverServiceType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional river service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de río</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1873,6 +1807,28 @@
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#offersBeachService -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersBeachService">
+        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Beach"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/BeachServiceType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">offers beach service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicios de la playa</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#offersDestinationExperience -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersDestinationExperience">
@@ -1881,6 +1837,28 @@
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#DestinationExperience"/>
         <rdfs:label xml:lang="en">offers destination experience</rdfs:label>
         <rdfs:label xml:lang="es">ofrece experiencia de destino</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#offersLakeService -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersLakeService">
+        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Lake"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/LakeServiceType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">offers lake service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicios del lago</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1903,6 +1881,28 @@
         </rdfs:range>
         <rdfs:label xml:lang="en">multiadventure activity type</rdfs:label>
         <rdfs:label xml:lang="es">tipo de actividad multiaventura</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#offersRiverService -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersRiverService">
+        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#River"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/RiverServiceType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">offers river service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicios del río</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3744,7 +3744,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalBeachService"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersBeachService"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5307,7 +5307,7 @@
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalLakeService"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersLakeService"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5315,16 +5315,6 @@
         <rdfs:comment xml:lang="en">Large permanent mass of water deposited in depressions in the ground.</rdfs:comment>
         <rdfs:label xml:lang="es">lago</rdfs:label>
         <rdfs:label xml:lang="en">lake</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#Landform -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Landform">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
-        <rdfs:label xml:lang="es">accidente geográfico</rdfs:label>
-        <rdfs:label xml:lang="en">landform</rdfs:label>
     </owl:Class>
     
 
@@ -6362,7 +6352,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalRiverService"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersRiverService"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6524,6 +6514,18 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:comment xml:lang="es">Experiencia en destino con vínculo a un negocio particular con un valor diferencial, que puede llevar consigo o no la transacción de un producto o servicio. También llamadas microexperiencias.</rdfs:comment>
         <rdfs:label xml:lang="es">experiencia singular</rdfs:label>
         <rdfs:label xml:lang="en">singular experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#SingularTree -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SingularTree">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:comment xml:lang="en">Tree that stands out among others due to its size, shape, age, rarity, biological origin, state of conservation, beauty or for being part of myths or traditions.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Árbol que destaca entre los demás por su tamaño, forma, edad, rareza, origen biológico, estado de conservación, belleza o por formar parte de mitos o tradiciones.</rdfs:comment>
+        <rdfs:label xml:lang="en">singular tree</rdfs:label>
+        <rdfs:label xml:lang="es">árbol singular</rdfs:label>
     </owl:Class>
     
 
@@ -7365,18 +7367,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:comment xml:lang="es">Empresa que presta servicios de organización, planificación, desarrollo y venta de productos o servicios de naturaleza y fines turísticos entre proveedores y clientes finales.</rdfs:comment>
         <rdfs:label xml:lang="es">agencia de viajes</rdfs:label>
         <rdfs:label xml:lang="en">travel agency</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#Tree -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Tree">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
-        <rdfs:comment xml:lang="en">Tree that stands out among others due to its size, shape, age, rarity, biological origin, state of conservation, beauty or for being part of myths or traditions.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Árbol que destaca entre los demás por su tamaño, forma, edad, rareza, origen biológico, estado de conservación, belleza o por formar parte de mitos o tradiciones.</rdfs:comment>
-        <rdfs:label xml:lang="en">tree</rdfs:label>
-        <rdfs:label xml:lang="es">árbol singular</rdfs:label>
     </owl:Class>
     
 

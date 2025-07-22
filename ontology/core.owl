@@ -557,27 +557,6 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#historicalLandmarksOrBuildingsType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#historicalLandmarksOrBuildingsType">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/HistoricalLandmarkOrBuildingType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">historical landmark or building type</rdfs:label>
-        <rdfs:label xml:lang="es">tipo de edificio o lugar histórico</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#holidayPackageItinerary -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#holidayPackageItinerary">
@@ -1173,7 +1152,7 @@
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalHistoricalAndCulturalResourceService">
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1185,8 +1164,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:label xml:lang="en">offers additional historical and cultural resource service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de recursos históricos y culturales</rdfs:label>
+        <rdfs:label xml:lang="en">offers additional historical or cultural resource service</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional del recurso histórico o cultural</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3437,7 +3416,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Alcazar -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Alcazar">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Castillo fortificado situado en un lugar estratégico, especialmente cuando está amurallado.</rdfs:comment>
         <rdfs:label xml:lang="en">alcazar</rdfs:label>
         <rdfs:label xml:lang="es">alcázar</rdfs:label>
@@ -3448,7 +3427,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Amphitheatre -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Amphitheatre">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Construcción oval o circular provista de un graderío alrededor de una zona arenosa central, en la que en la esantigua Roma se celebraban espectáculos públicos.</rdfs:comment>
         <rdfs:label xml:lang="en">amphitheater</rdfs:label>
         <rdfs:label xml:lang="es">anfiteatro</rdfs:label>
@@ -3501,7 +3480,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Aqueduct -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Aqueduct">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Construcción en forma de puente soportado por una o más filas de arcos sobre la cual se conduce agua de un lado a otro de una fuerte depresión de terreno.</rdfs:comment>
         <rdfs:label xml:lang="es">acueducto</rdfs:label>
         <rdfs:label xml:lang="en">aqueduct</rdfs:label>
@@ -3524,7 +3503,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Arch -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Arch">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Elemento constructivo de directriz en forma curvada o poligonal.</rdfs:comment>
         <rdfs:label xml:lang="en">arch</rdfs:label>
         <rdfs:label xml:lang="es">arco</rdfs:label>
@@ -3535,7 +3514,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#ArcheologicalSite -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ArcheologicalSite">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Lugar donde se hallan restos arqueológicos.</rdfs:comment>
         <rdfs:label xml:lang="es">archaelogical site</rdfs:label>
         <rdfs:label xml:lang="es">yacimiento arqueológico</rdfs:label>
@@ -3612,7 +3591,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Basilica -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Basilica">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Iglesia notable por su antigüedad o magnificencia o por los cultos que en ella se celebran.</rdfs:comment>
         <rdfs:label xml:lang="en">basilica</rdfs:label>
         <rdfs:label xml:lang="es">basílica</rdfs:label>
@@ -3707,7 +3686,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#BellTower -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BellTower">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Torre elevada, exenta, adosada o integrada en un edificio, donde se colocan las campanas.</rdfs:comment>
         <rdfs:label xml:lang="en">bell tower</rdfs:label>
         <rdfs:label xml:lang="es">campanario</rdfs:label>
@@ -3812,7 +3791,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Bridge -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Bridge">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Construcción de piedra, ladrillo, madera, hierro, hormigón, etc., que se construye y forma sobre los ríos, fosos y otros sitios, para comunicar dos lados.</rdfs:comment>
         <rdfs:label xml:lang="en">bridge</rdfs:label>
         <rdfs:label xml:lang="es">puente</rdfs:label>
@@ -3824,7 +3803,7 @@
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#BullRing">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#EventAttendanceFacility"/>
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Construcción generalmente circular y con graderías, destinada a la lidia de toros, aunque también puede ser utilizada para otros tipos de eventos.</rdfs:comment>
         <rdfs:label xml:lang="en">Bullring</rdfs:label>
         <rdfs:label xml:lang="es">Plaza de toros</rdfs:label>
@@ -3953,7 +3932,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Castle -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Castle">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Edificio o conjunto de edificios rodeados de murallas, fosos y otras obras de fortificación, construido generalmente en un lugar elevado y estratégicamente situado para la guerra.</rdfs:comment>
         <rdfs:label xml:lang="es">castillo</rdfs:label>
         <rdfs:label xml:lang="en">castle</rdfs:label>
@@ -3964,7 +3943,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Catacomb -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Catacomb">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Galerías subterráneas que algunas civilizaciones mediterráneas antiguas construyeron y utilizaron como lugar de enterramiento.</rdfs:comment>
         <rdfs:label xml:lang="en">catacomb</rdfs:label>
         <rdfs:label xml:lang="es">catacumba</rdfs:label>
@@ -3987,7 +3966,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Cathedral -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Cathedral">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Iglesia principal en que el obispo, con su cabildo, tiene su sede o cátedra.</rdfs:comment>
         <rdfs:label xml:lang="es">catedral</rdfs:label>
         <rdfs:label xml:lang="en">cathedral</rdfs:label>
@@ -4010,7 +3989,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Cemetery -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Cemetery">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Terreno, generalmente cercado, destinado a enterrar cadáveres.</rdfs:comment>
         <rdfs:label xml:lang="es">Cementerio</rdfs:label>
         <rdfs:label xml:lang="en">Cemetery</rdfs:label>
@@ -4040,7 +4019,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Chapel -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Chapel">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Edificio contiguo a una iglesia o parte integrante de ella, con altar y advocación particular.</rdfs:comment>
         <rdfs:label xml:lang="es">capilla</rdfs:label>
         <rdfs:label xml:lang="en">chapel</rdfs:label>
@@ -4075,7 +4054,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Church -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Church">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Templo cristiano. También se pueden utilizar otros términos como parroquia</rdfs:comment>
         <rdfs:label xml:lang="en">church</rdfs:label>
         <rdfs:label xml:lang="es">iglesia</rdfs:label>
@@ -4134,7 +4113,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Cloister -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Cloister">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Galería que cerca el patio principal de una iglesia o convento.</rdfs:comment>
         <rdfs:label xml:lang="es">Claustro</rdfs:label>
         <rdfs:label xml:lang="en">Cloister</rdfs:label>
@@ -4218,7 +4197,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Convent -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Convent">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Casa en que viven religiosos o religiosas bajo las reglas de su instituto.</rdfs:comment>
         <rdfs:label xml:lang="en">convent</rdfs:label>
         <rdfs:label xml:lang="es">convento</rdfs:label>
@@ -4783,7 +4762,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Garden -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Garden">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Terreno donde se cultivan especies vegetales, con posible añadidura de otros elementos como fuentes, esculturas o zonas de ocio. También pueden referirse a parques urbanos.</rdfs:comment>
         <rdfs:label xml:lang="en">garden</rdfs:label>
         <rdfs:label xml:lang="es">jardín</rdfs:label>
@@ -4818,7 +4797,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Gastronomy_-_deprecated -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Gastronomy_-_deprecated">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Referido a la cocina, los productos y platos típicos de una región como experiencia cultural de un destino.</rdfs:comment>
         <rdfs:label xml:lang="en">gastronomy -deprecated</rdfs:label>
         <rdfs:label xml:lang="es">gastronomía - deprecado</rdfs:label>
@@ -4931,7 +4910,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Hammam -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Hammam">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:label xml:lang="es">Baños árabes</rdfs:label>
         <rdfs:label xml:lang="en">Hammam</rdfs:label>
         <rdfs:label xml:lang="es">Los baños árabes, también conocidos como hammam, son espacios públicos de baño que combinan la limpieza del cuerpo con la relajación y el bienestar</rdfs:label>
@@ -4942,7 +4921,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#HandicraftAndLocalProduct -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#HandicraftAndLocalProduct">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Productos artesanales y creaciones hechas a mano por artesanos locales (tejidos, cerámica, joyería, productos de cuero, talla de madera, etc.)</rdfs:comment>
         <rdfs:label xml:lang="es">artesanía y producto local</rdfs:label>
         <rdfs:label xml:lang="en">handicraft and local product</rdfs:label>
@@ -4996,14 +4975,14 @@
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource">
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismResource"/>
         <rdfs:comment xml:lang="es">Lugares, sitios y estructuras que tienen un valor significativo para los turistas desde el punto de vista histórico, arqueológico, arquitectónico o cultural.</rdfs:comment>
         <rdfs:comment xml:lang="en">Places, sites and structures that have significant value to tourists from a historical, archaeological, architectural or cultural point of view</rdfs:comment>
-        <rdfs:label xml:lang="en">historical and/or cultural resource</rdfs:label>
-        <rdfs:label xml:lang="es">recurso histórico y/o cultural</rdfs:label>
+        <rdfs:label xml:lang="en">historical or cultural resource</rdfs:label>
+        <rdfs:label xml:lang="es">recurso histórico o cultural</rdfs:label>
     </owl:Class>
     
 
@@ -5239,7 +5218,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Library -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Library">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
         <rdfs:comment xml:lang="es">Lugar cuya finalidad consiste en la adquisición, conservación, estudio y exposición de libros y documentos</rdfs:comment>
         <rdfs:label xml:lang="es">Biblioteca</rdfs:label>
@@ -5372,7 +5351,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Minaret -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Minaret">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Torre de las mezquitas desde cuya altura convoca el almuédano a los musulmanes en las horas de oración.</rdfs:comment>
         <rdfs:label xml:lang="en">minaret</rdfs:label>
         <rdfs:label xml:lang="es">minarete</rdfs:label>
@@ -5395,7 +5374,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Monastery -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Monastery">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Casa, ordinariamente fuera de poblado, donde viven monjes en comunidad.</rdfs:comment>
         <rdfs:label xml:lang="es">monasterio</rdfs:label>
         <rdfs:label xml:lang="en">monastery</rdfs:label>
@@ -5406,7 +5385,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Monument -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Monument">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Construcción arquitectónica o escultórica, generalmente de grandes dimensiones, que se erige en recuerdo de una persona o hecho memorable.</rdfs:comment>
         <rdfs:label xml:lang="en">monument</rdfs:label>
         <rdfs:label xml:lang="es">monumento</rdfs:label>
@@ -5417,7 +5396,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Mosque -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Mosque">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Templo musulmán.</rdfs:comment>
         <rdfs:label xml:lang="es">mezquita</rdfs:label>
         <rdfs:label xml:lang="en">mosque</rdfs:label>
@@ -5680,7 +5659,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#OrnamentalFountain -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#OrnamentalFountain">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:label xml:lang="es">Estructura, típicamente de agua, diseñada para embellecer un espacio, tanto interior como exterior, a través de su forma, diseño y efectos visuales y/o auditivos</rdfs:label>
         <rdfs:label xml:lang="es">Fuente ornamental</rdfs:label>
         <rdfs:label xml:lang="en">Ornamental Fountain</rdfs:label>
@@ -5703,7 +5682,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#Palace -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Palace">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Mansión grande y lujosa destinada a ser residencia de reyes, de aristócratas o de personajes importantes.</rdfs:comment>
         <rdfs:label xml:lang="en">palace</rdfs:label>
         <rdfs:label xml:lang="es">palacio</rdfs:label>
@@ -6320,7 +6299,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#Sanctuary -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Sanctuary">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Templo en que se venera la imagen o reliquia de un santo de especial devoción. También puede utilizarse el término ermita.</rdfs:comment>
         <rdfs:label xml:lang="en">sanctuary</rdfs:label>
         <rdfs:label xml:lang="es">santuario</rdfs:label>
@@ -6494,7 +6473,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#Square -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Square">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Lugar ancho y espacioso dentro de una población, al que suelen afluir varias calles. En ocasiones, en este lugar se venden artículos diversos, se tiene el trato común con los vecinos, y se celebran las ferias, los mercados y las fiestas públicas.</rdfs:comment>
         <rdfs:label xml:lang="es">Plaza</rdfs:label>
         <rdfs:label xml:lang="en">Square</rdfs:label>
@@ -6565,7 +6544,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#Synagogue -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Synagogue">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Edificio dedicado a la congregación y culto de la religión judía.</rdfs:comment>
         <rdfs:label xml:lang="es">sinagoga</rdfs:label>
         <rdfs:label xml:lang="en">synagogue</rdfs:label>
@@ -6943,7 +6922,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#TouristAttractionSite -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristAttractionSite">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Espacio delimitado en el que se reúnen diferentes atractivos que no son exclusivamente turísticos, pero que en razón de sus condiciones y singularidad suscitan interés para la actividad turística. Por ejemplo, puede incluir el casco antiguo de una población</rdfs:comment>
         <rdfs:label xml:lang="es">conjunto de interés artístico</rdfs:label>
         <rdfs:label xml:lang="en">tourist attraction site</rdfs:label>
@@ -7082,7 +7061,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#Tower -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Tower">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Construcción fortificada, más alta que ancha, utilizada para defender una ciudad o plaza.</rdfs:comment>
         <rdfs:label xml:lang="es">Torre</rdfs:label>
         <rdfs:label xml:lang="en">Tower</rdfs:label>
@@ -7093,7 +7072,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#TownHall -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TownHall">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">El edificio del ayuntamiento, también conocido como casa consistorial, es el edificio de una población adonde concurren los concejales de su ayuntamiento a celebrar sus juntas.</rdfs:comment>
         <rdfs:label xml:lang="es">Ayuntamiento</rdfs:label>
         <rdfs:label xml:lang="en">Town Hall</rdfs:label>
@@ -7129,7 +7108,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TraditionalMarket">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility"/>
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="en">An area made up of individual stalls that offer products of various kinds with a predominance of fresh products: meat, fruits, vegetables, fish, etc.</rdfs:comment>
         <rdfs:comment xml:lang="es">Recinto formado por puestos individuales que ofrecen productos de diversa índole con predominancia de los productos frescos: carne, frutas, verduras, pescado, etc.</rdfs:comment>
         <rdfs:label xml:lang="es">mercado tradicional</rdfs:label>
@@ -7219,7 +7198,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#UrbanViewPoint -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#UrbanViewPoint">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Lugar para disfrutar de las vistas de una ciudad desde una perspectiva única, desde la cima de un edificio o de una colina.</rdfs:comment>
         <rdfs:label xml:lang="es">mirador urbano</rdfs:label>
         <rdfs:label xml:lang="en">urban viewpoint</rdfs:label>
@@ -7340,7 +7319,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#VernacularArchitecture -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VernacularArchitecture">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Construcciones tradicionales que reflejan las tradiciones y estilos arquitectónicos locales (masías, molinos, almazaras, etc.)</rdfs:comment>
         <rdfs:label xml:lang="es">arquitectura vernácula</rdfs:label>
         <rdfs:label xml:lang="en">vernacular architecture</rdfs:label>
@@ -7364,7 +7343,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#VineyardShelter -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VineyardShelter">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">También conocido como chozo, se trata de una pequeña edificación de piedra de una sola planta, normalmente de forma circular y coronada con una falsa cúpula, levantada por el propio agricultor de la vid como refugio ante las inclemencias del tiempo o durante los momentos de descanso, y como almacén de herramientas de labor. También utilizada como puesto de vigilancia para proteger las cosechas. Elemento característico del paisaje vitivinícola de La Rioja y la Rioja Alavesa actualmente en desuso, se popularizó a finales del siglo XIX, aunque su origen se remonta a siglos atrás.</rdfs:comment>
         <rdfs:label xml:lang="es">guardaviña</rdfs:label>
         <rdfs:label xml:lang="en">vineyard shelter</rdfs:label>
@@ -7387,7 +7366,7 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#Wall -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Wall">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalAndCulturalResource"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
         <rdfs:comment xml:lang="es">Construcción alta y robusta, generalmente coronada por un parapeto, que rodea una fortificación, plaza fuerte u otro lugar para su defensa.</rdfs:comment>
         <rdfs:label xml:lang="es">muralla</rdfs:label>
         <rdfs:label xml:lang="en">wall</rdfs:label>
@@ -7801,14 +7780,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/HistoricalAndCultureServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/HistoricalAndCultureServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/HistoricalLandmarkOrBuildingType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/HistoricalLandmarkOrBuildingType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     

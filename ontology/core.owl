@@ -989,7 +989,7 @@
             </owl:Class>
         </rdfs:range>
         <rdfs:label xml:lang="en">offers additional educational service</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece servicio adicional de educación</rdfs:label>
+        <rdfs:label xml:lang="es">ofrece servicio adicional educativo</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -4518,7 +4518,7 @@
     <!-- https://ontologia.segittur.es/turismo/def/core#FarmSchool -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#FarmSchool">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#EducationalFacility"/>
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility"/>
         <rdfs:comment xml:lang="en">Educational and learning space where activities related to nature, the rural world and respect for the environment are carried out.</rdfs:comment>
         <rdfs:comment xml:lang="es">Espacio educativo y de aprendizaje donde se realizan actividades relacionadas con la naturaleza, el mundo rural y el respeto al medio ambiente.</rdfs:comment>
         <rdfs:label xml:lang="en">farm school</rdfs:label>

@@ -60,4 +60,10 @@ estur-labeltype:AdultsOnly a skos:Concept;
   skos:prefLabel "Adults Only"@en ;
   skos:prefLabel "Sólo para adultos"@es .
 
+estur-labeltype:EnvironmentallyFriendly a skos:Concept;
+  skos:inScheme estur-kos:LabelType;
+  skos:prefLabel "Environmentally Friendly"@en ;
+  skos:prefLabel "Respetuoso con el medio ambiente"@es .
+
+
 

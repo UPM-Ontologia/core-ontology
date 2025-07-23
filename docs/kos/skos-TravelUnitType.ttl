@@ -17,8 +17,8 @@
 #################################################################
 
 estur-kos:TravelUnitType a skos:ConceptScheme ; 
-    dct:issued "2025-06-16"^^xsd:date ;
-    dct:modified "2025-06-16"^^xsd:date ;
+    dct:issued "2025-07-16"^^xsd:date ;
+    dct:modified "2025-07-16"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;

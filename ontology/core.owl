@@ -478,15 +478,7 @@ It is possible that this annotation property is taken out in the future from the
     <!-- https://ontologia.segittur.es/turismo/def/core#hasLocation -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#hasLocation">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#DestinationExperience"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Event"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Location"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismEntity"/>
         <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:label xml:lang="en">has location</rdfs:label>
         <rdfs:label xml:lang="es">tiene localización</rdfs:label>
@@ -6016,7 +6008,6 @@ It is possible that this annotation property is taken out in the future from the
     <!-- https://ontologia.segittur.es/turismo/def/core#PublicService -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PublicService">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismEntity"/>
         <rdfs:comment xml:lang="en">Actividad o función proporcionada por la administración local con el propósito de satisfacer las necesidades básicas de la sociedad y promover el bienestar común.</rdfs:comment>
         <rdfs:comment xml:lang="en">Activity or function provided by the local administration with the purpose of satisfying the basic needs of society and promoting the common well-being.</rdfs:comment>
@@ -6867,7 +6858,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#TourismResource -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TourismResource">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6968,7 +6958,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#TouristDestination -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristDestination">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7071,7 +7060,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#TouristOrRelatedFacility -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristOrRelatedFacility">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7195,7 +7183,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/def/core#TransportInfrastructure -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TransportInfrastructure">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismEntity"/>
         <rdfs:comment xml:lang="es">Instalaciones físicas que permiten el movimiento de personas de un lugar a otro. Proporcionan las vías, conexiones y recursos necesarios para el transporte terrestre, aéreo, marítimo y ferroviario, facilitando la movilidad tanto a nivel local como global.</rdfs:comment>
         <rdfs:comment xml:lang="en">Physical facilities that allow the movement of people from one place to another. They provide the roads, connections and resources necessary for land, air, sea and rail transportation, facilitating mobility both locally and globally.</rdfs:comment>

@@ -384,6 +384,7 @@ It is possible that this annotation property is taken out in the future from the
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Event"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TourismService"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristDestination"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristInformationOffice"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TouristOrRelatedFacility"/>
@@ -1163,6 +1164,7 @@ It is possible that this annotation property is taken out in the future from the
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdditionalLeisureAndCultureService">
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdditionalService"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#LeisureAndCultureFacility"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismService"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1879,6 +1881,19 @@ It is possible that this annotation property is taken out in the future from the
         </rdfs:range>
         <rdfs:label xml:lang="es">punto de interés de referencia</rdfs:label>
         <rdfs:label xml:lang="en">reference point of interest</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#relatedEvent -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#relatedEvent">
+        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#relatedTo"/>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismService"/>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Event"/>
+        <rdfs:label xml:lang="es">evento relacionado</rdfs:label>
+        <rdfs:label xml:lang="en">related event</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:ObjectProperty>
     

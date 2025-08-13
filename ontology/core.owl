@@ -127,6 +127,17 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/annot#tooltip -->
+
+    <owl:AnnotationProperty rdf:about="https://ontologia.segittur.es/turismo/def/annot#tooltip">
+        <rdfs:comment xml:lang="es">Esta propiedad de anotación se utiliza para proporcionar información adicional sobre el uso una clase o propiedad, que pueda ser mostrada en herramientas</rdfs:comment>
+        <rdfs:comment xml:lang="en">This annotation property allows providing additional information about the use of a class or property, so that it can be used in tools.</rdfs:comment>
+        <rdfs:label xml:lang="en">tooltip</rdfs:label>
+        <rdfs:label xml:lang="es">tooltip</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/annot#version -->
 
     <owl:AnnotationProperty rdf:about="https://ontologia.segittur.es/turismo/def/annot#version">
@@ -2829,6 +2840,8 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:label xml:lang="es">descripción corta</rdfs:label>
         <rdfs:label xml:lang="en">short description</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+        <estur-annot:tooltip xml:lang="es">Debes crear una descripción de hasta 250 caracteres</estur-annot:tooltip>
+        <estur-annot:tooltip xml:lang="en">You should create a description of up to 250 characters</estur-annot:tooltip>
     </owl:DatatypeProperty>
     
 

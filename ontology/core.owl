@@ -22,7 +22,7 @@
         <dct:description xml:lang="es">Esta ontología de dominio del sector turístico está construida a partir del Modelo Conceptual de Referencia Semántico de Turismo de SEGITTUR, un modelo para el desarrollo de una Red de Ontologías del Sector Turístico al servicio de la futura Plataforma Inteligente de Destino (PID) promovida por SEGITTUR. El Modelo Conceptual de Referencia de Turismo de SEGITTUR ofrece un corazón ontológico extensible para conceptos e información sobre el dominio de turismo, y aspira a convertirse en una referencia para el intercambio controlado de información sobre turismo.</dct:description>
         <dct:description xml:lang="en">This tourism domain ontology is built from SEGITTUR&apos;s Conceptual Tourism Semantic Reference Model, a model for the development of a Network of Tourism Sector Ontologies at the service of the future Intelligent Destination Platform (IDP) promoted by SEGITTUR. The SEGITTUR Conceptual Tourism Reference Model offers an extensible ontological core for concepts and information on the tourism domain, and aims to become a reference for the controlled exchange of tourism information.</dct:description>
         <dct:hasFormat rdf:resource="https://ontologia.segittur.es/turismo/def/core.owl"/>
-        <dct:issued>2025-08-14</dct:issued>
+        <dct:issued>2025-08-18</dct:issued>
         <dct:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
         <dct:license>CC BY-NC-ND</dct:license>
         <dct:title xml:lang="en">Core ontology for tourism by SEGITTUR</dct:title>

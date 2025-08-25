@@ -8809,14 +8809,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/EventOrganisationService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/EventOrganisationService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/EventServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/EventServiceType">
@@ -8868,14 +8860,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/HistoricalAndCultureServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/HistoricalAndCultureServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/ItineraryModality -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/ItineraryModality">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -9124,14 +9108,6 @@ quality, performance or satisfaction. Based on this score, the instances of each
     <!-- https://ontologia.segittur.es/turismo/kos/TravelAgencyServiceType -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TravelAgencyServiceType">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/TravelMotivationType -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TravelMotivationType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
     </owl:NamedIndividual>
     

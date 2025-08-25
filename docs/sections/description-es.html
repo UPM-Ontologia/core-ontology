@@ -21,13 +21,13 @@ Figura 1. Modelo conceptual general, representando Organizaciones, Servicios Tur
 
 <p>A continuación se ofrecerán más detalles para cada uno de estos conceptos (Organización, Servicio turístico y Recurso turístico) y sus jerarquías, así como ejemplos en RDF asociados a una organización, un servicio turístico y un recurso turístico imaginarios.</p>
 
-<p>Comenzando con las organizaciones, estas están clasificadas, tal y como se muestra en la figura 2, en cuatro grandes categorías: <a href="#PassengerTransportCompany">Compañías de transporte de pasajeros</a>, <a href="#TourGuide">Guías turísticos</a>, <a href="#TouristIntermediary">Intermediarios turísticos</a> y <a href="#EventOrganisationCompany">Empresas de organización de eventos</a>. Tanto las compañías de transporte de pasajeros como los intermediarios turísticos están subclasificados en otros conceptos, como también se puede ver en la figura 2.</p> 
+<p>Comenzando con las organizaciones, estas están clasificadas, tal y como se muestra en la figura 2, en siete clases principales: organizaciones que ofrecen servicios de <a href="#Accommodation">Alojamiento</a>, <a href="#PassengerTransportCompany">Compañías de transporte de pasajeros</a>, organizaciones que ofrecen <a href="#RestaurantService">Servicios de restauración</a>, <a href="#TourGuide">Guías turísticos</a>, <a href="#TouristIntermediary">Intermediarios turísticos</a> y <a href="#EventOrganisationCompany">Empresas de organización de eventos</a> y <a href="#ComplementaryActivitiesCompany">Empresas de actividades complementarias</a>. Tanto las compañías de transporte de pasajeros como los intermediarios turísticos están subclasificados en otros conceptos, como también se puede ver en la figura 2.</p>  
 
 <p><center><img src="images/fig2-Organisation.png"/><figcaption>Figura 2. Clasificación de Organizaciones.</figcaption></center></p>
 
-<p>Para algunos de estos conceptos son aplicables algunas propiedades específicas. Por ejemplo, una <a href="#Airline">Aerolínea</a> está relacionada con los <a href="#Airplane">Aviones</a> que posee, las clases de pasaje que ofrece (expresadas en un tesauro <a href="https://ontologia.segittur.es/turismo/kos/TravellerClass">estur-kos:TravellerClass</a>) y los servicios adicionales relacionados con aerolíneas que ofrece (también expresadas en el tesauro <a href="https://ontologia.segittur.es/turismo/kos/AirlineServiceType">estur-kos:AirlineServiceType</a>).</p> 
+<!--<p>Para algunos de estos conceptos son aplicables algunas propiedades específicas. Por ejemplo, una <a href="#Airline">Aerolínea</a> está relacionada con los <a href="#Airplane">Aviones</a> que posee, las clases de pasaje que ofrece (expresadas en un tesauro <a href="https://ontologia.segittur.es/turismo/kos/TravellerClass">estur-kos:TravellerClass</a>) y los servicios adicionales relacionados con aerolíneas que ofrece (también expresadas en el tesauro <a href="https://ontologia.segittur.es/turismo/kos/AirlineServiceType">estur-kos:AirlineServiceType</a>).</p> -->
 
-<p>A continuación se muestra un ejemplo en RDF, usando la notación Turtle, que describe a una empresa <a href="#BusOperator">operadora de autobuses</a> con dos autobuses y tres clases de viajeros, y que ofrece como servicio adicional la posibilidad de llevar equipaje adicional. La empresa está localizada en el municipio de Galapagar, en Madrid, tiene una certificación UNE 170001, varios perfiles en redes sociales, y un canal de reservas online. El resto de propiedades aplicables a una organización como esta se rellenarían de manera similar.</p>
+<p>A continuación se muestra un ejemplo en RDF, usando la notación Turtle, que describe a una empresa <a href="#BusOperator">operadora de autobuses</a>, que ofrece como servicio adicional la posibilidad de llevar equipaje adicional. La empresa está localizada en el municipio de Galapagar, en Madrid, tiene una certificación UNE 170001, varios perfiles en redes sociales, y un canal de reservas online. El resto de propiedades aplicables a una organización como esta se rellenarían de manera similar.</p>
 
 <pre><textarea style="resize:none" readonly id="code1" name="code" rows="25" cols="100">
 @prefix ex: &lt;http://example.org/recurso/&gt; .
@@ -37,21 +37,25 @@ Figura 1. Modelo conceptual general, representando Organizaciones, Servicios Tur
 ex:OperadorBus1 a estur:BusOperator ;
   dct:identifier "OperadorBus1" ;
   rdfs:label "Operador de Autobuses 1" ;
-  estur:bus ex:Bus1 ;
-  estur:bus ex:Bus2 ;
   estur:offersAdditionalBusOperatorService estur-busoperatorservice:AdditionalLuggage ;
   estur:hasLocation ex:OperadorBus1Location ;
   estur:hasAcknowledgement ex:certifUNE170001 ;
-  estur:hasSocialMediaProfile ex:OperadorBus1SocialMediaProfile ;
+  estur:hasSocialMediaProfile ex:OperadorBus1SocialMediaProfile1 ;
+  estur:hasSocialMediaProfile ex:OperadorBus1SocialMediaProfile2 ;
   estur:hasBookingChannel ex:OperadorBus1Web .
 
 ex:certifUNE170001 a estur:Certification ;
   rdfs:label "Certificación UNE 170001".
   
-ex:OperadorBus1SocialMediaProfile a estur:SocialMediaProfile ;
-  rdfs:label "Perfiles de redes sociales del operador de autobús 1" ;
-  estur:instagram "operadorbus1-galapagar" ;
-  estur:facebook "operadorbus1-galapag" .
+ex:OperadorBus1SocialMediaProfile1 a estur:SocialMediaProfile ;
+  rdfs:label "Perfil de Instagram del operador de autobús 1" ;
+  estur:socialMediaUser "operadorbus1-galapagar" ;
+  estur:socialMediaPlatform estur-socialmediaplatform:Instagram .
+
+ex:OperadorBus1SocialMediaProfile2 a estur:SocialMediaProfile ;
+  rdfs:label "Perfil de Facebook del operador de autobús 1" ;
+  estur:socialMediaUser "operadorbus1-galapag" ;
+  estur:socialMediaPlatform estur-socialmediaplatform:Facebook .
 
 ex:OperadorBus1Web a estur:BookingChannel ;
   rdfs:label "Canales de contratación del operador de autobús 1" ;

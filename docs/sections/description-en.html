@@ -19,9 +19,9 @@ Figure 1. Top-level conceptual model, which represents the main class Tourism En
 
 <p>Next we provide more details for some of these concepts (Tourism Organisation, Tourism Service and Tourism Resource) and their taxonomies, as well as examples in RDF for ficticious organisations, tourism services and tourism resources.</p>
 
-<p>Organisations are classified, as shown in figure 2, in four main categories: <a href="#PassengerTransportCompany">Passenger transport companies</a>, <a href="#TourGuide">Tour guides</a>, <a href="#TouristIntermediary">Tourist intermediaries</a> and <a href="#EventOrganisationCompany">Event organisation companies</a>. Passenger transport companies and tourist intermediaries are further divided into other subconcepts, as shown in figure 2.</p> 
+<p>Organisations are classified, as shown in figure 2, in seven main classes: organisations that offer <a href="#Accommodation">Accommodation</a> services, <a href="#PassengerTransportCompany">Passenger transport companies</a>, organisations that offer <a href="#RestaurantService">Restaurant Services</a>, <a href="#TourGuide">Tour guides</a>, <a href="#TouristIntermediary">Tourism intermediaries</a>, <a href="#EventOrganisationCompany">Event organisation companies</a> and <a href="#ComplementaryActivitiesCompany">Complementary activities companies</a>. Passenger transport companies and tourist intermediaries are further divided into other subconcepts, as shown in figure 2.</p> 
 
-<p><center><img src="images/fig2-Organisation.png"/><figcaption>Figure 2. Classification of Organisations.</figcaption></center></p>
+<p><center><img src="images/fig2-Organisation.png"/><figcaption>Figure 2. Classification of Tourism Organisations.</figcaption></center></p>
 
 <!--<p>For some of these concepts there are specific properties applicable to them. For example, an <a href="#Airline">Airline</a> is related with the <a href="#Airplane">Airplanes</a> that it operates, to the types of traveller classes that it offers (expressed as a thesaurus <a href="https://ontologia.segittur.es/turismo/kos/TravellerClass">estur-kos:TravellerClass</a>) and to the additional services related to the airlines (also expressed as a thesaurus <a href="https://ontologia.segittur.es/turismo/kos/AirlineServiceType">estur-kos:AirlineServiceType</a>).</p> -->
 
@@ -44,20 +44,20 @@ ex:OperadorBus1 a estur:BusOperator ;
   estur:hasBookingChannel ex:OperadorBus1Web .
 
 ex:certifUNE170001 a estur:Certification ;
-  rdfs:label "Certificación UNE 170001".
+  rdfs:label "UNE Certification 170001".
   
 ex:OperadorBus1SocialMediaProfile1 a estur:SocialMediaProfile ;
-  rdfs:label "Perfil de Instagram del operador de autobús 1" ;
+  rdfs:label "Instagram profile of bus operator 1" ;
   estur:socialMediaUser "operadorbus1-galapagar" ;
   estur:socialMediaPlatform estur-socialmediaplatform:Instagram .
 
 ex:OperadorBus1SocialMediaProfile2 a estur:SocialMediaProfile ;
-  rdfs:label "Perfil de Facebook del operador de autobús 1" ;
+  rdfs:label "Facebook profile of bus operator 1" ;
   estur:socialMediaUser "operadorbus1-galapag" ;
   estur:socialMediaPlatform estur-socialmediaplatform:Facebook .
 
 ex:OperadorBus1Web a estur:BookingChannel ;
-  rdfs:label "Canales de contratación del operador de autobús 1" ;
+  rdfs:label "Booking channel for bus operator 1" ;
   estur:url "https://example.org/BusOperator1/compra" .
 </textarea></pre>
     <script>

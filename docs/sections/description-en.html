@@ -103,7 +103,7 @@ ex:OperadorBus1LocationGeometry a geosparql:Geometry, geo:Point ;
 
 <p>Next we show an example in RDF, using again the RDF Turtle notation, to describe an accommodation establishment (according to the model shown in figure 5 for accommodations). More specifically, it is a three-star hotel, with a medium price, with 98 rooms and a maximum capacity of 258 customers. It is located in Mérida and offers several additional services (restaurant and swimming pool), as well as four options for meal plans (accommodation only, bed an breakfast, half board and full board). In this and the following examples, we omit prefixes that have been already used. Other applicable properties would be included in a similar manner, if available.</p>
 
-<p><center><img src="images/fig5-Accomodation.png"/><figcaption>Figure 4. Conceptual model for Accommodation Establishment.</figcaption></center></p>
+<p><center><img src="images/fig5-Accommodation.png"/><figcaption>Figure 4. Conceptual model for Accommodation Establishment.</figcaption></center></p>
 
 <pre><textarea style="resize:none" readonly id="code3" name="code" rows="25" cols="100">
 @prefix estur-priceclass: &lt;https://ontologia.segittur.es/turismo/kos/priceclass/&gt; .
@@ -113,10 +113,10 @@ ex:OperadorBus1LocationGeometry a geosparql:Geometry, geo:Point ;
 ex:Hotel1 a estur:Hotel ;
   rdfs:label "Hotel 1" ;
   estur:numberOfBeds "258"^^xsd:int ;
-  estur:numberOfBeds "98"^^xsd:int ;
+  estur:numberOfAccommodationUnits "98"^^xsd:int ;
   estur:checkinHours "15:00" ;
   estur:checkoutHours "12:00" ;
-  estur:online "true"^^xsd:boolean ;
+  estur:autonomousCheckIn "true"^^xsd:boolean ;
   estur:accommodationRating ex:Hotel1Stars ;
   estur:hasPriceClass estur-priceclass:MidRange ;
   estur:offersAdditionalAccommodationService estur-accommodationservice:Restaurant ;

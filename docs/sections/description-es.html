@@ -102,52 +102,37 @@ ex:OperadorBus1LocationGeometry a geosparql:Geometry, geo:Point ;
 
 <p><center><img src="images/fig4-TourismService.png"/><figcaption>Figura 4. Clasificación de Servicios Turísticos.</figcaption></center></p>
 
-<p>A continuación se muestra un ejemplo en RDF, usando la notación Turtle, que describe un tipo de servicio de alojamiento (de acuerdo con el modelo que presenta la figura 5 para alojamientos), específicamente un hotel de tres estrellas de precio medio, con 98 habitaciones (8 individuales, 20 dobles y 70 triples) y una capacidad máxima para 258 clientes, localizado en Mérida y que ofrece algunos servicios adicionales (restaurante y piscina), así como cuatro opciones de alojamiento (sólo alojamiento, alojamiento y desayuno, media pensión y pensión completa). Se omiten los prefijos que ya han sido utilizados con anterioridad en otros ejemplos. Como en el caso anterior, otras propiedades aplicables se incluirían de manera similar a las utilizadas como ejemplo.</p>
+<p>A continuación se muestra un ejemplo en RDF, usando la notación Turtle, que describe un tipo de servicio de alojamiento (de acuerdo con el modelo que presenta la figura 4 para alojamientos), específicamente un hotel de tres estrellas de precio medio, con 98 habitaciones y una capacidad máxima para 258 clientes. El hotel está localizado en Mérida y ofrece algunos servicios adicionales (restaurante y piscina), así como cuatro opciones de alojamiento (sólo alojamiento, alojamiento y desayuno, media pensión y pensión completa). Se omiten los prefijos que ya han sido utilizados con anterioridad en otros ejemplos. Como en el caso anterior, otras propiedades aplicables se incluirían de manera similar a las utilizadas como ejemplo.</p>
 
-<p><center><img src="images/fig5-Accomodation.png"/><figcaption>Figura 5. Modelo conceptual de los Alojamientos.</figcaption></center></p>
+<p><center><img src="images/fig5-Accommodation.png"/><figcaption>Figura 4. Modelo conceptual de los Establecimientos alojativos.</figcaption></center></p>
 
 <pre><textarea style="resize:none" readonly id="code3" name="code" rows="25" cols="100">
 @prefix estur-priceclass: &lt;https://ontologia.segittur.es/turismo/kos/priceclass/&gt; .
 @prefix estur-accommodationservice: &lt;https://ontologia.segittur.es/turismo/kos/accommodationservice/&gt; .
-@prefix estur-roomtype: &lt;https://ontologia.segittur.es/turismo/kos/roomtype/&gt; .
-@prefix estur-mealplan: &lt;https://ontologia.segittur.es/turismo/kos/mealplan/&gt; .
+@prefix estur-accommodationratetype: &lt;https://ontologia.segittur.es/turismo/kos/accomodationratetype/&gt; .
 
 ex:Hotel1 a estur:Hotel ;
   rdfs:label "Hotel 1" ;
-  estur:stars "4" ;
+  estur:numberOfBeds "258"^^xsd:int ;
+  estur:numberOfAccommodationUnits "98"^^xsd:int ;
+  estur:checkinHours "15:00" ;
+  estur:checkoutHours "12:00" ;
+  estur:autonomousCheckIn "true"^^xsd:boolean ;
+  estur:accommodationRating ex:Hotel1Stars ;
   estur:hasPriceClass estur-priceclass:MidRange ;
-  estur:accommodationCapacity ex:Hotel1AccommodationCapacity ;
   estur:offersAdditionalAccommodationService estur-accommodationservice:Restaurant ;
   estur:offersAdditionalAccommodationService estur-accommodationservice:Pool ;
-  estur:offersRoom ex:Hotel1SingleRoom ;
-  estur:offersRoom ex:Hotel1DoubleRoom ;
-  estur:offersRoom ex:Hotel1TripleRoom ;
-  estur:offersMealPlan estur-mealplan:Accommodation ;
-  estur:offersMealPlan estur-mealplan:Breakfast ;
-  estur:offersMealPlan estur-mealplan:HalfBoard ;
-  estur:offersMealPlan estur-mealplan:FullBoard ;  
-  estur:registration ex:Hotel1AccommodationRegistration ;
+  estur:offersAccommodationRateType estur-accommodationratetype:Accommodation ;
+  estur:offersAccommodationRateType estur-accommodationratetype:Breakfast ;
+  estur:offersAccommodationRateType estur-accommodationratetype:HalfBoard ;
+  estur:offersAccommodationRateType estur-accommodationratetype:FullBoard ;  
   estur:hasLocation ex:Hotel11Location ;
   estur:hasBookingChannel ex:Hotel1Web. 
 
-ex:Hotel1AccommodationCapacity a estur:AccommodationCapacity ;
-  rdfs:label "Capacidad del hotel 1" ;
-  estur:maximumCapacity "258"^^xsd:int ;
-  estur:numberOfRooms "98"^^xsd:int .
-  
-ex:Hotel1SingleRoom a estur:Room;
-  rdfs:label "Habitaciones individuales del hotel 1";
-  estur:roomType estur-roomtype:SingleRoom;
-  estur:numberOfRooms "8"^^xsd:int.
-ex:Hotel1DoubleRoom a estur:Room;
-  rdfs:label "Habitaciones dobles del hotel 1";
-  estur:roomType estur-roomtype:DoubleRoom;
-  estur:numberOfRooms "20"^^xsd:int.
-ex:Hotel1TripleRoom a estur:Room;
-  rdfs:label "Habitaciones triples del hotel 1";
-  estur:roomType estur-roomtype:TripleRoom;
-  estur:numberOfRooms "70"^^xsd:int.
-
+ex:Hotel1Stars a estur:Rating ;
+  estur:ratingValue "stars" ;
+  estur:ratingUnit "3".
+    
 estur:Hotel11Location a estur:Location ;
   rdfs:label "Localización del hotel 1" ;
   estur:streetAddress "C/ Ejemplo, 2" ;
@@ -155,13 +140,6 @@ estur:Hotel11Location a estur:Location ;
   estur:autonomousCommunity "Extremadura" ;
   estur:country "España".
 
-ex:Hotel1AccommodationRegistration a AcommodationRegistration ;
-  rdfs:label "Registration options for Hotel 1" ;
-  estur:checkinHours "15:00" ;
-  estur:checkoutHours "12:00" ;
-  estur:online "true"^^xsd:boolean ;
-  estur:onsite "true"^^xsd:boolean.
-  
 ex:Hotel1Web a estur:BookingChannel ;
   rdfs:label "Canales de contratación del hotel 1" ;
   estur:url "https://example.org/Hotel1/compra" ;
@@ -173,7 +151,7 @@ ex:Hotel1Web a estur:BookingChannel ;
         matchBrackets: true
       });
  </script>
-    
+        
 <p>Con respecto a los <a href="#TourismResource">Recursos Turísticos</a>, estos se organizan en cuatro grandes grupos (tal y como se presenta en la figura 6): <a href="#HistoricalAndCulturalResource">Recursos históricos y culturales</a>, <a href="#Route">Rutas</a>, <a href="#NaturalResource">Recursos Naturales</a> y <a href="#GastronomicResource">Recursos Gastronómicos</a>. Cada una de estas clases se divide en otras subclases. </p>
     
 <p>También están las <a href="#TourismOrRelatedFacility">Instalaciones turísticas o vinculadas</a> que se dividen en <a href="#AccommodationEstablishment">Establecimientos alojativos</a>, <a href="#FoodEstablishment">Establecimientos de comida</a>, <a href="#AgrotourismFacility">Instalaciones Agroturísticas</a>, <a href="#Educational Facility">Instalaciones Educativas</a>, <a href="#EventAttendanceFacility">Instalaciones para Eventos</a>, <a href="#HealthAndWellnessFacility">Instalaciones de Salud y Bienestar</a>, <a href="#LeisureAndCultureFacility">Instalaciones de Ocio y Cultura</a>, <a href="#PartyAndEntertainmentFacility">Instalaciones para Fiestas y Entretenimiento</a>, <a href="#SportFacility">Instalaciones Deportivas</a> y <a href="#LocalBusiness">Negocios Locales</a>.</p>

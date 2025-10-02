@@ -8,13 +8,13 @@
 
 <https://ontologia.segittur.es/turismo/def/core#> rdf:type owl:Ontology ;
                                                    owl:versionIRI <https://ontologia.segittur.es/turismo/def/core/1.2.0> ;
-                                                   <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution Non-Commercial No-Derivatives 4.0 International (CC BY-NC-ND 4.0)" ;
+                                                   <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution Share-Alike 4.0 International (CC BY-SA 4.0)" ;
                                                    <http://purl.org/dc/terms/description> "Esta ontología de dominio del sector turístico está construida a partir del Modelo Conceptual de Referencia Semántico de Turismo de SEGITTUR, un modelo para el desarrollo de una Red de Ontologías del Sector Turístico al servicio de la futura Plataforma Inteligente de Destino (PID) promovida por SEGITTUR. El Modelo Conceptual de Referencia de Turismo de SEGITTUR ofrece un corazón ontológico extensible para conceptos e información sobre el dominio de turismo, y aspira a convertirse en una referencia para el intercambio controlado de información sobre turismo."@es ,
                                                                                           "This tourism domain ontology is built from SEGITTUR's Conceptual Tourism Semantic Reference Model, a model for the development of a Network of Tourism Sector Ontologies at the service of the future Intelligent Destination Platform (IDP) promoted by SEGITTUR. The SEGITTUR Conceptual Tourism Reference Model offers an extensible ontological core for concepts and information on the tourism domain, and aims to become a reference for the controlled exchange of tourism information."@en ;
                                                    <http://purl.org/dc/terms/hasFormat> <https://ontologia.segittur.es/turismo/def/core.owl> ;
                                                    <http://purl.org/dc/terms/issued> "2025-08-25" ;
-                                                   <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-nd/4.0/> ,
-                                                                                      "CC BY-NC-ND" ;
+                                                   <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> ,
+                                                                                      "CC BY-SA" ;
                                                    <http://purl.org/dc/terms/title> "Core ontology for tourism by SEGITTUR"@en ,
                                                                                     "Ontología de referencia de turismo de SEGITTUR"@es ;
                                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "estur" ;

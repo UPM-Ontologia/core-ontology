@@ -5011,7 +5011,7 @@
   "@id" : "https://ontologia.segittur.es/turismo/def/core#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/rights" : [ {
-    "@value" : "Creative Commons Attribution Non-Commercial No-Derivatives 4.0 International (CC BY-NC-ND 4.0)"
+    "@value" : "Creative Commons Attribution Share-Alike 4.0 International (CC BY-SA 4.0)"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "es",
@@ -5027,9 +5027,9 @@
     "@value" : "2025-08-25"
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    "@id" : "https://creativecommons.org/licenses/by-sa/4.0/"
   }, {
-    "@value" : "CC BY-NC-ND"
+    "@value" : "CC BY-SA"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",

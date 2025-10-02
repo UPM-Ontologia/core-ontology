@@ -18,13 +18,13 @@
      xmlns:estur-annot="https://ontologia.segittur.es/turismo/def/annot#">
     <owl:Ontology rdf:about="https://ontologia.segittur.es/turismo/def/core#">
         <owl:versionIRI rdf:resource="https://ontologia.segittur.es/turismo/def/core/1.2.0"/>
-        <dc:rights>Creative Commons Attribution Non-Commercial No-Derivatives 4.0 International (CC BY-NC-ND 4.0)</dc:rights>
+        <dc:rights>Creative Commons Attribution Share-Alike 4.0 International (CC BY-SA 4.0)</dc:rights>
         <dct:description xml:lang="es">Esta ontología de dominio del sector turístico está construida a partir del Modelo Conceptual de Referencia Semántico de Turismo de SEGITTUR, un modelo para el desarrollo de una Red de Ontologías del Sector Turístico al servicio de la futura Plataforma Inteligente de Destino (PID) promovida por SEGITTUR. El Modelo Conceptual de Referencia de Turismo de SEGITTUR ofrece un corazón ontológico extensible para conceptos e información sobre el dominio de turismo, y aspira a convertirse en una referencia para el intercambio controlado de información sobre turismo.</dct:description>
         <dct:description xml:lang="en">This tourism domain ontology is built from SEGITTUR&apos;s Conceptual Tourism Semantic Reference Model, a model for the development of a Network of Tourism Sector Ontologies at the service of the future Intelligent Destination Platform (IDP) promoted by SEGITTUR. The SEGITTUR Conceptual Tourism Reference Model offers an extensible ontological core for concepts and information on the tourism domain, and aims to become a reference for the controlled exchange of tourism information.</dct:description>
         <dct:hasFormat rdf:resource="https://ontologia.segittur.es/turismo/def/core.owl"/>
         <dct:issued>2025-08-25</dct:issued>
-        <dct:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
-        <dct:license>CC BY-NC-ND</dct:license>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <dct:license>CC BY-SA</dct:license>
         <dct:title xml:lang="en">Core ontology for tourism by SEGITTUR</dct:title>
         <dct:title xml:lang="es">Ontología de referencia de turismo de SEGITTUR</dct:title>
         <vann:preferredNamespacePrefix>estur</vann:preferredNamespacePrefix>

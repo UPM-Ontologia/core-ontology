@@ -8,9 +8,9 @@ Figure 1. Top-level conceptual model, which represents the main class Tourism En
 <p>There is a set of properties that are applicable to most of the instances of these concepts:</p>
 
 <ul>
-<li>Properties related to their more detailed descriptions (hasDescription, hasAdditionalInformation).<br></li>
-<li>Properties related to their category (hasAcknowledgement), which can be of type Rating, Label or Certification.<br></li>
-<li>Properties related to contact details and social networks (hasContactPoint, hasBookingChannel, hasSocialMediaProfile, hasMultimedia).<br></li>
+<li>Properties related to their more detailed descriptions or additional multimedia resources (hasDescription, hasAdditionalInformation, hasMultimedia).<br></li>
+<li>Properties related to their ratings, labels or certifications (hasAcknowledgement).<br></li>
+<li>Properties related to contact details and social networks (hasContactPoint, hasBookingChannel, hasSocialMediaProfile).<br></li>
 <li>Properties related to their location and availability (hasLocation, hasOpeningHours).<br></li>
 <li>Properties related to their prices (hasPriceInformation).<br></li>
 </ul>
@@ -211,7 +211,8 @@ ex:CongressCentre1OpeningHoursWeekend a estur:OpeningHours ;
     
 <p>Next we include some additional examples that are relevant in this reference conceptual model.</p> 
 
-<p>We start with the class <a href="#Event">Event</a>, whose main properties and relations with other classes and thesauri are shown in figure 7. Events are organised by <a href="#EventOrganisationCompany">Event organisation companies</a>, which have a set of applicable properties, such as who is performing in the event, whether it is an open air event or not, the maximum capacity, and the range of dates when it is available. Furthermore, events can have associated <a href="#subEvent">sub events</a>. They can be of different types and offer additional services. This is in addition to properties that we have already indicated for tourism services. Next we show an example of a musical event (a concert) that happens in two consecutive days, and which offers as an additional service the availability of lockers. This event is contained in another event (in a cultural week) and is hosted in the congress centre that was already presented above.</p>
+<p>We start with the class <a href="#Event">Event</a>, whose main properties and relations with other classes and thesauri are shown in figure 7. Events may be organised by <a href="#TourismOrganisation">Tourism Organisations</a> or <a href="#TourismDestinations">Tourism Destinations</a>. They have a set of applicable properties, such as the type of event, additional services, whether it is an outdoor event or not, the maximum capacity, and the dates when it is available. Furthermore, events have a <a href="#Schedule">Schedule</a> and an <a href="#Agenda">Agenda</a>. They can be of different types and offer additional services. This is in addition to properties that we have already indicated for tourism entities. </p>
+<!--<p>Next we show an example of a musical event (a concert) that happens in two consecutive days, and which offers as an additional service the availability of lockers. This event is contained in another event (in a cultural week) and is hosted in the congress centre that was already presented above.</p>
 
 <p><center><img src="images/fig7-Event.png"/><figcaption>Figure 7. Conceptual model for Events.</figcaption></center></p>
 
@@ -252,7 +253,7 @@ ex:Event1Session1 a estur:EventSession ;
         matchBrackets: true
       });
  </script>
-    
+-->    
 <!--<p>Finally, we provide an example related with a <a href="#Person">Person</a>. A 47 years-old woman from a city in Germany, who travels as a <a href="#Tourist">Tourist</a> using a plane and a rental car, as part of a holiday package. Some additional characteristics of this person in this role follow the conceptual model shown in figure 8.</p>
 
 <p><center><img src="images/fig8-Persons.png"/><figcaption>Figure 8. Conceptual model for Persons and their Roles.</figcaption></center></p>

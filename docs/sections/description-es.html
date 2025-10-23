@@ -9,17 +9,16 @@ Figura 1. Modelo conceptual general, representando Organizaciones, Servicios Tur
 <p>Hay un conjunto de propiedades que son aplicables a las instancias de estos tres conceptos:</p>
 
 <ul>
-<li>Propiedades relacionadas con sus descripciones más detalladas (hasDescription, hasAdditionalInformation).<br></li>
-<li>Propiedades relacionadas con la categoría de las organizaciones, servicios y recursos (hasAcknowledgement), que pueden ser de tipo Rating, Label o Certification.<br></li>
-<li>Propiedades relacionadas con datos de contacto y de redes sociales (hasContactInfo, hasSocialMediaProfile, hasMultimedia).<br></li>
-<li>Propiedades relacionadas con localización y disponibilidad (hasLocation, hasOpeningHours, hasTemporaryClosure).<br></li>
-<li>Propiedades relacionadas con reservas y sus precios (hasBookingChannel, hasBookingInformation, hasPriceInformation).<br></li>
-<li>Propiedades relacionadas con transacciones y pagos (hasTransactionInformation, hasPaymentInformation).<br></li>
+<li>Propiedades relacionadas con sus descripciones más detalladas o recursos multimedia adicionales (hasDescription, hasAdditionalInformation, hasMultimedia).<br></li>
+<li>Propiedades relacionadas con certificaciones, puntuaciones y distintivos de las entidades (hasAcknowledgement).<br></li>
+<li>Propiedades relacionadas con datos de contacto y de redes sociales (hasContactPoint, hasBookingChannel, hasSocialMediaProfile).<br></li>
+<li>Propiedades relacionadas con localización y disponibilidad (hasLocation, hasOpeningHours).<br></li>
+<li>Propiedades relacionadas con sus precios (hasPriceInformation).<br></li>
 </ul>
 
 <p>Todas estas propiedades tienen como rango un concepto específico para cada una de ellas, con sus propiedades correspondientes.</p>
 
-<p>A continuación se ofrecerán más detalles para cada uno de estos conceptos (Organización, Servicio turístico y Recurso turístico) y sus jerarquías, así como ejemplos en RDF asociados a una organización, un servicio turístico y un recurso turístico imaginarios.</p>
+<p>A continuación se ofrecerán más detalles sobre algunos de estos conceptos (Organización, Servicio turístico y Recurso turístico) y sus jerarquías, así como ejemplos en RDF asociados a una organización, un servicio turístico y un recurso turístico imaginarios.</p>
 
 <p>Comenzando con las organizaciones, estas están clasificadas, tal y como se muestra en la figura 2, en siete clases principales: organizaciones que ofrecen servicios de <a href="#Accommodation">Alojamiento</a>, <a href="#PassengerTransportCompany">Compañías de transporte de pasajeros</a>, organizaciones que ofrecen <a href="#RestaurantService">Servicios de restauración</a>, <a href="#TourGuide">Guías turísticos</a>, <a href="#TouristIntermediary">Intermediarios turísticos</a> y <a href="#EventOrganisationCompany">Empresas de organización de eventos</a> y <a href="#ComplementaryActivitiesCompany">Empresas de actividades complementarias</a>. Tanto las compañías de transporte de pasajeros como los intermediarios turísticos están subclasificados en otros conceptos, como también se puede ver en la figura 2.</p>  
 
@@ -154,7 +153,7 @@ ex:Hotel1Web a estur:BookingChannel ;
         
 <p>Con respecto a los <a href="#Place">Lugares</a>, estos se organizan en siete grandes grupos (tal y como se presenta en la figura 6): <a href="#TourismDestination">Destinos turísticos</a>,<a href="#TourismOrRelatedFacility">Instalaciones turísticas  vinculadas</a>, <a href="#HistoricalAndCulturalResource">Recursos históricos y culturales</a>, <a href="#NaturalResource">Recursos Naturales</a>, <a href="#Route">Rutas</a>, <a href="#PublicService">Servicios Públicos</a> e <a href="#TransportInfrastructure">Infraestructuras de transportes</a>. Cada una de estas clases se divide en otras subclases. </p>
     
-<p>Por ejemplo, las <a href="#TourismOrRelatedFacility">Instalaciones turísticas o vinculadas</a> se dividen en <a href="#AgrotourismFacility">Instalaciones Agroturísticas</a>, <a href="#AccommodationEstablishment">Establecimientos alojativos</a>, <a href="#FoodEstablishment">Establecimientos de comida</a>,  <a href="#Educational Facility">Instalaciones Educativas</a>, <a href="#EventAttendanceFacility">Instalaciones para Eventos</a>, <a href="#HealthAndWellnessFacility">Instalaciones de Salud y Bienestar</a>, <a href="#LeisureAndCultureFacility">Instalaciones de Ocio y Cultura</a>, <a href="#PartyAndEntertainmentFacility">Instalaciones para Fiestas y Entretenimiento</a>, <a href="#SportFacility">Instalaciones Deportivas</a> y <a href="#LocalBusiness">Negocios Locales</a>.</p>
+<p>Por ejemplo, las <a href="#TourismOrRelatedFacility">Instalaciones turísticas o vinculadas</a> se dividen en <a href="#AgrotourismFacility">Instalaciones Agroturísticas</a>, <a href="#AccommodationEstablishment">Establecimientos alojativos</a>, <a href="#FoodEstablishment">Establecimientos de restauración</a>,  <a href="#Educational Facility">Instalaciones Educativas</a>, <a href="#EventAttendanceFacility">Instalaciones para Eventos</a>, <a href="#HealthAndWellnessFacility">Instalaciones de Salud y Bienestar</a>, <a href="#LeisureAndCultureFacility">Instalaciones de Ocio y Cultura</a>, <a href="#PartyAndEntertainmentFacility">Instalaciones para Fiestas y Entretenimiento</a>, <a href="#SportFacility">Instalaciones Deportivas</a> y <a href="#LocalBusiness">Negocios Locales</a>.</p>
 
 <p><center><img src="images/fig6-Place.png"/><figcaption>Figura 6. Clasificación de Lugares.</figcaption></center></p>
 
@@ -214,7 +213,8 @@ ex:CongressCentre1OpeningHoursWeekend a estur:OpeningHours ;
     
 <p>A continuación se presentan algunos ejemplos adicionales de conceptos que tienen también relevancia en esta ontología.</p> 
 
-<p>Se comienza con la clase <a href="#Event">Evento</a>, cuyas propiedades y relaciones principales con otros conceptos y tesauros se muestran en la figura 7. Los eventos son organizados por <a href="#EventOrganisationCompany">Compañías de organización de eventos</a>, tienen una serie de propiedades aplicables, como quién o quiénes son los que actúan en el evento, si se trata de un evento al aire libre o no, el aforo máximo, y el rango de fechas en las que está disponible. Asimismo, los eventos pueden tener <a href="#subEvent">eventos relacionados (también conocidos como sub-eventos)</a>. Todo esto se une a las propiedades ya indicadas para los servicios turísticos. A continuación se muestra un ejemplo de un evento musical (un concierto) que se celebra en dos días consecutivos, y que ofrece como servicio adicional el uso de taquillas. Este evento está relacionado (contenido) en otro evento (en una semana cultural) y se celebra en el centro de congresos CongressCentre1, ya utilizado como ejemplo anteriormente.</p>
+<p>Se comienza con la clase <a href="#Event">Evento</a>, cuyas propiedades y relaciones principales con otros conceptos y tesauros se muestran en la figura 7. Los eventos pueden ser organizados por <a href="#TourismOrganisation">Organizaciones turísticas</a> o <a href="#TourismDestination">Destinos turísticos</a>. Tienen una serie de propiedades aplicables, como el tipo de evento o servicios adicionales que se ofrecen, si se trata de un evento al aire libre o no, el aforo máximo, y las fechas en las que está disponible. Asimismo, los eventos tienen una <a href="#Schedule">programación</a> y una <a href="#Agenda">agenda</a>. Todo esto se une a las propiedades ya indicadas para entidades turísticas.</p>
+<!--<p>A continuación se muestra un ejemplo de un evento musical (un concierto) que se celebra en dos días consecutivos, y que ofrece como servicio adicional el uso de taquillas. Este evento está relacionado (contenido) en otro evento (en una semana cultural) y se celebra en el centro de congresos CongressCentre1, ya utilizado como ejemplo anteriormente.</p>
 
 <p><center><img src="images/fig7-Event.png"/><figcaption>Figura 7. Modelo conceptual de los Eventos.</figcaption></center></p>
 
@@ -256,7 +256,7 @@ ex:Event1Session1 a estur:Event ;
         matchBrackets: true
       });
  </script>
-    
+-->    
 <!--<p>Finalmente, añadimos un ejemplo relacionado con una <a href="#Person">Persona</a>, mujer de 47 años procedente de una ciudad en Alemania, que viaja como <a href="#Tourist">Turista</a> en avión y en coche de alquiler, como parte de un paquete turístico, representando varias de sus características de acuerdo con el modelo conceptual presentado en la figura 8.</p>
 
 <p><center><img src="images/fig8-Persons.png"/><figcaption>Figura 8. Modelo conceptual de las Personas y sus Roles.</figcaption></center></p>

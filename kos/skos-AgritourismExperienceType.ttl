@@ -18,11 +18,11 @@
 
 estur-kos:AgritourismExperienceType a skos:ConceptScheme ; 
     dct:issued "2025-08-18"^^xsd:date ;
-    dct:modified "2025-08-18"^^xsd:date ;
+    dct:modified "2025-12-15"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Agritourism Experience Type"@en ;
+    rdfs:label "Agritourism Experience type"@en ;
     rdfs:label "Tipo de experiencia agroturística"@es ;
     dct:title "Concept scheme grouping agritourism experience types"@en ;
     dct:title "Esquema de conceptos agrupando tipos de experiencias agroturísticas"@es .

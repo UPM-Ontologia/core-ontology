@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:EventAttendanceServiceType a skos:ConceptScheme ; 
+estur-kos:EventAttendanceService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+    dct:modified "2025-12-15"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Event Attendance Service Type"@en ;
-    rdfs:label "Tipo de servicio de asistencia a un evento"@es ;
-    dct:title "Concept scheme grouping event attendance service types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de servicio de asistencia a un evento"@es .
+    rdfs:label "Event Attendance Service"@en ;
+    rdfs:label "Servicios de asistencia a un evento"@es ;
+    dct:title "Concept scheme grouping event attendance services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de asistencia a un evento"@es .
 
 #################################################################
 #
@@ -34,28 +34,28 @@ estur-kos:EventAttendanceServiceType a skos:ConceptScheme ;
 #################################################################
 
 estur-eventattendanceservice:ChildrenGames a skos:Concept;
-  skos:inScheme estur-kos:EventAttendanceServiceType;
+  skos:inScheme estur-kos:EventAttendanceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Children Games"@en ;
   skos:prefLabel "Juegos para niños"@es .
 
 estur-eventattendanceservice:CloakRoom a skos:Concept;
-  skos:inScheme estur-kos:EventAttendanceServiceType;
+  skos:inScheme estur-kos:EventAttendanceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Cloak Room"@en ;
   skos:prefLabel "Guardarropa"@es .
 
 estur-eventattendanceservice:Shop a skos:Concept;
-  skos:inScheme estur-kos:EventAttendanceServiceType;
+  skos:inScheme estur-kos:EventAttendanceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Shop"@en ;
   skos:prefLabel "Tienda"@es .
 
 estur-eventattendanceservice:Venue a skos:Concept;
-  skos:inScheme estur-kos:EventAttendanceServiceType;
+  skos:inScheme estur-kos:EventAttendanceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Venue"@en ;

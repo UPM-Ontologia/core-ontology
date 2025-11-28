@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:ZooServiceType a skos:ConceptScheme ; 
+estur-kos:ZooService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+    dct:modified "2025-12-15"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Zoo Service Type"@en ;
-    rdfs:label "Tipo de servicio de un zoo"@es ;
-    dct:title "Concept scheme grouping zoo service types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de servicio de un zoo"@es .
+    rdfs:label "Zoo Service"@en ;
+    rdfs:label "ZServicio de un zoo"@es ;
+    dct:title "Concept scheme grouping zoo services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de un zoo"@es .
 
 #################################################################
 #
@@ -34,35 +34,35 @@ estur-kos:ZooServiceType a skos:ConceptScheme ;
 #################################################################
 
 estur-zooservice:Audioguide a skos:Concept;
-  skos:inScheme estur-kos:ZooServiceType;
+  skos:inScheme estur-kos:ZooService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Audioguide"@en ;
   skos:prefLabel "Audioguía"@es .
 
 estur-zooservice:EducationalTour a skos:Concept;
-  skos:inScheme estur-kos:ZooServiceType;
+  skos:inScheme estur-kos:ZooService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Educational tour"@en ;
   skos:prefLabel "Visita educativa"@es .
 
 estur-zooservice:GroupTour a skos:Concept;
-  skos:inScheme estur-kos:ZooServiceType;
+  skos:inScheme estur-kos:ZooService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Group tour"@en ;
   skos:prefLabel "Visita de grupos"@es .
 
 estur-zooservice:GuidedTour a skos:Concept;
-  skos:inScheme estur-kos:ZooServiceType;
+  skos:inScheme estur-kos:ZooService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Guided tour"@en ;
   skos:prefLabel "Visita guiada"@es .
 
 estur-zooservice:PrivateTour a skos:Concept;
-  skos:inScheme estur-kos:ZooServiceType;
+  skos:inScheme estur-kos:ZooService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Private tour"@en ;

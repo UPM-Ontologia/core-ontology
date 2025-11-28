@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:SwimmingPoolServiceType a skos:ConceptScheme ; 
+estur-kos:SwimmingPoolService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+    dct:modified "2024-12-15"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Swimming Pool Service Type"@en ;
-    rdfs:label "Tipo de servicio de una piscina"@es ;
-    dct:title "Concept scheme grouping swimming pool service types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de servicio de una piscina"@es .
+    rdfs:label "Swimming Pool Service"@en ;
+    rdfs:label "Servicio de una piscina"@es ;
+    dct:title "Concept scheme grouping swimming pool services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de una piscina"@es .
 
 #################################################################
 #
@@ -34,7 +34,7 @@ estur-kos:SwimmingPoolServiceType a skos:ConceptScheme ;
 #################################################################
 
 estur-swimmingpoolservice:LifeGuard a skos:Concept;
-  skos:inScheme estur-kos:SwimmingPoolServiceType;
+  skos:inScheme estur-kos:SwimmingPoolService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Life Guard"@en ;

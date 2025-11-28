@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:TourGuideServiceType a skos:ConceptScheme ; 
+estur-kos:TourGuideService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+    dct:modified "2025-12-15"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Tour Guide Service Type"@en ;
-    rdfs:label "Tipo de servicio de un guía turístico"@es ;
-    dct:title "Concept scheme grouping tour guide service types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de servicio de un guía turístico"@es .
+    rdfs:label "Tour Guide Service"@en ;
+    rdfs:label "Servicio de un guía turístico"@es ;
+    dct:title "Concept scheme grouping tour guide services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de un guía turístico"@es .
 
 #################################################################
 #
@@ -34,49 +34,49 @@ estur-kos:TourGuideServiceType a skos:ConceptScheme ;
 #################################################################
 
 estur-tourguideservice:BikeTour a skos:Concept;
-  skos:inScheme estur-kos:TourGuideServiceType;
+  skos:inScheme estur-kos:TourGuideService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Bike Tour"@en ;
   skos:prefLabel "Visita en bicicleta"@es .
 
 estur-tourguideservice:EducationalTour a skos:Concept;
-  skos:inScheme estur-kos:TourGuideServiceType;
+  skos:inScheme estur-kos:TourGuideService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Educational Tour"@en ;
   skos:prefLabel "Visita educativa"@es .
 
 estur-tourguideservice:FastLane a skos:Concept;
-  skos:inScheme estur-kos:TourGuideServiceType;
+  skos:inScheme estur-kos:TourGuideService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Fast Lane"@en ;
   skos:prefLabel "Fast lane"@es .
 
 estur-tourguideservice:GearProvision a skos:Concept;
-  skos:inScheme estur-kos:TourGuideServiceType;
+  skos:inScheme estur-kos:TourGuideService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Gear Provision"@en ;
   skos:prefLabel "Gear provision"@es .
 
 estur-tourguideservice:GroupTour a skos:Concept;
-  skos:inScheme estur-kos:TourGuideServiceType;
+  skos:inScheme estur-kos:TourGuideService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Group Tour"@en ;
   skos:prefLabel "Visita en grupos"@es .
 
 estur-tourguideservice:NightTour a skos:Concept;
-  skos:inScheme estur-kos:TourGuideServiceType;
+  skos:inScheme estur-kos:TourGuideService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Night Tour"@en ;
   skos:prefLabel "Visita nocturna"@es .
 
 estur-tourguideservice:PrivateTour a skos:Concept;
-  skos:inScheme estur-kos:TourGuideServiceType;
+  skos:inScheme estur-kos:TourGuideService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Private Tour"@en ;

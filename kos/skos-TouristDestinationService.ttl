@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:TouristDestinationServiceType a skos:ConceptScheme ; 
+estur-kos:TouristDestinationService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2025-08-13"^^xsd:date ;
+    dct:modified "2025-12-15"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Tourist Destination Service Type"@en ;
-    rdfs:label "Tipo de servicio de un destino turístico"@es ;
-    dct:title "Concept scheme grouping tourist destination service types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de servicio de un destino turístico"@es .
+    rdfs:label "Tourist Destination Service"@en ;
+    rdfs:label "Servicio de un destino turístico"@es ;
+    dct:title "Concept scheme grouping tourist destination services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de un destino turístico"@es .
 
 #################################################################
 #
@@ -34,42 +34,42 @@ estur-kos:TouristDestinationServiceType a skos:ConceptScheme ;
 #################################################################
 
 estur-touristdestinationservice:DestinationApp a skos:Concept;
-  skos:inScheme estur-kos:TouristDestinationServiceType;
+  skos:inScheme estur-kos:TouristDestinationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Destination App"@en ;
   skos:prefLabel "App de destino"@es .
 
 estur-touristdestinationservice:Shop a skos:Concept;
-  skos:inScheme estur-kos:TouristDestinationServiceType;
+  skos:inScheme estur-kos:TouristDestinationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Shop"@en ;
   skos:prefLabel "Tienda"@es .
 
 estur-touristdestinationservice:TouristCard a skos:Concept;
-  skos:inScheme estur-kos:TouristDestinationServiceType;
+  skos:inScheme estur-kos:TouristDestinationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Tourist Card"@en ;
   skos:prefLabel "Tarjeta turística"@es .
 
 estur-touristdestinationservice:Travelogue a skos:Concept;
-  skos:inScheme estur-kos:TouristDestinationServiceType;
+  skos:inScheme estur-kos:TouristDestinationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Travelogue"@en ;
   skos:prefLabel "Cuaderno de viaje"@es .
 
 estur-touristdestinationservice:VirtualAdvisor a skos:Concept;
-  skos:inScheme estur-kos:TouristDestinationServiceType;
+  skos:inScheme estur-kos:TouristDestinationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Virtual Advisor"@en ;
   skos:prefLabel "Asesor virtual"@es .
 
 estur-touristdestinationservice:Wifi a skos:Concept;
-  skos:inScheme estur-kos:TouristDestinationServiceType;
+  skos:inScheme estur-kos:TouristDestinationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Wifi"@en ;

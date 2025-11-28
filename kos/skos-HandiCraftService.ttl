@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:HandiCraftServiceType a skos:ConceptScheme ; 
+estur-kos:HandiCraftService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+    dct:modified "2025-12-15"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Handi Craft Service Type"@en ;
-    rdfs:label "Tipo de servicio de artesanía"@es ;
-    dct:title "Concept scheme grouping handi craft service types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de servicio de artesanía"@es .
+    rdfs:label "Handi Craft Service"@en ;
+    rdfs:label "Servicio de artesanía"@es ;
+    dct:title "Concept scheme grouping handi craft services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de artesanía"@es .
 
 #################################################################
 #
@@ -34,7 +34,7 @@ estur-kos:HandiCraftServiceType a skos:ConceptScheme ;
 #################################################################
 
 estur-handicraftservice:Workshop a skos:Concept;
-  skos:inScheme estur-kos:HandiCraftServiceType;
+  skos:inScheme estur-kos:HandiCraftService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Workshop"@en ;

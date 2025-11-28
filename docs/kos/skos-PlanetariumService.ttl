@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:PlanetariumServiceType a skos:ConceptScheme ; 
+estur-kos:PlanetariumService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+    dct:modified "2025-12-15"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Planetarium Service Type"@en ;
-    rdfs:label "Tipo de servicio de un planetario"@es ;
-    dct:title "Concept scheme grouping planetarium service types"@en ;
-    dct:title "Esquema de conceptos agrupando tipos de servicio de un planetario"@es .
+    rdfs:label "Planetarium Service"@en ;
+    rdfs:label "Servicio de un planetario"@es ;
+    dct:title "Concept scheme grouping planetarium services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de un planetario"@es .
 
 #################################################################
 #
@@ -34,56 +34,56 @@ estur-kos:PlanetariumServiceType a skos:ConceptScheme ;
 #################################################################
 
 estur-planetariumservice:Audioguide a skos:Concept;
-  skos:inScheme estur-kos:PlanetariumServiceType;
+  skos:inScheme estur-kos:PlanetariumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Audioguide"@en ;
   skos:prefLabel "Audioguía"@es .
 
 estur-planetariumservice:AugmentedReality a skos:Concept;
-  skos:inScheme estur-kos:PlanetariumServiceType;
+  skos:inScheme estur-kos:PlanetariumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Augmented Reality"@en ;
   skos:prefLabel "Realidad aumentada"@es .
 
 estur-planetariumservice:EducationalTour a skos:Concept;
-  skos:inScheme estur-kos:PlanetariumServiceType;
+  skos:inScheme estur-kos:PlanetariumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Educational Tour"@en ;
   skos:prefLabel "Visita educativa"@es .
 
 estur-planetariumservice:GroupTour a skos:Concept;
-  skos:inScheme estur-kos:PlanetariumServiceType;
+  skos:inScheme estur-kos:PlanetariumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Group Tour"@en ;
   skos:prefLabel "Visita en grupos"@es .
 
 estur-planetariumservice:GuidedTour a skos:Concept;
-  skos:inScheme estur-kos:PlanetariumServiceType;
+  skos:inScheme estur-kos:PlanetariumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Guided Tour"@en ;
   skos:prefLabel "Visita guiada"@es .
 
 estur-planetariumservice:PrivateTour a skos:Concept;
-  skos:inScheme estur-kos:PlanetariumServiceType;
+  skos:inScheme estur-kos:PlanetariumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Private Tour"@en ;
   skos:prefLabel "Visita privada"@es .
 
 estur-planetariumservice:Venue a skos:Concept;
-  skos:inScheme estur-kos:PlanetariumServiceType;
+  skos:inScheme estur-kos:PlanetariumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Venue"@en ;
   skos:prefLabel "Lugar"@es .
 
 estur-planetariumservice:VirtualReality a skos:Concept;
-  skos:inScheme estur-kos:PlanetariumServiceType;
+  skos:inScheme estur-kos:PlanetariumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Virtual Reality"@en ;

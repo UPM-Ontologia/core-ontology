@@ -22,7 +22,7 @@ estur-kos:EducationalService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Educational Service"@en ;
+    rdfs:label "Educational service"@en ;
     rdfs:label "Servicio educativo"@es ;
     dct:title "Concept scheme grouping educational services"@en ;
     dct:title "Esquema de conceptos agrupando servicios educativos"@es .
@@ -37,7 +37,7 @@ estur-educationalservice:ChildrenGames a skos:Concept;
   skos:inScheme estur-kos:EducationalService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Children Games"@en ;
+  skos:prefLabel "Children games"@en ;
   skos:prefLabel "Juegos para niños"@es .
 
 estur-educationalservice:Gamification a skos:Concept;
@@ -58,7 +58,7 @@ estur-educationalservice:QrCodes a skos:Concept;
   skos:inScheme estur-kos:EducationalService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "QR Codes"@en ;
+  skos:prefLabel "QR codes"@en ;
   skos:prefLabel "Códigos QR"@es .
 
 estur-educationalservice:Venue a skos:Concept;

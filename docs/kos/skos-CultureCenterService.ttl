@@ -22,7 +22,7 @@ estur-kos:CultureCenterService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Culture Center Service"@en ;
+    rdfs:label "Culture center service"@en ;
     rdfs:label "Servicio de centro cultural"@es ;
     dct:title "Concept scheme grouping culture center services"@en ;
     dct:title "Esquema de conceptos agrupando servicios de centro cultural"@es .
@@ -44,35 +44,35 @@ estur-culturecenterservice:AugmentedReality a skos:Concept;
   skos:inScheme estur-kos:CultureCenterService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Augmented Reality"@en ;
+  skos:prefLabel "Augmented reality"@en ;
   skos:prefLabel "Realidad aumentada"@es .
 
 estur-culturecenterservice:EducationalTour a skos:Concept;
   skos:inScheme estur-kos:CultureCenterService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Educational Tour"@en ;
+  skos:prefLabel "Educational tour"@en ;
   skos:prefLabel "Visita educativa"@es .
 
 estur-culturecenterservice:GroupTour a skos:Concept;
   skos:inScheme estur-kos:CultureCenterService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Group Tour"@en ;
+  skos:prefLabel "Group tour"@en ;
   skos:prefLabel "Visita de grupos"@es .
 
 estur-culturecenterservice:GuidedTour a skos:Concept;
   skos:inScheme estur-kos:CultureCenterService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Guided Tour"@en ;
+  skos:prefLabel "Guided tour"@en ;
   skos:prefLabel "Visita guiada"@es .
 
 estur-culturecenterservice:PrivateTour a skos:Concept;
   skos:inScheme estur-kos:CultureCenterService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Private Tour"@en ;
+  skos:prefLabel "Private tour"@en ;
   skos:prefLabel "Visita privada"@es .
 
 estur-culturecenterservice:Venue a skos:Concept;
@@ -86,7 +86,7 @@ estur-culturecenterservice:VirtualReality a skos:Concept;
   skos:inScheme estur-kos:CultureCenterService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Virtual Reality"@en ;
+  skos:prefLabel "Virtual reality"@en ;
   skos:prefLabel "Realidad virtual"@es .
 
 estur-culturecenterservice:Wifi a skos:Concept;

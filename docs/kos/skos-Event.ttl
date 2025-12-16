@@ -37,14 +37,14 @@ estur-event:AcrobaticsShow a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Acrobatics Show"@en ;
+  skos:prefLabel "Acrobatics show"@en ;
   skos:prefLabel "Espectáculo acrobático"@es .
 
 estur-event:ArtEvent a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Art Event"@en ;
+  skos:prefLabel "Art event"@en ;
   skos:prefLabel "Evento artístico"@es .
 
 estur-event:Ballet a skos:Concept;
@@ -65,14 +65,14 @@ estur-event:BusinessEvent a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Business Event"@en ;
+  skos:prefLabel "Business event"@en ;
   skos:prefLabel "Evento de negocios"@es .
 
 estur-event:CabaretShow a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Cabaret Show"@en ;
+  skos:prefLabel "Cabaret show"@en ;
   skos:prefLabel "Espectáculo de cabaret"@es .
 
 estur-event:Cinema a skos:Concept;
@@ -93,7 +93,7 @@ estur-event:ClownAct a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Clown Act"@en ;
+  skos:prefLabel "Clown act"@en ;
   skos:prefLabel "Actuación de payasos"@es .
 
 estur-event:Competition a skos:Concept;
@@ -128,21 +128,21 @@ estur-event:DanceEvent a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Dance Event"@en ;
+  skos:prefLabel "Dance event"@en ;
   skos:prefLabel "Evento de baile"@es .
 
 estur-event:DigitalCulture a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Digital Culture"@en ;
+  skos:prefLabel "Digital culture"@en ;
   skos:prefLabel "Cultura digital"@es .
 
 estur-event:EducationEvent a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Education Event"@en ;
+  skos:prefLabel "Education event"@en ;
   skos:prefLabel "Evento educativo"@es .
 
 estur-event:Environmental a skos:Concept;
@@ -156,7 +156,7 @@ estur-event:ExhibitionEvent a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Exhibition Event"@en ;
+  skos:prefLabel "Exhibition event"@en ;
   skos:prefLabel "Exhibición"@es .
 
 estur-event:Fair a skos:Concept;
@@ -184,7 +184,7 @@ estur-event:FoodEvent a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Food Event"@en ;
+  skos:prefLabel "Food event"@en ;
   skos:prefLabel "Evento gastronómico"@es .
 
 estur-event:Hiphop a skos:Concept;
@@ -205,14 +205,14 @@ estur-event:MagicShow a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Magic Show"@en ;
+  skos:prefLabel "Magic show"@en ;
   skos:prefLabel "Espectáculo de magia"@es .
 
 estur-event:MimeAct a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Mime Act"@en ;
+  skos:prefLabel "Mime act"@en ;
   skos:prefLabel "Actuación de mimos"@es .
 
 estur-event:Music a skos:Concept;
@@ -233,7 +233,7 @@ estur-event:NewsRadioTv a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "News Radio TV"@en ;
+  skos:prefLabel "News radio TV"@en ;
   skos:prefLabel "Noticias Radio TV"@es .
 
 estur-event:Opera a skos:Concept;
@@ -254,14 +254,14 @@ estur-event:PoetryExhibition a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Poetry Exhibition"@en ;
+  skos:prefLabel "Poetry exhibition"@en ;
   skos:prefLabel "Exhibición de poesía"@es .
 
 estur-event:PuppetShow a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Puppet Show"@en ;
+  skos:prefLabel "Puppet show"@en ;
   skos:prefLabel "Espectáculo de marionetas"@es .
 
 estur-event:Race a skos:Concept;
@@ -275,7 +275,7 @@ estur-event:ReligionEvent a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Religion Event"@en ;
+  skos:prefLabel "Religion event"@en ;
   skos:prefLabel "Evento religioso"@es .
 
 estur-event:Specials a skos:Concept;
@@ -296,21 +296,21 @@ estur-event:SportsEvent a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Sports Event"@en ;
+  skos:prefLabel "Sports event"@en ;
   skos:prefLabel "Evento deportivo"@es .
 
 estur-event:SportsMatch a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Sports Match"@en ;
+  skos:prefLabel "Sports match"@en ;
   skos:prefLabel "Partido deportivo"@es .
 
 estur-event:StandupComedy a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Standup Comedy"@en ;
+  skos:prefLabel "Standup comedy"@en ;
   skos:prefLabel "Monólogo cómico"@es .
 
 estur-event:Tap a skos:Concept;
@@ -324,20 +324,20 @@ estur-event:TheaterPlay a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Theater Play"@en ;
+  skos:prefLabel "Theater play"@en ;
   skos:prefLabel "Obra de teatro"@es .
 
 estur-event:TraditionalFestival a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Traditional Festival"@en ;
+  skos:prefLabel "Traditional festival"@en ;
   skos:prefLabel "Festival tradicional"@es .
 
 estur-event:WineFestival a skos:Concept;
   skos:inScheme estur-kos:Event;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wine Festival"@en ;
+  skos:prefLabel "Wine festival"@en ;
   skos:prefLabel "Festival del vino"@es .
 

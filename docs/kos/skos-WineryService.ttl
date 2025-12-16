@@ -44,21 +44,21 @@ estur-wineryservice:AugmentedReality a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Augmented Reality"@en ;
+  skos:prefLabel "Augmented reality"@en ;
   skos:prefLabel "Realidad aumentada"@es .
 
 estur-wineryservice:ConferenceRoom a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Conference Room"@en ;
+  skos:prefLabel "Conference room"@en ;
   skos:prefLabel "Sala de conferencias"@es .
 
 estur-wineryservice:EducationalTour a skos:Concept;
   skos:inScheme estur-kos:WineryServiceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Educational Tour"@en ;
+  skos:prefLabel "Educational tour"@en ;
   skos:prefLabel "Visita educativa"@es .
 
 estur-wineryservice:Enoteca a skos:Concept;
@@ -79,35 +79,35 @@ estur-wineryservice:GroupTour a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Group Tour"@en ;
+  skos:prefLabel "Group tour"@en ;
   skos:prefLabel "Visita de grupos"@es .
 
 estur-wineryservice:GuidedTour a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Guided Tour"@en ;
+  skos:prefLabel "Guided tour"@en ;
   skos:prefLabel "Visita guiada"@es .
 
 estur-wineryservice:HorizontalSampling a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Horizontal Sampling"@en ;
+  skos:prefLabel "Horizontal sampling"@en ;
   skos:prefLabel "Cata horizontal"@es .
 
 estur-wineryservice:OnlineSampling a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Online Sampling"@en ;
+  skos:prefLabel "Online sampling"@en ;
   skos:prefLabel "Cata online"@es .
 
 estur-wineryservice:PrivateTour a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Private Tour"@en ;
+  skos:prefLabel "Private tour"@en ;
   skos:prefLabel "Visita privada"@es .
 
 estur-wineryservice:Restaurant a skos:Concept;
@@ -121,14 +121,14 @@ estur-wineryservice:SamplingCourse a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Sampling Course"@en ;
+  skos:prefLabel "Sampling course"@en ;
   skos:prefLabel "Curso de cata"@es .
 
 estur-wineryservice:TastingMenu a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Tasting Menu"@en ;
+  skos:prefLabel "Tasting menu"@en ;
   skos:prefLabel "Menú especial"@es .
 
 estur-wineryservice:Venue a skos:Concept;
@@ -142,34 +142,34 @@ estur-wineryservice:VerticalSampling a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Vertical Sampling"@en ;
+  skos:prefLabel "Vertical sampling"@en ;
   skos:prefLabel "Cata vertical"@es .
 
 estur-wineryservice:VirtualReality a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Virtual Reality"@en ;
+  skos:prefLabel "Virtual reality"@en ;
   skos:prefLabel "Realidad virtual"@es .
 
 estur-wineryservice:WineBar a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wine Bar"@en ;
+  skos:prefLabel "Wine bar"@en ;
   skos:prefLabel "Bar para tomar vinos"@es .
 
 estur-wineryservice:WineClub a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wine Club"@en ;
+  skos:prefLabel "Wine club"@en ;
   skos:prefLabel "Club de vinos"@es .
 
 estur-wineryservice:WineSpa a skos:Concept;
   skos:inScheme estur-kos:WineryService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wine Spa"@en ;
+  skos:prefLabel "Wine spa"@en ;
   skos:prefLabel "Spa de vino"@es .
 

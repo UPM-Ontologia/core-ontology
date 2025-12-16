@@ -107,21 +107,21 @@ estur-multiadventureactivity:WakeBoarding a skos:Concept;
   skos:inScheme estur-kos:MultiadventureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wake Boarding"@en ;
+  skos:prefLabel "Wake boarding"@en ;
   skos:prefLabel "Wakeboarding"@es .
 
 estur-multiadventureactivity:WakeFoil a skos:Concept;
   skos:inScheme estur-kos:MultiadventureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Wake Foil"@en ;
+  skos:prefLabel "Wake foil"@en ;
   skos:prefLabel "Wake foil"@es .
 
 estur-multiadventureactivity:WaterCanyoning a skos:Concept;
   skos:inScheme estur-kos:MultiadventureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Water Canyoning"@en ;
+  skos:prefLabel "Water canyoning"@en ;
   skos:prefLabel "Barranquismo acuático"@es .
 
 estur-multiadventureactivity:Abseiling a skos:Concept;
@@ -170,7 +170,7 @@ estur-multiadventureactivity:CompressedAirShooting a skos:Concept;
   skos:inScheme estur-kos:MultiadventureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Compressed Air shooting"@en ;
+  skos:prefLabel "Compressed air shooting"@en ;
   skos:prefLabel "Tiro con aire comprimido"@es .
 
 estur-multiadventureactivity:Geocaching a skos:Concept;
@@ -191,7 +191,7 @@ estur-multiadventureactivity:HorseRiding a skos:Concept;
   skos:inScheme estur-kos:MultiadventureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "HorseRiding"@en ;
+  skos:prefLabel "Horse riding"@en ;
   skos:prefLabel "Montar a caballo"@es .
 
 estur-multiadventureactivity:Hunting a skos:Concept;
@@ -219,7 +219,7 @@ estur-multiadventureactivity:PneumaticShooting a skos:Concept;
   skos:inScheme estur-kos:MultiadventureActivityType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Pneumatic Shooting"@en ;
+  skos:prefLabel "Pneumatic shooting"@en ;
   skos:prefLabel "Tiro neumático"@es .
 
 estur-multiadventureactivity:ViaFerrata a skos:Concept;

@@ -47,17 +47,17 @@ estur-labeltype:TaxFree a skos:Concept;
   skos:inScheme estur-kos:LabelType;
   skos:note "This concept is only applicable to shops"@en;
   skos:note "Este concepto es sólo aplicable a comercios"@es;
-  skos:prefLabel "Tax Free"@en ;
+  skos:prefLabel "Tax free"@en ;
   skos:prefLabel "Libre de impuestos"@es .
 
 estur-labeltype:KidsFriendly a skos:Concept;
   skos:inScheme estur-kos:LabelType;
-  skos:prefLabel "Kids Friendly"@en ;
+  skos:prefLabel "Kids friendly"@en ;
   skos:prefLabel "Apto para niños"@es .
 
 estur-labeltype:AdultsOnly a skos:Concept;
   skos:inScheme estur-kos:LabelType;
-  skos:prefLabel "Adults Only"@en ;
+  skos:prefLabel "Adults only"@en ;
   skos:prefLabel "Sólo para adultos"@es .
 
 

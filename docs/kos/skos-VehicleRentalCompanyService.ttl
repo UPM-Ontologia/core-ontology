@@ -22,7 +22,7 @@ estur-kos:VehicleRentalCompanyService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Vehicle Rental Company Service"@en ;
+    rdfs:label "Vehicle rental company service"@en ;
     rdfs:label "Servicio de una empresa de alquiler de vehículos"@es ;
     dct:title "Concept scheme grouping vehicle rental company services"@en ;
     dct:title "Esquema de conceptos agrupando servicios de una empresa de alquiler de vehículos"@es .
@@ -37,41 +37,41 @@ estur-vehiclerentalcompanyservice:AccesibleVehicleFleet a skos:Concept;
   skos:inScheme estur-kos:VehicleRentalCompanyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Accesible Vehicle Fleet"@en ;
+  skos:prefLabel "Accesible vehicle fleet"@en ;
   skos:prefLabel "Flota de vehículos accesibles"@es .
 
 estur-vehiclerentalcompanyservice:AdditionalDriver a skos:Concept;
   skos:inScheme estur-kos:VehicleRentalCompanyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Additional Driver"@en ;
+  skos:prefLabel "Additional driver"@en ;
   skos:prefLabel "Conductor adicional"@es .
 
 estur-vehiclerentalcompanyservice:BabySeat a skos:Concept;
   skos:inScheme estur-kos:VehicleRentalCompanyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Baby Seat"@en ;
+  skos:prefLabel "Baby seat"@en ;
   skos:prefLabel "Asientos para niños"@es .
 
 estur-vehiclerentalcompanyservice:PetFriendlyVehicles a skos:Concept;
   skos:inScheme estur-kos:VehicleRentalCompanyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Pet Friendly Vehicles"@en ;
+  skos:prefLabel "Pet-friendly vehicles"@en ;
   skos:prefLabel "Vehículos preparados para mascotas"@es .
 
 estur-vehiclerentalcompanyservice:RentByTheHour a skos:Concept;
   skos:inScheme estur-kos:VehicleRentalCompanyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Rent By The Hour"@en ;
+  skos:prefLabel "Rent by the hour"@en ;
   skos:prefLabel "Alquiler por horas"@es .
 
 estur-vehiclerentalcompanyservice:SnowChains a skos:Concept;
   skos:inScheme estur-kos:VehicleRentalCompanyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Snow Chains"@en ;
+  skos:prefLabel "Snow chains"@en ;
   skos:prefLabel "Cadenas para la nieve"@es .
 

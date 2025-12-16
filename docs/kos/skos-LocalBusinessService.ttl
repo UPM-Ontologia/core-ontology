@@ -22,7 +22,7 @@ estur-kos:LocalBusinessService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Local Business Service"@en ;
+    rdfs:label "Local business service"@en ;
     rdfs:label "Servicio de negocios locales"@es ;
     dct:title "Concept scheme grouping local business services"@en ;
     dct:title "Esquema de conceptos agrupando servicios de negocios locales"@es .
@@ -37,7 +37,7 @@ estur-localbusinessservice:AccessForDisabled a skos:Concept;
   skos:inScheme estur-kos:LocalBusinessService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Access For Disabled"@en ;
+  skos:prefLabel "Access for disabled"@en ;
   skos:prefLabel "Acceso para personas de movilidad reducida"@es .
 
 estur-localbusinessservice:Audiodescription a skos:Concept;
@@ -51,7 +51,7 @@ estur-localbusinessservice:ParkingFacility a skos:Concept;
   skos:inScheme estur-kos:LocalBusinessService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Parking Facility"@en ;
+  skos:prefLabel "Parking facility"@en ;
   skos:prefLabel "Parking"@es .
 
 estur-localbusinessservice:Voucher a skos:Concept;

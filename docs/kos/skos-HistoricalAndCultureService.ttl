@@ -22,7 +22,7 @@ estur-kos:HistoricalAndCultureService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Historical And Culture Service"@en ;
+    rdfs:label "Historical and culture service"@en ;
     rdfs:label "Servicio de historia y cultura"@es ;
     dct:title "Concept scheme grouping historical and culture services"@en ;
     dct:title "Esquema de conceptos agrupando servicios de historia y cultura"@es .
@@ -51,34 +51,34 @@ estur-historicalandcultureservice:EducationalTour a skos:Concept;
   skos:inScheme estur-kos:HistoricalAndCultureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Educational Tour"@en ;
+  skos:prefLabel "Educational tour"@en ;
   skos:prefLabel "Visita educativa"@es .
 
 estur-historicalandcultureservice:FastLane a skos:Concept;
   skos:inScheme estur-kos:HistoricalAndCultureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Fast Lane"@en ;
+  skos:prefLabel "Fast lane"@en ;
   skos:prefLabel "Fast lane"@es .
 
 estur-historicalandcultureservice:GroupTour a skos:Concept;
   skos:inScheme estur-kos:HistoricalAndCultureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Group Tour"@en ;
+  skos:prefLabel "Group tour"@en ;
   skos:prefLabel "Visita de grupos"@es .
 
 estur-historicalandcultureservice:GuidedTour a skos:Concept;
   skos:inScheme estur-kos:HistoricalAndCultureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Guided Tour"@en ;
+  skos:prefLabel "Guided tour"@en ;
   skos:prefLabel "Visita guiada"@es .
 
 estur-historicalandcultureservice:PrivateTour a skos:Concept;
   skos:inScheme estur-kos:HistoricalAndCultureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Private Tour"@en ;
+  skos:prefLabel "Private tour"@en ;
   skos:prefLabel "Visita privada"@es .
 

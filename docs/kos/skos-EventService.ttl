@@ -22,7 +22,7 @@ estur-kos:EventService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Event Service"@en ;
+    rdfs:label "Event service"@en ;
     rdfs:label "Servicio asociado a un evento"@es ;
     dct:title "Concept scheme grouping event services"@en ;
     dct:title "Esquema de conceptos agrupando servicios asociados a un evento"@es .
@@ -37,7 +37,7 @@ estur-eventservice:AccessForDisabled a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Access For Disabled"@en ;
+  skos:prefLabel "Access for disabled"@en ;
   skos:prefLabel "Acceso para personas de movilidad reducida"@es .
 
 estur-eventservice:Audiodescription a skos:Concept;
@@ -58,7 +58,7 @@ estur-eventservice:AugmentedReality a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Augmented Reality"@en ;
+  skos:prefLabel "Augmented reality"@en ;
   skos:prefLabel "Realidad aumentada"@es .
 
 estur-eventservice:Banquet a skos:Concept;
@@ -93,21 +93,21 @@ estur-eventservice:CloakRoom a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Cloak Room"@en ;
+  skos:prefLabel "Cloak room"@en ;
   skos:prefLabel "Guardarropa"@es .
 
 estur-eventservice:ConferenceRoom a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Conference Room"@en ;
+  skos:prefLabel "Conference room"@en ;
   skos:prefLabel "Sala de conferencias"@es .
 
 estur-eventservice:FastLane a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Fast Lane"@en ;
+  skos:prefLabel "Fast lane"@en ;
   skos:prefLabel "Fast lane"@es .
 
 estur-eventservice:Gamification a skos:Concept;
@@ -121,7 +121,7 @@ estur-eventservice:GearProvision a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Gear Provision"@en ;
+  skos:prefLabel "Gear provision"@en ;
   skos:prefLabel "Gear provision"@es .
 
 estur-eventservice:Infirmary a skos:Concept;
@@ -135,7 +135,7 @@ estur-eventservice:InformationPoint a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Information Point"@en ;
+  skos:prefLabel "Information point"@en ;
   skos:prefLabel "Punto de información"@es .
 
 estur-eventservice:Lockers a skos:Concept;
@@ -149,7 +149,7 @@ estur-eventservice:QrCodes a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "QR Codes"@en ;
+  skos:prefLabel "QR codes"@en ;
   skos:prefLabel "Códigos QR"@es .
 
 estur-eventservice:Restaurant a skos:Concept;
@@ -163,14 +163,14 @@ estur-eventservice:SaleOfProducts a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Sale Of Products"@en ;
+  skos:prefLabel "Sale of products"@en ;
   skos:prefLabel "Venta de productos"@es .
 
 estur-eventservice:SecurityStaff a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Security Staff"@en ;
+  skos:prefLabel "Security staff"@en ;
   skos:prefLabel "Personal de seguridad"@es .
 
 estur-eventservice:Shop a skos:Concept;
@@ -184,7 +184,7 @@ estur-eventservice:SmartWristband a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Smart Wristband"@en ;
+  skos:prefLabel "Smart wristband"@en ;
   skos:prefLabel "Pulsera inteligente"@es .
 
 estur-eventservice:Terrace a skos:Concept;
@@ -205,21 +205,21 @@ estur-eventservice:ValetParking a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Valet Parking"@en ;
+  skos:prefLabel "Valet parking"@en ;
   skos:prefLabel "Valet parking"@es .
 
 estur-eventservice:VipRoom a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "VIP Room"@en ;
+  skos:prefLabel "VIP room"@en ;
   skos:prefLabel "Sala VIP"@es .
 
 estur-eventservice:VirtualReality a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Virtual Reality"@en ;
+  skos:prefLabel "Virtual reality"@en ;
   skos:prefLabel "Realidad virtual"@es .
 
 estur-eventservice:Wifi a skos:Concept;

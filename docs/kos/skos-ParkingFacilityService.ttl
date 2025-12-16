@@ -22,7 +22,7 @@ estur-kos:ParkingFacilityService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Parking Facility Service"@en ;
+    rdfs:label "Parking facility service"@en ;
     rdfs:label "Servicio de un estacionamiento"@es ;
     dct:title "Concept scheme grouping parking facility services"@en ;
     dct:title "Esquema de conceptos agrupando servicios de un estacionamiento"@es .
@@ -44,13 +44,13 @@ estur-parkingfacilityservice:DisabledParking a skos:Concept;
   skos:inScheme estur-kos:ParkingFacilityService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Disabled Parking"@en ;
+  skos:prefLabel "Disabled parking"@en ;
   skos:prefLabel "Parking para personas de movilidad reducida"@es .
 
 estur-parkingfacilityservice:SecurityStaff a skos:Concept;
   skos:inScheme estur-kos:ParkingFacilityService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Security Staff"@en ;
+  skos:prefLabel "Security staff"@en ;
   skos:prefLabel "Personal de seguridad"@es .
 

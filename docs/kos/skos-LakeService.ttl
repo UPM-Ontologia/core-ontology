@@ -22,7 +22,7 @@ estur-kos:LakeService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Lake Service"@en ;
+    rdfs:label "Lake service"@en ;
     rdfs:label "Servicio en un lago"@es ;
     dct:title "Concept scheme grouping lake services"@en ;
     dct:title "Esquema de conceptos agrupando servicios en un lago"@es .
@@ -37,14 +37,14 @@ estur-lakeservice:BathingArea a skos:Concept;
   skos:inScheme estur-kos:LakeService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Bathing Area"@en ;
+  skos:prefLabel "Bathing area"@en ;
   skos:prefLabel "Área de baño"@es .
 
 estur-lakeservice:FishingArea a skos:Concept;
   skos:inScheme estur-kos:LakeService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Fishing Area"@en ;
+  skos:prefLabel "Fishing area"@en ;
   skos:prefLabel "Área de pesca"@es .
 
 estur-lakeservice:Infirmary a skos:Concept;
@@ -58,7 +58,7 @@ estur-lakeservice:LifeGuard a skos:Concept;
   skos:inScheme estur-kos:LakeService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Life Guard"@en ;
+  skos:prefLabel "Life guard"@en ;
   skos:prefLabel "Socorrista"@es .
 
 estur-lakeservice:Surveillance a skos:Concept;
@@ -79,6 +79,6 @@ estur-lakeservice:WasteCollection a skos:Concept;
   skos:inScheme estur-kos:LakeService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Waste Collection"@en ;
+  skos:prefLabel "Waste collection"@en ;
   skos:prefLabel "Recogida de basuras"@es .
 

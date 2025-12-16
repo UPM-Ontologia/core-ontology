@@ -22,7 +22,7 @@ estur-kos:RouteService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Route Service"@en ;
+    rdfs:label "Route service"@en ;
     rdfs:label "Servicio asociado a una ruta"@es ;
     dct:title "Concept scheme grouping route services"@en ;
     dct:title "Esquema de conceptos agrupando servicios asociados a una ruta"@es .
@@ -35,7 +35,7 @@ estur-kos:RouteService a skos:ConceptScheme ;
 
 estur-routeservice:DisabledParking a skos:Concept;
   skos:inScheme estur-kos:RouteService;
-  skos:prefLabel "Disabled Parking"@en ;
+  skos:prefLabel "Disabled parking"@en ;
   skos:prefLabel "Aparcamiento para discapacitados"@es .
 
 estur-routeservice:Signaling a skos:Concept;
@@ -45,7 +45,7 @@ estur-routeservice:Signaling a skos:Concept;
 
 estur-routeservice:PublicRestroom a skos:Concept;
   skos:inScheme estur-kos:RouteService;
-  skos:prefLabel "Public Restroom"@en ;
+  skos:prefLabel "Public restroom"@en ;
   skos:prefLabel "Baño público"@es .
 
 estur-routeservice:Lighting a skos:Concept;
@@ -55,10 +55,10 @@ estur-routeservice:Lighting a skos:Concept;
 
 estur-routeservice:AdaptedPublicRestrooms a skos:Concept;
   skos:inScheme estur-kos:RouteService;
-  skos:prefLabel "Adapted Public Restrooms"@en ;
+  skos:prefLabel "Adapted public restrooms"@en ;
   skos:prefLabel "Baños públicos adaptados"@es .
 
 estur-routeservice:AccessibleSignage a skos:Concept;
   skos:inScheme estur-kos:RouteService;
-  skos:prefLabel "Accessible Signage"@en ;
+  skos:prefLabel "Accessible signage"@en ;
   skos:prefLabel "Señalética accesible"@es .

@@ -65,7 +65,7 @@ estur-vehicleexperience:InflatableBoat a skos:Concept;
   skos:inScheme estur-kos:VehicleExperience;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Inflatable Boat"@en ;
+  skos:prefLabel "Inflatable boat"@en ;
   skos:prefLabel "Bote hinchable"@es .
 
 estur-vehicleexperience:JetBoat a skos:Concept;

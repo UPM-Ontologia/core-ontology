@@ -22,7 +22,7 @@ estur-kos:BusOperatorService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Bus Operator Service"@en ;
+    rdfs:label "Bus operator service"@en ;
     rdfs:label "Servicio de un operador de autobús"@es ;
     dct:title "Concept scheme grouping bus operator services"@en ;
     dct:title "Esquema de conceptos agrupando servicios de operador de autobús"@es .
@@ -37,13 +37,13 @@ estur-busoperatorservice:AdditionalLuggage a skos:Concept;
   skos:inScheme estur-kos:BusOperatorService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Additional Luggage"@en ;
+  skos:prefLabel "Additional luggage"@en ;
   skos:prefLabel "Equipaje adicional"@es .
 
 estur-busoperatorservice:UnAccompainedChildService a skos:Concept;
   skos:inScheme estur-kos:BusOperatorService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Unaccompained Child Service"@en ;
+  skos:prefLabel "Unaccompained child service"@en ;
   skos:prefLabel "Servicio de menores no acompañados"@es .
 

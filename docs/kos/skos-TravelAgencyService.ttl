@@ -22,7 +22,7 @@ estur-kos:TravelAgencyService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Travel Agency Service"@en ;
+    rdfs:label "Travel agency service"@en ;
     rdfs:label "Servicio de una agencia de viajes"@es ;
     dct:title "Concept scheme grouping travel agency services"@en ;
     dct:title "Esquema de conceptos agrupando servicios de una agencia de viajes"@es .
@@ -37,14 +37,14 @@ estur-travelagencyservice:AccessForDisabled a skos:Concept;
   skos:inScheme estur-kos:TravelAgencyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Access For Disabled"@en ;
+  skos:prefLabel "Access for disabled"@en ;
   skos:prefLabel "Acceso para personas de movilidad reducida"@es .
 
 estur-travelagencyservice:CurrencyExchange a skos:Concept;
   skos:inScheme estur-kos:TravelAgencyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Currency Exchange"@en ;
+  skos:prefLabel "Currency exchange"@en ;
   skos:prefLabel "Cambio de moneda"@es .
 
 estur-travelagencyservice:Insurance a skos:Concept;
@@ -58,6 +58,6 @@ estur-travelagencyservice:VisasAndPermits a skos:Concept;
   skos:inScheme estur-kos:TravelAgencyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Visas And Permits"@en ;
+  skos:prefLabel "Visas and permits"@en ;
   skos:prefLabel "Visas y permisos"@es .
 

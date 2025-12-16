@@ -100,14 +100,14 @@ estur-vehicletype:ElectricMoped a skos:Concept;
   skos:inScheme estur-kos:VehicleType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Electric Moped"@en ;
+  skos:prefLabel "Electric moped"@en ;
   skos:prefLabel "Patinete eléctrico"@es .
 
 estur-vehicletype:ElectricScooter a skos:Concept;
   skos:inScheme estur-kos:VehicleType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Electric Scooter"@en ;
+  skos:prefLabel "Electric scooter"@en ;
   skos:prefLabel "Ciclomotor eléctrico"@es .
 
 estur-vehicletype:ExtendedCabPickup a skos:Concept;

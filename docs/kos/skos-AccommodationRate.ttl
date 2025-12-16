@@ -51,7 +51,7 @@ estur-accommodationrate:AccommodationWithBreakfast a skos:Concept;
   skos:inScheme estur-kos:AccommodationRate;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Accommodation with Breakfast"@en ;
+  skos:prefLabel "Accommodation with breakfast"@en ;
   skos:prefLabel "Alojamiento con desayuno"@es .
 
 estur-accommodationrate:FullBoard a skos:Concept;

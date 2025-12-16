@@ -22,7 +22,7 @@ estur-kos:TravelUnit a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Travel Unit"@en ;
+    rdfs:label "Travel unit"@en ;
     rdfs:label "Unidad de viaje"@es ;
     dct:title "Concept scheme grouping travel units"@en ;
     dct:title "Esquema de conceptos agrupando unidades de viaje"@es .
@@ -45,7 +45,7 @@ estur-travelunit:Couple a skos:Concept;
 
 estur-travelunit:FamilyAndKids a skos:Concept;
   skos:inScheme estur-kos:TravelUnit;
-  skos:prefLabel "Family and Kids"@en ;
+  skos:prefLabel "Family and kids"@en ;
   skos:prefLabel "Familia con niños"@es .
 
 estur-travelunit:Group a skos:Concept;

@@ -22,8 +22,8 @@ estur-kos:ZooService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Zoo Service"@en ;
-    rdfs:label "ZServicio de un zoo"@es ;
+    rdfs:label "Zoo service"@en ;
+    rdfs:label "Servicio de un zoo"@es ;
     dct:title "Concept scheme grouping zoo services"@en ;
     dct:title "Esquema de conceptos agrupando servicios de un zoo"@es .
 

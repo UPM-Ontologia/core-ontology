@@ -22,7 +22,7 @@ estur-kos:PartyAndEntertainmentService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Party And Entertainment Service"@en ;
+    rdfs:label "Party and entertainment service"@en ;
     rdfs:label "Servicio de fiesta y entretenimiento"@es ;
     dct:title "Concept scheme grouping party and entertainment services"@en ;
     dct:title "Esquema de conceptos agrupando servicios de fiesta y entretenimiento"@es .
@@ -34,12 +34,12 @@ estur-kos:PartyAndEntertainmentService a skos:ConceptScheme ;
 #################################################################
 estur-partyandentertainmentservice:CloackRoom a skos:Concept;
   skos:inScheme estur-kos:PartyAndEntertainmentService;
-  skos:prefLabel "Cloack Room"@en ;
+  skos:prefLabel "Cloack room"@en ;
   skos:prefLabel "Guardarropa"@es .
 
 estur-partyandentertainmentservice:OutdoorTables a skos:Concept;
   skos:inScheme estur-kos:PartyAndEntertainmentService;
-  skos:prefLabel "Outdoor Tables"@en ;
+  skos:prefLabel "Outdoor tables"@en ;
   skos:prefLabel "Mesas exteriores"@es .
 
 estur-partyandentertainmentservice:Venue a skos:Concept;
@@ -49,7 +49,7 @@ estur-partyandentertainmentservice:Venue a skos:Concept;
 
 estur-partyandentertainmentservice:VIPRoom a skos:Concept;
   skos:inScheme estur-kos:PartyAndEntertainmentService;
-  skos:prefLabel "VIP Room"@en ;
+  skos:prefLabel "VIP room"@en ;
   skos:prefLabel "Sala VIP"@es .
 
 

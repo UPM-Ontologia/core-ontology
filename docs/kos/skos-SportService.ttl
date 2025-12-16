@@ -22,7 +22,7 @@ estur-kos:SportService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Sport Service"@en ;
+    rdfs:label "Sport service"@en ;
     rdfs:label "Servicio deportivo"@es ;
     dct:title "Concept scheme grouping sport services"@en ;
     dct:title "Esquema de conceptos agrupando servicios deportivos"@es .
@@ -37,7 +37,7 @@ estur-sportservice:ChildrenGames a skos:Concept;
   skos:inScheme estur-kos:SportService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Children Games"@en ;
+  skos:prefLabel "Children games"@en ;
   skos:prefLabel "Juegos para niños"@es .
 
 estur-sportservice:GearProvision a skos:Concept;

@@ -22,7 +22,7 @@ estur-kos:StadiumService a skos:ConceptScheme ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Stadium Service"@en ;
+    rdfs:label "Stadium service"@en ;
     rdfs:label "Servicio de un estadio"@es ;
     dct:title "Concept scheme grouping stadium services"@en ;
     dct:title "Esquema de conceptos agrupando servicios de un estadio"@es .
@@ -37,28 +37,28 @@ estur-stadiumservice:EducationalTour a skos:Concept;
   skos:inScheme estur-kos:StadiumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Educational Tour"@en ;
+  skos:prefLabel "Educational tour"@en ;
   skos:prefLabel "Visita educativa"@es .
 
 estur-stadiumservice:GroupTour a skos:Concept;
   skos:inScheme estur-kos:StadiumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Group Tour"@en ;
+  skos:prefLabel "Group tour"@en ;
   skos:prefLabel "Visita de grupos"@es .
 
 estur-stadiumservice:GuidedTour a skos:Concept;
   skos:inScheme estur-kos:StadiumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Guided Tour"@en ;
+  skos:prefLabel "Guided tour"@en ;
   skos:prefLabel "Visita guiada"@es .
 
 estur-stadiumservice:PrivateTour a skos:Concept;
   skos:inScheme estur-kos:StadiumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Private Tour"@en ;
+  skos:prefLabel "Private tour"@en ;
   skos:prefLabel "Visita privada"@es .
 
 estur-stadiumservice:Venue a skos:Concept;
@@ -72,6 +72,6 @@ estur-stadiumservice:VipRoom a skos:Concept;
   skos:inScheme estur-kos:StadiumService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "VIP Room"@en ;
+  skos:prefLabel "VIP room"@en ;
   skos:prefLabel "Sala VIP"@es .
 

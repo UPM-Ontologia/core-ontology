@@ -37,14 +37,14 @@ estur-dmcservice:AccessForDisabled a skos:Concept;
   skos:inScheme estur-kos:DMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Access For Disabled"@en ;
+  skos:prefLabel "Access for disabled"@en ;
   skos:prefLabel "Acceso para personas de movilidad reducida"@es .
 
 estur-dmcservice:CurrencyExchange a skos:Concept;
   skos:inScheme estur-kos:DMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Currency Exchange"@en ;
+  skos:prefLabel "Currency exchange"@en ;
   skos:prefLabel "Cambio de moneda"@es .
 
 estur-dmcservice:Insurance a skos:Concept;
@@ -58,20 +58,20 @@ estur-dmcservice:LuggageStorage a skos:Concept;
   skos:inScheme estur-kos:DMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Luggage Storage"@en ;
+  skos:prefLabel "Luggage storage"@en ;
   skos:prefLabel "Almacenamiento de equipaje"@es .
 
 estur-dmcservice:TravelAgency a skos:Concept;
   skos:inScheme estur-kos:DMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Travel Agency"@en ;
+  skos:prefLabel "Travel agency"@en ;
   skos:prefLabel "Agencia de viajes"@es .
 
 estur-dmcservice:VisasAndPermits a skos:Concept;
   skos:inScheme estur-kos:DMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Visas And Permits"@en ;
+  skos:prefLabel "Visas and permits"@en ;
   skos:prefLabel "Visas y permisos"@es .
 

@@ -829,6 +829,32 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#historicalOrCulturalResourceContains -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#historicalOrCulturalResourceContains">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#OldTown"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Square"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TourismOrRelatedFacility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">historical or cultural resource contains</rdfs:label>
+        <rdfs:label xml:lang="es">recurso histórico o cultural contiene</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#itinerary -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#itinerary">
@@ -947,6 +973,56 @@ It is possible that this annotation property is taken out in the future from the
         </rdfs:range>
         <rdfs:label xml:lang="en">museum type</rdfs:label>
         <rdfs:label xml:lang="es">tipo de museo</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#naturalResourceContains -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#naturalResourceContains">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Beach"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Desert"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Forest"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Mountain"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#NaturalPark"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Valley"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TourismOrRelatedFacility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">natural resource contains</rdfs:label>
+        <rdfs:label xml:lang="es">recurso natural contiene</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#nearTo -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#nearTo">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Event"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Place"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Place"/>
+        <rdfs:label xml:lang="es">cerca de</rdfs:label>
+        <rdfs:label xml:lang="en">near to</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:ObjectProperty>
     
@@ -2102,6 +2178,18 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#resortContains -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#resortContains">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Resort"/>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismOrRelatedFacility"/>
+        <rdfs:label xml:lang="en">resort contains</rdfs:label>
+        <rdfs:label xml:lang="es">resort contiene</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#serviceSchedule -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#serviceSchedule">
@@ -2287,6 +2375,34 @@ It is possible that this annotation property is taken out in the future from the
         </rdfs:range>
         <rdfs:label xml:lang="es">tipo de camino</rdfs:label>
         <rdfs:label xml:lang="en">trail type</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#transportInfrastructureContains -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#transportInfrastructureContains">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Airport"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#BusStation"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PortPassengerTerminal"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TrainStation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TourismOrRelatedFacility"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="es">infraestructura de transporte contiene</rdfs:label>
+        <rdfs:label xml:lang="en">transport infrastructure contains</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:ObjectProperty>
     

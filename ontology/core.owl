@@ -681,7 +681,6 @@ It is possible that this annotation property is taken out in the future from the
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#DestinationExperience"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Event"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Place"/>
                 </owl:unionOf>
             </owl:Class>
@@ -2014,14 +2013,7 @@ It is possible that this annotation property is taken out in the future from the
     <!-- https://ontologia.segittur.es/turismo/def/core#refPointOfInterest -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#refPointOfInterest">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Event"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Itinerary"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Itinerary"/>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -2397,6 +2389,18 @@ It is possible that this annotation property is taken out in the future from the
         </rdfs:range>
         <rdfs:label xml:lang="es">tipo de vehículo</rdfs:label>
         <rdfs:label xml:lang="en">vehicle type</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#venue -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#venue">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Event"/>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#Place"/>
+        <rdfs:label xml:lang="es">lugar de celebración</rdfs:label>
+        <rdfs:label xml:lang="en">venue</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:ObjectProperty>
     
@@ -2845,7 +2849,6 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Event"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
@@ -3161,6 +3164,18 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#numberedSeats -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#numberedSeats">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="es">entradas numeradas</rdfs:label>
+        <rdfs:label xml:lang="en">numbered seats</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#open24Hours -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#open24Hours">
@@ -3368,6 +3383,30 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="es">observaciones</rdfs:label>
         <rdfs:label xml:lang="en">remarks</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#saleEndDate -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#saleEndDate">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="es">fecha de fin de la venta</rdfs:label>
+        <rdfs:label xml:lang="en">sale end date</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#saleStartDate -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#saleStartDate">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="es">fecha de inicio de la venta</rdfs:label>
+        <rdfs:label xml:lang="en">sale start date</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:DatatypeProperty>
     

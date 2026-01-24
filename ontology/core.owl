@@ -3798,6 +3798,25 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#AdventureActivity -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#AdventureActivity">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismService"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#relatedTourismOrRelatedFacility"/>
+                <owl:someValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#MultiAdventureCentre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="es">Aectividad recreativa o deportiva que implica exploración, desafío físico y cierto grado de riesgo en entornos naturales o controlados</rdfs:comment>
+        <rdfs:comment xml:lang="en">Recreational or sporting activity that involves exploration, physical challenge, and a certain level of risk in natural or controlled environments</rdfs:comment>
+        <rdfs:label xml:lang="es">Actividad de aventuras</rdfs:label>
+        <rdfs:label xml:lang="en">Adventure activity</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#Advice -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Advice">
@@ -4796,10 +4815,24 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#ConventionCentre -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ConventionCentre">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#EventAttendanceFacility"/>
+        <rdfs:comment xml:lang="en">Facility, which can be a single building or a set of buildings, designed specifically to host large-scale events</rdfs:comment>
+        <rdfs:comment xml:lang="es">Instalación o complejo de edificios diseñado específicamente para albergar eventos de gran escala</rdfs:comment>
+        <rdfs:label xml:lang="es">Centro de convenciones</rdfs:label>
+        <rdfs:label xml:lang="en">Convention centre</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#Cove -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Cove">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:comment xml:lang="en">A rounded bay section, smaller in size than the beach, where the waters are calmer.</rdfs:comment>
         <rdfs:comment xml:lang="es">Tramo de bahía de forma redondeada, de dimensiones más pequeñas a las de la playa y donde sus aguas son más tranquilas</rdfs:comment>
         <rdfs:label xml:lang="es">Cala</rdfs:label>
         <rdfs:label xml:lang="en">Cove</rdfs:label>
@@ -4957,6 +4990,19 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:comment xml:lang="es">Empresa especializada en la organización y gestión de servicios turísticos para visitantes extranjeros en un destino específico.</rdfs:comment>
         <rdfs:label xml:lang="en">Destination management company</rdfs:label>
         <rdfs:label xml:lang="es">Operador receptivo</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#DivePoint -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#DivePoint">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+        <rdfs:comment xml:lang="en">A specific and designated location where divers safely enter the water to carry out diving activities</rdfs:comment>
+        <rdfs:comment xml:lang="es">Lugar específico y habilitado donde los buceadores acceden al agua de forma segura para realizar actividades de buceo</rdfs:comment>
+        <rdfs:label xml:lang="en">Dive point</rdfs:label>
+        <rdfs:label xml:lang="es">Punto de inmersión</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
     
@@ -5319,6 +5365,19 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#Fairground -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Fairground">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#EventAttendanceFacility"/>
+        <rdfs:comment xml:lang="en">A designated and equipped venue for hosting fairs, exhibitions, and commercial, cultural, or institutional events</rdfs:comment>
+        <rdfs:comment xml:lang="es">Espacio habilitado y equipado para la celebración de ferias, exposiciones y eventos comerciales, culturales o institucionales.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fairground</rdfs:label>
+        <rdfs:label xml:lang="es">Recinto ferial</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#FarmSchool -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#FarmSchool">
@@ -5425,6 +5484,19 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:comment xml:lang="es">Negocios dedicados a la elaboración de comidas y bebidas preparadas para su consumo.</rdfs:comment>
         <rdfs:label xml:lang="es">Establecimiento de restauración</rdfs:label>
         <rdfs:label xml:lang="en">Food establishment</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#FoodStall -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#FoodStall">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#FoodEstablishment"/>
+        <rdfs:comment xml:lang="es">Instalación temporal o fija donde se preparan y venden alimentos y bebidas al público</rdfs:comment>
+        <rdfs:comment xml:lang="en">Temporary or permanent setup where food and beverages are prepared and sold to the public</rdfs:comment>
+        <rdfs:label xml:lang="en">Food stall</rdfs:label>
+        <rdfs:label xml:lang="es">Puesto de comida</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
     
@@ -6404,6 +6476,19 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:comment xml:lang="en">Public place where they serve drinks and dance to recorded music.</rdfs:comment>
         <rdfs:label xml:lang="es">Discoteca</rdfs:label>
         <rdfs:label xml:lang="en">Night club</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#OldTown -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#OldTown">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
+        <rdfs:comment xml:lang="es">La parte más antigua de una ciudad, caracterizada por su valor histórico, patrimonial y arquitectónico</rdfs:comment>
+        <rdfs:comment xml:lang="en">The oldest part of a city, characterized by its historical, cultural, and architectural value.</rdfs:comment>
+        <rdfs:label xml:lang="es">Casco antiguo</rdfs:label>
+        <rdfs:label xml:lang="en">Old town</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
     
@@ -7618,6 +7703,19 @@ quality, performance or satisfaction. Based on this score, the instances of each
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#SportingGoodsStore -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SportingGoodsStore">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#RetailAndFashion"/>
+        <rdfs:comment xml:lang="es">Establecimiento comercial dedicado a la venta de material, ropa y accesorios para la práctica de actividades deportivas</rdfs:comment>
+        <rdfs:comment xml:lang="en">Retail establishment dedicated to selling gear, clothing, and accessories for sports activities</rdfs:comment>
+        <rdfs:label xml:lang="en">Sporting goods store</rdfs:label>
+        <rdfs:label xml:lang="es">Tienda de equipamiento deportivo</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#SportsCentre -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#SportsCentre">
@@ -7845,6 +7943,19 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:comment xml:lang="en">Playing field where tennis is played.</rdfs:comment>
         <rdfs:label xml:lang="es">Pista de tenis</rdfs:label>
         <rdfs:label xml:lang="en">Tennnis court</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#Thalasso -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Thalasso">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HealthAndWellnessFacility"/>
+        <rdfs:comment xml:lang="es">Centro de talasoterapia que ofrece tratamientos de bienestar y salud basados en el uso terapéutico del agua de mar, algas y el clima marino.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Thalassotherapy center that provides wellness and health treatments based on the therapeutic use of seawater, algae, and the marine climate</rdfs:comment>
+        <rdfs:label xml:lang="es">Talaso</rdfs:label>
+        <rdfs:label xml:lang="en">Thalasso</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
     
@@ -8731,6 +8842,19 @@ quality, performance or satisfaction. Based on this score, the instances of each
         <rdfs:comment xml:lang="en">Small excursions by train, bus or boat to see the main monuments and attractions of a city.</rdfs:comment>
         <rdfs:label xml:lang="es">Experiencia en vehículo</rdfs:label>
         <rdfs:label xml:lang="en">Vehicle experience</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#VehicleRentalAgency -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VehicleRentalAgency">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismOrRelatedFacility"/>
+        <rdfs:comment xml:lang="en">Business that provides vehicles for rent for specified periods for personal or professional use.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Empresa que ofrece vehículos en alquiler por periodos determinados para uso personal o profesional.</rdfs:comment>
+        <rdfs:label xml:lang="es">Agencia de alquiler de vehículos</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle rental agency</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
     

@@ -45,7 +45,7 @@ estur-leisureandcultureservice:ChildrenGames a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Children games"@en ;
-  skos:prefLabel "Juegos para niños"@es .
+  skos:prefLabel "Juegos infantiles"@es .
 
 estur-leisureandcultureservice:CloakRoom a skos:Concept;
   skos:inScheme estur-kos:LeisureAndCultureService;
@@ -54,19 +54,19 @@ estur-leisureandcultureservice:CloakRoom a skos:Concept;
   skos:prefLabel "Cloak room"@en ;
   skos:prefLabel "Guardarropa"@es .
 
-estur-leisureandcultureservice:Event a skos:Concept;
+estur-leisureandcultureservice:EventVenue a skos:Concept;
   skos:inScheme estur-kos:LeisureAndCultureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Event"@en ;
-  skos:prefLabel "Evento"@es .
+  skos:prefLabel "Event venue"@en ;
+  skos:prefLabel "Lugar de celebración"@es .
 
 estur-leisureandcultureservice:FastLane a skos:Concept;
   skos:inScheme estur-kos:LeisureAndCultureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Fast lane"@en ;
-  skos:prefLabel "Fast lane"@es .
+  skos:prefLabel "Acceso prioritario"@es .
 
 estur-leisureandcultureservice:Gamification a skos:Concept;
   skos:inScheme estur-kos:LeisureAndCultureService;

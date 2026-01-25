@@ -61,12 +61,12 @@ estur-educationalservice:QrCodes a skos:Concept;
   skos:prefLabel "QR codes"@en ;
   skos:prefLabel "Códigos QR"@es .
 
-estur-educationalservice:Venue a skos:Concept;
+estur-educationalservice:EventVenue a skos:Concept;
   skos:inScheme estur-kos:EducationalService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Venue"@en ;
-  skos:prefLabel "Lugar"@es .
+  skos:prefLabel "Event venue"@en ;
+  skos:prefLabel "Lugar de celebración"@es .
 
 estur-educationalservice:Wifi a skos:Concept;
   skos:inScheme estur-kos:EducationalService;

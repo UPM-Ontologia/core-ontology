@@ -40,12 +40,12 @@ estur-touristorrelatedfacilityservice:AccessForDisabled a skos:Concept;
   skos:prefLabel "Access for disabled"@en ;
   skos:prefLabel "Acceso para personas de movilidad reducida"@es .
 
-estur-touristorrelatedfacilityservice:Event a skos:Concept;
+estur-touristorrelatedfacilityservice:EventVenue a skos:Concept;
   skos:inScheme estur-kos:TouristOrRelatedFacilityService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Event"@en ;
-  skos:prefLabel "Evento"@es .
+  skos:prefLabel "Event venue"@en ;
+  skos:prefLabel "Lugar de celebración"@es .
 
 estur-touristorrelatedfacilityservice:InformationPoint a skos:Concept;
   skos:inScheme estur-kos:TouristOrRelatedFacilityService;
@@ -66,7 +66,7 @@ estur-touristorrelatedfacilityservice:ParkingFacility a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Parking facility"@en ;
-  skos:prefLabel "Parking"@es .
+  skos:prefLabel "Aparcamiento"@es .
 
 estur-touristorrelatedfacilityservice:Restaurant a skos:Concept;
   skos:inScheme estur-kos:TouristOrRelatedFacilityService;

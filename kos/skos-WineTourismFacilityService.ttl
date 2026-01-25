@@ -131,12 +131,12 @@ estur-winetourismfacilityservice:TastingMenu a skos:Concept;
   skos:prefLabel "Tasting menu"@en ;
   skos:prefLabel "Menú especial"@es .
 
-estur-winetourismfacilityservice:Venue a skos:Concept;
+estur-winetourismfacilityservice:EventVenue a skos:Concept;
   skos:inScheme estur-kos:WineTourismFacilityService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Venue"@en ;
-  skos:prefLabel "Lugar"@es .
+  skos:prefLabel "Event venue"@en ;
+  skos:prefLabel "Lugar de celebración"@es .
 
 estur-winetourismfacilityservice:VerticalSampling a skos:Concept;
   skos:inScheme estur-kos:WineTourismFacilityService;

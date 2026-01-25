@@ -59,7 +59,7 @@ estur-historicalandcultureservice:FastLane a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Fast lane"@en ;
-  skos:prefLabel "Fast lane"@es .
+  skos:prefLabel "Acceso prioritario"@es .
 
 estur-historicalandcultureservice:GroupTour a skos:Concept;
   skos:inScheme estur-kos:HistoricalAndCultureService;

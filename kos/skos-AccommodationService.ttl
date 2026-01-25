@@ -54,12 +54,12 @@ estur-accommodationservice:BasketballCourt a skos:Concept;
   skos:prefLabel "Basketball court"@en ;
   skos:prefLabel "Cancha de baloncesto"@es .
 
-estur-accommodationservice:Event a skos:Concept;
+estur-accommodationservice:EventVenue a skos:Concept;
   skos:inScheme estur-kos:AccommodationService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Event"@en ;
-  skos:prefLabel "Evento"@es .
+  skos:prefLabel "Event venue"@en ;
+  skos:prefLabel "Lugar de celebración"@es .
 
 estur-accommodationservice:FootballField a skos:Concept;
   skos:inScheme estur-kos:AccommodationService;
@@ -101,7 +101,7 @@ estur-accommodationservice:ParkingFacility a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Parking facility"@en ;
-  skos:prefLabel "Parking"@es .
+  skos:prefLabel "Aparcamiento"@es .
 
 estur-accommodationservice:Pool a skos:Concept;
   skos:inScheme estur-kos:AccommodationService;

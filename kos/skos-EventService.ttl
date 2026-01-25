@@ -108,7 +108,7 @@ estur-eventservice:FastLane a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Fast lane"@en ;
-  skos:prefLabel "Fast lane"@es .
+  skos:prefLabel "Acceso prioritario"@es .
 
 estur-eventservice:Gamification a skos:Concept;
   skos:inScheme estur-kos:EventService;
@@ -122,7 +122,7 @@ estur-eventservice:GearProvision a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Gear provision"@en ;
-  skos:prefLabel "Gear provision"@es .
+  skos:prefLabel "Suministro de equipamiento"@es .
 
 estur-eventservice:Infirmary a skos:Concept;
   skos:inScheme estur-kos:EventService;
@@ -206,14 +206,14 @@ estur-eventservice:ValetParking a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Valet parking"@en ;
-  skos:prefLabel "Valet parking"@es .
+  skos:prefLabel "Servicio de aparcacoche"@es .
 
-estur-eventservice:VipRoom a skos:Concept;
+estur-eventservice:VipRooms a skos:Concept;
   skos:inScheme estur-kos:EventService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "VIP room"@en ;
-  skos:prefLabel "Sala VIP"@es .
+  skos:prefLabel "VIP rooms"@en ;
+  skos:prefLabel "Salas VIP"@es .
 
 estur-eventservice:VirtualReality a skos:Concept;
   skos:inScheme estur-kos:EventService;

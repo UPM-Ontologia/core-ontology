@@ -66,7 +66,7 @@ estur-beachservice:Footbath a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Footbath"@en ;
-  skos:prefLabel "Footbath"@es .
+  skos:prefLabel "Lavapiés"@es .
 
 estur-beachservice:Infirmary a skos:Concept;
   skos:inScheme estur-kos:BeachService;
@@ -157,7 +157,7 @@ estur-beachservice:Walkway a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Walkway"@en ;
-  skos:prefLabel "Paseo"@es .
+  skos:prefLabel "Pasarela"@es .
 
 estur-beachservice:WasteCollection a skos:Concept;
   skos:inScheme estur-kos:BeachService;

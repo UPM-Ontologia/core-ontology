@@ -215,11 +215,11 @@ estur-museumtype:Painting a skos:Concept;
   skos:prefLabel "Painting"@en ;
   skos:prefLabel "Pintura"@es .
 
-estur-museumtype:Paleonthology a skos:Concept;
+estur-museumtype:Paleontology a skos:Concept;
   skos:inScheme estur-kos:MuseumType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Paleonthology"@en ;
+  skos:prefLabel "Paleontology"@en ;
   skos:prefLabel "Paleontología"@es .
 
 estur-museumtype:Parochial a skos:Concept;

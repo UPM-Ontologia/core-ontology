@@ -52,7 +52,7 @@ estur-transportinfrastructureservice:ParkingFacility a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Parking facility"@en ;
-  skos:prefLabel "Parking"@es .
+  skos:prefLabel "Aparcamiento"@es .
 
 estur-transportinfrastructureservice:SmokingRooms a skos:Concept;
   skos:inScheme estur-kos:TransportInfrastructureService;
@@ -61,12 +61,12 @@ estur-transportinfrastructureservice:SmokingRooms a skos:Concept;
   skos:prefLabel "Smoking rooms"@en ;
   skos:prefLabel "Salas para fumadores"@es .
 
-estur-transportinfrastructureservice:VipRoom a skos:Concept;
+estur-transportinfrastructureservice:VipRooms a skos:Concept;
   skos:inScheme estur-kos:TransportInfrastructureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "VIP room"@en ;
-  skos:prefLabel "Sala VIP"@es .
+  skos:prefLabel "VIP rooms"@en ;
+  skos:prefLabel "Salas VIP"@es .
 
 estur-transportinfrastructureservice:Wifi a skos:Concept;
   skos:inScheme estur-kos:TransportInfrastructureService;

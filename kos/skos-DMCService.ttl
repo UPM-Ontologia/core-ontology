@@ -52,7 +52,7 @@ estur-dmcservice:Insurance a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Insurance"@en ;
-  skos:prefLabel "Seguro"@es .
+  skos:prefLabel "Seguros"@es .
 
 estur-dmcservice:LuggageStorage a skos:Concept;
   skos:inScheme estur-kos:DMCService;

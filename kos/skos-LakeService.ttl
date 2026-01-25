@@ -73,7 +73,7 @@ estur-lakeservice:Walkway a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Walkway"@en ;
-  skos:prefLabel "Camino transitable"@es .
+  skos:prefLabel "Pasarela"@es .
 
 estur-lakeservice:WasteCollection a skos:Concept;
   skos:inScheme estur-kos:LakeService;

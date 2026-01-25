@@ -241,7 +241,7 @@ estur-event:Opera a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Opera"@en ;
-  skos:prefLabel "Opera"@es .
+  skos:prefLabel "Ópera"@es .
 
 estur-event:Pantomime a skos:Concept;
   skos:inScheme estur-kos:Event;

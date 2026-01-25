@@ -38,14 +38,14 @@ estur-sportservice:ChildrenGames a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Children games"@en ;
-  skos:prefLabel "Juegos para niños"@es .
+  skos:prefLabel "Juegos infantiles"@es .
 
 estur-sportservice:GearProvision a skos:Concept;
   skos:inScheme estur-kos:SportService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Gear provision"@en ;
-  skos:prefLabel "Gear provision"@es .
+  skos:prefLabel "Suministro de equipamiento"@es .
 
 estur-sportservice:Gym a skos:Concept;
   skos:inScheme estur-kos:SportService;

@@ -33,11 +33,11 @@ estur-kos:VehicleRentalCompanyService a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-vehiclerentalcompanyservice:AccesibleVehicleFleet a skos:Concept;
+estur-vehiclerentalcompanyservice:AccessibleVehicleFleet a skos:Concept;
   skos:inScheme estur-kos:VehicleRentalCompanyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Accesible vehicle fleet"@en ;
+  skos:prefLabel "Accessible vehicle fleet"@en ;
   skos:prefLabel "Flota de vehículos accesibles"@es .
 
 estur-vehiclerentalcompanyservice:AdditionalDriver a skos:Concept;

@@ -54,12 +54,12 @@ estur-tourismresourceservice:AugmentedReality a skos:Concept;
   skos:prefLabel "Augmented reality"@en ;
   skos:prefLabel "Realidad aumentada"@es .
 
-estur-tourismresourceservice:Event a skos:Concept;
+estur-tourismresourceservice:EventVenue a skos:Concept;
   skos:inScheme estur-kos:TourismResourceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Event"@en ;
-  skos:prefLabel "Evento"@es .
+  skos:prefLabel "Event venue"@en ;
+  skos:prefLabel "Lugar de celebración"@es .
 
 estur-tourismresourceservice:Gamification a skos:Concept;
   skos:inScheme estur-kos:TourismResourceService;
@@ -80,7 +80,7 @@ estur-tourismresourceservice:ParkingFacility a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Parking facility"@en ;
-  skos:prefLabel "Parking"@es .
+  skos:prefLabel "Aparcamiento"@es .
 
 estur-tourismresourceservice:QrCodes a skos:Concept;
   skos:inScheme estur-kos:TourismResourceService;

@@ -4746,6 +4746,21 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#ComplementaryActivitiesCompany">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismOrganisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offers"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#AdventureActivity"/>
+                            <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#AgrotourismExperience"/>
+                            <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TicketOrEntrance"/>
+                            <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Tour"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Company that offers complementary activities</rdfs:comment>
         <rdfs:comment xml:lang="es">Empresa que se encarga de ofrecer actividades complementarias</rdfs:comment>
         <rdfs:label xml:lang="en">Complementary activities company</rdfs:label>
@@ -6688,6 +6703,12 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismOrganisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offers"/>
+                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#Transport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Transportation dedicated to the movement of people and their luggage in vehicles built and conditioned for this purpose.</rdfs:comment>
         <rdfs:comment xml:lang="es">Transporte dedicado al desplazamiento de las personas y sus equipajes en vehículos construidos y acondicionados para tal fin.</rdfs:comment>
         <rdfs:label xml:lang="es">Compañía de transporte de viajeros</rdfs:label>
@@ -7159,6 +7180,12 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#RestaurantService">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismOrganisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offers"/>
+                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#FoodAndBeverageService"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Company that offers restaurant services</rdfs:comment>
         <rdfs:comment xml:lang="es">Empresa que se encarga de ofrecer servicios de restauración</rdfs:comment>
         <rdfs:label xml:lang="es">Empresa de servicios de restauración</rdfs:label>
@@ -8300,6 +8327,7 @@ It is possible that this annotation property is taken out in the future from the
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#DestinationExperience"/>
                             <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Event"/>
                             <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#SpecialOffer"/>
                             <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TourismService"/>

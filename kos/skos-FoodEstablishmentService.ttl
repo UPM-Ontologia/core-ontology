@@ -73,21 +73,21 @@ estur-foodestablishmentservice:ChildrenGames a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Children games"@en ;
-  skos:prefLabel "Juegos para niños"@es .
+  skos:prefLabel "Juegos infantiles"@es .
 
 estur-foodestablishmentservice:CloakRoom a skos:Concept;
   skos:inScheme estur-kos:FoodEstablishmentService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Cloak room"@en ;
-  skos:prefLabel "Ropero"@es .
+  skos:prefLabel "Guardarropa"@es .
 
 estur-foodestablishmentservice:HighChairs a skos:Concept;
   skos:inScheme estur-kos:FoodEstablishmentService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "High chairs"@en ;
-  skos:prefLabel "Sillas altas"@es .
+  skos:prefLabel "Sillas para niños"@es .
 
 estur-foodestablishmentservice:HomeDelivery a skos:Concept;
   skos:inScheme estur-kos:FoodEstablishmentService;
@@ -101,7 +101,7 @@ estur-foodestablishmentservice:ParkingFacility a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Parking facility"@en ;
-  skos:prefLabel "Parking"@es .
+  skos:prefLabel "Aparcamiento"@es .
 
 estur-foodestablishmentservice:PrivateChef a skos:Concept;
   skos:inScheme estur-kos:FoodEstablishmentService;
@@ -129,7 +129,7 @@ estur-foodestablishmentservice:Sommelier a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Sommelier"@en ;
-  skos:prefLabel "Somelier"@es .
+  skos:prefLabel "Sumiller"@es .
 
 estur-foodestablishmentservice:SportBroadcasting a skos:Concept;
   skos:inScheme estur-kos:FoodEstablishmentService;
@@ -164,14 +164,14 @@ estur-foodestablishmentservice:ValetParking a skos:Concept;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Valet parking"@en ;
-  skos:prefLabel "Valet parking"@es .
+  skos:prefLabel "Aparcacoches"@es .
 
-estur-foodestablishmentservice:Venue a skos:Concept;
+estur-foodestablishmentservice:EventVenue a skos:Concept;
   skos:inScheme estur-kos:FoodEstablishmentService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Venue"@en ;
-  skos:prefLabel "Lugar"@es .
+  skos:prefLabel "Event venue"@en ;
+  skos:prefLabel "Lugar de celebración"@es .
 
 estur-foodestablishmentservice:Wifi a skos:Concept;
   skos:inScheme estur-kos:FoodEstablishmentService;

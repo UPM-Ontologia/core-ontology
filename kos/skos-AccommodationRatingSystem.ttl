@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-tourguideservice: <https://ontologia.segittur.es/turismo/kos/tourguideservice/> .
+@prefix estur-accommodationratingsystem: <https://ontologia.segittur.es/turismo/kos/accommodationratingsystem/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:TourGuideService a skos:ConceptScheme ; 
-    dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2025-12-15"^^xsd:date ;
+estur-kos:AccommodationRatingSystem a skos:ConceptScheme ; 
+    dct:issued "2026-01-24"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Tour guide service"@en ;
-    rdfs:label "Servicio de un guía turístico"@es ;
-    dct:title "Concept scheme grouping tour guide services"@en ;
-    dct:title "Esquema de conceptos agrupando servicios de un guía turístico"@es .
+    rdfs:label "Accommodation rating system"@en ;
+    rdfs:label "Sistema de clasificación de alojamientos"@es ;
+    dct:title "Concept scheme grouping accommodation rating systems"@en ;
+    dct:title "Esquema de conceptos agrupando sistemas de clasificación de alojamientos"@es .
 
 #################################################################
 #
@@ -33,8 +33,8 @@ estur-kos:TourGuideService a skos:ConceptScheme ;
 #
 #################################################################
 
-#estur-tourguideservice:BikeTour a skos:Concept;
-#  skos:inScheme estur-kos:TourGuideService;
-#  skos:prefLabel "Bike tour"@en ;
-#  skos:prefLabel "Visita en bicicleta"@es .
+estur-accommodationratingsystem:ARS1 a skos:Concept;
+  skos:inScheme estur-kos:AccommodationRatingSystem;
+  skos:prefLabel "ARS1"@en ;
+  skos:prefLabel "ARS1"@es .
 

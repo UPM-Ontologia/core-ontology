@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-historicalandcultureservice: <https://ontologia.segittur.es/turismo/kos/historicalandcultureservice/> .
+@prefix estur-sportfacilityservice: <https://ontologia.segittur.es/turismo/kos/sportfacilityservice/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:HistoricalAndCultureService a skos:ConceptScheme ; 
+estur-kos:SportFacilityService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2025-12-15"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Historical and culture service"@en ;
-    rdfs:label "Servicio de historia y cultura"@es ;
-    dct:title "Concept scheme grouping historical and culture services"@en ;
-    dct:title "Esquema de conceptos agrupando servicios de historia y cultura"@es .
+    rdfs:label "Sport facility service"@en ;
+    rdfs:label "Servicio de instalación deportiva"@es ;
+    dct:title "Concept scheme grouping sport facility services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios de instalaciones deportivas"@es .
 
 #################################################################
 #
@@ -33,24 +33,30 @@ estur-kos:HistoricalAndCultureService a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-historicalandcultureservice:Audiodescription a skos:Concept;
-  skos:inScheme estur-kos:HistoricalAndCultureService;
+estur-sportfacilityservice:ChildrenGames a skos:Concept;
+  skos:inScheme estur-kos:SportFacilityService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Audiodescription"@en ;
-  skos:prefLabel "Audiodescripción"@es .
+  skos:prefLabel "Children games"@en ;
+  skos:prefLabel "Juegos infantiles"@es .
 
-estur-historicalandcultureservice:Audioguide a skos:Concept;
-  skos:inScheme estur-kos:HistoricalAndCultureService;
+estur-sportfacilityservice:GearProvision a skos:Concept;
+  skos:inScheme estur-kos:SportFacilityService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Audioguide"@en ;
-  skos:prefLabel "Audioguía"@es .
+  skos:prefLabel "Gear provision"@en ;
+  skos:prefLabel "Suministro de equipamiento"@es .
 
-estur-historicalandcultureservice:FastLane a skos:Concept;
-  skos:inScheme estur-kos:HistoricalAndCultureService;
+estur-sportfacilityservice:Infirmary a skos:Concept;
+  skos:inScheme estur-kos:SportFacilityService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Fast lane"@en ;
-  skos:prefLabel "Acceso prioritario"@es .
+  skos:prefLabel "Infirmary"@en ;
+  skos:prefLabel "Enfermería"@es .
 
+estur-sportfacilityservice:Showers a skos:Concept;
+  skos:inScheme estur-kos:SportFacilityService;
+  skos:note "Value generated from the original SEGITTUR ontology"@en;
+  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
+  skos:prefLabel "Showers"@en ;
+  skos:prefLabel "Duchas"@es .

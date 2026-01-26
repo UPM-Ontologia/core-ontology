@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-agritourismexperiencetype: <https://ontologia.segittur.es/turismo/kos/agritourismexperiencetype/> .
+@prefix estur-agrotourismexperiencetype: <https://ontologia.segittur.es/turismo/kos/agrotourismexperiencetype/> .
 
 #################################################################
 #
@@ -16,15 +16,15 @@
 #
 #################################################################
 
-estur-kos:AgritourismExperienceType a skos:ConceptScheme ; 
+estur-kos:AgrotourismExperienceType a skos:ConceptScheme ; 
     dct:issued "2025-08-18"^^xsd:date ;
-    dct:modified "2025-12-15"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Agritourism experience type"@en ;
+    rdfs:label "Agrotourism experience type"@en ;
     rdfs:label "Tipo de experiencia agroturística"@es ;
-    dct:title "Concept scheme grouping agritourism experience types"@en ;
+    dct:title "Concept scheme grouping agrotourism experience types"@en ;
     dct:title "Esquema de conceptos agrupando tipos de experiencias agroturísticas"@es .
 
 #################################################################
@@ -33,27 +33,27 @@ estur-kos:AgritourismExperienceType a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-agritourismexperiencetype:GuidedTour a skos:Concept;
-  skos:inScheme estur-kos:AgritourismExperienceType;
+estur-agrotourismexperiencetype:GuidedTour a skos:Concept;
+  skos:inScheme estur-kos:AgrotourismExperienceType;
   skos:prefLabel "Guided tour"@en ;
   skos:prefLabel "Visita guiada"@es .
 
-estur-agritourismexperiencetype:Workshop a skos:Concept;
-  skos:inScheme estur-kos:AgritourismExperienceType;
+estur-agrotourismexperiencetype:Workshop a skos:Concept;
+  skos:inScheme estur-kos:AgrotourismExperienceType;
   skos:prefLabel "Workshop"@en ;
   skos:prefLabel "Taller"@es .
 
-estur-agritourismexperiencetype:Tasting a skos:Concept;
-  skos:inScheme estur-kos:AgritourismExperienceType;
+estur-agrotourismexperiencetype:Tasting a skos:Concept;
+  skos:inScheme estur-kos:AgrotourismExperienceType;
   skos:prefLabel "Tasting"@en ;
   skos:prefLabel "Degustación"@es .
 
-estur-agritourismexperiencetype:Sampling a skos:Concept;
-  skos:inScheme estur-kos:AgritourismExperienceType;
+estur-agrotourismexperiencetype:Sampling a skos:Concept;
+  skos:inScheme estur-kos:AgrotourismExperienceType;
   skos:prefLabel "Sampling"@en ;
   skos:prefLabel "Cata"@es .
 
-estur-agritourismexperiencetype:Visit a skos:Concept;
-  skos:inScheme estur-kos:AgritourismExperienceType;
+estur-agrotourismexperiencetype:Visit a skos:Concept;
+  skos:inScheme estur-kos:AgrotourismExperienceType;
   skos:prefLabel "Visit"@en ;
   skos:prefLabel "Visita"@es .

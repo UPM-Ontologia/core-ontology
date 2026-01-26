@@ -77,4 +77,3 @@ estur-paymentmethod:Paypal a skos:Concept;
   skos:inScheme estur-kos:PaymentMethod;
   skos:prefLabel "Paypal"@en ;
   skos:prefLabel "Paypal"@es .
-

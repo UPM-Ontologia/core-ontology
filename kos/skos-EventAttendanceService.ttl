@@ -47,3 +47,8 @@ estur-eventattendancefacilityservice:CloakRoom a skos:Concept;
   skos:prefLabel "Cloak room"@en ;
   skos:prefLabel "Guardarropa"@es .
 
+estur-eventattendancefacilityservice:WiredInternet a skos:Concept;
+  skos:inScheme estur-kos:EventAttendanceFacilityService;
+  skos:prefLabel "Wired Internet"@en ;
+  skos:prefLabel "Internet por cable"@es .
+

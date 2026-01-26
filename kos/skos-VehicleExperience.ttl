@@ -18,7 +18,7 @@
 
 estur-kos:VehicleExperience a skos:ConceptScheme ; 
     dct:issued "2024-10-29"^^xsd:date ;
-    dct:modified "2025-12-15"^^xsd:date ;
+    dct:modified "2026-01-26"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
@@ -39,6 +39,11 @@ estur-vehicleexperience:Buggy a skos:Concept;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Buggy"@en ;
   skos:prefLabel "Buggy"@es .
+
+estur-vehicleexperience:Bicycle a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Bicycle"@en ;
+  skos:prefLabel "Bicicleta"@es .
 
 estur-vehicleexperience:Catamaran a skos:Concept;
   skos:inScheme estur-kos:VehicleExperience;
@@ -81,6 +86,11 @@ estur-vehicleexperience:Jetski a skos:Concept;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Jetski"@en ;
   skos:prefLabel "Ski acuático"@es .
+
+estur-vehicleexperience:Limo a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Limo"@en ;
+  skos:prefLabel "Limusina"@es .
 
 estur-vehicleexperience:Motorboat a skos:Concept;
   skos:inScheme estur-kos:VehicleExperience;
@@ -142,3 +152,53 @@ estur-vehicleexperience:Tuktuk a skos:Concept;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Tuktuk"@en ;
   skos:prefLabel "Tuktuk"@es .
+
+estur-vehicleexperience:TandemBicycle a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Tandem bicycle"@en ;
+  skos:prefLabel "Tándem"@es .
+
+estur-vehicleexperience:FishingBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Fishing boat"@en ;
+  skos:prefLabel "Barco de pesca recreativa"@es .
+
+estur-vehicleexperience:SpeedBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Speed boat"@en ;
+  skos:prefLabel "Lancha rápida"@es .
+
+estur-vehicleexperience:SailBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Sail boat"@en ;
+  skos:prefLabel "Velero"@es .
+
+estur-vehicleexperience:Yacht a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Yacht"@en ;
+  skos:prefLabel "Yate"@es .
+
+estur-vehicleexperience:Dinghy a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Dinghy"@en ;
+  skos:prefLabel "Bote auxiliar"@es .
+
+estur-vehicleexperience:Kayak a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Kayak"@en ;
+  skos:prefLabel "Kayak"@es .
+
+estur-vehicleexperience:RowBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Row boat"@en ;
+  skos:prefLabel "Barca de remos"@es .
+
+estur-vehicleexperience:GlassBottomBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Glass-bottom boat"@en ;
+  skos:prefLabel "Barco con fondo de cristal"@es .
+
+estur-vehicleexperience:ParasailingBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Parasailing boat"@en ;
+  skos:prefLabel "Barca de parasailing"@es .

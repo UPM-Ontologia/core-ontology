@@ -33,7 +33,42 @@ estur-kos:TransportService a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-transportservice:Service1 a skos:Concept;
+estur-transportservice:BabySeat a skos:Concept;
   skos:inScheme estur-kos:TransportService;
-  skos:prefLabel "Service1"@en ;
-  skos:prefLabel "Servicio1"@es .
+  skos:prefLabel "Baby seat"@en ;
+  skos:prefLabel "Silla infantil"@es .
+
+estur-transportservice:ChargingPlug a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Charging plug"@en ;
+  skos:prefLabel "Enchufe de carga"@es .
+
+estur-transportservice:Wifi a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Wifi"@en ;
+  skos:prefLabel "Wifi"@es .
+
+estur-transportservice:Bathrooms a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Bathrooms"@en ;
+  skos:prefLabel "Baño"@es .
+
+estur-transportservice:AirConditioning a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Air conditioning"@en ;
+  skos:prefLabel "Aire acondicionado"@es .
+
+estur-transportservice:AdditionalLuggage a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Additional luggage"@en ;
+  skos:prefLabel "Equipaje adicional"@es .
+
+estur-transportservice:UnaccompaniedChildService a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Unaccompanied child service"@en ;
+  skos:prefLabel "Servicio para menores no acompañados"@es .
+
+estur-transportservice:PetTransport a skos:Concept;
+  skos:inScheme estur-kos:TransportService;
+  skos:prefLabel "Pet transport"@en ;
+  skos:prefLabel "Transporte de mascotas"@es .

@@ -18,7 +18,7 @@
 
 estur-kos:VehicleType a skos:ConceptScheme ; 
     dct:issued "2024-10-29"^^xsd:date ;
-    dct:modified "2024-10-29"^^xsd:date ;
+    dct:modified "2026-01-24"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
@@ -40,11 +40,11 @@ estur-vehicletype:AllTerrain a skos:Concept;
   skos:prefLabel "Allterrain"@en ;
   skos:prefLabel "Todoterreno"@es .
 
-estur-vehicletype:Bycicle a skos:Concept;
+estur-vehicletype:Bicycle a skos:Concept;
   skos:inScheme estur-kos:VehicleType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Bycicle"@en ;
+  skos:prefLabel "Bicycle"@en ;
   skos:prefLabel "Bicicleta"@es .
 
 estur-vehicletype:CarSedan a skos:Concept;
@@ -166,3 +166,67 @@ estur-vehicletype:Van a skos:Concept;
   skos:prefLabel "Van"@en ;
   skos:prefLabel "Furgoneta"@es .
 
+estur-vehicletype:Buggy a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Buggy"@en ;
+  skos:prefLabel "Buggy"@es .
+
+estur-vehicletype:Dinghy a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Dinghy"@en ;
+  skos:prefLabel "Bote auxiliar"@es .
+
+estur-vehicletype:FishingBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Fishing boat"@en ;
+  skos:prefLabel "Barco de pesca recreativa"@es .
+
+estur-vehicletype:InflatableBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Inflatable boat"@en ;
+  skos:prefLabel "Bote inflable"@es .
+
+estur-vehicletype:JetSki a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Jet ski"@en ;
+  skos:prefLabel "Moto acuática"@es .
+
+estur-vehicletype:Kayak a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Kayak"@en ;
+  skos:prefLabel "Kayak"@es .
+
+estur-vehicletype:MotorBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Motorboat"@en ;
+  skos:prefLabel "Barco de motor"@es .
+
+estur-vehicletype:Quad a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Quad"@en ;
+  skos:prefLabel "Quad"@es .
+
+estur-vehicletype:Rowboat a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Rowboat"@en ;
+  skos:prefLabel "Barco de remos"@es .
+
+estur-vehicletype:Sailboat a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Sailboat"@en ;
+  skos:prefLabel "Velero"@es .
+
+estur-vehicletype:Speedboat a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Speedboat"@en ;
+  skos:prefLabel "Lancha rápida"@es .
+
+estur-vehicletype:SurreyBike a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Surrey bike"@en ;
+  skos:prefLabel "Bicicleta surrey"@es .
+
+estur-vehicletype:Yacht a skos:Concept;
+  skos:inScheme estur-kos:VehicleType;
+  skos:prefLabel "Yacht"@en ;
+  skos:prefLabel "Yate"@es .

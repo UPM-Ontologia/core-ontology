@@ -128,9 +128,9 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/annot#refPointOfInterest -->
+    <!-- https://ontologia.segittur.es/turismo/def/annot#tooltip -->
 
-    <owl:AnnotationProperty rdf:about="https://ontologia.segittur.es/turismo/def/annot#refPointOfInterest">
+    <owl:AnnotationProperty rdf:about="https://ontologia.segittur.es/turismo/def/annot#tooltip">
         <rdfs:comment xml:lang="es">Esta propiedad de anotación se utiliza para proporcionar información adicional sobre el uso una clase o propiedad, que pueda ser mostrada en herramientas</rdfs:comment>
         <rdfs:comment xml:lang="en">This annotation property allows providing additional information about the use of a class or property, so that it can be used in tools.</rdfs:comment>
         <rdfs:label xml:lang="en">tooltip</rdfs:label>
@@ -158,6 +158,78 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:comment xml:lang="en">This annotation property allows determining whether a class or property will be visible in the data input forms that will be used by some applications that use this ontology. It is possible that this property (and its uses in the ontology) are extracted out in the future from the core.owl file.</rdfs:comment>
         <rdfs:label xml:lang="es">recurso visible</rdfs:label>
         <rdfs:label xml:lang="en">visible resource</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/annot#visibleResourceForS1 -->
+
+    <owl:AnnotationProperty rdf:about="https://ontologia.segittur.es/turismo/def/annot#visibleResourceForS1">
+        <rdfs:comment xml:lang="es">Esta propiedad de anotación se utiliza para determinar si una clase o propiedad será visible en los formularios de introducción de datos que se utilizarán en las aplicaciones principales de uso de la ontología. Es posible que esta propiedad (y sus usos en la ontología core) se extraiga fuera del fichero core.owl.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This annotation property allows determining whether a class or property will be visible in the data input forms that will be used by some applications that use this ontology. It is possible that this property (and its uses in the ontology) are extracted out in the future from the core.owl file.</rdfs:comment>
+        <rdfs:label xml:lang="es">recurso visible para S1</rdfs:label>
+        <rdfs:label xml:lang="en">visible resource for S1</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/annot#visibleResource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/annot#visibleResourceForS10 -->
+
+    <owl:AnnotationProperty rdf:about="https://ontologia.segittur.es/turismo/def/annot#visibleResourceForS10">
+        <rdfs:comment xml:lang="es">Esta propiedad de anotación se utiliza para determinar si una clase o propiedad será visible en los formularios de introducción de datos que se utilizarán en las aplicaciones principales de uso de la ontología. Es posible que esta propiedad (y sus usos en la ontología core) se extraiga fuera del fichero core.owl.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This annotation property allows determining whether a class or property will be visible in the data input forms that will be used by some applications that use this ontology. It is possible that this property (and its uses in the ontology) are extracted out in the future from the core.owl file.</rdfs:comment>
+        <rdfs:label xml:lang="es">recurso visible para S10</rdfs:label>
+        <rdfs:label xml:lang="en">visible resource for S10</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/annot#visibleResource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/annot#visibleResourceForS2 -->
+
+    <owl:AnnotationProperty rdf:about="https://ontologia.segittur.es/turismo/def/annot#visibleResourceForS2">
+        <rdfs:comment xml:lang="es">Esta propiedad de anotación se utiliza para determinar si una clase o propiedad será visible en los formularios de introducción de datos que se utilizarán en las aplicaciones principales de uso de la ontología. Es posible que esta propiedad (y sus usos en la ontología core) se extraiga fuera del fichero core.owl.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This annotation property allows determining whether a class or property will be visible in the data input forms that will be used by some applications that use this ontology. It is possible that this property (and its uses in the ontology) are extracted out in the future from the core.owl file.</rdfs:comment>
+        <rdfs:label xml:lang="es">recurso visible para S2</rdfs:label>
+        <rdfs:label xml:lang="en">visible resource for S2</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/annot#visibleResource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/annot#visibleResourceForS3 -->
+
+    <owl:AnnotationProperty rdf:about="https://ontologia.segittur.es/turismo/def/annot#visibleResourceForS3">
+        <rdfs:comment xml:lang="es">Esta propiedad de anotación se utiliza para determinar si una clase o propiedad será visible en los formularios de introducción de datos que se utilizarán en las aplicaciones principales de uso de la ontología. Es posible que esta propiedad (y sus usos en la ontología core) se extraiga fuera del fichero core.owl.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This annotation property allows determining whether a class or property will be visible in the data input forms that will be used by some applications that use this ontology. It is possible that this property (and its uses in the ontology) are extracted out in the future from the core.owl file.</rdfs:comment>
+        <rdfs:label xml:lang="es">recurso visible para S3</rdfs:label>
+        <rdfs:label xml:lang="en">visible resource for S3</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/annot#visibleResource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/annot#visibleResourceForS6 -->
+
+    <owl:AnnotationProperty rdf:about="https://ontologia.segittur.es/turismo/def/annot#visibleResourceForS6">
+        <rdfs:comment xml:lang="es">Esta propiedad de anotación se utiliza para determinar si una clase o propiedad será visible en los formularios de introducción de datos que se utilizarán en las aplicaciones principales de uso de la ontología. Es posible que esta propiedad (y sus usos en la ontología core) se extraiga fuera del fichero core.owl.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This annotation property allows determining whether a class or property will be visible in the data input forms that will be used by some applications that use this ontology. It is possible that this property (and its uses in the ontology) are extracted out in the future from the core.owl file.</rdfs:comment>
+        <rdfs:label xml:lang="es">recurso visible para S6</rdfs:label>
+        <rdfs:label xml:lang="en">visible resource for S6</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/annot#visibleResource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/annot#visibleResourceForS7 -->
+
+    <owl:AnnotationProperty rdf:about="https://ontologia.segittur.es/turismo/def/annot#visibleResourceForS7">
+        <rdfs:comment xml:lang="es">Esta propiedad de anotación se utiliza para determinar si una clase o propiedad será visible en los formularios de introducción de datos que se utilizarán en las aplicaciones principales de uso de la ontología. Es posible que esta propiedad (y sus usos en la ontología core) se extraiga fuera del fichero core.owl.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This annotation property allows determining whether a class or property will be visible in the data input forms that will be used by some applications that use this ontology. It is possible that this property (and its uses in the ontology) are extracted out in the future from the core.owl file.</rdfs:comment>
+        <rdfs:label xml:lang="es">recurso visible para S7</rdfs:label>
+        <rdfs:label xml:lang="en">visible resource for S7</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/annot#visibleResource"/>
     </owl:AnnotationProperty>
     
 
@@ -3275,8 +3347,8 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:label xml:lang="es">descripción corta</rdfs:label>
         <rdfs:label xml:lang="en">short description</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
-        <estur-annot:refPointOfInterest xml:lang="es">Debes crear una descripción de hasta 250 caracteres</estur-annot:refPointOfInterest>
-        <estur-annot:refPointOfInterest xml:lang="en">You should create a description of up to 250 characters</estur-annot:refPointOfInterest>
+        <estur-annot:tooltip xml:lang="es">Debes crear una descripción de hasta 250 caracteres</estur-annot:tooltip>
+        <estur-annot:tooltip xml:lang="en">You should create a description of up to 250 characters</estur-annot:tooltip>
     </owl:DatatypeProperty>
     
 

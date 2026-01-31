@@ -22,15 +22,15 @@
         <dct:description xml:lang="es">Esta ontología de dominio del sector turístico está construida a partir del Modelo Conceptual de Referencia Semántico de Turismo de SEGITTUR, un modelo para el desarrollo de una Red de Ontologías del Sector Turístico al servicio de la futura Plataforma Inteligente de Destino (PID) promovida por SEGITTUR. El Modelo Conceptual de Referencia de Turismo de SEGITTUR ofrece un corazón ontológico extensible para conceptos e información sobre el dominio de turismo, y aspira a convertirse en una referencia para el intercambio controlado de información sobre turismo.</dct:description>
         <dct:description xml:lang="en">This tourism domain ontology is built from SEGITTUR&apos;s Conceptual Tourism Semantic Reference Model, a model for the development of a Network of Tourism Sector Ontologies at the service of the future Intelligent Destination Platform (IDP) promoted by SEGITTUR. The SEGITTUR Conceptual Tourism Reference Model offers an extensible ontological core for concepts and information on the tourism domain, and aims to become a reference for the controlled exchange of tourism information.</dct:description>
         <dct:hasFormat rdf:resource="https://ontologia.segittur.es/turismo/def/core.owl"/>
-        <dct:issued>2025-12-15</dct:issued>
+        <dct:issued>2026-01-31</dct:issued>
         <dct:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dct:license>CC BY-SA</dct:license>
         <dct:title xml:lang="en">Core ontology for tourism by SEGITTUR</dct:title>
         <dct:title xml:lang="es">Ontología de referencia de turismo de SEGITTUR</dct:title>
         <vann:preferredNamespacePrefix>estur</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://ontologia.segittur.es/turismo/def/core#"/>
-        <owl:priorVersion>1.1.1</owl:priorVersion>
-        <owl:versionInfo>1.2.1</owl:versionInfo>
+        <owl:priorVersion>1.2.1</owl:priorVersion>
+        <owl:versionInfo>1.2.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1295,6 +1295,7 @@ It is possible that this annotation property is taken out in the future from the
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#DestinationExperience"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Event"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Place"/>
                 </owl:unionOf>
             </owl:Class>
@@ -3896,6 +3897,12 @@ It is possible that this annotation property is taken out in the future from the
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasPriceClass"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offeredBy"/>
                 <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#ComplementaryActivitiesCompany"/>
             </owl:Restriction>
@@ -3955,6 +3962,12 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#experienceRelatedProduct"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasPriceClass"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6836,6 +6849,13 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasLocation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#keyword"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -8853,8 +8873,8 @@ It is possible that this annotation property is taken out in the future from the
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Prestación destinada al traslado de personas o bienes de un lugar a otro mediante distintos medios de transporte</rdfs:comment>
         <rdfs:comment xml:lang="en">Service intended for the transfer of people or goods from one place to another using different means of transport</rdfs:comment>
-        <rdfs:label xml:lang="en">Transport</rdfs:label>
-        <rdfs:label xml:lang="es">Transporte</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio de transporte</rdfs:label>
+        <rdfs:label xml:lang="en">Transport service</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
     
@@ -8947,6 +8967,12 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VehicleExperience">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismService"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasPriceClass"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#vehicleExperienceType"/>

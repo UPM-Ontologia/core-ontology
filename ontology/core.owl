@@ -1147,6 +1147,8 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Terroir"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#UndergroundWineCellar"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Vineyard"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Winery"/>
                 </owl:unionOf>
@@ -1515,6 +1517,7 @@ It is possible that this annotation property is taken out in the future from the
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#OldTown"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Quarter"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Square"/>
                 </owl:unionOf>
             </owl:Class>
@@ -3534,6 +3537,7 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#AgrotourismExperience"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#DestinationExperience"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Tour"/>
                 </owl:unionOf>
@@ -3553,6 +3557,7 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#AgrotourismExperience"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#DestinationExperience"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Tour"/>
                 </owl:unionOf>
@@ -5190,19 +5195,6 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:comment xml:lang="en">Engine circuit</rdfs:comment>
         <rdfs:label xml:lang="es">Circuito de motor</rdfs:label>
         <rdfs:label xml:lang="en">Engine circuit</rdfs:label>
-        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#Enoteca -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Enoteca">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility"/>
-        <rdfs:comment xml:lang="es">Lugar donde se exponen, guardan, venden e incluso se catan o degustan distintas clases de vinos. En algunos lugares también se puede utilizar el término tabanco</rdfs:comment>
-        <rdfs:comment xml:lang="en">Place where different types of wines are exhibited, stored, sold and even tasted or tasted</rdfs:comment>
-        <rdfs:label xml:lang="en">Enoteca</rdfs:label>
-        <rdfs:label xml:lang="es">Enoteca</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
     
@@ -7205,6 +7197,19 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#Quarter -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Quarter">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
+        <rdfs:comment xml:lang="en">A group of streets in a city that offer tourist attractions of interest, usually related to a specific theme</rdfs:comment>
+        <rdfs:comment xml:lang="es">Conjunto de calles de una ciudad que alberga oferta turística de interés, habitualmente relacionada con un tema</rdfs:comment>
+        <rdfs:label xml:lang="es">Barrio</rdfs:label>
+        <rdfs:label xml:lang="en">Quarter</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#Racetrack -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Racetrack">
@@ -8000,6 +8005,19 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#Terroir -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Terroir">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility"/>
+        <rdfs:comment xml:lang="en">Areas of land where an indeterminate number of vineyards are located which, due to their location and microclimatic conditions, geological composition or terrain, share similar conditions and therefore produce grapes with distinctive characteristics that give rise to very unique wines, generally known as vinos de pago</rdfs:comment>
+        <rdfs:comment xml:lang="es">Extensiones de terreno en las que se localizan un número indeterminado de viñas que -por razón de su situación y condiciones micro-climáticas, por su composición geológica o por su orografía- comparten condiciones similares y producen por ello uvas con características diferenciadas que dan lugar a unos vinos muy singulares, generalmente conocidos como vinos de pago</rdfs:comment>
+        <rdfs:label xml:lang="es">Pago</rdfs:label>
+        <rdfs:label xml:lang="en">Terroir</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#Thalasso -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Thalasso">
@@ -8206,6 +8224,23 @@ It is possible that this annotation property is taken out in the future from the
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasRulesAndTips"/>
                 <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#RulesAndTips"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#nearTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#HistoricalOrCulturalResource"/>
+                            <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
+                            <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PublicService"/>
+                            <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Route"/>
+                            <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TourismOrRelatedFacility"/>
+                            <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TransportInfrastructure"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8844,6 +8879,19 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#UndergroundWineCellar -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#UndergroundWineCellar">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility"/>
+        <rdfs:comment xml:lang="en">A cellar, cave or underground winery with high humidity and a constant temperature throughout the year, used for maturing and ageing wines</rdfs:comment>
+        <rdfs:comment xml:lang="es">Cava, cueva o bodega subterránea con mucha humedad ambiente y temperatura constante todo el año que se utiliza para criar y envejecer vinos</rdfs:comment>
+        <rdfs:label xml:lang="es">Calado</rdfs:label>
+        <rdfs:label xml:lang="en">Underground wine cellar</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#UrbanViewPoint -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#UrbanViewPoint">
@@ -9009,11 +9057,26 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#VineyardHouse -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VineyardHouse">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#VernacularArchitecture"/>
+        <rdfs:comment xml:lang="es">Construcción tradicional situada entre viñedos que, siguiendo un modelo arquitectónico funcional, sirve para llevar a cabo las labores de la viña, el soleo y pisado de la uva, ocupando el lagar, el espacio principal de la casa</rdfs:comment>
+        <rdfs:comment xml:lang="en">Traditional building located among vineyards which, following a functional architectural model, is used to carry out vineyard work, the sun-drying and treading of the grapes. The winepress, the main space of the house, occupies the central area.</rdfs:comment>
+        <rdfs:label xml:lang="es">Casa de viña</rdfs:label>
+        <rdfs:label xml:lang="en">Vineyard house</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#VineyardShelter -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#VineyardShelter">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#VernacularArchitecture"/>
+        <rdfs:comment xml:lang="en">Also known as a chozo, it is a small single-storey stone building, usually circular in shape and topped with a corbelled (false) dome. It was built by vineyard farmers themselves as a shelter from bad weather or as a place to rest, and as a storage space for working tools. It was also used as a lookout post to protect the harvest. A characteristic element of the wine-growing landscape of La Rioja and Rioja Alavesa, it is now disused. It became widespread in the late 19th century, although its origins date back several centuries</rdfs:comment>
         <rdfs:comment xml:lang="es">También conocido como chozo, se trata de una pequeña edificación de piedra de una sola planta, normalmente de forma circular y coronada con una falsa cúpula, levantada por el propio agricultor de la vid como refugio ante las inclemencias del tiempo o durante los momentos de descanso, y como almacén de herramientas de labor. También utilizada como puesto de vigilancia para proteger las cosechas. Elemento característico del paisaje vitivinícola de La Rioja y la Rioja Alavesa actualmente en desuso, se popularizó a finales del siglo XIX, aunque su origen se remonta a siglos atrás.</rdfs:comment>
+        <rdfs:label xml:lang="es">Chozo</rdfs:label>
         <rdfs:label xml:lang="es">Guardaviña</rdfs:label>
         <rdfs:label xml:lang="en">Vineyard shelter</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
@@ -9085,6 +9148,33 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#WinePress -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#WinePress">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#VernacularArchitecture"/>
+        <rdfs:comment xml:lang="en">A vat where grapes were once trodden</rdfs:comment>
+        <rdfs:comment xml:lang="es">Depósito donde antiguamente se pisaba la uva</rdfs:comment>
+        <rdfs:label xml:lang="es">Lagar</rdfs:label>
+        <rdfs:label xml:lang="en">Wine press</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#WineShop -->
+
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#WineShop">
+        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismFacility"/>
+        <rdfs:comment xml:lang="es">Lugar donde se exponen, guardan, venden e incluso se catan o degustan distintas clases de vinos. En algunos lugares también se puede utilizar el término tabanco</rdfs:comment>
+        <rdfs:comment xml:lang="en">Place where different types of wines are exhibited, stored, sold and even tasted or tasted</rdfs:comment>
+        <rdfs:label xml:lang="es">Enoteca</rdfs:label>
+        <rdfs:label xml:lang="es">Vinoteca</rdfs:label>
+        <rdfs:label xml:lang="en">Wine shop</rdfs:label>
+        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
+    </owl:Class>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#Winery -->
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Winery">
@@ -9095,8 +9185,8 @@ It is possible that this annotation property is taken out in the future from the
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="es">Lugar donde se cría y almacena el vino.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Place where wine is raised and stored.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A set of facilities where wine is produced, aged and sold. The winery usually consists of the production plant, the ageing rooms (properly called cellars), laboratories and offices. In many cases, wineries have additional facilities for tourist activities (visitor centres, tasting rooms, shops, meeting/event spaces, etc.)</rdfs:comment>
+        <rdfs:comment xml:lang="es">Conjunto de instalaciones donde se elabora, cría y comercializa el vino. La bodega suele estar compuesta por la planta elaboradora, las naves de crianza (llamadas propiamente bodegas), los laboratorios y las oficinas. En muchas ocasiones, las bodegas cuentan con instalaciones complementarias destinadas a la actividad turística (centros de acogida, espacios de degustación, tienda, espacios para la realización de reuniones / eventos, etc.)</rdfs:comment>
         <rdfs:label xml:lang="es">Bodega</rdfs:label>
         <rdfs:label xml:lang="en">Winery</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>

@@ -202,3 +202,8 @@ estur-vehicleexperience:ParasailingBoat a skos:Concept;
   skos:inScheme estur-kos:VehicleExperience;
   skos:prefLabel "Parasailing boat"@en ;
   skos:prefLabel "Barca de parasailing"@es .
+
+estur-vehicleexperience:EnotourismBus a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperience;
+  skos:prefLabel "Enotourism bus"@en ;
+  skos:prefLabel "Autobús enoturístico"@es .

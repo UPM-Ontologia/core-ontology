@@ -327,3 +327,8 @@ estur-museumtype:Universitary a skos:Concept;
   skos:prefLabel "Universitary"@en ;
   skos:prefLabel "Universitario"@es .
 
+estur-museumtype:WineMuseum a skos:Concept;
+  skos:inScheme estur-kos:MuseumType;
+  skos:prefLabel "Wine museum"@en ;
+  skos:prefLabel "Museo del vino"@es .
+

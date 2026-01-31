@@ -124,3 +124,22 @@ estur-winetourismfacilityservice:SaleOfProducts a skos:Concept;
   skos:prefLabel "Sale of products"@en ;
   skos:prefLabel "Venta de productos"@es .
 
+estur-winetourismfacilityservice:WineBar a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:prefLabel "Wine bar"@en ;
+  skos:prefLabel "Bar de vinos"@es .
+
+estur-winetourismfacilityservice:BlindSampling a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:prefLabel "Blind sampling"@en ;
+  skos:prefLabel "Cata a ciegas"@es .
+
+estur-winetourismfacilityservice:VarietalSampling a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:prefLabel "Varietal sampling"@en ;
+  skos:prefLabel "Cata varietal"@es .
+
+estur-winetourismfacilityservice:AmpelographicGarden a skos:Concept;
+  skos:inScheme estur-kos:WineTourismFacilityService;
+  skos:prefLabel "Ampelographic garden"@en ;
+  skos:prefLabel "Jardín ampelográfico"@es .

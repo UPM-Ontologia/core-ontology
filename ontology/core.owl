@@ -2383,7 +2383,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#accessTip">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#AdditionalInformation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">access tip</rdfs:label>
         <rdfs:label xml:lang="es">consejo para acceder</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2420,7 +2420,7 @@ It is possible that this annotation property is taken out in the future from the
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">additional classification</rdfs:label>
         <rdfs:label xml:lang="es">clasificación adicional</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2434,7 +2434,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#answer">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#FrequentlyAskedQuestion"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">answer</rdfs:label>
         <rdfs:label xml:lang="es">respuesta</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2446,7 +2446,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#app">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#ContactPoint"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">app</rdfs:label>
         <rdfs:label xml:lang="es">app</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2460,7 +2460,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#audio">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Multimedia"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">audio</rdfs:label>
         <rdfs:label xml:lang="es">audio</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2486,7 +2486,7 @@ It is possible that this annotation property is taken out in the future from the
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#autonomousCommunity">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">autonomous community</rdfs:label>
         <rdfs:label xml:lang="es">comunidad autónoma</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2546,7 +2546,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#category">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Tour"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">category</rdfs:label>
         <rdfs:label xml:lang="es">categoría</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2582,7 +2582,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#conditions">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#AdditionalInformation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">condiciones</rdfs:label>
         <rdfs:label xml:lang="en">conditions</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2595,7 +2595,7 @@ It is possible that this annotation property is taken out in the future from the
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#country">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">country</rdfs:label>
         <rdfs:label xml:lang="es">país</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2609,7 +2609,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#county">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">comarca</rdfs:label>
         <rdfs:label xml:lang="en">county</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2621,7 +2621,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#curiosities">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#AdditionalInformation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">curiosidades</rdfs:label>
         <rdfs:label xml:lang="en">curiosities</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2690,7 +2690,7 @@ It is possible that this annotation property is taken out in the future from the
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">duración</rdfs:label>
         <rdfs:label xml:lang="en">duration</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2702,7 +2702,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#eligibleQuantity">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceSpecification"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">cantidad elegible</rdfs:label>
         <rdfs:label xml:lang="en">eligible quantity</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2777,7 +2777,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#highestAltitude">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Route"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">altitud máxima</rdfs:label>
         <rdfs:label xml:lang="en">highest altitude</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2798,7 +2798,7 @@ It is possible that this annotation property is taken out in the future from the
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">includes</rdfs:label>
         <rdfs:label xml:lang="es">incluye</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2810,7 +2810,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#instantMessagingService">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#ContactPoint"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">instant messaging service</rdfs:label>
         <rdfs:label xml:lang="es">servicio de mensajería instantánea</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2879,7 +2879,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#keyword">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Description"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">keyword</rdfs:label>
         <rdfs:label xml:lang="es">palabra clave</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2891,7 +2891,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#length">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Route"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">length</rdfs:label>
         <rdfs:label xml:lang="es">longitud</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2904,7 +2904,7 @@ It is possible that this annotation property is taken out in the future from the
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#locality">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">localidad</rdfs:label>
         <rdfs:label xml:lang="en">locality</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2928,7 +2928,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#longDescription">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Description"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">descripción larga</rdfs:label>
         <rdfs:label xml:lang="en">long description</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -2998,7 +2998,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#minimumAltitude">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Route"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">altitud mínima</rdfs:label>
         <rdfs:label xml:lang="en">minimum altitude</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3032,7 +3032,7 @@ It is possible that this annotation property is taken out in the future from the
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">name</rdfs:label>
         <rdfs:label xml:lang="es">nombre</rdfs:label>
         <estur-annot:presentationOrderCategory>generalInfo</estur-annot:presentationOrderCategory>
@@ -3052,7 +3052,7 @@ It is possible that this annotation property is taken out in the future from the
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">no incluido</rdfs:label>
         <rdfs:label xml:lang="en">not included</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3227,7 +3227,7 @@ It is possible that this annotation property is taken out in the future from the
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#province">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">province</rdfs:label>
         <rdfs:label xml:lang="es">provincia</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3271,7 +3271,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#publicTransportStopZone">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PublicTransportStop"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">public transport stop zone</rdfs:label>
         <rdfs:label xml:lang="es">zona de la parada de transporte público</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3283,7 +3283,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#question">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#FrequentlyAskedQuestion"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">pregunta</rdfs:label>
         <rdfs:label xml:lang="en">question</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3296,7 +3296,7 @@ It is possible that this annotation property is taken out in the future from the
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#recognizedBy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Certification"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">recognized by</rdfs:label>
         <rdfs:label xml:lang="es">reconocido por</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3308,7 +3308,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#refPointOfInterestAsText">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#ItineraryElement"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">punto de interés de referencia (texto)</rdfs:label>
         <rdfs:label xml:lang="en">reference point of interest (texto)</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3344,7 +3344,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#remarks">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#AdditionalInformation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">observaciones</rdfs:label>
         <rdfs:label xml:lang="en">remarks</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3443,7 +3443,7 @@ It is possible that this annotation property is taken out in the future from the
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#shortDescription">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Description"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">descripción corta</rdfs:label>
         <rdfs:label xml:lang="en">short description</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3471,7 +3471,7 @@ It is possible that this annotation property is taken out in the future from the
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#streetAddress">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">dirección</rdfs:label>
         <rdfs:label xml:lang="en">street address</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3490,7 +3490,7 @@ It is possible that this annotation property is taken out in the future from the
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">público objetivo</rdfs:label>
         <rdfs:label xml:lang="en">target audience</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3556,7 +3556,7 @@ It is possible that this annotation property is taken out in the future from the
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#text">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Multimedia"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">text</rdfs:label>
         <rdfs:label xml:lang="es">texto</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3576,7 +3576,7 @@ It is possible that this annotation property is taken out in the future from the
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">momento del día</rdfs:label>
         <rdfs:label xml:lang="en">time of the day</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3596,7 +3596,7 @@ It is possible that this annotation property is taken out in the future from the
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="es">temporada del año</rdfs:label>
         <rdfs:label xml:lang="en">time of the year</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
@@ -3629,7 +3629,7 @@ It is possible that this annotation property is taken out in the future from the
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
         <rdfs:label xml:lang="en">url</rdfs:label>
         <rdfs:label xml:lang="es">url</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>

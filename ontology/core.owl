@@ -1777,7 +1777,14 @@ It is possible that this annotation property is taken out in the future from the
     <!-- https://ontologia.segittur.es/turismo/def/core#locomotionMode -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#locomotionMode">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Route"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Route"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Trail"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2761,20 +2768,6 @@ tourism organisations, tourism or related facilities, tourism resources and serv
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#category -->
-
-    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#category">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Tour"/>
-        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-        <rdfs:comment xml:lang="en">Text that identifies and specifies the type of activity corresponding to a guided tour, according to its theme or nature.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Texto que identifica y especifica el tipo de actividad que corresponde a una visita guiada, según su temática o naturaleza.</rdfs:comment>
-        <rdfs:label xml:lang="en">category</rdfs:label>
-        <rdfs:label xml:lang="es">categoría</rdfs:label>
-        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/def/core#checkInTime -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#checkInTime">
@@ -2972,6 +2965,7 @@ tourism organisations, tourism or related facilities, tourism resources and serv
     <!-- https://ontologia.segittur.es/turismo/def/core#endDateTime -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#endDateTime">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Schedule"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="es">La fecha de finalización con o sin hora de una programación.</rdfs:comment>
         <rdfs:comment xml:lang="en">The end date with or without time of a schedule.</rdfs:comment>
@@ -3803,6 +3797,7 @@ tourism organisations, tourism or related facilities, tourism resources and serv
     <!-- https://ontologia.segittur.es/turismo/def/core#startDateTime -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#startDateTime">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#Schedule"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="es">La fecha de inicio con o sin hora de una programación.</rdfs:comment>
         <rdfs:comment xml:lang="en">The start date with or without time of a schedule.</rdfs:comment>
@@ -7685,7 +7680,7 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:comment xml:lang="es">Centro de recreo donde se guardan juegos y juguetes para su uso y préstamo</rdfs:comment>
         <rdfs:comment xml:lang="en">Recreation center where games and toys are stored for use and loan</rdfs:comment>
         <rdfs:label xml:lang="es">Ludoteca</rdfs:label>
-        <rdfs:label xml:lang="es">Playroom</rdfs:label>
+        <rdfs:label xml:lang="en">Playroom</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
     
@@ -9044,13 +9039,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#category"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#dramatisedTour"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -9722,19 +9710,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:comment xml:lang="es">Vía, senda o camino que se caracteriza por ser muy pequeña y angosta y que por lo general se encuentran en las zonas rurales.</rdfs:comment>
         <rdfs:label xml:lang="es">Sendero</rdfs:label>
         <rdfs:label xml:lang="en">Trail</rdfs:label>
-        <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
-    </owl:Class>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#TrailMTB -->
-
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#TrailMTB">
-        <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
-        <rdfs:comment xml:lang="es">Caminos disponibles para ir en bicicleta por la montaña o el campo.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Paths available for cycling in the mountains or countryside</rdfs:comment>
-        <rdfs:label xml:lang="es">Sendero BTT</rdfs:label>
-        <rdfs:label xml:lang="en">Trail for mountain bike</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
     

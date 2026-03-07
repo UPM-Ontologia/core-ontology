@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-accommodationrate: <https://ontologia.segittur.es/turismo/kos/accommodationrate/> .
+@prefix estur-additionalvehiclerentalagencyservice: <https://ontologia.segittur.es/turismo/kos/additionalvehiclerentalagencyservice/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:AccommodationRate a skos:ConceptScheme ; 
-    dct:issued "2024-10-29"^^xsd:date ;
-    dct:modified "2025-12-15"^^xsd:date ;
+estur-kos:AdditionalVehicleRentalAgencyService a skos:ConceptScheme ; 
+    dct:issued "2024-05-24"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Accommodation rate"@en ;
-    rdfs:label "Tarifa de alojamiento"@es ;
-    dct:title "Concept scheme grouping accommodation rates"@en ;
-    dct:title "Esquema de conceptos agrupando tarifas de alojamiento"@es .
+    rdfs:label "Additional vehicle rental agency service"@en ;
+    rdfs:label "Servicio adicional de una agencia de alquiler de vehículos"@es ;
+    dct:title "Concept scheme grouping additional vehicle rental agency services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios adicionales de una agencia de alquiler de vehículos"@es .
 
 #################################################################
 #
@@ -33,37 +33,38 @@ estur-kos:AccommodationRate a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-accommodationrate:AccommodationOnly a skos:Concept;
-  skos:inScheme estur-kos:AccommodationRate;
+estur-additionalvehiclerentalagencyservice:AccessibleVehicleFleet a skos:Concept;
+  skos:inScheme estur-kos:AdditionalVehicleRentalAgencyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Accommodation only"@en ;
-  skos:prefLabel "Sólo alojamiento"@es .
+  skos:prefLabel "Accessible vehicle fleet"@en ;
+  skos:prefLabel "Flota de vehículos accesibles"@es .
 
-estur-accommodationrate:AllInclusive a skos:Concept;
-  skos:inScheme estur-kos:AccommodationRate;
+estur-additionalvehiclerentalagencyservice:AdditionalDriver a skos:Concept;
+  skos:inScheme estur-kos:AdditionalVehicleRentalAgencyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "All inclusive"@en ;
-  skos:prefLabel "Todo incluido"@es .
+  skos:prefLabel "Additional driver"@en ;
+  skos:prefLabel "Conductor adicional"@es .
 
-estur-accommodationrate:AccommodationWithBreakfast a skos:Concept;
-  skos:inScheme estur-kos:AccommodationRate;
+estur-additionalvehiclerentalagencyservice:BabySeat a skos:Concept;
+  skos:inScheme estur-kos:AdditionalVehicleRentalAgencyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Accommodation with breakfast"@en ;
-  skos:prefLabel "Alojamiento con desayuno"@es .
+  skos:prefLabel "Baby seat"@en ;
+  skos:prefLabel "Asientos para niños"@es .
 
-estur-accommodationrate:FullBoard a skos:Concept;
-  skos:inScheme estur-kos:AccommodationRate;
+estur-additionalvehiclerentalagencyservice:RentByTheHour a skos:Concept;
+  skos:inScheme estur-kos:AdditionalVehicleRentalAgencyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Full board"@en ;
-  skos:prefLabel "Pensión completa"@es .
+  skos:prefLabel "Rent by the hour"@en ;
+  skos:prefLabel "Alquiler por horas"@es .
 
-estur-accommodationrate:HalfBoard a skos:Concept;
-  skos:inScheme estur-kos:AccommodationRate;
+estur-additionalvehiclerentalagencyservice:SnowChains a skos:Concept;
+  skos:inScheme estur-kos:AdditionalVehicleRentalAgencyService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Half board"@en ;
-  skos:prefLabel "Media pensión"@es .
+  skos:prefLabel "Snow chains"@en ;
+  skos:prefLabel "Cadenas para la nieve"@es .
+

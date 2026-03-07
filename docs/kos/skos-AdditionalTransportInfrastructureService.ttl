@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-transportinfrastructureservice: <https://ontologia.segittur.es/turismo/kos/transportinfrastructureservice/> .
+@prefix estur-additionaltransportinfrastructureservice: <https://ontologia.segittur.es/turismo/kos/additionaltransportinfrastructureservice/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:TransportInfrastructureService a skos:ConceptScheme ; 
+estur-kos:AdditionalTransportInfrastructureService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-05-24"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Transport infrastructure service"@en ;
-    rdfs:label "Servicio de infraestructura de transporte"@es ;
-    dct:title "Concept scheme grouping transport infrastructure services"@en ;
-    dct:title "Esquema de conceptos agrupando servicios de infraestructura de transporte"@es .
+    rdfs:label "Additional transport infrastructure service"@en ;
+    rdfs:label "Servicio adicional de infraestructura de transporte"@es ;
+    dct:title "Concept scheme grouping additional transport infrastructure services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios adicionales de infraestructura de transporte"@es .
 
 #################################################################
 #
@@ -33,36 +33,36 @@ estur-kos:TransportInfrastructureService a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-transportinfrastructureservice:InformationPoint a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureService;
+estur-additionaltransportinfrastructureservice:InformationPoint a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportInfrastructureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Information point"@en ;
   skos:prefLabel "Punto de información"@es .
 
-estur-transportinfrastructureservice:ParkingFacility a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureService;
+estur-additionaltransportinfrastructureservice:ParkingFacility a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportInfrastructureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Parking facility"@en ;
   skos:prefLabel "Aparcamiento"@es .
 
-estur-transportinfrastructureservice:SmokingRooms a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureService;
+estur-additionaltransportinfrastructureservice:SmokingRooms a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportInfrastructureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Smoking rooms"@en ;
   skos:prefLabel "Salas para fumadores"@es .
 
-estur-transportinfrastructureservice:VipRooms a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureService;
+estur-additionaltransportinfrastructureservice:VipRooms a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportInfrastructureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "VIP rooms"@en ;
   skos:prefLabel "Salas VIP"@es .
 
-estur-transportinfrastructureservice:Wifi a skos:Concept;
-  skos:inScheme estur-kos:TransportInfrastructureService;
+estur-additionaltransportinfrastructureservice:Wifi a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportInfrastructureService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Wifi"@en ;

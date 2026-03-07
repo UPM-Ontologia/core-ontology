@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-routeservice: <https://ontologia.segittur.es/turismo/kos/routeservice/> .
+@prefix estur-additionalrouteservice: <https://ontologia.segittur.es/turismo/kos/additionalrouteservice/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:RouteService a skos:ConceptScheme ; 
+estur-kos:AdditionalRouteService a skos:ConceptScheme ; 
     dct:issued "2024-07-23"^^xsd:date ;
-    dct:modified "2025-12-15"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Route service"@en ;
-    rdfs:label "Servicio asociado a una ruta"@es ;
-    dct:title "Concept scheme grouping route services"@en ;
-    dct:title "Esquema de conceptos agrupando servicios asociados a una ruta"@es .
+    rdfs:label "Additional route service"@en ;
+    rdfs:label "Servicio adicional asociado a una ruta"@es ;
+    dct:title "Concept scheme grouping additional route services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios adicionales asociados a una ruta"@es .
 
 #################################################################
 #
@@ -33,17 +33,17 @@ estur-kos:RouteService a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-routeservice:Signaling a skos:Concept;
-  skos:inScheme estur-kos:RouteService;
+estur-additionalrouteservice:Signaling a skos:Concept;
+  skos:inScheme estur-kos:AdditionalRouteService;
   skos:prefLabel "Signaling"@en ;
   skos:prefLabel "Señalización"@es .
 
-estur-routeservice:Lighting a skos:Concept;
-  skos:inScheme estur-kos:RouteService;
+estur-additionalrouteservice:Lighting a skos:Concept;
+  skos:inScheme estur-kos:AdditionalRouteService;
   skos:prefLabel "Ligthing"@en ;
   skos:prefLabel "Alumbrado"@es .
 
-estur-routeservice:AccessibleSignage a skos:Concept;
-  skos:inScheme estur-kos:RouteService;
+estur-additionalrouteservice:AccessibleSignage a skos:Concept;
+  skos:inScheme estur-kos:AdditionalRouteService;
   skos:prefLabel "Accessible signage"@en ;
   skos:prefLabel "Señalética accesible"@es .

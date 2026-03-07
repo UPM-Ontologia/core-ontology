@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-vehiclerentalagencyservice: <https://ontologia.segittur.es/turismo/kos/vehiclerentalagencyservice/> .
+@prefix estur-additionaltourservice: <https://ontologia.segittur.es/turismo/kos/additionaltourservice/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:VehicleRentalAgencyService a skos:ConceptScheme ; 
+estur-kos:AdditionalTourService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2026-01-24"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Vehicle rental agency service"@en ;
-    rdfs:label "Servicio de una agencia de alquiler de vehículos"@es ;
-    dct:title "Concept scheme grouping vehicle rental agency services"@en ;
-    dct:title "Esquema de conceptos agrupando servicios de una agencia de alquiler de vehículos"@es .
+    rdfs:label "Additional tour service"@en ;
+    rdfs:label "Servicio adicional de una visita guiada"@es ;
+    dct:title "Concept scheme grouping additional tour services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios adicionales de una visita guiada"@es .
 
 #################################################################
 #
@@ -33,38 +33,39 @@ estur-kos:VehicleRentalAgencyService a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-vehiclerentalagencyservice:AccessibleVehicleFleet a skos:Concept;
-  skos:inScheme estur-kos:VehicleRentalAgencyService;
+estur-additionaltourservice:Audiodescription a skos:Concept;
+  skos:inScheme estur-kos:TourSeAdditionalTourServicervice;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Accessible vehicle fleet"@en ;
-  skos:prefLabel "Flota de vehículos accesibles"@es .
+  skos:prefLabel "Audiodescription"@en ;
+  skos:prefLabel "Audiodescripción"@es .
 
-estur-vehiclerentalagencyservice:AdditionalDriver a skos:Concept;
-  skos:inScheme estur-kos:VehicleRentalAgencyService;
+estur-additionaltourservice:Audioguide a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Additional driver"@en ;
-  skos:prefLabel "Conductor adicional"@es .
+  skos:prefLabel "Audioguide"@en ;
+  skos:prefLabel "Audioguía"@es .
 
-estur-vehiclerentalagencyservice:BabySeat a skos:Concept;
-  skos:inScheme estur-kos:VehicleRentalAgencyService;
+estur-additionaltourservice:Gamification a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Baby seat"@en ;
-  skos:prefLabel "Asientos para niños"@es .
+  skos:prefLabel "Gamification"@en ;
+  skos:prefLabel "Gamificación"@es .
 
-estur-vehiclerentalagencyservice:RentByTheHour a skos:Concept;
-  skos:inScheme estur-kos:VehicleRentalAgencyService;
+estur-additionaltourservice:FastLane a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Rent by the hour"@en ;
-  skos:prefLabel "Alquiler por horas"@es .
+  skos:prefLabel "Fast lane"@en ;
+  skos:prefLabel "Fast lane"@es .
 
-estur-vehiclerentalagencyservice:SnowChains a skos:Concept;
-  skos:inScheme estur-kos:VehicleRentalAgencyService;
+estur-additionaltourservice:GearProvision a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Snow chains"@en ;
-  skos:prefLabel "Cadenas para la nieve"@es .
+  skos:prefLabel "Gear provision"@en ;
+  skos:prefLabel "Gear provision"@es .
+
 

@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-educationalfacilityservice: <https://ontologia.segittur.es/turismo/kos/educationalfacilityservice/> .
+@prefix estur-additionaldmcservice: <https://ontologia.segittur.es/turismo/kos/additionaldmcservice/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:EducationalFacilityService a skos:ConceptScheme ; 
+estur-kos:AdditionalDMCService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2026-01-24"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Educational facility service"@en ;
-    rdfs:label "Servicio de un centro educativo"@es ;
-    dct:title "Concept scheme grouping educational facility services"@en ;
-    dct:title "Esquema de conceptos agrupando servicios de centros educativos"@es .
+    rdfs:label "Additional DMC service"@en ;
+    rdfs:label "Servicio adicional del operador receptivo"@es ;
+    dct:title "Concept scheme grouping additional DMC services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios adicionales del operador receptivo"@es .
 
 #################################################################
 #
@@ -33,45 +33,45 @@ estur-kos:EducationalFacilityService a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-educationalfacilityservice:ChildrenGames a skos:Concept;
-  skos:inScheme estur-kos:EducationalFacilityService;
+estur-additionaldmcservice:AccessForDisabled a skos:Concept;
+  skos:inScheme estur-kos:AdditionalDMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Children games"@en ;
-  skos:prefLabel "Juegos para niños"@es .
+  skos:prefLabel "Access for disabled"@en ;
+  skos:prefLabel "Acceso para personas de movilidad reducida"@es .
 
-estur-educationalfacilityservice:Gamification a skos:Concept;
-  skos:inScheme estur-kos:EducationalFacilityService;
+estur-additionaldmcservice:CurrencyExchange a skos:Concept;
+  skos:inScheme estur-kos:AdditionalDMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Gamification"@en ;
-  skos:prefLabel "Gamificación"@es .
+  skos:prefLabel "Currency exchange"@en ;
+  skos:prefLabel "Cambio de moneda"@es .
 
-estur-educationalfacilityservice:Pool a skos:Concept;
-  skos:inScheme estur-kos:EducationalFacilityService;
+estur-additionaldmcservice:Insurance a skos:Concept;
+  skos:inScheme estur-kos:AdditionalDMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Pool"@en ;
-  skos:prefLabel "Piscina"@es .
+  skos:prefLabel "Insurance"@en ;
+  skos:prefLabel "Seguros"@es .
 
-estur-educationalfacilityservice:QrCodes a skos:Concept;
-  skos:inScheme estur-kos:EducationalFacilityService;
+estur-additionaldmcservice:LuggageStorage a skos:Concept;
+  skos:inScheme estur-kos:AdditionalDMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "QR codes"@en ;
-  skos:prefLabel "Códigos QR"@es .
+  skos:prefLabel "Luggage storage"@en ;
+  skos:prefLabel "Almacenamiento de equipaje"@es .
 
-estur-educationalfacilityservice:EventVenue a skos:Concept;
-  skos:inScheme estur-kos:EducationalFacilityService;
+estur-additionaldmcservice:TravelAgency a skos:Concept;
+  skos:inScheme estur-kos:AdditionalDMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Event venue"@en ;
-  skos:prefLabel "Lugar de celebración"@es .
+  skos:prefLabel "Travel agency"@en ;
+  skos:prefLabel "Agencia de viajes"@es .
 
-estur-educationalfacilityservice:Workshop a skos:Concept;
-  skos:inScheme estur-kos:EducationalFacilityService;
+estur-additionaldmcservice:VisasAndPermits a skos:Concept;
+  skos:inScheme estur-kos:AdditionalDMCService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
-  skos:prefLabel "Workshop"@en ;
-  skos:prefLabel "Taller"@es .
+  skos:prefLabel "Visas and permits"@en ;
+  skos:prefLabel "Visas y permisos"@es .
 

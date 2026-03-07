@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-targetaudience: <https://ontologia.segittur.es/turismo/kos/targetaudience/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:TargetAudience a skos:ConceptScheme ; 
+    dct:issued "2026-03-06"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Target Audience"@en ;
+    rdfs:label "Público objetivo"@es ;
+    dct:title "Concept scheme grouping target audiences"@en ;
+    dct:title "Esquema de conceptos agrupando públicos objetivo"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-targetaudience:Families a skos:Concept;
+  skos:inScheme estur-kos:TargetAudience;
+  skos:prefLabel "Families"@en ;
+  skos:prefLabel "Familias"@es .
+
+estur-targetaudience:Adults a skos:Concept;
+  skos:inScheme estur-kos:TargetAudience;
+  skos:prefLabel "Adults"@en ;
+  skos:prefLabel "Adultos"@es .
+
+estur-targetaudience:Youth a skos:Concept;
+  skos:inScheme estur-kos:TargetAudience;
+  skos:prefLabel "Youth"@en ;
+  skos:prefLabel "Jóvenes"@es .
+
+estur-targetaudience:Senior a skos:Concept;
+  skos:inScheme estur-kos:TargetAudience;
+  skos:prefLabel "Senior"@en ;
+  skos:prefLabel "Senior"@es .
+
+estur-targetaudience:Kids a skos:Concept;
+  skos:inScheme estur-kos:TargetAudience;
+  skos:prefLabel "Kids"@en ;
+  skos:prefLabel "Niños"@es .
+
+
+
+
+ Implica deprecar los siguientes individuos del esquema de conceptos "LabelType" (@ es "Tipo de distintivo") por solapamiento: solo para adultos (@ en "adultsOnly") / apto para niños (@ en "kidsFriendly").

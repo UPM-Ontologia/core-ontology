@@ -1,0 +1,135 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-tag: <https://ontologia.segittur.es/turismo/kos/tag/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:Tag a skos:ConceptScheme ; 
+    dct:issued "2026-03-06"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Tag"@en ;
+    rdfs:label "Etiqueta"@es ;
+    dct:title "Concept scheme grouping tags"@en ;
+    dct:title "Esquema de conceptos agrupando etiquetas"@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-tag:Adrenaline a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Adrenaline"@en ;
+  skos:prefLabel "Adrenalina"@es .
+
+estur-tag:Sea a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Sea"@en ;
+  skos:prefLabel "Mar"@es .
+
+estur-tag:Slow a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Slow"@en ;
+  skos:prefLabel "Slow"@es .
+
+estur-tag:Art a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Art"@en ;
+  skos:prefLabel "Arte"@es .
+
+estur-tag:History a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "History"@en ;
+  skos:prefLabel "Historia"@es .
+
+estur-tag:Learning a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Learning"@en ;
+  skos:prefLabel "Aprendizaje"@es .
+
+estur-tag:Wellness a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Wellness"@en ;
+  skos:prefLabel "Bienestar"@es .
+
+estur-tag:Fun a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Fun"@en ;
+  skos:prefLabel "Diversión"@es .
+
+estur-tag:Relax a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Relax"@en ;
+  skos:prefLabel "Relax"@es .
+
+estur-tag:Celebration a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Celebration"@en ;
+  skos:prefLabel "Celebración"@es .
+
+estur-tag:Night a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Night"@en ;
+  skos:prefLabel "Noche"@es .
+
+estur-tag:Spirituality a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Spirituality"@en ;
+  skos:prefLabel "Espiritualidad"@es .
+
+estur-tag:Authenticity a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Authencity"@en ;
+  skos:prefLabel "Autenticidad"@es .
+
+estur-tag:Fashion a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Fashion"@en ;
+  skos:prefLabel "Moda"@es .
+
+estur-tag:Luxury a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Luxury"@en ;
+  skos:prefLabel "Lujo"@es .
+
+estur-tag:Design a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Design"@en ;
+  skos:prefLabel "Diseño"@es .
+
+estur-tag:Architecture a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Architecture"@en ;
+  skos:prefLabel "Arquitectura"@es .
+
+estur-tag:Entertainment a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Entertainment"@en ;
+  skos:prefLabel "Entretenimiento"@es .
+
+estur-tag:Foodie a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Foodie"@en ;
+  skos:prefLabel "Foodie"@es .
+
+estur-tag:Disconnection a skos:Concept;
+  skos:inScheme estur-kos:Tag;
+  skos:prefLabel "Disconnection"@en ;
+  skos:prefLabel "Desconexión"@es .
+

@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-transportservice: <https://ontologia.segittur.es/turismo/kos/transportservice/> .
+@prefix estur-additionaltransportservice: <https://ontologia.segittur.es/turismo/kos/additionaltransportservice/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:TransportService a skos:ConceptScheme ; 
+estur-kos:AdditionalTransportService a skos:ConceptScheme ; 
     dct:issued "2026-01-24"^^xsd:date ;
-    dct:modified "2026-01-24"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Transport service"@en ;
-    rdfs:label "Servicio de transporte"@es ;
-    dct:title "Concept scheme grouping transport services"@en ;
-    dct:title "Esquema de conceptos agrupando servicios de transporte"@es .
+    rdfs:label "Additional transport service"@en ;
+    rdfs:label "Servicio adicional de transporte"@es ;
+    dct:title "Concept scheme grouping additional transport services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios adicionales de transporte"@es .
 
 #################################################################
 #
@@ -33,42 +33,42 @@ estur-kos:TransportService a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-transportservice:BabySeat a skos:Concept;
-  skos:inScheme estur-kos:TransportService;
+estur-additionaltransportservice:BabySeat a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportService;
   skos:prefLabel "Baby seat"@en ;
   skos:prefLabel "Silla infantil"@es .
 
-estur-transportservice:ChargingPlug a skos:Concept;
-  skos:inScheme estur-kos:TransportService;
+estur-additionaltransportservice:ChargingPlug a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportService;
   skos:prefLabel "Charging plug"@en ;
   skos:prefLabel "Enchufe de carga"@es .
 
-estur-transportservice:Wifi a skos:Concept;
-  skos:inScheme estur-kos:TransportService;
+estur-additionaltransportservice:Wifi a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportService;
   skos:prefLabel "Wifi"@en ;
   skos:prefLabel "Wifi"@es .
 
-estur-transportservice:Bathrooms a skos:Concept;
-  skos:inScheme estur-kos:TransportService;
+estur-additionaltransportservice:Bathrooms a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportService;
   skos:prefLabel "Bathrooms"@en ;
   skos:prefLabel "Baño"@es .
 
-estur-transportservice:AirConditioning a skos:Concept;
-  skos:inScheme estur-kos:TransportService;
+estur-additionaltransportservice:AirConditioning a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportService;
   skos:prefLabel "Air conditioning"@en ;
   skos:prefLabel "Aire acondicionado"@es .
 
-estur-transportservice:AdditionalLuggage a skos:Concept;
-  skos:inScheme estur-kos:TransportService;
+estur-additionaltransportservice:AdditionalLuggage a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportService;
   skos:prefLabel "Additional luggage"@en ;
   skos:prefLabel "Equipaje adicional"@es .
 
-estur-transportservice:UnaccompaniedChildService a skos:Concept;
-  skos:inScheme estur-kos:TransportService;
+estur-additionaltransportservice:UnaccompaniedChildService a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportService;
   skos:prefLabel "Unaccompanied child service"@en ;
   skos:prefLabel "Servicio para menores no acompañados"@es .
 
-estur-transportservice:PetTransport a skos:Concept;
-  skos:inScheme estur-kos:TransportService;
+estur-additionaltransportservice:PetTransport a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTransportService;
   skos:prefLabel "Pet transport"@en ;
   skos:prefLabel "Transporte de mascotas"@es .

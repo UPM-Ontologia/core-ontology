@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-tourismresourceservice: <https://ontologia.segittur.es/turismo/kos/tourismresourceservice/> .
+@prefix estur-additionaltourismresourceservice: <https://ontologia.segittur.es/turismo/kos/additionaltourismresourceservice/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:TourismResourceService a skos:ConceptScheme ; 
+estur-kos:AdditionalTourismResourceService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2024-12-15"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Tourism resource service"@en ;
-    rdfs:label "Servicio de un recurso turístico"@es ;
-    dct:title "Concept scheme grouping tourism resource services"@en ;
-    dct:title "Esquema de conceptos agrupando servicios de un recurso turístico"@es .
+    rdfs:label "Additional ourism resource service"@en ;
+    rdfs:label "Servicio adicional de un recurso turístico"@es ;
+    dct:title "Concept scheme grouping additional tourism resource services"@en ;
+    dct:title "Esquema de conceptos agrupando servicios adicionales de un recurso turístico"@es .
 
 #################################################################
 #
@@ -33,71 +33,71 @@ estur-kos:TourismResourceService a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-tourismresourceservice:Audiodescription a skos:Concept;
-  skos:inScheme estur-kos:TourismResourceService;
+estur-additionaltourismresourceservice:Audiodescription a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourismResourceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Audiodescription"@en ;
   skos:prefLabel "Audiodescripción"@es .
 
-estur-tourismresourceservice:AugmentedReality a skos:Concept;
-  skos:inScheme estur-kos:TourismResourceService;
+estur-additionaltourismresourceservice:AugmentedReality a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourismResourceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Augmented reality"@en ;
   skos:prefLabel "Realidad aumentada"@es .
 
-estur-tourismresourceservice:EventVenue a skos:Concept;
-  skos:inScheme estur-kos:TourismResourceService;
+estur-additionaltourismresourceservice:EventVenue a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourismResourceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Event venue"@en ;
   skos:prefLabel "Lugar de celebración"@es .
 
-estur-tourismresourceservice:Gamification a skos:Concept;
-  skos:inScheme estur-kos:TourismResourceService;
+estur-additionaltourismresourceservice:Gamification a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourismResourceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Gamification"@en ;
   skos:prefLabel "Gamificación"@es .
 
-estur-tourismresourceservice:InformationPoint a skos:Concept;
-  skos:inScheme estur-kos:TourismResourceService;
+estur-additionaltourismresourceservice:InformationPoint a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourismResourceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Information point"@en ;
   skos:prefLabel "Punto de información"@es .
 
-estur-tourismresourceservice:ParkingFacility a skos:Concept;
-  skos:inScheme estur-kos:TourismResourceService;
+estur-additionaltourismresourceservice:ParkingFacility a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourismResourceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Parking facility"@en ;
   skos:prefLabel "Aparcamiento"@es .
 
-estur-tourismresourceservice:Shop a skos:Concept;
-  skos:inScheme estur-kos:TourismResourceService;
+estur-additionaltourismresourceservice:Shop a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourismResourceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Shop"@en ;
   skos:prefLabel "Tienda"@es .
 
-estur-tourismresourceservice:Venue a skos:Concept;
-  skos:inScheme estur-kos:TourismResourceService;
+estur-additionaltourismresourceservice:Venue a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourismResourceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Venue"@en ;
   skos:prefLabel "Lugar"@es .
 
-estur-tourismresourceservice:VirtualReality a skos:Concept;
-  skos:inScheme estur-kos:TourismResourceService;
+estur-additionaltourismresourceservice:VirtualReality a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourismResourceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Virtual reality"@en ;
   skos:prefLabel "Realidad virtual"@es .
 
-estur-tourismresourceservice:Wifi a skos:Concept;
-  skos:inScheme estur-kos:TourismResourceService;
+estur-additionaltourismresourceservice:Wifi a skos:Concept;
+  skos:inScheme estur-kos:AdditionalTourismResourceService;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Wifi"@en ;

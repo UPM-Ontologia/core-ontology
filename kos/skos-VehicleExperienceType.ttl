@@ -8,7 +8,7 @@
 @prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
 @prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
 
-@prefix estur-vehicleexperience: <https://ontologia.segittur.es/turismo/kos/vehicleexperience/> .
+@prefix estur-vehicleexperiencetype: <https://ontologia.segittur.es/turismo/kos/vehicleexperiencetype/> .
 
 #################################################################
 #
@@ -16,16 +16,16 @@
 #
 #################################################################
 
-estur-kos:VehicleExperience a skos:ConceptScheme ; 
+estur-kos:VehicleExperienceType a skos:ConceptScheme ; 
     dct:issued "2024-10-29"^^xsd:date ;
-    dct:modified "2026-01-26"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
-    rdfs:label "Vehicle experience"@en ;
-    rdfs:label "Experiencia en vehículo"@es ;
-    dct:title "Concept scheme grouping vehicle experiences"@en ;
-    dct:title "Esquema de conceptos agrupando experiencias en vehículos"@es .
+    rdfs:label "Vehicle experience type"@en ;
+    rdfs:label "Tipo de experiencia en vehículo"@es ;
+    dct:title "Concept scheme grouping vehicle experience types"@en ;
+    dct:title "Esquema de conceptos agrupando tipos de experiencias en vehículos"@es .
 
 #################################################################
 #
@@ -33,177 +33,177 @@ estur-kos:VehicleExperience a skos:ConceptScheme ;
 #
 #################################################################
 
-estur-vehicleexperience:Buggy a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Buggy a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Buggy"@en ;
   skos:prefLabel "Buggy"@es .
 
-estur-vehicleexperience:Bicycle a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Bicycle a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Bicycle"@en ;
   skos:prefLabel "Bicicleta"@es .
 
-estur-vehicleexperience:Catamaran a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Catamaran a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Catamaran"@en ;
   skos:prefLabel "Catamarán"@es .
 
-estur-vehicleexperience:Helicopter a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Helicopter a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Helicopter"@en ;
   skos:prefLabel "Helicóptero"@es .
 
-estur-vehicleexperience:HorseCarriage a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:HorseCarriage a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Horse carriage"@en ;
   skos:prefLabel "Carruaje de caballos"@es .
 
-estur-vehicleexperience:InflatableBoat a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:InflatableBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Inflatable boat"@en ;
   skos:prefLabel "Bote hinchable"@es .
 
-estur-vehicleexperience:JetBoat a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:JetBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "JetBoat"@en ;
   skos:prefLabel "Bote a propulsión"@es .
 
-estur-vehicleexperience:Jetski a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Jetski a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Jetski"@en ;
   skos:prefLabel "Ski acuático"@es .
 
-estur-vehicleexperience:Limo a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Limo a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Limo"@en ;
   skos:prefLabel "Limusina"@es .
 
-estur-vehicleexperience:Motorboat a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Motorboat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Motorboat"@en ;
   skos:prefLabel "Lancha a motor"@es .
 
-estur-vehicleexperience:Quad a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Quad a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Quad"@en ;
   skos:prefLabel "Quad"@es .
 
-estur-vehicleexperience:Segway a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Segway a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Segway"@en ;
   skos:prefLabel "Segway"@es .
 
-estur-vehicleexperience:Sled a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Sled a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Sled"@en ;
   skos:prefLabel "Sled"@es .
 
-estur-vehicleexperience:SurreyBike a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:SurreyBike a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Surrey bike"@en ;
   skos:prefLabel "Surrey bike"@es .
 
-estur-vehicleexperience:TouristBus a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:TouristBus a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Tourist bus"@en ;
   skos:prefLabel "Bus turístico"@es .
 
-estur-vehicleexperience:TouristTrain a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:TouristTrain a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Tourist train"@en ;
   skos:prefLabel "Tren turístico"@es .
 
-estur-vehicleexperience:EnotourismTrain a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:EnotourismTrain a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Enotourism train"@en ;
   skos:prefLabel "Tren turístico de enoturismo"@es .
 
-estur-vehicleexperience:Tuktuk a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Tuktuk a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:note "Value generated from the original SEGITTUR ontology"@en;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Tuktuk"@en ;
   skos:prefLabel "Tuktuk"@es .
 
-estur-vehicleexperience:TandemBicycle a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:TandemBicycle a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Tandem bicycle"@en ;
   skos:prefLabel "Tándem"@es .
 
-estur-vehicleexperience:FishingBoat a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:FishingBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Fishing boat"@en ;
   skos:prefLabel "Barco de pesca recreativa"@es .
 
-estur-vehicleexperience:SpeedBoat a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:SpeedBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Speed boat"@en ;
   skos:prefLabel "Lancha rápida"@es .
 
-estur-vehicleexperience:SailBoat a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:SailBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Sail boat"@en ;
   skos:prefLabel "Velero"@es .
 
-estur-vehicleexperience:Yacht a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Yacht a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Yacht"@en ;
   skos:prefLabel "Yate"@es .
 
-estur-vehicleexperience:Dinghy a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Dinghy a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Dinghy"@en ;
   skos:prefLabel "Bote auxiliar"@es .
 
-estur-vehicleexperience:Kayak a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:Kayak a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Kayak"@en ;
   skos:prefLabel "Kayak"@es .
 
-estur-vehicleexperience:RowBoat a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:RowBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Row boat"@en ;
   skos:prefLabel "Barca de remos"@es .
 
-estur-vehicleexperience:GlassBottomBoat a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:GlassBottomBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Glass-bottom boat"@en ;
   skos:prefLabel "Barco con fondo de cristal"@es .
 
-estur-vehicleexperience:ParasailingBoat a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:ParasailingBoat a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Parasailing boat"@en ;
   skos:prefLabel "Barca de parasailing"@es .
 
-estur-vehicleexperience:EnotourismBus a skos:Concept;
-  skos:inScheme estur-kos:VehicleExperience;
+estur-vehicleexperiencetype:EnotourismBus a skos:Concept;
+  skos:inScheme estur-kos:VehicleExperienceType;
   skos:prefLabel "Enotourism bus"@en ;
   skos:prefLabel "Autobús enoturístico"@es .

@@ -291,7 +291,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AccommodationRate"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AccommodationRateType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -354,15 +354,46 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:comment xml:lang="es">Tipo de unidad de alojamiento que se ofrece a los huéspedes y en la que se les proporcionan, como mínimo, camas y servicios de higiene.</rdfs:comment>
         <rdfs:comment xml:lang="en">Type of accommodation unit offered to guests, in which they are provided with, at least, sleeping and sanitary facilities.</rdfs:comment>
         <rdfs:label xml:lang="en">accommodation unit category</rdfs:label>
-        <rdfs:label xml:lang="es">categoría de unidad de alojamiento</rdfs:label>
+        <rdfs:label xml:lang="es">tipo de unidad de alojamiento</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#adversity -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#adventureActivityType -->
 
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#adversity">
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#adventureActivityType">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#AdventureActivity"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#AdventureActivityCentre"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdventureActivityType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">Actividades físicas, deportivas o recreativas ofrecidas por el centro.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Physical, sports, or recreational activities offered by the facility.</rdfs:comment>
+        <rdfs:label xml:lang="en">adventure activity type</rdfs:label>
+        <rdfs:label xml:lang="es">tipo de actividad de aventura</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#adversityType -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#adversityType">
         <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#RulesAndTips"/>
         <rdfs:range>
             <owl:Class>
@@ -377,8 +408,32 @@ It is possible that this annotation property is taken out in the future from the
         </rdfs:range>
         <rdfs:comment xml:lang="en">A situation or event characterized by significant misfortune, lasting over a period of time and involving a varying degree of severity.</rdfs:comment>
         <rdfs:comment xml:lang="es">Situación o suceso con un fuerte componente de infortunio, una cierta duración en el tiempo y con un mayor o menor grado de gravedad.</rdfs:comment>
-        <rdfs:label xml:lang="es">adversidad</rdfs:label>
-        <rdfs:label xml:lang="en">adversity</rdfs:label>
+        <rdfs:label xml:lang="en">adversity type</rdfs:label>
+        <rdfs:label xml:lang="es">tipo de adversidad</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#agrotourismExperienceRelatedProduct -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#agrotourismExperienceRelatedProduct">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismExperience"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AgrotourismExperienceRelatedProduct"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">An agri-food product linked to an agrotourism experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Producto agroalimentario vinculado con una experiencia agroturística.</rdfs:comment>
+        <rdfs:label xml:lang="en">agrotourism experience related product</rdfs:label>
+        <rdfs:label xml:lang="es">producto relacionado con experiencia agriturística</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:ObjectProperty>
     
@@ -614,7 +669,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/Event"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/EventType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -623,30 +678,6 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:comment xml:lang="en">Classification used to hierarchically group the different types of events that take place according to their nature or theme.</rdfs:comment>
         <rdfs:label xml:lang="en">event type</rdfs:label>
         <rdfs:label xml:lang="es">tipo de evento</rdfs:label>
-        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#experienceRelatedProduct -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#experienceRelatedProduct">
-        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#AgrotourismExperience"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/ExperienceRelatedProduct"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:comment xml:lang="en">An agri-food product linked to an agrotourism experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Producto agroalimentario vinculado con una experiencia agroturística.</rdfs:comment>
-        <rdfs:label xml:lang="en">agritourism experience related product</rdfs:label>
-        <rdfs:label xml:lang="es">producto relacionado con experiencia agriturística</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:ObjectProperty>
     
@@ -717,9 +748,9 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#hasAdditionalAccommodationEstablishmentService -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#hasAdditionalAccommodationService -->
 
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#hasAdditionalAccommodationEstablishmentService">
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#hasAdditionalAccommodationService">
         <rdfs:subPropertyOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasAdditionalService"/>
         <rdfs:domain>
             <owl:Class>
@@ -735,15 +766,15 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AccommodationService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalAccommodationService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
         <rdfs:comment xml:lang="en">Complementary or additional services that an accommodation establishment may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
         <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un establecimiento alojativo junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:label xml:lang="en">has additional accommodation establishment service</rdfs:label>
-        <rdfs:label xml:lang="es">tiene servicio adicional del establecimiento alojativo</rdfs:label>
+        <rdfs:label xml:lang="en">has additional accommodation service</rdfs:label>
+        <rdfs:label xml:lang="es">tiene servicio adicional del alojamiento</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:ObjectProperty>
     
@@ -760,7 +791,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/DMCService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalDMCService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -785,7 +816,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/EducationalFacilityService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalEducationalFacilityService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -810,7 +841,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/EventAttendanceFacilityService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalEventAttendanceFacilityService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -860,7 +891,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/FoodEstablishmentService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalFoodEstablishmentService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -885,7 +916,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/HistoricalOrCulturalResourceService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalHistoricalOrCulturalResourceService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -932,7 +963,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/LeisureAndCultureFacilityService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalLeisureAndCultureFacilityService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -957,7 +988,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/PartyAndEntertainmentFacilityService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalPartyAndEntertainmentFacilityService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -982,7 +1013,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/RouteService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalRouteService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1018,7 +1049,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/SportFacilityService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalSportFacilityService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1043,7 +1074,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/TourService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalTourService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1051,7 +1082,7 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:comment xml:lang="en">Complementary or additional services that a tour may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
         <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un tour junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
         <rdfs:label xml:lang="en">has additional tour service</rdfs:label>
-        <rdfs:label xml:lang="es">tiene servicio adicional de tour</rdfs:label>
+        <rdfs:label xml:lang="es">tiene servicio adicional de la visita guiada</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:ObjectProperty>
     
@@ -1083,7 +1114,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/TourismOrRelatedFacilityService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalTourismOrRelatedFacilityService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1116,7 +1147,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/TourismResourceService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalTourismResourceService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1141,7 +1172,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/TransportInfrastructureService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalTransportInfrastructureService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1165,7 +1196,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/TransportService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalTransportService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1190,7 +1221,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/TravelAgencyService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalTravelAgencyService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1215,7 +1246,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/VehicleRentalAgencyService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalVehicleRentalAgencyService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1249,7 +1280,7 @@ It is possible that this annotation property is taken out in the future from the
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/WineTourismFacilityService"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdditionalWineTourismFacilityService"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1641,11 +1672,11 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Accommodation"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#AccommodationCompany"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#ComplementaryActivitiesCompany"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#PassengerTransportCompany"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#RestaurantCompany"/>
                     <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#TourismIntermediary"/>
                 </owl:unionOf>
             </owl:Class>
@@ -1971,37 +2002,6 @@ It is possible that this annotation property is taken out in the future from the
         <rdfs:comment xml:lang="en">Association of a tourism organisation or destination with the events, special offers and tourism services that they provide to tourists. </rdfs:comment>
         <rdfs:label xml:lang="en">offers</rdfs:label>
         <rdfs:label xml:lang="es">ofrece</rdfs:label>
-        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/def/core#offersAdventureActivityType -->
-
-    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#offersAdventureActivityType">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#AdventureActivity"/>
-                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#AdventureActivityCentre"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/AdventureActivityType"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:comment xml:lang="es">Actividades físicas, deportivas o recreativas ofrecidas por el centro.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Physical, sports, or recreational activities offered by the facility.</rdfs:comment>
-        <rdfs:label xml:lang="en">offers adventure activity type</rdfs:label>
-        <rdfs:label xml:lang="es">ofrece tipo de actividad de aventura</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:ObjectProperty>
     
@@ -2362,7 +2362,7 @@ It is possible that this annotation property is taken out in the future from the
         </rdfs:range>
         <rdfs:comment xml:lang="es">Enfoque particular o características únicas que distinguen al servicio de visita guiada.</rdfs:comment>
         <rdfs:comment xml:lang="en">Particular focus or unique features that distinguish the tour service.</rdfs:comment>
-        <rdfs:label xml:lang="es">especialidad del tour</rdfs:label>
+        <rdfs:label xml:lang="es">especialidad de la visita guiada</rdfs:label>
         <rdfs:label xml:lang="en">tour specialty</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:ObjectProperty>
@@ -2513,7 +2513,7 @@ tourism organisations, tourism or related facilities, tourism resources and serv
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/VehicleExperience"/>
+                        <owl:hasValue rdf:resource="https://ontologia.segittur.es/turismo/kos/VehicleExperienceType"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3166,7 +3166,7 @@ tourism organisations, tourism or related facilities, tourism resources and serv
         <rdfs:comment xml:lang="es">Distancia total del recorrido.</rdfs:comment>
         <rdfs:comment xml:lang="en">The total distance of the route.</rdfs:comment>
         <rdfs:label xml:lang="en">length</rdfs:label>
-        <rdfs:label xml:lang="es">longitud</rdfs:label>
+        <rdfs:label xml:lang="es">longitud total</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:DatatypeProperty>
     
@@ -4128,9 +4128,9 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#Accommodation -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#AccommodationCompany -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Accommodation">
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#AccommodationCompany">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismOrganisation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4140,7 +4140,7 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Proveedor de, al menos, camas y servicios de higiene</rdfs:comment>
         <rdfs:comment xml:lang="en">Provider of at least sleeping and sanitary facilities</rdfs:comment>
-        <rdfs:label xml:lang="en">Accommodation</rdfs:label>
+        <rdfs:label xml:lang="en">Accommodation company</rdfs:label>
         <rdfs:label xml:lang="es">Empresa de alojamiento</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
@@ -4171,7 +4171,7 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasAdditionalAccommodationEstablishmentService"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasAdditionalAccommodationService"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4357,7 +4357,7 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#SportFacility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offersAdventureActivityType"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#adventureActivityType"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4389,13 +4389,13 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismService"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#agrotourismExperienceType"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#agrotourismExperienceRelatedProduct"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#experienceRelatedProduct"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#agrotourismExperienceType"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5652,13 +5652,13 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#DivePoint -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#DiveSite -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#DivePoint">
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#DiveSite">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#NaturalResource"/>
         <rdfs:comment xml:lang="en">Specific area of a natural environment, generally marine or underwater, that meets physical, biological, or scenic conditions of interest for the practice of diving.</rdfs:comment>
         <rdfs:comment xml:lang="es">Zona específica de un entorno natural, generalmente marino o subacuático, que reúne condiciones físicas, biológicas o paisajísticas de interés para la práctica del buceo.</rdfs:comment>
-        <rdfs:label xml:lang="en">Dive point</rdfs:label>
+        <rdfs:label xml:lang="en">Dive site</rdfs:label>
         <rdfs:label xml:lang="es">Punto de inmersión</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
@@ -6109,7 +6109,7 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#offeredBy"/>
-                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantService"/>
+                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#RestaurantCompany"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en"> A tourism service that encompasses the preparation, provision, and consumption of food and beverages offered to customers by food and beverage establishments, either for on-site consumption or takeaway.</rdfs:comment>
@@ -7507,7 +7507,7 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:comment xml:lang="es">Lugar o recinto destinado a aparcar vehículos.</rdfs:comment>
         <rdfs:comment xml:lang="en">Place or area intended for parking vehicles.</rdfs:comment>
         <rdfs:label xml:lang="es">Aparcamiento</rdfs:label>
-        <rdfs:label xml:lang="en">Parking</rdfs:label>
+        <rdfs:label xml:lang="en">Parking facility</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
     
@@ -8096,9 +8096,9 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/def/core#RestaurantService -->
+    <!-- https://ontologia.segittur.es/turismo/def/core#RestaurantCompany -->
 
-    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#RestaurantService">
+    <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#RestaurantCompany">
         <rdfs:subClassOf rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismOrganisation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -8114,8 +8114,8 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Company that offers restaurant services</rdfs:comment>
         <rdfs:comment xml:lang="es">Empresa que se encarga de ofrecer servicios de restauración</rdfs:comment>
-        <rdfs:label xml:lang="es">Empresa de servicios de restauración</rdfs:label>
-        <rdfs:label xml:lang="en">Restaurant service organisation</rdfs:label>
+        <rdfs:label xml:lang="es">Empresa de restauración</rdfs:label>
+        <rdfs:label xml:lang="en">Restaurant company</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
     
@@ -8328,7 +8328,7 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#adversity"/>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#adversityType"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8626,7 +8626,7 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Offer of products that vary from the regular offer of tourism service providers, including, but not limited to, plans, temporary price reductions, and free gifts or extra quantities.</rdfs:comment>
         <rdfs:comment xml:lang="es">Propuesta de productos que difieren de la oferta habitual de los proveedores de servicios turísticos, incluyendo, entre otros, planes, reducciones temporales de precios y obsequios o cantidades adicionales.</rdfs:comment>
-        <rdfs:label xml:lang="es">Oferta especial</rdfs:label>
+        <rdfs:label xml:lang="es">Propuesta especial</rdfs:label>
         <rdfs:label xml:lang="en">Special offer</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</estur-annot:visibleResource>
     </owl:Class>
@@ -8902,7 +8902,7 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:comment xml:lang="en">A rectangular surface adapted for tennis, divided by a central net and featuring various types of court surfaces depending on the style of play.</rdfs:comment>
         <rdfs:comment xml:lang="es">Superficie rectangular adaptada para la práctica del tenis, dividida por una red intermedia y acondicionada con diferentes tipos de pavimento según la modalidad de juego.</rdfs:comment>
         <rdfs:label xml:lang="es">Pista de tenis</rdfs:label>
-        <rdfs:label xml:lang="en">Tennnis court</rdfs:label>
+        <rdfs:label xml:lang="en">Tennis court</rdfs:label>
         <estur-annot:visibleResource rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</estur-annot:visibleResource>
     </owl:Class>
     
@@ -10267,13 +10267,15 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/AccommodationRate -->
+    <!-- https://ontologia.segittur.es/turismo/kos/AccommodationRateType -->
 
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AccommodationRate">
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AccommodationRateType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
         <rdfs:comment xml:lang="en">Rates applicable specifically to accommodation establishments and lodging services.</rdfs:comment>
         <rdfs:comment xml:lang="es">Tarifas aplicables específicamente a establecimientos alojativos y servicios de hospedaje.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AccommodationRate.ttl"/>
+        <rdfs:label xml:lang="en">Accommodation rate type</rdfs:label>
+        <rdfs:label xml:lang="es">Tipo de tarifa de alojamiento</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AccommodationRateType.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -10289,17 +10291,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/AccommodationService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AccommodationService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that an accommodation establishment may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un establecimiento alojativo junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AccommodationService.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/AccommodationUnitCategory -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AccommodationUnitCategory">
@@ -10307,6 +10298,240 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:comment xml:lang="es">Tipo de unidad de alojamiento que se ofrece a los huéspedes y en la que se les proporcionan, como mínimo, camas y servicios de higiene.</rdfs:comment>
         <rdfs:comment xml:lang="en">Type of accommodation unit offered to guests, in which they are provided with, at least, sleeping and sanitary facilities.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AccommodationUnitCategory.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalAccommodationService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalAccommodationService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that an accommodation establishment may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un establecimiento alojativo junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional accommodation service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional del alojamiento</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalAccommodationService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalDMCService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalDMCService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a destination management company may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un operador receptivo junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional DMC service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional del operador receptivo</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalDMCService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalEducationalFacilityService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalEducationalFacilityService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that an educational facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación educativa junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional educational facility service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de la instalación educativa</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalEducationalFacilityService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalEventAttendanceFacilityService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalEventAttendanceFacilityService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that an event attendance facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación para eventos junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional event attendance facility service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de la instalación para eventos</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalEventAttendanceFacilityService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalFoodEstablishmentService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalFoodEstablishmentService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a food establishment may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un establecimiento de restauración junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional food establishment service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional del establecimiento de restauración</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalFoodEstablishmentService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalHistoricalOrCulturalResourceService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalHistoricalOrCulturalResourceService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a historical or cultural resource may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un recurso histórico o cultural junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="es">Additional historical or cultural resource service</rdfs:label>
+        <rdfs:label xml:lang="en">Servicio adicional del recurso histórico o cultural</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalHistoricalOrCulturalResourceService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalLeisureAndCultureFacilityService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalLeisureAndCultureFacilityService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a leisure and culture facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación de cultura y ocio junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional leisure and culture facility service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de instalación de ocio y cultura</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalLeisureAndCultureFacilityService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalPartyAndEntertainmentFacilityService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalPartyAndEntertainmentFacilityService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a party and entertainment facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación para fiestas y entretenimiento junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional party and entertainment facility service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de la instalación para fiestas y entretenimiento</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalPartyAndEntertainmentFacilityService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalRouteService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalRouteService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a route may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una ruta junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional route service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de la ruta</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalRouteService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalSportFacilityService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalSportFacilityService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a sport facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación deportiva junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional sport facility service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de la instalación deportiva</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalSportFacilityService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalTourService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalTourService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a tour may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una visita guiada junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional tour service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de la visita guiada</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalTourService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalTourismOrRelatedFacilityService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalTourismOrRelatedFacilityService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a tourism or related facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación turística o vinculada junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional tourism or related facility service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de la instalación turística o vinculada</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalTourismOrRelatedFacilityService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalTourismResourceService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalTourismResourceService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a tourism resource may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un recurso turístico junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional tourism resource service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional del recurso turístico</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalTourismResourceService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalTransportInfrastructureService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalTransportInfrastructureService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a transport infrastructure may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una infraestructura de transporte junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional transport infrastructure service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de la infraestructura de transporte</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalTransportInfrastructureService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalTransportService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalTransportService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a transport may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un transporte junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional transport service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional del transporte</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalTransportService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalTravelAgencyService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalTravelAgencyService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a travel agency may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una agencia de viajes junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional travel agency service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de la agencia de viajes</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalTravelAgencyService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalVehicleRentalAgencyService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalVehicleRentalAgencyService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a vehicle rental agency may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una agencia de alquiler de vehículos junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional vehicle rental agency service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de la agencia de alquiler de vehículos</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalVehicleRentalAgencyService.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AdditionalWineTourismFacilityService -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalWineTourismFacilityService">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a wine tourism facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación de enoturismo junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional wine tourism facility service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de la instalación de enoturismo</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalWineTourismFacilityService.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -10329,6 +10554,19 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:comment xml:lang="en">A situation or event characterized by significant misfortune, lasting over a period of time and involving a varying degree of severity.</rdfs:comment>
         <rdfs:comment xml:lang="es">Situación o suceso con un fuerte componente de infortunio, una cierta duración en el tiempo y con un mayor o menor grado de gravedad.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdversityType.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/kos/AgrotourismExperienceRelatedProduct -->
+
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AgrotourismExperienceRelatedProduct">
+        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Agrifood product linked to an agrotourism experience.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Producto agroalimentario vinculado con una experiencia agroturística.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agrotourism experience related product</rdfs:label>
+        <rdfs:label xml:lang="es">Producto relacionado con la experiencia agroturística</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AgrotourismExperienceRelatedProduct.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -10388,17 +10626,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/DMCService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/DMCService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a destination management company may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un operador receptivo junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-DMCService.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/DayOfTheWeek -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/DayOfTheWeek">
@@ -10421,39 +10648,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/EducationalFacilityService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/EducationalFacilityService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that an educational facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación educativa junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-EducationalFacilityService.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/Event -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/Event">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="es">Clasificación utilizada para agrupar jerárquicamente los diferentes tipos de eventos que se llevan a cabo en función de su naturaleza o temática.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Classification used to hierarchically group the different types of events that take place according to their nature or theme.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-Event.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/EventAttendanceFacilityService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/EventAttendanceFacilityService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that an event attendance facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación para eventos junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-EventAttendanceFacilityService.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/EventService -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/EventService">
@@ -10465,24 +10659,15 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/ExperienceRelatedProduct -->
+    <!-- https://ontologia.segittur.es/turismo/kos/EventType -->
 
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/ExperienceRelatedProduct">
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/EventType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Agrifood product linked to an agrotourism experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Producto agroalimentario vinculado con una experiencia agroturística.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-ExperienceRelatedProduct.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/FoodEstablishmentService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/FoodEstablishmentService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a food establishment may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un establecimiento de restauración junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-FoodEstablishmentService.ttl"/>
+        <rdfs:comment xml:lang="es">Clasificación utilizada para agrupar jerárquicamente los diferentes tipos de eventos que se llevan a cabo en función de su naturaleza o temática.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Classification used to hierarchically group the different types of events that take place according to their nature or theme.</rdfs:comment>
+        <rdfs:label xml:lang="en">Event type</rdfs:label>
+        <rdfs:label xml:lang="es">Tipo de evento</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-EventType.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -10494,17 +10679,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:comment xml:lang="en">Categorisation of handicraft shops according to the type of product they offer.</rdfs:comment>
         <rdfs:comment xml:lang="es">Categorización de las tiendas de artesanías en función del tipo de producto que ofrece.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-HandiCraftsType.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/HistoricalOrCulturalResourceService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/HistoricalOrCulturalResourceService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a historical or cultural resource may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un recurso histórico o cultural junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-HistoricalOrCulturalResourceService.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -10527,17 +10701,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:comment xml:lang="en">Complementary or additional services that may be offered at a lake alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
         <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que pueden ofrecerse en un lago junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-LakeService.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/LeisureAndCultureFacilityService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/LeisureAndCultureFacilityService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a leisure and culture facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación de cultura y ocio junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-LeisureAndCultureFacilityService.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -10586,17 +10749,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/PartyAndEntertainmentFacilityService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/PartyAndEntertainmentFacilityService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a party and entertainment facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación para fiestas y entretenimiento junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-PartyAndEntertainmentFacilityService.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/PaymentMethod -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/PaymentMethod">
@@ -10630,17 +10782,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/RouteService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/RouteService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a route may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una ruta junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-RouteService.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/SocialMediaPlatform -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/SocialMediaPlatform">
@@ -10648,17 +10789,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:comment xml:lang="en">A selection of leading digital platforms designed for social interaction.</rdfs:comment>
         <rdfs:comment xml:lang="es">Selección de plataformas digitales de referencia diseñadas para la interacción social.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-SocialMediaPlatform.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/SportFacilityService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/SportFacilityService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a sport facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación deportiva junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-SportFacilityService.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -10685,17 +10815,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/TourService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TourService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a tour may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un tour junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-TourService.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/TourSpecialty -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TourSpecialty">
@@ -10703,28 +10822,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:comment xml:lang="es">Enfoque particular o características únicas que distinguen al servicio de visita guiada.</rdfs:comment>
         <rdfs:comment xml:lang="en">Particular focus or unique features that distinguish the tour service.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-TourSpecialty.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/TourismOrRelatedFacilityService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TourismOrRelatedFacilityService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a tourism or related facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación turística o vinculada junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-TourismOrRelatedFacilityService.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/TourismResourceService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TourismResourceService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a tourism resource may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un recurso turístico junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-TourismResourceService.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -10751,39 +10848,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/TransportInfrastructureService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TransportInfrastructureService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a transport infrastructure may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una infraestructura de transporte junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-TransportInfrastructureService.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/TransportService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TransportService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a transport may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un transporte junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-TransportService.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/TravelAgencyService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TravelAgencyService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a travel agency may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una agencia de viajes junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-TravelAgencyService.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://ontologia.segittur.es/turismo/kos/TravelUnit -->
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TravelUnit">
@@ -10795,24 +10859,15 @@ Start of the validity period of the certification, opening hours, rule or tip.</
     
 
 
-    <!-- https://ontologia.segittur.es/turismo/kos/VehicleExperience -->
+    <!-- https://ontologia.segittur.es/turismo/kos/VehicleExperienceType -->
 
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/VehicleExperience">
+    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/VehicleExperienceType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
         <rdfs:comment xml:lang="en">A list of vehicle types through which specific experiences can be carried out.</rdfs:comment>
         <rdfs:comment xml:lang="es">Listado de vehículos con los cuales se pueden realizar determinadas experiencias.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-VehicleExperience.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/VehicleRentalAgencyService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/VehicleRentalAgencyService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a vehicle rental agency may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una agencia de alquiler de vehículos junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-VehicleRentalAgencyService.ttl"/>
+        <rdfs:label xml:lang="es">Tipo de experiencia en vehículo</rdfs:label>
+        <rdfs:label xml:lang="en">Vehicle experience type</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-VehicleExperienceType.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -10824,17 +10879,6 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:comment xml:lang="en">Categories or classifications of vehicles based on their design, size, purpose, and characteristics.</rdfs:comment>
         <rdfs:comment xml:lang="es">Categorías o clasificaciones de vehículos según su diseño, tamaño, propósito y características.</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-VehicleType.ttl"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://ontologia.segittur.es/turismo/kos/WineTourismFacilityService -->
-
-    <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/WineTourismFacilityService">
-        <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
-        <rdfs:comment xml:lang="en">Complementary or additional services that a wine tourism facility may offer alongside its main service or activity in order to enhance or improve the user experience.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer una instalación de enoturismo junto a su servicio o actividad principal para ampliar o mejorar la experiencia del usuario.</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-WineTourismFacilityService.ttl"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

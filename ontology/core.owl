@@ -463,6 +463,27 @@ It is possible that this annotation property is taken out in the future from the
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#author -->
+
+    <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#author">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Description"/>
+                    <rdf:Description rdf:about="https://ontologia.segittur.es/turismo/def/core#Multimedia"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismDestination"/>
+        <rdfs:comment xml:lang="es">Destino turístico responsable de generar el contenido multimedia de una entidad turística.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Tourism destination responsible for generating multimedia content for a tourism entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">author</rdfs:label>
+        <rdfs:label xml:lang="es">autor</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#availableLanguage -->
 
     <owl:ObjectProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#availableLanguage">
@@ -5555,6 +5576,12 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#author"/>
+                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismDestination"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#relatedTourismDestination"/>
                 <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismDestination"/>
             </owl:Restriction>
@@ -7156,6 +7183,12 @@ Start of the validity period of the certification, opening hours, rule or tip.</
 
     <owl:Class rdf:about="https://ontologia.segittur.es/turismo/def/core#Multimedia">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#author"/>
+                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismDestination"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#audio"/>
@@ -9489,8 +9522,20 @@ Start of the validity period of the certification, opening hours, rule or tip.</
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasDescription"/>
+                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#Description"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasLocation"/>
                 <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#hasMultimedia"/>
+                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#Multimedia"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9503,6 +9548,12 @@ Start of the validity period of the certification, opening hours, rule or tip.</
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#paymentMethod"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ontologia.segittur.es/turismo/def/core#relatedTourismDestination"/>
+                <owl:allValuesFrom rdf:resource="https://ontologia.segittur.es/turismo/def/core#TourismDestination"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>

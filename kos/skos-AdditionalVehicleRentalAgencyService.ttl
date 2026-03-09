@@ -68,3 +68,8 @@ estur-additionalvehiclerentalagencyservice:SnowChains a skos:Concept;
   skos:prefLabel "Snow chains"@en ;
   skos:prefLabel "Cadenas para la nieve"@es .
 
+estur-additionalvehiclerentalagencyservice:PetSeatBelt a skos:Concept;
+  skos:inScheme estur-kos:AdditionalVehicleRentalAgencyService;
+  skos:prefLabel "Peat seat belt"@en ;
+  skos:prefLabel "Cinturón de seguridad para mascotas"@es .
+

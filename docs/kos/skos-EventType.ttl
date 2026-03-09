@@ -18,7 +18,7 @@
 
 estur-kos:EventType a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2025-12-15"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
@@ -336,8 +336,113 @@ estur-eventtype:TraditionalFestival a skos:Concept;
 
 estur-eventtype:WineFestival a skos:Concept;
   skos:inScheme estur-kos:EventType;
-  skos:note "Value generated from the original SEGITTUR ontology"@en;
-  skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Wine festival"@en ;
   skos:prefLabel "Festival del vino"@es .
+
+estur-eventtype:DogEvent a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:prefLabel "Dog event"@en ;
+  skos:prefLabel "Evento canino"@es .
+
+estur-eventtype:DogExhibitionEvent a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogEvent;
+  skos:prefLabel "Dog exhibition event"@en ;
+  skos:prefLabel "Exposición canina"@es .
+
+estur-eventtype:SpecialtyDogShow a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogEvent;
+  skos:prefLabel "Specialty dog show"@en ;
+  skos:prefLabel "Exposición canina monográfica"@es .
+
+estur-eventtype:SpecialtyDogShow a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogExhibitionEvent;
+  skos:prefLabel "Specialty dog show"@en ;
+  skos:prefLabel "Exposición canina monográfica"@es .
+
+estur-eventtype:DogCompetition a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogEvent;
+  skos:prefLabel "Dog competition"@en ;
+  skos:prefLabel "Concurso canino"@es .
+
+estur-eventtype:SpecialtyDogCompetition a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogCompetition;
+  skos:prefLabel "Specialty dog competition"@en ;
+  skos:prefLabel "Concurso canino monográfico"@es .
+
+estur-eventtype:DogAthleticAndUtilityContest a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogEvent;
+  skos:prefLabel "Dog athletic and utility contest"@en ;
+  skos:prefLabel "Prueba canina de utilidad y deporte"@es .
+
+estur-eventtype:Agility a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogAthleticAndUtilityContest;
+  skos:prefLabel "Agility"@en ;
+  skos:prefLabel "Agilidad"@es .
+
+estur-eventtype:IGP a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogAthleticAndUtilityContest;
+  skos:prefLabel "iGP"@en ;
+  skos:prefLabel "iGP"@es .
+
+estur-eventtype:IGP-IFH a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogAthleticAndUtilityContest;
+  skos:prefLabel "iGP-IFH"@en ;
+  skos:prefLabel "iGP-IFH"@es .
+
+estur-eventtype:Obedience a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogAthleticAndUtilityContest;
+  skos:prefLabel "Obedience"@en ;
+  skos:prefLabel "Obediencia"@es .
+
+estur-eventtype:Mondioring a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogAthleticAndUtilityContest;
+  skos:prefLabel "Mondioring"@en ;
+  skos:prefLabel "Mondioring"@es .
+
+estur-eventtype:SearchAndRescue a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogAthleticAndUtilityContest;
+  skos:prefLabel "Search and rescue"@en ;
+  skos:prefLabel "Búsqueda y rescate"@es .
+
+estur-eventtype:AquaticRescue a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogAthleticAndUtilityContest;
+  skos:prefLabel "Aquatic rescue"@en ;
+  skos:prefLabel "Rescate acuático deportivo"@es .
+
+estur-eventtype:HuntingDogsContest a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogEvent;
+  skos:prefLabel "Hunting dogs contest"@en ;
+  skos:prefLabel "Prueba para perros de campo"@es .
+
+estur-eventtype:DogSociabilityContest a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogEvent;
+  skos:prefLabel "Dog sociability contest"@en ;
+  skos:prefLabel "Prueba canina de sociabilidad"@es .
+
+estur-eventtype:DogGroomingContest a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogEvent;
+  skos:prefLabel "Dog grooming contest"@en ;
+  skos:prefLabel "Competición canina de grooming"@es .
+
+estur-eventtype:LeisureDogEvent a skos:Concept;
+  skos:inScheme estur-kos:EventType;
+  skos:broader estur-eventtype:DogEvent;
+  skos:prefLabel "Leisure dog event"@en ;
+  skos:prefLabel "Evento canino lúdico"@es .
 

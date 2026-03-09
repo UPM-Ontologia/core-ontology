@@ -18,7 +18,7 @@
 
 estur-kos:EventService a skos:ConceptScheme ; 
     dct:issued "2024-05-24"^^xsd:date ;
-    dct:modified "2025-12-15"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
     rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
     rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
@@ -165,4 +165,9 @@ estur-eventservice:WiredInternet a skos:Concept;
   skos:note "Valor generado a partir de la ontología de SEGITTUR original"@es;
   skos:prefLabel "Wired Internet"@en ;
   skos:prefLabel "Internet por cable"@es .
+
+estur-eventservice:PetFriendlySpace a skos:Concept;
+  skos:inScheme estur-kos:EventService;
+  skos:prefLabel "Pet friendly space"@en ;
+  skos:prefLabel "Espacio habilitado para mascotas"@es .
 

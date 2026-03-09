@@ -2941,6 +2941,34 @@ tourism organisations, tourism or related facilities, tourism resources and serv
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#allowedPetAreasOnANonStrechtableLeash -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#allowedPetAreasOnANonStrechtableLeash">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAccommodationPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment xml:lang="en">Areas designated by the accommodation where pets are allowed to stay provided they are kept on a leash that cannot be extended.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Áreas habilitadas por el alojamiento para que las mascotas puedan permanecer siempre que lleven correa que no pueda extenderse.</rdfs:comment>
+        <rdfs:label xml:lang="en">allowed pet areas on a non-stretchable leash</rdfs:label>
+        <rdfs:label xml:lang="es">zonas permitidas para mascotas con correa no extensible</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#allowedPetFreeRoamingAreas -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#allowedPetFreeRoamingAreas">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAccommodationPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment xml:lang="en">Areas designated by the accommodation where pets may remain without the need for a muzzle or non-extendable leash.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Áreas habilitadas por el alojamiento para que las mascotas puedan permanecer sin la necesidad de llevar bozal o correa no extensible.</rdfs:comment>
+        <rdfs:label xml:lang="en">allowed pet free roaming areas</rdfs:label>
+        <rdfs:label xml:lang="es">zonas permitidas para mascotas en libertad</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#answer -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#answer">
@@ -3037,6 +3065,20 @@ tourism organisations, tourism or related facilities, tourism resources and serv
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#brachycephalicPetsAllowed -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#brachycephalicPetsAllowed">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetTransportPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="es">Posibilidad de transportar animales propensos a las obstrucciones y problemas respiratorios debido a la forma pequeña de su cabeza, hocico y garganta.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Possibility of transporting animals prone to obstructions and respiratory problems due to the small size of their head, snout and throat.</rdfs:comment>
+        <rdfs:label xml:lang="es">admite mascotas braquicéfalos</rdfs:label>
+        <rdfs:label xml:lang="en">brachycephalic pets allowed</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#byMonthDay -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#byMonthDay">
@@ -3092,6 +3134,20 @@ tourism organisations, tourism or related facilities, tourism resources and serv
         <rdfs:comment xml:lang="en">The time by which guests must complete their departure and vacate their accommodation.</rdfs:comment>
         <rdfs:label xml:lang="en">check-out time</rdfs:label>
         <rdfs:label xml:lang="es">hora de salida</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#civilLiabilityInsuranceRequired -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#civilLiabilityInsuranceRequired">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="es">Necesidad de disponer de un tipo de seguro contra daños por el que el asegurador se obliga a indemnizar a un tercero de los daños y perjuicios causados por un hecho de cuyas consecuencias sea responsable el asegurado.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The need for a type of insurance against damages whereby the insurer undertakes to compensate a third party for damages caused by an event for which the insured party is liable.</rdfs:comment>
+        <rdfs:label xml:lang="en">civil liability insurance required</rdfs:label>
+        <rdfs:label xml:lang="es">requiere seguro de responsabilidad civil</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:DatatypeProperty>
     
@@ -3165,6 +3221,20 @@ tourism organisations, tourism or related facilities, tourism resources and serv
         <rdfs:comment xml:lang="en">Indicates whether the parking facility is adapted for people with reduced mobility.</rdfs:comment>
         <rdfs:label xml:lang="es">aparcamiento para personas con movilidad reducida</rdfs:label>
         <rdfs:label xml:lang="en">disabled parking</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#disallowedDogBreeds -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#disallowedDogBreeds">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment xml:lang="en">Groups into which the canine biological species is subdivided, whose access to an establishment or consumption of a service is restricted.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Grupos en los que se subdivide la especie biológica canina cuyo acceso a un establecimiento o al consumo de un servicio está restringido.</rdfs:comment>
+        <rdfs:label xml:lang="en">disallowed dog breeds</rdfs:label>
+        <rdfs:label xml:lang="es">razas de perros no admitidas</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:DatatypeProperty>
     
@@ -3583,6 +3653,34 @@ tourism organisations, tourism or related facilities, tourism resources and serv
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#maximumNonStretchableLeashLength -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#maximumNonStretchableLeashLength">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment xml:lang="es">Longitud máxima que debe cumplir la cuerda con la que se conduce o sujeta el/los animal/es.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Maximum length that the rope used to lead or restrain the animal(s) must comply with.</rdfs:comment>
+        <rdfs:label xml:lang="es">longitud máxima de la correa no extensible</rdfs:label>
+        <rdfs:label xml:lang="en">maximum non-stretchable leash length</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#microchipIdentificationRequired -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#microchipIdentificationRequired">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="es">Necesidad de cumplir con el sistema de identificación establecido reglamentariamente por las autoridades competentes, en el caso español, un dispositivo de identificación por radiofrecuencia pasivo y solo de lectura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Need to comply with the identification system established by regulation by the competent authorities, in the case of Spain, a passive, read-only radio frequency identification device.</rdfs:comment>
+        <rdfs:label xml:lang="en">microchip identification required</rdfs:label>
+        <rdfs:label xml:lang="es">requiere identificación con microchip</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#minPrice -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#minPrice">
@@ -3597,6 +3695,48 @@ tourism organisations, tourism or related facilities, tourism resources and serv
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#minimumBookingTime -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#minimumBookingTime">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetTransportPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment xml:lang="en">Minimum advance notice required to book the pet transport service.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Tiempo de antelación mínima con el que debe realizarse la reserva del servicio de transporte con mascotas.</rdfs:comment>
+        <rdfs:label xml:lang="en">minimum booking time</rdfs:label>
+        <rdfs:label xml:lang="es">tiempo mínimo de reserva</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#minimumPetAge -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#minimumPetAge">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment xml:lang="es">Edad mínima que se exige a la mascota para permitir su admisión.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Minimum age required for pets to be admitted.</rdfs:comment>
+        <rdfs:label xml:lang="es">edad mínima de la mascota</rdfs:label>
+        <rdfs:label xml:lang="en">minimum pet age</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#minimumTimeRequiredSinceAntiRabiesVaccination -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#minimumTimeRequiredSinceAntiRabiesVaccination">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment xml:lang="es">Antelación mínima con la que se ha de administrar a un animal la vacuna para inducirle inmunidad contra los agentes patógenos de la rabia.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Minimum time in advance that an animal must be given the vaccine to induce immunity against rabies pathogens.</rdfs:comment>
+        <rdfs:label xml:lang="en">minimum time required since anti rabies vaccination</rdfs:label>
+        <rdfs:label xml:lang="es">tiempo mínimo requerido desde la vacunación antirrábica</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#municipality -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#municipality">
@@ -3606,6 +3746,20 @@ tourism organisations, tourism or related facilities, tourism resources and serv
         <rdfs:comment xml:lang="en">Local entity formed by residents of a specific territory to autonomously manage their common interests.</rdfs:comment>
         <rdfs:label xml:lang="en">municipality</rdfs:label>
         <rdfs:label xml:lang="es">municipio</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#muzzleWearRequired -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#muzzleWearRequired">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Animals must wear a muzzle to prevent them from biting.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Necesidad de que los animales usen un dispositivo en el hocico para que no muerdan.</rdfs:comment>
+        <rdfs:label xml:lang="es">exige uso de bozal</rdfs:label>
+        <rdfs:label xml:lang="en">muzzle wear required</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:DatatypeProperty>
     
@@ -3635,6 +3789,20 @@ tourism organisations, tourism or related facilities, tourism resources and serv
     
 
 
+    <!-- https://ontologia.segittur.es/turismo/def/core#nonStretchableLeashRequired -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#nonStretchableLeashRequired">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment xml:lang="en">Animals must be led or restrained with a rope that cannot be extended.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Necesidad de que los animales sean conducidos o sujetados con una cuerda que no pueda extenderse.</rdfs:comment>
+        <rdfs:label xml:lang="es">exige uso de correa no extensible</rdfs:label>
+        <rdfs:label xml:lang="en">non-stretchable leash required</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://ontologia.segittur.es/turismo/def/core#notIncluded -->
 
     <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#notIncluded">
@@ -3652,6 +3820,20 @@ tourism organisations, tourism or related facilities, tourism resources and serv
         <rdfs:comment xml:lang="es">Gastos o servicios adicionales que no están cubiertos por el coste total de un servicio turístico.</rdfs:comment>
         <rdfs:label xml:lang="es">no incluido</rdfs:label>
         <rdfs:label xml:lang="en">not included</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#notPetFriendlyAreas -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#notPetFriendlyAreas">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAccommodationPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment xml:lang="en">Areas of the accommodation are not suitable for pets or their stay with them.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Áreas del alojamiento no aptas para las mascotas ni su permanencia con ellas.</rdfs:comment>
+        <rdfs:label xml:lang="en">not pet friendly areas</rdfs:label>
+        <rdfs:label xml:lang="es">zonas no habilitadas para mascotas</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:DatatypeProperty>
     
@@ -3695,6 +3877,62 @@ tourism organisations, tourism or related facilities, tourism resources and serv
         <rdfs:comment xml:lang="en">Number of beds available in the accommodation.</rdfs:comment>
         <rdfs:label xml:lang="en">number of beds</rdfs:label>
         <rdfs:label xml:lang="es">número de camas</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#numberOfPetsAllowedPerEstablishment -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#numberOfPetsAllowedPerEstablishment">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="es">Cantidad máxima de mascotas que admite el establecimiento</rdfs:comment>
+        <rdfs:comment xml:lang="en">Maximum number of pets allowed at the establishment.</rdfs:comment>
+        <rdfs:label xml:lang="en">number of pets allowed per establishment</rdfs:label>
+        <rdfs:label xml:lang="es">número de mascotas permitidas por establecimiento</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#numberOfPetsAllowedPerPerson -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#numberOfPetsAllowedPerPerson">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="es">Cantidad máxima de mascotas por persona aceptadas.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Maximum number of pets per person accepted.</rdfs:comment>
+        <rdfs:label xml:lang="en">number of pets allowed per person</rdfs:label>
+        <rdfs:label xml:lang="es">número de mascotas permitidas por persona</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#numberOfPetsAllowedPerService -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#numberOfPetsAllowedPerService">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="es">Cantidad máxima de mascotas que admite el servicio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Maximum number of pets allowed by the service.</rdfs:comment>
+        <rdfs:label xml:lang="en">number of pets allowed per service</rdfs:label>
+        <rdfs:label xml:lang="es">número de mascotas permitidas por servicio</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#numberOfPetsAllowedPerTravelContainer -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#numberOfPetsAllowedPerTravelContainer">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetTransportPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="es">Cantidad de animales que se pueden albergar en un mismo recipiente u estructura rígida, siempre y cuando sean de la misma especie y/o camada o estén acostumbrados a cohabitar.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Number of animals that can be housed in the same container or rigid structure, provided they are of the same species and/or litter or are accustomed to cohabiting.</rdfs:comment>
+        <rdfs:label xml:lang="en">number of pets allowed per travel container</rdfs:label>
+        <rdfs:label xml:lang="es">número de mascotas por contenedor de viaje</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:DatatypeProperty>
     
@@ -3760,6 +3998,118 @@ tourism organisations, tourism or related facilities, tourism resources and serv
         <rdfs:label xml:lang="es">parador</rdfs:label>
         <estur-annot:orderInCategory rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</estur-annot:orderInCategory>
         <estur-annot:presentationOrderCategory>generalInfo</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#passportOrAnimalHealthCertificatedRequired -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#passportOrAnimalHealthCertificatedRequired">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="es">Necesidad de disponer de documento que permita identificar claramente al animal y controlar la conformidad de su situación sanitaria.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Need for a document that clearly identifies the animal and verifies its health status.</rdfs:comment>
+        <rdfs:label xml:lang="en">passport or animal health certificate required</rdfs:label>
+        <rdfs:label xml:lang="es">requiere pasaporte o certificado zoosanitario</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#petAdmissionDeposit -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#petAdmissionDeposit">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAccommodationPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="es">Necesidad de abonar una suma dineraria con la que la persona responde ante un eventual incumplimiento de una obligación derivada del alojamiento con su mascota.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The requirement to pay a sum of money with which the person is liable in the event of a breach of an obligation arising from the accommodation of their pet.</rdfs:comment>
+        <rdfs:label xml:lang="es">depósito de garantía por admisión de la mascota</rdfs:label>
+        <rdfs:label xml:lang="en">pet admission deposit</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#petAdmissionFee -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#petAdmissionFee">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="es">Exigencia de pagar una suma de dinero para acceder a un servicio con mascotas.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Requirement to pay a sum of money to access a service with pets.</rdfs:comment>
+        <rdfs:label xml:lang="en">pet admission fee</rdfs:label>
+        <rdfs:label xml:lang="es">suplemento por admisión de la mascota</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#petDeposit -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#petDeposit">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Amount of money with which the person is liable in the event of a breach of an obligation arising from any activity that forms part of travelling with a pet.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Importe de la suma dineraria con la que la persona responde ante un eventual incumplimiento de una obligación derivada de cualquier actividad que forme parte del viaje con mascota.</rdfs:comment>
+        <rdfs:label xml:lang="es">depósito de garantía por mascota</rdfs:label>
+        <rdfs:label xml:lang="en">pet deposit</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#petFee -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#petFee">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PriceSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Amount of money paid to access a service with pets.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Suma de dinero que se paga para acceder a un servicio con mascotas.</rdfs:comment>
+        <rdfs:label xml:lang="en">pet fee</rdfs:label>
+        <rdfs:label xml:lang="es">suplemento por mascota</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#petPermanenceInTravelContainerRequired -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#petPermanenceInTravelContainerRequired">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="es">Necesidad de albergar el/los animal/es en recipientes u otras estructuras rígidas.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Need to house the animal(s) in containers or other rigid structures.</rdfs:comment>
+        <rdfs:label xml:lang="es">exige la permanencia de la mascota en el contenedor de viaje</rdfs:label>
+        <rdfs:label xml:lang="en">pet permanence in travel container required</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#petWeightLimitation -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#petWeightLimitation">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetAdmissionPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment xml:lang="es">Suma del peso de la mascota más el transportín.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Total weight of the pet plus the carrier.</rdfs:comment>
+        <rdfs:label xml:lang="es">límite de peso de la mascota</rdfs:label>
+        <rdfs:label xml:lang="en">pet weight limitation</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#petsInHeatAllowed -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#petsInHeatAllowed">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetTransportPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="es">Posibilidad de transportar animales que se encuentran en la época en la que experimentan apetito sexual.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Possibility of transporting animals that are in their sexual appetite season.</rdfs:comment>
+        <rdfs:label xml:lang="es">admite mascotas en celo</rdfs:label>
+        <rdfs:label xml:lang="en">pets in heat allowed</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:DatatypeProperty>
     
 
@@ -4231,6 +4581,20 @@ tourism organisations, tourism or related facilities, tourism resources and serv
         <rdfs:comment xml:lang="es">Franja temporal general en la que se desarrolla o se recomienda una experiencia en destino.</rdfs:comment>
         <rdfs:label xml:lang="es">momento del día</rdfs:label>
         <rdfs:label xml:lang="en">time of the day</rdfs:label>
+        <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ontologia.segittur.es/turismo/def/core#travelContainerSize -->
+
+    <owl:DatatypeProperty rdf:about="https://ontologia.segittur.es/turismo/def/core#travelContainerSize">
+        <rdfs:domain rdf:resource="https://ontologia.segittur.es/turismo/def/core#PetTransportPolicy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+        <rdfs:comment xml:lang="en">Sizes that the container or rigid structure housing the animal(s) must comply with.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Tamaños que debe cumplir el recipiente u estructura rígida en la que se alberga el/los animal/es.</rdfs:comment>
+        <rdfs:label xml:lang="es">dimensiones del contenedor de viaje</rdfs:label>
+        <rdfs:label xml:lang="en">travel container size</rdfs:label>
         <estur-annot:presentationOrderCategory>other</estur-annot:presentationOrderCategory>
     </owl:DatatypeProperty>
     

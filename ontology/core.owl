@@ -11345,6 +11345,11 @@ Start of the validity period of the certification, opening hours, rule or tip.</
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalPetAccommodationService">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that an accommodation establishment may offer alongside its main service or activity in order to enhance or improve the experience of a tourist with pets.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un establecimiento alojativo junto a su servicio o actividad principal para ampliar o mejorar la experiencia del turista con mascotas.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional pet accommodation service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de alojamiento con mascotas</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalPetAccommodationService.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -11353,6 +11358,11 @@ Start of the validity period of the certification, opening hours, rule or tip.</
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalPetFoodEstablishmentService">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a food establishment may offer alongside its main service or activity in order to enhance or improve the experience of a tourist with pets.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un establecimiento de restauración junto a su servicio o actividad principal para ampliar o mejorar la experiencia del turista con mascotas.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional pet food establishment service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de establecimiento de restauración con mascotas</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalPetFoodEstablishmentService.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -11361,6 +11371,11 @@ Start of the validity period of the certification, opening hours, rule or tip.</
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalPetTourismResourceService">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a tourism resource may offer alongside its main service or activity in order to enhance or improve the experience of a tourist with pets.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un recurso turístico junto a su servicio o actividad principal para ampliar o mejorar la experiencia del turista con mascotas.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional pet tourism resource service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional del recurso turístico con mascotas</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalPetTourismResourceService.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -11369,6 +11384,11 @@ Start of the validity period of the certification, opening hours, rule or tip.</
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/AdditionalPetTransportService">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Complementary or additional services that a transport service may offer alongside its main service or activity in order to enhance or improve the experience of a tourist with pets.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Servicios complementarios o adicionales que puede ofrecer un servicio de transporte junto a su servicio o actividad principal para ampliar o mejorar la experiencia del turista con mascotas.</rdfs:comment>
+        <rdfs:label xml:lang="en">Additional pet transport service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio adicional de transporte con mascotas</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-AdditionalPetTransportService.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -11586,6 +11606,11 @@ Start of the validity period of the certification, opening hours, rule or tip.</
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/CompulsoryZoosanitaryProduct">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Substances, active ingredients, formulations or preparations intended for the diagnosis, prevention, treatment, alleviation or cure of diseases or ailments in animals, and whose administration is required for admission.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Sustancias, ingredientes activos, formulaciones o preparados destinados al diagnóstico, prevención, tratamiento, alivio o cura de las enfermedades o dolencias de los animales, y cuya administración es requerida para su admisión.</rdfs:comment>
+        <rdfs:label xml:lang="en">Compulsory zoosanitary product</rdfs:label>
+        <rdfs:label xml:lang="es">Producto zoosanitario obligatorio</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-CompulsoryZoosanitaryProduct.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -11772,6 +11797,11 @@ Start of the validity period of the certification, opening hours, rule or tip.</
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/Species">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="en">Biological species of pets whose entry is permitted.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Especies biológicas de mascotas cuyo ingreso es permitido.</rdfs:comment>
+        <rdfs:label xml:lang="es">Especie</rdfs:label>
+        <rdfs:label xml:lang="en">Species</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-Species.ttl"/>
     </owl:NamedIndividual>
     
 
@@ -11874,6 +11904,11 @@ Start of the validity period of the certification, opening hours, rule or tip.</
 
     <owl:NamedIndividual rdf:about="https://ontologia.segittur.es/turismo/kos/TravelContainerType">
         <rdf:type rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <rdfs:comment xml:lang="es">Tipos de habitáculos portátiles utilizados para transportar o albergar a mascotas.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Types of portable enclosures used to transport or house pets.</rdfs:comment>
+        <rdfs:label xml:lang="es">Tipo de contenedor de viaje</rdfs:label>
+        <rdfs:label xml:lang="en">Travel container type</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://ontologia.segittur.es/turismo/def/core/kos/skos-TravelContainerType.ttl"/>
     </owl:NamedIndividual>
     
 

@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-additionalpettourismresourceservice: <https://ontologia.segittur.es/turismo/kos/additionalpettourismresourceservice/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:AdditionalPetTourismResourceService a skos:ConceptScheme ; 
+    dct:issued "2026-03-06"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Additional pet tourism resource service"@en ;
+    rdfs:label "Servicio adicional del recurso turístico con mascotas"@es ;
+    dct:title "Concept scheme grouping complementary or additional services that a tourism resource may offer alongside its main service or activity in order to enhance or improve the experience of a tourist with pets."@en ;
+    dct:title "Esquema de conceptos agrupando servicios complementarios o adicionales que puede ofrecer un recurso turístico junto a su servicio o actividad principal para ampliar o mejorar la experiencia del turista con mascotas."@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-additionalpettourismresourceservice:PetRecreationArea a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetTourismResourceService;
+  skos:prefLabel "Pet recreation area"@en ;
+  skos:prefLabel "Zona de recreo para mascotas"@es .
+
+estur-additionalpettourismresourceservice:AgilitySpace a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetTourismResourceService;
+  skos:prefLabel "Agility space"@en ;
+  skos:prefLabel "Espacio agility"@es .
+
+estur-additionalpettourismresourceservice:PetFriendlySpace a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetTourismResourceService;
+  skos:prefLabel "Pet friendly space"@en ;
+  skos:prefLabel "Espacio habilitado para mascotas"@es .
+
+estur-additionalpettourismresourceservice:WasteBagDispenser a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetTourismResourceService;
+  skos:prefLabel "Waste bag dispenser"@en ;
+  skos:prefLabel "Dispensador de bolsas de desechos"@es .
+
+estur-additionalpettourismresourceservice:PetWaterFountain a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetTourismResourceService;
+  skos:prefLabel "Pet water fountain"@en ;
+  skos:prefLabel "Fuente de agua para mascotas"@es .
+
+estur-additionalpettourismresourceservice:PetWasteBin a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetTourismResourceService;
+  skos:prefLabel "Pet waste bin"@en ;
+  skos:prefLabel "Papelera para excrementos de mascotas"@es .
+

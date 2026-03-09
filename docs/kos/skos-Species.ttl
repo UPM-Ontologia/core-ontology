@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-species: <https://ontologia.segittur.es/turismo/kos/species/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:Species a skos:ConceptScheme ; 
+    dct:issued "2026-03-06"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Species"@en ;
+    rdfs:label "Especies"@es ;
+    dct:title "Concept scheme grouping biological species of pets whose entry is permitted."@en ;
+    dct:title "Esquema de conceptos agrupando especies biológicas de mascotas cuyo ingreso es permitido."@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-species:Dog a skos:Concept;
+  skos:inScheme estur-kos:Species;
+  skos:prefLabel "Dog"@en ;
+  skos:prefLabel "Perro"@es .
+
+estur-species:Cat a skos:Concept;
+  skos:inScheme estur-kos:Species;
+  skos:prefLabel "Cat"@en ;
+  skos:prefLabel "Gato"@es .
+
+estur-species:Ferret a skos:Concept;
+  skos:inScheme estur-kos:Species;
+  skos:prefLabel "Ferret"@en ;
+  skos:prefLabel "Hurón"@es .
+
+estur-species:Fish a skos:Concept;
+  skos:inScheme estur-kos:Species;
+  skos:prefLabel "Fish"@en ;
+  skos:prefLabel "Pez"@es .
+
+estur-species:Bird a skos:Concept;
+  skos:inScheme estur-kos:Species;
+  skos:prefLabel "Bird"@en ;
+  skos:prefLabel "Ave"@es .
+
+estur-species:Turtle a skos:Concept;
+  skos:inScheme estur-kos:Species;
+  skos:prefLabel "Turtle"@en ;
+  skos:prefLabel "Tortuga"@es .

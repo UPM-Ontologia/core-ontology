@@ -1,0 +1,120 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-additionalpetaccommodationservice: <https://ontologia.segittur.es/turismo/kos/additionalpetaccommodationservice/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:AdditionalPetAccommodationService a skos:ConceptScheme ; 
+    dct:issued "2026-03-06"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Additional pet accommodation service"@en ;
+    rdfs:label "Servicio adicional de alojamiento con mascotas"@es ;
+    dct:title "Concept scheme grouping complementary or additional services that an accommodation establishment may offer alongside its main service or activity in order to enhance or improve the experience of a tourist with pets."@en ;
+    dct:title "Esquema de conceptos agrupando servicios complementarios o adicionales que puede ofrecer un establecimiento alojativo junto a su servicio o actividad principal para ampliar o mejorar la experiencia del turista con mascotas."@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-additionalpetaccommodationservice:PetBed a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Pet bed"@en ;
+  skos:prefLabel "Cama para mascotas"@es .
+
+estur-additionalpetaccommodationservice:PetTowel a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Pet towel"@en ;
+  skos:prefLabel "Toalla para mascotas"@es .
+
+estur-additionalpetaccommodationservice:PetToys a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Pet toys"@en ;
+  skos:prefLabel "Juguetes para mascotas"@es .
+
+estur-additionalpetaccommodationservice:PetShampoo a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Pet shampoo"@en ;
+  skos:prefLabel "Champú para mascotas"@es .
+
+estur-additionalpetaccommodationservice:DrinkingBowl a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Drinking bowl"@en ;
+  skos:prefLabel "Bebedero"@es .
+
+estur-additionalpetaccommodationservice:FoodBowl a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Food bowl"@en ;
+  skos:prefLabel "Comedero"@es .
+
+estur-additionalpetaccommodationservice:WasteBags a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Waste bags"@en ;
+  skos:prefLabel "Bolsas de desechos"@es .
+
+estur-additionalpetaccommodationservice:Soaker a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Soaker"@en ;
+  skos:prefLabel "Empapador"@es .
+
+estur-additionalpetaccommodationservice:PetRecreationArea a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Pet recreation area"@en ;
+  skos:prefLabel "Zona de recreo para mascotas"@es .
+
+estur-additionalpetaccommodationservice:AgilitySpace a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Agility space"@en ;
+  skos:prefLabel "Espacio agility"@es .
+
+estur-additionalpetaccommodationservice:AloneInTheRoom a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Alone in the room"@en ;
+  skos:prefLabel "Solos en la habitación"@es .
+
+estur-additionalpetaccommodationservice:PetMenu a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Pet menu"@en ;
+  skos:prefLabel "Menú para mascotas"@es .
+
+estur-additionalpetaccommodationservice:PetTreats a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Pet treats"@en ;
+  skos:prefLabel "Golosinas para mascotas"@es .
+
+estur-additionalpetaccommodationservice:PetSitting a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Pet sitting"@en ;
+  skos:prefLabel "Guardería para mascotas"@es .
+
+estur-additionalpetaccommodationservice:PetWalker a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Pet walker"@en ;
+  skos:prefLabel "Paseador de mascotas"@es .
+
+estur-additionalpetaccommodationservice:PetPool a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Pet pool"@en ;
+  skos:prefLabel "Piscina para mascotas"@es .
+
+estur-additionalpetaccommodationservice:PetShower a skos:Concept;
+  skos:inScheme estur-kos:AdditionalPetAccommodationService;
+  skos:prefLabel "Pet shower"@en ;
+  skos:prefLabel "Ducha para mascotas"@es .
+

@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-travelcontainertype: <https://ontologia.segittur.es/turismo/kos/travelcontainertype/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:TravelContainerType a skos:ConceptScheme ; 
+    dct:issued "2026-03-06"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Travel container type"@en ;
+    rdfs:label "Tipo de contenedor de viaje"@es ;
+    dct:title "Concept scheme grouping types of portable enclosures used to transport or house pets."@en ;
+    dct:title "Esquema de conceptos agrupando tipos de habitáculos portátiles utilizados para transportar o albergar a mascotas."@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-travelcontainertype:Cage a skos:Concept;
+  skos:inScheme estur-kos:TravelContainerType;
+  skos:prefLabel "Cage"@en ;
+  skos:prefLabel "Jaula"@es .
+
+estur-travelcontainertype:SoftBag a skos:Concept;
+  skos:inScheme estur-kos:TravelContainerType;
+  skos:prefLabel "Soft  bag"@en ;
+  skos:prefLabel "Bolsa de transporte"@es .
+
+estur-travelcontainertype:Carrier a skos:Concept;
+  skos:inScheme estur-kos:TravelContainerType;
+  skos:prefLabel "Carrier"@en ;
+  skos:prefLabel "Transportín"@es .

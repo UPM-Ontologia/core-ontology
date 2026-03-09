@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix estur-core: <https://ontologia.segittur.es/turismo/def/core#> .
+@prefix estur-kos: <https://ontologia.segittur.es/turismo/kos/> .
+
+@prefix estur-compulsorysanitaryproduct: <https://ontologia.segittur.es/turismo/kos/compulsorysanitaryproduct/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+estur-kos:CompulsorySanitaryProduct a skos:ConceptScheme ; 
+    dct:issued "2026-03-06"^^xsd:date ;
+    dct:modified "2026-03-06"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the SEGITTUR tourism ontology."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por la ontología de turismo de SEGITTUR."@es ;
+    rdfs:label "Compulsory sanitary product"@en ;
+    rdfs:label "Producto zoosanitario obligatorio"@es ;
+    dct:title "Concept scheme grouping substances, active ingredients, formulations or preparations intended for the diagnosis, prevention, treatment, alleviation or cure of diseases or ailments in animals, and whose administration is required for admission."@en ;
+    dct:title "Esquema de conceptos agrupando sustancias, ingredientes activos, formulaciones o preparados destinados al diagnóstico, prevención, tratamiento, alivio o cura de las enfermedades o dolencias de los animales, y cuya administración es requerida para su admisión."@es .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+estur-species:RabiesVaccination a skos:Concept;
+  skos:inScheme estur-kos:CompulsorySanitaryProduct;
+  skos:prefLabel "Rabies vaccination"@en ;
+  skos:prefLabel "Vacunación antirrábica"@es .
+
+estur-species:LeptospirosisVaccination a skos:Concept;
+  skos:inScheme estur-kos:CompulsorySanitaryProduct;
+  skos:prefLabel "Leptospirosis vaccination"@en ;
+  skos:prefLabel "Vacunación leptospirosis"@es .
+
+estur-species:InternalParasiteTreatment a skos:Concept;
+  skos:inScheme estur-kos:CompulsorySanitaryProduct;
+  skos:prefLabel "Internal parasite treatment"@en ;
+  skos:prefLabel "Antiparasitario interno"@es .
+
+estur-species:ExternalParasiteTreatment a skos:Concept;
+  skos:inScheme estur-kos:CompulsorySanitaryProduct;
+  skos:prefLabel "External parasite treatment"@en ;
+  skos:prefLabel "Antiparasitario externo"@es .

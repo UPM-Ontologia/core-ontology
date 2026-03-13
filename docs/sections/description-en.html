@@ -30,8 +30,8 @@ Figure 1. Top-level conceptual model, which represents the main class Tourism En
 <pre><textarea style="resize:none" readonly id="code1" name="code" rows="25" cols="100">
 @prefix ex: &lt;http://example.org/recurso/&gt; .
 @prefix estur: &lt;https://ontologia.segittur.es/turismo/def/core#&gt; .
-@prefix estur-busoperatorservice: &lt;https://ontologia.segittur.es/turismo/kos/busoperatorservice/&gt; .
-@prefix estur-socialmediaplatform: &lt;https://ontologia.segittur.es/turismo/kos/socialmediaplatform/&gt; .
+@prefix estur-busoperatorservice: &lt;https://ontologia.segittur.es/turismo/kos/BusOperatorService/&gt; .
+@prefix estur-socialmediaplatform: &lt;https://ontologia.segittur.es/turismo/kos/SocialMediaPlatform/&gt; .
 
 ex:OperadorBus1 a estur:BusOperator ;
   dct:identifier "OperadorBus1" ;
@@ -106,9 +106,9 @@ ex:OperadorBus1LocationGeometry a geosparql:Geometry, geo:Point ;
 <p><center><img src="images/fig5-Accommodation.png"/><figcaption>Figure 4. Conceptual model for Accommodation Establishment.</figcaption></center></p>
 
 <pre><textarea style="resize:none" readonly id="code3" name="code" rows="25" cols="100">
-@prefix estur-priceclass: &lt;https://ontologia.segittur.es/turismo/kos/priceclass/&gt; .
-@prefix estur-accommodationservice: &lt;https://ontologia.segittur.es/turismo/kos/accommodationservice/&gt; .
-@prefix estur-accommodationratetype: &lt;https://ontologia.segittur.es/turismo/kos/accomodationratetype/&gt; .
+@prefix estur-priceclass: &lt;https://ontologia.segittur.es/turismo/kos/PriceClass/&gt; .
+@prefix estur-accommodationservice: &lt;https://ontologia.segittur.es/turismo/kos/AccommodationService/&gt; .
+@prefix estur-accommodationratetype: &lt;https://ontologia.segittur.es/turismo/kos/AccomodationRateType/&gt; .
 
 ex:Hotel1 a estur:Hotel ;
   rdfs:label "Hotel 1" ;
@@ -159,8 +159,8 @@ ex:Hotel1Web a estur:BookingChannel ;
 <p>Next we show an example in RDF, using the RDF Turtle notation, that describes a tourism resource, specifically a <a href="#CongressCentre">Congress Centre</a> located in Málaga, with capacity for 2000 persons, managed by an event agency, with several social network profiles, two types of opening hours during 2025 (one for weekdays and another one for weekends), and with additional services such as cloak room, accesses for disabled, event organisations and parking.</p>
 
 <pre><textarea style="resize:none" readonly id="code4" name="code" rows="25" cols="100">
-@prefix estur-eventattendanceservice: &lt;https://ontologia.segittur.es/turismo/kos/eventattendanceservice/&gt; .
-@prefix estur-touristorrelatedfacilityservice: &lt;https://ontologia.segittur.es/turismo/kos/touristorrelatedfacilityservice/&gt; .
+@prefix estur-eventattendanceservice: &lt;https://ontologia.segittur.es/turismo/kos/AdditionalEventAttendanceService/&gt; .
+@prefix estur-touristorrelatedfacilityservice: &lt;https://ontologia.segittur.es/turismo/kos/TouristOrRelatedFacilityService/&gt; .
 
 ex:CongressCentre1 a estur:CongressCentre ;
   rdfs:label "Centro de congresos 1" ;

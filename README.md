@@ -6,6 +6,6 @@ El espacio de nombres (‘namespace’) para los términos específicos de esta 
 
 This tourism domain ontology is built from SEGITTUR's ‘Conceptual Tourism Semantic Reference Model’, a model for the development of a Network of Tourism Sector Ontologies at the service of the future Intelligent Destination Platform (IDP) promoted by SEGITTUR. The SEGITTUR Conceptual Tourism Reference Model offers an extensible ontological core for concepts and information on the tourism domain, and aims to become a reference for the controlled exchange of tourism information.
 
-The namespace for the terms of this ontology is: https://ontologia.segittur.es/def/turismo/core#. 
+The namespace for the terms of this ontology is: [https://ontologia.segittur.es/def/turismo/core#](https://ontologia.segittur.es/turismo/def/core#). 
 
 The documentation of the latest version of the ontology is available (provisionally) at: https://raw.githack.com/UPM-Ontologia/core-ontology/refs/heads/master/docs/index-es.html (note that for release 1.2.2, this documentation is not yet updated)
